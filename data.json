@@ -1,7 +1,7 @@
 {
   "theme": "dark",
-  "usdRate": 44.4744,
-  "eurRate": 51.8578,
+  "usdRate": 44.4737,
+  "eurRate": 51.8583,
   "liveprices": {
     "VIG": 214.26,
     "PG": 144.44,
@@ -15,9 +15,9 @@
     "VEA": 64.08,
     "VOO": 597.55,
     "IJR": 124.31,
-    "ALTIN": 6772.7,
-    "GUMUS": 107.14,
-    "BTC_TL": 3049024.992012
+    "ALTIN": 6774.77,
+    "GUMUS": 107.17,
+    "BTC_TL": 3048626.1047205
   },
   "temttu": [
     {
