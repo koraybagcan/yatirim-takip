@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V7.9</title>
+<title>Portföy Takip — V7.10</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -161,7 +161,7 @@ canvas{max-height:220px;}
 <nav class="sidebar">
   <div class="logo">
     <div class="logo-title">Portföy</div>
-    <div class="logo-sub">Yatırım Takip — V7.9</div>
+    <div class="logo-sub">Yatırım Takip — V7.10</div>
   </div>
   <div class="nav">
     <div class="nav-section">Genel</div>
@@ -2933,49 +2933,56 @@ async function applyUpdate() {
   }
 }
 
+let _ghSaving = false;
+
 async function githubSave() {
+  if(_ghSaving) return;
   const cfg = getGHConfig();
   if(!cfg.username || !cfg.token) { openGithubSettings(); return; }
+  _ghSaving = true;
   setGHStatus('Kaydediliyor…', '');
   const btn = document.getElementById('gh-save-btn');
   if(btn) btn.disabled = true;
   try {
-    const path = 'data.json';
-    const apiUrl = `https://api.github.com/repos/${cfg.username}/${cfg.dataRepo}/contents/${path}`;
-    // Mevcut dosyanın SHA'sını al (update için gerekli)
-    let sha = null;
-    try {
-      const existing = await fetch(apiUrl, {
-        headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
+    const apiUrl = `https://api.github.com/repos/${cfg.username}/${cfg.dataRepo}/contents/data.json`;
+    const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
+    const msg = `Portföy güncellendi — ${new Date().toLocaleString('tr-TR')}`;
+
+    async function doSave(sha) {
+      return fetch(apiUrl, {
+        method: 'PUT',
+        headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: msg, content: encoded, ...(sha ? {sha} : {}) })
       });
-      if(existing.ok) { const d = await existing.json(); sha = d.sha; }
-    } catch(e) {}
-    // Veriyi base64'e çevir
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
-    const body = {
-      message: `Portföy güncellendi — ${new Date().toLocaleString('tr-TR')}`,
-      content,
-      ...(sha ? {sha} : {})
-    };
-    const res = await fetch(apiUrl, {
-      method: 'PUT',
-      headers: {
-        'Authorization': `token ${cfg.token}`,
-        'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body)
-    });
-    if(res.ok) {
-      setGHStatus('✓ GitHub\'a kaydedildi — ' + new Date().toLocaleTimeString('tr-TR'), 'ok');
-    } else {
-      const err = await res.json();
-      setGHStatus('Hata: ' + (err.message || res.status), 'err');
     }
+
+    // Her seferinde taze SHA al
+    let sha = null;
+    const existing = await fetch(apiUrl, { headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }, cache: 'no-store' });
+    if(existing.ok) { sha = (await existing.json()).sha; }
+
+    let res = await doSave(sha);
+    // SHA uyusmazligi olursa bir kez daha dene
+    if(!res.ok) {
+      const err = await res.json();
+      if(res.status === 409 || (err.message||'').includes('does not match')) {
+        setGHStatus('Yeniden deneniyor…', '');
+        const retry = await fetch(apiUrl, { headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }, cache: 'no-store' });
+        const newSha = retry.ok ? (await retry.json()).sha : null;
+        res = await doSave(newSha);
+      }
+      if(!res.ok) {
+        const e2 = await res.json();
+        setGHStatus('Hata: ' + (e2.message || res.status), 'err');
+        return;
+      }
+    }
+    setGHStatus('✓ Kaydedildi — ' + new Date().toLocaleTimeString('tr-TR'), 'ok');
   } catch(e) {
     setGHStatus('Bağlantı hatası: ' + e.message, 'err');
   } finally {
     if(btn) btn.disabled = false;
+    _ghSaving = false;
   }
 }
 
