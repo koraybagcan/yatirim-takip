@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V7.10</title>
+<title>Portföy Takip — V7.11</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -130,6 +130,88 @@ body{background:var(--bg);color:var(--text);font-family:'DM Mono',monospace;min-
 .add-row-btn:hover{color:var(--accent);}
 
 canvas{max-height:220px;}
+/* ===== MOBİL ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform .25s ease;
+    z-index: 100;
+    width: 260px;
+  }
+  .sidebar.mobile-open {
+    transform: translateX(0);
+    box-shadow: 4px 0 24px rgba(0,0,0,.5);
+  }
+  #sidebar-close { display: block !important; }
+  #hamburger-btn { display: block !important; }
+  #sidebar-overlay.visible { display: block !important; }
+
+  .main {
+    margin-left: 0;
+    padding: 72px 14px 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .stat-card { padding: 14px 16px; }
+  .stat-value { font-size: 18px; }
+  .stat-sub { font-size: 10px; }
+
+  .charts-row {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  .page-header {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .page-title { font-size: 22px; }
+
+  .card-header { padding: 14px 16px 12px; }
+  .card-body { padding: 14px 16px; }
+
+  .data-table th { font-size: 8px; padding: 0 8px 10px 0; }
+  .data-table td { font-size: 11px; padding: 9px 8px 9px 0; }
+
+  .form-grid { grid-template-columns: 1fr !important; }
+
+  .modal { padding: 24px 18px; width: 95vw; }
+
+  .status-bar { bottom: 16px; right: 12px; left: 12px; font-size: 11px; }
+
+  .data-btns { gap: 5px; }
+  .data-btn { font-size: 9px; padding: 6px 3px; }
+
+  /* Dashboard ikinci satır kartları 2x2 */
+  .stats-grid[style*="margin-top"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Tablolar yatay scroll */
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* charts row tek sütun */
+  .charts-row > div { min-width: 0; }
+
+  /* ABD Takip hedef butonları */
+  #at-hedef-buyume, #at-hedef-temttu, #at-hedef-oto {
+    font-size: 10px; padding: 6px 10px;
+  }
+
+  /* Ödemeler tablosu yatay scroll */
+  #odemeler-table { font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr !important; }
+  .stat-value { font-size: 20px; }
+}
+
 .table-wrap{overflow-x:auto;}
 .table-scroll-wrap{overflow-x:auto;}
 .table-scroll-wrap table{width:100%;border-collapse:collapse;}
@@ -159,9 +241,12 @@ canvas{max-height:220px;}
 <div class="app">
 
 <nav class="sidebar">
-  <div class="logo">
-    <div class="logo-title">Portföy</div>
-    <div class="logo-sub">Yatırım Takip — V7.10</div>
+  <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
+    <div>
+      <div class="logo-title">Portföy</div>
+      <div class="logo-sub">Yatırım Takip — V7.11</div>
+    </div>
+    <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
   <div class="nav">
     <div class="nav-section">Genel</div>
@@ -201,6 +286,8 @@ canvas{max-height:220px;}
 <input type="file" id="import-file-input" accept=".json" onchange="importData(event)">
 
 <main class="main">
+<button id="hamburger-btn" onclick="toggleSidebar()" style="display:none;position:fixed;top:16px;left:16px;z-index:150;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px 12px;cursor:pointer;font-size:16px;color:var(--text);box-shadow:0 2px 8px var(--shadow)">☰</button>
+<div id="sidebar-overlay" onclick="toggleSidebar()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99;backdrop-filter:blur(2px)"></div>
 
 <!-- DASHBOARD -->
 <div id="page-dashboard" class="page active">
@@ -1233,6 +1320,19 @@ function applyTheme(t) {
 function toggleTheme() { applyTheme(state.theme==='dark' ? 'light' : 'dark'); }
 
 // ===== NAV =====
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
+  const isOpen = sidebar.classList.contains('mobile-open');
+  if(isOpen) {
+    sidebar.classList.remove('mobile-open');
+    overlay.classList.remove('visible');
+  } else {
+    sidebar.classList.add('mobile-open');
+    overlay.classList.add('visible');
+  }
+}
+
 function navigate(page, el) {
   const pageEl = document.getElementById('page-'+page);
   if(!pageEl) return;
@@ -1241,6 +1341,11 @@ function navigate(page, el) {
   pageEl.classList.add('active');
   if(el) el.classList.add('active');
   renderPage(page);
+  // Mobilde sidebar'ı kapat
+  if(window.innerWidth <= 768) {
+    document.querySelector('.sidebar').classList.remove('mobile-open');
+    document.getElementById('sidebar-overlay').classList.remove('visible');
+  }
 }
 function renderPage(p) {
   const map = {
