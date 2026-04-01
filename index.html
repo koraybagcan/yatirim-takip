@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V7.11</title>
+<title>Portföy Takip — V7.12</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V7.11</div>
+      <div class="logo-sub">Yatırım Takip — V7.12</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -1388,16 +1388,15 @@ function livePrice(ticker) {
 }
 
 function assetCurrentTL(row) {
+  // Manuel değer varsa (faiz gibi elle güncellenen satırlar)
+  if(row.manuelDeger !== undefined && row.manuelDeger !== null) return row.manuelDeger;
   const tur = row.tur;
   if(tur === 'Altın')  return row.adet * (livePrice('ALTIN') || 4500);
   if(tur === 'Gümüş')  return row.adet * (livePrice('GUMUS') || 52);
-  // Kripto — doğrudan TL fiyatı (truncgil'den BTC_TL, ETH_TL geliyor)
   const priceTL = livePrice(tur + '_TL');
   if(priceTL) return row.adet * priceTL;
-  // ABD hisse / ETF — USD price * kur
   const priceUSD = livePrice(tur);
   if(priceUSD) return row.adet * priceUSD * state.usdRate;
-  // Fallback: maliyet
   return row.maliyet;
 }
 
@@ -1982,13 +1981,20 @@ function renderAssetYK(key) {
     totalMaliyet+=(row.maliyet||0);
     totalDeger+=cur;
     const adetD = row.adet<0.01 ? 6 : row.adet<1 ? 4 : row.adet<100 ? 3 : 0;
+    const isManuel = row.manuelDeger !== undefined && row.manuelDeger !== null;
+    const isAutoPrice = ['Altın','Gümüş','QQQM','VOO','VEA','IJR','BTC'].includes(row.tur) || livePrice(row.tur) || livePrice(row.tur+'_TL');
     return `<tr>
       <td class="muted" style="font-size:11px">${row.tarih ? row.tarih.split("-").reverse().join(".") : "—"}</td>
       <td><span class="type-badge">${row.tur}</span></td>
       <td class="price-cell">${fmt(row.adet,adetD)}</td>
       <td class="price-cell">${fmtTL(row.maliyet,2)}</td>
       <td class="price-cell muted">${row.usd?fmtUSD(row.usd,2):'—'}</td>
-      <td class="price-cell ${pc(pnl)}">${fmtTL(cur,2)}</td>
+      <td class="price-cell ${pc(pnl)}" style="padding:4px 0">
+        ${!isAutoPrice || isManuel ? `<input type="text" value="${cur > 0 ? Math.round(cur).toLocaleString('tr-TR') : ''}"
+          style="width:110px;background:transparent;border:none;border-bottom:1px solid var(--border);color:${pnl>=0?'var(--green)':'var(--red)'};font-family:'DM Mono',monospace;font-size:12px;text-align:right;padding:2px 4px;"
+          placeholder="Manuel gir"
+          onchange="setAssetManuelDeger('${key}',${i},this.value)">` : fmtTL(cur,2)}
+      </td>
       <td><button class="btn btn-danger" style="font-size:9px;padding:3px 7px" onclick="removeYKRow('${key}',${i})">✕</button></td>
     </tr>`;
   }).join('');
@@ -2053,6 +2059,16 @@ function saveYKModal() {
   }
   save(); closeModal('yk-modal'); renderYK();
   showStatus('Kayıt eklendi','success');
+}
+
+function setAssetManuelDeger(key, i, val) {
+  const n = parseFloat(val.replace(/\./g,'').replace(',','.'));
+  if(val === '' || isNaN(n)) {
+    delete state.yatirim[key][i].manuelDeger;
+  } else {
+    state.yatirim[key][i].manuelDeger = n;
+  }
+  save(); renderYK();
 }
 
 function removeYKRow(key,i) { state.yatirim[key].splice(i,1); save(); renderYK(); }
