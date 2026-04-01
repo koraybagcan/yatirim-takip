@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V7.8</title>
+<title>Portföy Takip — V7.9</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -161,7 +161,7 @@ canvas{max-height:220px;}
 <nav class="sidebar">
   <div class="logo">
     <div class="logo-title">Portföy</div>
-    <div class="logo-sub">Yatırım Takip — V7.8</div>
+    <div class="logo-sub">Yatırım Takip — V7.9</div>
   </div>
   <div class="nav">
     <div class="nav-section">Genel</div>
@@ -896,8 +896,12 @@ canvas{max-height:220px;}
         <input type="text" id="gh-username" class="form-input" placeholder="koraybagcan">
       </div>
       <div class="form-group">
-        <label class="form-label">Repo Adı</label>
+        <label class="form-label">Uygulama Repo (public)</label>
         <input type="text" id="gh-repo" class="form-input" placeholder="yatirim-takip">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Veri Repo (private)</label>
+        <input type="text" id="gh-data-repo" class="form-input" placeholder="yatirim-takip-data">
       </div>
       <div class="form-group">
         <label class="form-label">Personal Access Token</label>
@@ -2826,18 +2830,20 @@ function savePortfoySecim() {
 // ===== GITHUB SYNC =====
 function getGHConfig() {
   return {
-    username: localStorage.getItem('gh_username') || '',
-    repo:     localStorage.getItem('gh_repo')     || 'yatirim-takip',
-    token:    localStorage.getItem('gh_token')    || '',
-    autosave: localStorage.getItem('gh_autosave') === 'true',
+    username: localStorage.getItem('gh_username')  || '',
+    repo:     localStorage.getItem('gh_repo')      || 'yatirim-takip',
+    dataRepo: localStorage.getItem('gh_data_repo') || 'yatirim-takip-data',
+    token:    localStorage.getItem('gh_token')     || '',
+    autosave: localStorage.getItem('gh_autosave')  === 'true',
   };
 }
 
 function openGithubSettings() {
   const cfg = getGHConfig();
-  document.getElementById('gh-username').value = cfg.username;
-  document.getElementById('gh-repo').value     = cfg.repo;
-  document.getElementById('gh-token').value    = cfg.token;
+  document.getElementById('gh-username').value  = cfg.username;
+  document.getElementById('gh-repo').value      = cfg.repo;
+  document.getElementById('gh-data-repo').value = cfg.dataRepo;
+  document.getElementById('gh-token').value     = cfg.token;
   document.getElementById('gh-autosave').checked = cfg.autosave;
   document.getElementById('gh-modal-status').textContent = '';
   document.getElementById('github-settings-modal').classList.add('open');
@@ -2846,13 +2852,15 @@ function openGithubSettings() {
 function saveGithubSettings() {
   const username = document.getElementById('gh-username').value.trim();
   const repo     = document.getElementById('gh-repo').value.trim();
+  const dataRepo = document.getElementById('gh-data-repo').value.trim() || 'yatirim-takip-data';
   const token    = document.getElementById('gh-token').value.trim();
   const autosave = document.getElementById('gh-autosave').checked;
   if(!username || !token) { document.getElementById('gh-modal-status').textContent = 'Kullanıcı adı ve token zorunlu.'; return; }
-  localStorage.setItem('gh_username', username);
-  localStorage.setItem('gh_repo',     repo);
-  localStorage.setItem('gh_token',    token);
-  localStorage.setItem('gh_autosave', autosave);
+  localStorage.setItem('gh_username',  username);
+  localStorage.setItem('gh_repo',      repo);
+  localStorage.setItem('gh_data_repo', dataRepo);
+  localStorage.setItem('gh_token',     token);
+  localStorage.setItem('gh_autosave',  autosave);
   closeModal('github-settings-modal');
   setGHStatus('Ayarlar kaydedildi', 'ok');
 }
@@ -2933,7 +2941,7 @@ async function githubSave() {
   if(btn) btn.disabled = true;
   try {
     const path = 'data.json';
-    const apiUrl = `https://api.github.com/repos/${cfg.username}/${cfg.repo}/contents/${path}`;
+    const apiUrl = `https://api.github.com/repos/${cfg.username}/${cfg.dataRepo}/contents/${path}`;
     // Mevcut dosyanın SHA'sını al (update için gerekli)
     let sha = null;
     try {
@@ -2977,7 +2985,7 @@ async function githubLoad() {
   const statusEl = document.getElementById('gh-modal-status');
   if(statusEl) statusEl.textContent = 'Yükleniyor…';
   try {
-    const apiUrl = `https://api.github.com/repos/${cfg.username}/${cfg.repo}/contents/data.json`;
+    const apiUrl = `https://api.github.com/repos/${cfg.username}/${cfg.dataRepo}/contents/data.json`;
     const res = await fetch(apiUrl, {
       headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
     });
