@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V7.13</title>
+<title>Portföy Takip — V8.2</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V7.13</div>
+      <div class="logo-sub">Yatırım Takip — V8.2</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -259,8 +259,10 @@ canvas{max-height:220px;}
     <div class="nav-item" onclick="navigate('diger',this)"><span class="nav-icon">◇</span> Diğer Yatırımlar</div>
     <div class="nav-section">Kayıtlar</div>
     <div class="nav-item" onclick="navigate('abdozet',this)"><span class="nav-icon">≋</span> ABD Özet</div>
+    <div class="nav-item" onclick="navigate('temettutakip',this)"><span class="nav-icon">◎</span> Temettü Takip</div>
     <div class="nav-item" onclick="navigate('yatirimkayit',this)"><span class="nav-icon">▦</span> Yatırım Kayıt</div>
     <div class="nav-item" onclick="navigate('abdtakip',this)"><span class="nav-icon">⊙</span> ABD Takip</div>
+    <div class="nav-item" onclick="navigate('temettutakip',this)"><span class="nav-icon">◎</span> Temettü Takip</div>
     <div class="nav-item" onclick="navigate('islem',this)"><span class="nav-icon">⊕</span> İşlem Ekle</div>
     <div class="nav-item" onclick="navigate('gecmis',this)"><span class="nav-icon">≡</span> Geçmiş</div>
   </div>
@@ -580,6 +582,11 @@ canvas{max-height:220px;}
   </div>
 </div>
 
+<!-- TEMETTÜ TAKİP -->
+
+<!-- TEMETTÜ EKLE MODAL -->
+
+
 <!-- ABD TAKİP -->
 <div id="page-abdtakip" class="page">
   <div class="page-header">
@@ -693,6 +700,112 @@ canvas{max-height:220px;}
     <div style="display:flex;gap:10px;margin-top:24px">
       <button class="btn" onclick="saveATHedef()" style="flex:1">Uygula</button>
       <button class="btn btn-secondary" onclick="closeModal('at-hedef-modal')">İptal</button>
+    </div>
+  </div>
+</div>
+
+<!-- TEMETTÜ TAKİP -->
+<div id="page-temettutakip" class="page">
+  <div class="page-header">
+    <div><div class="page-title">Temettü Takip</div><div class="page-subtitle">Temettü kayıtları & verim analizi</div></div>
+    <button class="btn btn-secondary" style="font-size:10px;padding:6px 14px" onclick="openTemettuEkleModal()">+ Kayıt Ekle</button>
+  </div>
+
+  <!-- ÜST: Aylık Temettü + Verim tabloları yan yana -->
+  <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:20px;margin-bottom:20px">
+
+    <!-- Aylık Temettü Tablosu -->
+    <div class="card">
+      <div class="card-header"><span class="card-title">Aylık Temettü</span><span class="stat-value gold" id="tt-toplam" style="font-size:16px">$—</span></div>
+      <div class="card-body" style="padding:0;max-height:420px;overflow-y:auto">
+        <table class="data-table">
+          <thead style="position:sticky;top:0;z-index:2;background:var(--surface)">
+            <tr>
+              <th style="padding-left:16px">Ay</th>
+              <th style="text-align:right">Tutar ($)</th>
+              <th style="text-align:right">Tür</th>
+            </tr>
+          </thead>
+          <tbody id="tt-aylik-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Verim Tablosu -->
+    <div class="card">
+      <div class="card-header"><span class="card-title">Verim Analizi</span></div>
+      <div class="card-body" style="padding:0;max-height:420px;overflow-y:auto">
+        <table class="data-table">
+          <thead style="position:sticky;top:0;z-index:2;background:var(--surface)">
+            <tr id="tt-verim-thead">
+              <th style="padding-left:16px;cursor:pointer" onclick="sortVerim('ticker')"><span id="tt-sort-ticker">Ticker</span></th>
+              <th style="text-align:right;cursor:pointer" onclick="sortVerim('toplam')"><span id="tt-sort-toplam">Temettü ($)</span></th>
+              <th style="text-align:right;cursor:pointer" onclick="sortVerim('tm')"><span id="tt-sort-tm">T/M ↓</span></th>
+              <th style="text-align:right;cursor:pointer" onclick="sortVerim('td')"><span id="tt-sort-td">T/D</span></th>
+              <th style="text-align:right;cursor:pointer" onclick="sortVerim('oran')"><span id="tt-sort-oran">Ort. Oran</span></th>
+            </tr>
+          </thead>
+          <tbody id="tt-verim-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALT: Temettü Kayıt Tablosu -->
+  <div class="card">
+    <div class="card-header"><span class="card-title">Temettü Kayıtları</span><span style="font-size:10px;color:var(--text3)" id="tt-kayit-count">0 kayıt</span></div>
+    <div class="card-body" style="padding:0;max-height:460px;overflow-y:auto">
+      <table class="data-table">
+        <thead style="position:sticky;top:0;z-index:2;background:var(--surface)">
+          <tr>
+            <th style="padding-left:16px">Ticker</th>
+            <th style="text-align:right">Tarih</th>
+            <th style="text-align:right">Hisse ($)</th>
+            <th style="text-align:right">Temettü ($)</th>
+            <th style="text-align:right">Miktar ($)</th>
+            <th style="text-align:right">Oran</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tt-kayit-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- TEMETTÜ EKLE MODAL -->
+<div class="modal-overlay" id="temettu-ekle-modal">
+  <div class="modal" style="max-width:440px">
+    <div class="modal-title">Temettü Kayıt Ekle</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label class="form-label">Ticker</label>
+        <input type="text" id="tt-ticker" class="form-input" placeholder="SCHD">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tarih</label>
+        <input type="date" id="tt-tarih" class="form-input">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Hisse Fiyatı ($)</label>
+        <input type="number" id="tt-hisse" class="form-input" step="any" placeholder="0.00">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Temettü/Hisse ($)</label>
+        <input type="number" id="tt-temettu" class="form-input" step="any" placeholder="0.00" oninput="ttHesaplaOran()">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Miktar (Net $)</label>
+        <input type="number" id="tt-miktar" class="form-input" step="any" placeholder="0.00">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Oran</label>
+        <input type="text" id="tt-oran-display" class="form-input" readonly style="color:var(--accent)">
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:24px">
+      <button class="btn" onclick="saveTemettuKayit()" style="flex:1">Ekle</button>
+      <button class="btn btn-secondary" onclick="closeModal('temettu-ekle-modal')">İptal</button>
     </div>
   </div>
 </div>
@@ -1134,11 +1247,94 @@ const DEFAULT = {
   ],
   portfoySecim: {abd_buyume:true, abd_temttu:true, metal:false, bes:true, sirketpay:false, ev:true},
   maliyetSecim: {abd_buyume:true, abd_temttu:true, metal:false, bes:true, sirketpay:false, ev:true},
+  temettuKayit: [{"ticker": "SMH", "tarih": "2024-12-24", "hisseFiyat": null, "temettu": 0.28, "miktar": 2.57, "oran": null}, {"ticker": "VOO", "tarih": "2024-12-26", "hisseFiyat": null, "temettu": 0.28, "miktar": 2.79, "oran": null}, {"ticker": "QQQ", "tarih": "2024-12-31", "hisseFiyat": null, "temettu": 0.28, "miktar": 1.34, "oran": null}, {"ticker": "VOO", "tarih": "2025-03-31", "hisseFiyat": null, "temettu": 0.28, "miktar": 2.9, "oran": null}, {"ticker": "QQQ", "tarih": "2025-04-30", "hisseFiyat": null, "temettu": 0.28, "miktar": 1.15, "oran": null}, {"ticker": "VEA", "tarih": "2025-06-24", "hisseFiyat": null, "temettu": 0.28, "miktar": 7.05, "oran": null}, {"ticker": "VALE", "tarih": "2025-03-24", "hisseFiyat": null, "temettu": 0.28, "miktar": 5.51, "oran": null}, {"ticker": "CTRA", "tarih": "2025-03-27", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.77, "oran": null}, {"ticker": "KO", "tarih": "2025-04-01", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.71, "oran": null}, {"ticker": "NVIDA", "tarih": "2025-04-02", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.03, "oran": null}, {"ticker": "VICI", "tarih": "2025-04-03", "hisseFiyat": null, "temettu": 0.28, "miktar": 1.51, "oran": null}, {"ticker": "WMT", "tarih": "2025-04-07", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.33, "oran": null}, {"ticker": "NWS", "tarih": "2025-04-09", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.35, "oran": null}, {"ticker": "MU", "tarih": "2025-04-15", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.16, "oran": null}, {"ticker": "QQQ", "tarih": "2025-04-30", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.5, "oran": null}, {"ticker": "WMT", "tarih": "2025-05-27", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.33, "oran": null}, {"ticker": "CTRA", "tarih": "2025-05-29", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.77, "oran": null}, {"ticker": "COP", "tarih": "2025-06-02", "hisseFiyat": null, "temettu": 0.28, "miktar": 1.09, "oran": null}, {"ticker": "DAL", "tarih": "2025-06-03", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.31, "oran": null}, {"ticker": "QQQM", "tarih": "2025-06-27", "hisseFiyat": null, "temettu": 0.28, "miktar": 4.21, "oran": null}, {"ticker": "SPLG", "tarih": "2025-06-30", "hisseFiyat": null, "temettu": 0.28, "miktar": 5.98, "oran": null}, {"ticker": "KO", "tarih": "2025-07-01", "hisseFiyat": null, "temettu": 0.28, "miktar": 0.71, "oran": null}, {"ticker": "VOO", "tarih": "2025-07-02", "hisseFiyat": null, "temettu": 0.28, "miktar": 4.21, "oran": null}, {"ticker": "VICI", "tarih": "2025-07-11", "hisseFiyat": null, "temettu": 0.28, "miktar": 1.51, "oran": null}, {"ticker": "QQQ", "tarih": "2025-07-31", "hisseFiyat": null, "temettu": 0.28, "miktar": 1.36, "oran": null}, {"ticker": "VIG", "tarih": "2025-07-02", "hisseFiyat": 203.55, "temettu": 0.87, "miktar": 4.43, "oran": 0.004274}, {"ticker": "RYLD", "tarih": "2025-07-28", "hisseFiyat": 14.86, "temettu": 0.14, "miktar": 3.32, "oran": 0.009421}, {"ticker": "QYLD", "tarih": "2025-07-28", "hisseFiyat": 16.77, "temettu": 0.16, "miktar": 4.38, "oran": 0.009541}, {"ticker": "XYLD", "tarih": "2025-07-28", "hisseFiyat": 38.99, "temettu": 0.31, "miktar": 2.67, "oran": 0.007951}, {"ticker": "ULTY", "tarih": "2025-08-01", "hisseFiyat": 6.22, "temettu": 0.1, "miktar": 1.62, "oran": 0.016077}, {"ticker": "JEPI", "tarih": "2025-08-05", "hisseFiyat": 55.61, "temettu": 0.35, "miktar": 3.5, "oran": 0.006294}, {"ticker": "JEPQ", "tarih": "2025-08-05", "hisseFiyat": 55.1, "temettu": 0.44, "miktar": 4.54, "oran": 0.007985}, {"ticker": "ULTY", "tarih": "2025-08-08", "hisseFiyat": 6.09, "temettu": 0.1, "miktar": 2.09, "oran": 0.01642}, {"ticker": "TXN", "tarih": "2025-08-12", "hisseFiyat": 216.59, "temettu": 1.36, "miktar": 5.72, "oran": 0.006279}, {"ticker": "PG", "tarih": "2025-08-15", "hisseFiyat": 157.89, "temettu": 1.06, "miktar": 5.92, "oran": 0.006714}, {"ticker": "MRNY", "tarih": "2025-08-15", "hisseFiyat": 1.93, "temettu": 0.095, "miktar": 5.08, "oran": 0.049223}, {"ticker": "MARO", "tarih": "2025-08-15", "hisseFiyat": 19.65, "temettu": 1.0, "miktar": 6.43, "oran": 0.050891}, {"ticker": "ULTY", "tarih": "2025-08-15", "hisseFiyat": 6.09, "temettu": 0.1, "miktar": 2.1, "oran": 0.01642}, {"ticker": "ULTY", "tarih": "2025-08-22", "hisseFiyat": 5.65, "temettu": 0.1, "miktar": 2.4, "oran": 0.017699}, {"ticker": "CONY", "tarih": "2025-08-22", "hisseFiyat": 6.78, "temettu": 0.34, "miktar": 5.0, "oran": 0.050147}, {"ticker": "QYLD", "tarih": "2025-08-25", "hisseFiyat": 16.84, "temettu": 0.17, "miktar": 4.816, "oran": 0.010095}, {"ticker": "RYLD", "tarih": "2025-08-25", "hisseFiyat": 15.0, "temettu": 0.15, "miktar": 3.712, "oran": 0.01}, {"ticker": "XYLD", "tarih": "2025-08-25", "hisseFiyat": 39.07, "temettu": 0.31, "miktar": 2.984, "oran": 0.007934}, {"ticker": "ICOI", "tarih": "2025-08-26", "hisseFiyat": 40.96, "temettu": 5.163, "miktar": 413.0, "oran": 0.12605}, {"ticker": "COYY", "tarih": "2025-09-03", "hisseFiyat": 20.59, "temettu": 0.68, "miktar": 31.81, "oran": 0.132103}, {"ticker": "COYY", "tarih": "2025-09-09", "hisseFiyat": 19.8, "temettu": 0.5412, "miktar": 25.12, "oran": 0.109333}, {"ticker": "JNJ", "tarih": "2025-09-09", "hisseFiyat": 164.78, "temettu": 1.3, "miktar": 9.248, "oran": 0.007889}, {"ticker": "MSFT", "tarih": "2025-09-11", "hisseFiyat": 470.92, "temettu": 0.83, "miktar": 1.656, "oran": 0.001763}, {"ticker": "COYY", "tarih": "2025-09-16", "hisseFiyat": 19.69, "temettu": 0.5543, "miktar": 25.72, "oran": 0.112605}, {"ticker": "VEA", "tarih": "2025-09-23", "hisseFiyat": 59.65, "temettu": 0.28, "miktar": 6.14, "oran": 0.004694}, {"ticker": "QQQM", "tarih": "2025-09-26", "hisseFiyat": 247.9, "temettu": 0.3, "miktar": 7.18, "oran": 0.00121}, {"ticker": "SCHD", "tarih": "2025-09-29", "hisseFiyat": 27.16, "temettu": 0.26, "miktar": 22.48, "oran": 0.009573}, {"ticker": "SPLG", "tarih": "2025-09-30", "hisseFiyat": 77.85, "temettu": 0.2382, "miktar": 6.67, "oran": 0.00306}, {"ticker": "AVGO", "tarih": "2025-09-30", "hisseFiyat": 338.79, "temettu": 0.59, "miktar": 4.31, "oran": 0.001741}, {"ticker": "PEP", "tarih": "2025-09-30", "hisseFiyat": 144.51, "temettu": 1.42, "miktar": 12.376, "oran": 0.009826}, {"ticker": "VIG", "tarih": "2025-10-01", "hisseFiyat": 215.4, "temettu": 0.86, "miktar": 7.64, "oran": 0.003993}, {"ticker": "VOO", "tarih": "2025-10-01", "hisseFiyat": 606.59, "temettu": 1.74, "miktar": 4.2, "oran": 0.002868}, {"ticker": "QQQ", "tarih": "2025-10-31", "hisseFiyat": 596.1, "temettu": 0.69, "miktar": 1.12, "oran": 0.001158}, {"ticker": "TXN", "tarih": "2025-11-12", "hisseFiyat": 161.46, "temettu": 1.42, "miktar": 11.05, "oran": 0.008795}, {"ticker": "PG", "tarih": "2025-11-17", "hisseFiyat": 152.49, "temettu": 1.05, "miktar": 9.58, "oran": 0.006886}, {"ticker": "JNJ", "tarih": "2025-12-09", "hisseFiyat": 206.67, "temettu": 1.3, "miktar": 10.46, "oran": 0.00629}, {"ticker": "MSFT", "tarih": "2025-12-11", "hisseFiyat": 510.0, "temettu": 0.91, "miktar": 4.31, "oran": 0.001784}, {"ticker": "SCHD", "tarih": "2025-12-15", "hisseFiyat": 27.57, "temettu": 0.27, "miktar": 24.2, "oran": 0.009793}, {"ticker": "VEA", "tarih": "2025-12-23", "hisseFiyat": 61.84, "temettu": 1.04, "miktar": 22.37, "oran": 0.016818}, {"ticker": "VIG", "tarih": "2025-12-24", "hisseFiyat": 220.95, "temettu": 0.88, "miktar": 7.84, "oran": 0.003983}, {"ticker": "VOO", "tarih": "2025-12-24", "hisseFiyat": 629.73, "temettu": 1.77, "miktar": 4.3, "oran": 0.002811}, {"ticker": "QQQM", "tarih": "2025-12-26", "hisseFiyat": 254.93, "temettu": 0.32, "miktar": 3.16, "oran": 0.001255}, {"ticker": "QQQ", "tarih": "2025-12-31", "hisseFiyat": 619.21, "temettu": 0.79, "miktar": 1.008, "oran": 0.001276}, {"ticker": "AVGO", "tarih": "2025-12-31", "hisseFiyat": 341.45, "temettu": 0.65, "miktar": 4.76, "oran": 0.001904}, {"ticker": "PEP", "tarih": "2026-01-06", "hisseFiyat": 145.02, "temettu": 1.42, "miktar": 14.26, "oran": 0.009792}, {"ticker": "TXN", "tarih": "2026-02-10", "hisseFiyat": 215.55, "temettu": 1.42, "miktar": 11.128, "oran": 0.006588}, {"ticker": "PG", "tarih": "2026-02-17", "hisseFiyat": 150.15, "temettu": 1.05, "miktar": 9.632, "oran": 0.006993}, {"ticker": "JNJ", "tarih": "2026-03-10", "hisseFiyat": 246.28, "temettu": 1.3, "miktar": 10.52, "oran": 0.005279}, {"ticker": "MSFT", "tarih": "2026-03-12", "hisseFiyat": 398.46, "temettu": 0.91, "miktar": 4.33, "oran": 0.002284}, {"ticker": "VEA", "tarih": "2026-03-24", "hisseFiyat": 62.04, "temettu": 0.1, "miktar": 2.38, "oran": 0.001612}, {"ticker": "QQQM", "tarih": "2026-03-27", "hisseFiyat": 242.07, "temettu": 0.32, "miktar": 5.52, "oran": 0.001322}, {"ticker": "QQQ", "tarih": "2026-03-27", "hisseFiyat": 588.0, "temettu": 0.73, "miktar": 2.36, "oran": 0.001241}, {"ticker": "SCHD", "tarih": "2026-03-30", "hisseFiyat": 30.54, "temettu": 0.25, "miktar": 22.53, "oran": 0.008186}, {"ticker": "AVGO", "tarih": "2026-03-31", "hisseFiyat": 322.51, "temettu": 0.65, "miktar": 4.76, "oran": 0.002015}, {"ticker": "VIG", "tarih": "2026-03-31", "hisseFiyat": 210.73, "temettu": 0.83, "miktar": 7.408, "oran": 0.003939}, {"ticker": "VOO", "tarih": "2026-03-31", "hisseFiyat": 582.96, "temettu": 1.87, "miktar": 4.544, "oran": 0.003208}, {"ticker": "PEP", "tarih": "2026-03-31", "hisseFiyat": 159.43, "temettu": 1.42, "miktar": 14.368, "oran": 0.008907}],
   abdHedef: {
     buyumeOran: 65, temttuOran: 35,
     buyume: [{ticker:'VOO',pct:25},{ticker:'QQQM',pct:50},{ticker:'VEA',pct:15},{ticker:'IJR',pct:10}],
     temttu: [{ticker:'SCHD',pct:50},{ticker:'AVGO',pct:12},{ticker:'JNJ',pct:10},{ticker:'TXN',pct:10},{ticker:'PG',pct:8},{ticker:'MSFT',pct:6},{ticker:'PEP',pct:4}],
   },
+  temettuKayitlar: [
+    {ticker:'SMH',tarih:'2024-12-24',hisseFiyat:null,temettu:0.28,miktar:2.57,oran:null},
+    {ticker:'VOO',tarih:'2024-12-26',hisseFiyat:null,temettu:0.28,miktar:2.79,oran:null},
+    {ticker:'QQQ',tarih:'2024-12-31',hisseFiyat:null,temettu:0.28,miktar:1.34,oran:null},
+    {ticker:'VOO',tarih:'2025-03-31',hisseFiyat:null,temettu:0.28,miktar:2.9,oran:null},
+    {ticker:'QQQ',tarih:'2025-04-30',hisseFiyat:null,temettu:0.28,miktar:1.15,oran:null},
+    {ticker:'VEA',tarih:'2025-06-24',hisseFiyat:null,temettu:0.28,miktar:7.05,oran:null},
+    {ticker:'VALE',tarih:'2025-03-24',hisseFiyat:null,temettu:0.28,miktar:5.51,oran:null},
+    {ticker:'CTRA',tarih:'2025-03-27',hisseFiyat:null,temettu:0.28,miktar:0.77,oran:null},
+    {ticker:'KO',tarih:'2025-04-01',hisseFiyat:null,temettu:0.28,miktar:0.71,oran:null},
+    {ticker:'NVIDA',tarih:'2025-04-02',hisseFiyat:null,temettu:0.28,miktar:0.03,oran:null},
+    {ticker:'VICI',tarih:'2025-04-03',hisseFiyat:null,temettu:0.28,miktar:1.51,oran:null},
+    {ticker:'WMT',tarih:'2025-04-07',hisseFiyat:null,temettu:0.28,miktar:0.33,oran:null},
+    {ticker:'NWS',tarih:'2025-04-09',hisseFiyat:null,temettu:0.28,miktar:0.35,oran:null},
+    {ticker:'MU',tarih:'2025-04-15',hisseFiyat:null,temettu:0.28,miktar:0.16,oran:null},
+    {ticker:'QQQ',tarih:'2025-04-30',hisseFiyat:null,temettu:0.28,miktar:0.5,oran:null},
+    {ticker:'WMT',tarih:'2025-05-27',hisseFiyat:null,temettu:0.28,miktar:0.33,oran:null},
+    {ticker:'CTRA',tarih:'2025-05-29',hisseFiyat:null,temettu:0.28,miktar:0.77,oran:null},
+    {ticker:'COP',tarih:'2025-06-02',hisseFiyat:null,temettu:0.28,miktar:1.09,oran:null},
+    {ticker:'DAL',tarih:'2025-06-03',hisseFiyat:null,temettu:0.28,miktar:0.31,oran:null},
+    {ticker:'QQQM',tarih:'2025-06-27',hisseFiyat:null,temettu:0.28,miktar:4.21,oran:null},
+    {ticker:'SPLG',tarih:'2025-06-30',hisseFiyat:null,temettu:0.28,miktar:5.98,oran:null},
+    {ticker:'KO',tarih:'2025-07-01',hisseFiyat:null,temettu:0.28,miktar:0.71,oran:null},
+    {ticker:'VOO',tarih:'2025-07-02',hisseFiyat:null,temettu:0.28,miktar:4.21,oran:null},
+    {ticker:'VICI',tarih:'2025-07-11',hisseFiyat:null,temettu:0.28,miktar:1.51,oran:null},
+    {ticker:'QQQ',tarih:'2025-07-31',hisseFiyat:null,temettu:0.28,miktar:1.36,oran:null},
+    {ticker:'VIG',tarih:'2025-07-02',hisseFiyat:203.55,temettu:0.87,miktar:4.43,oran:0.004274},
+    {ticker:'RYLD',tarih:'2025-07-28',hisseFiyat:14.86,temettu:0.14,miktar:3.32,oran:0.009421},
+    {ticker:'QYLD',tarih:'2025-07-28',hisseFiyat:16.77,temettu:0.16,miktar:4.38,oran:0.009541},
+    {ticker:'XYLD',tarih:'2025-07-28',hisseFiyat:38.99,temettu:0.31,miktar:2.67,oran:0.007951},
+    {ticker:'ULTY',tarih:'2025-08-01',hisseFiyat:6.22,temettu:0.1,miktar:1.62,oran:0.016077},
+    {ticker:'JEPI',tarih:'2025-08-05',hisseFiyat:55.61,temettu:0.35,miktar:3.5,oran:0.006294},
+    {ticker:'JEPQ',tarih:'2025-08-05',hisseFiyat:55.1,temettu:0.44,miktar:4.54,oran:0.007985},
+    {ticker:'ULTY',tarih:'2025-08-08',hisseFiyat:6.09,temettu:0.1,miktar:2.09,oran:0.01642},
+    {ticker:'TXN',tarih:'2025-08-12',hisseFiyat:216.59,temettu:1.36,miktar:5.72,oran:0.006279},
+    {ticker:'PG',tarih:'2025-08-15',hisseFiyat:157.89,temettu:1.06,miktar:5.92,oran:0.006714},
+    {ticker:'MRNY',tarih:'2025-08-15',hisseFiyat:1.93,temettu:0.095,miktar:5.08,oran:0.049223},
+    {ticker:'MARO',tarih:'2025-08-15',hisseFiyat:19.65,temettu:1.0,miktar:6.43,oran:0.050891},
+    {ticker:'ULTY',tarih:'2025-08-15',hisseFiyat:6.09,temettu:0.1,miktar:2.1,oran:0.01642},
+    {ticker:'ULTY',tarih:'2025-08-22',hisseFiyat:5.65,temettu:0.1,miktar:2.4,oran:0.017699},
+    {ticker:'CONY',tarih:'2025-08-22',hisseFiyat:6.78,temettu:0.34,miktar:5.0,oran:0.050147},
+    {ticker:'QYLD',tarih:'2025-08-25',hisseFiyat:16.84,temettu:0.17,miktar:4.816,oran:0.010095},
+    {ticker:'RYLD',tarih:'2025-08-25',hisseFiyat:15.0,temettu:0.15,miktar:3.712,oran:0.01},
+    {ticker:'XYLD',tarih:'2025-08-25',hisseFiyat:39.07,temettu:0.31,miktar:2.984,oran:0.007934},
+    {ticker:'ICOI',tarih:'2025-08-26',hisseFiyat:40.96,temettu:5.163,miktar:413.0,oran:0.12605},
+    {ticker:'COYY',tarih:'2025-09-03',hisseFiyat:20.59,temettu:0.68,miktar:31.81,oran:0.033026},
+    {ticker:'COYY',tarih:'2025-09-09',hisseFiyat:19.8,temettu:0.5412,miktar:25.12,oran:0.027333},
+    {ticker:'JNJ',tarih:'2025-09-09',hisseFiyat:164.78,temettu:1.3,miktar:9.248,oran:0.007889},
+    {ticker:'MSFT',tarih:'2025-09-11',hisseFiyat:470.92,temettu:0.83,miktar:1.656,oran:0.001763},
+    {ticker:'COYY',tarih:'2025-09-16',hisseFiyat:19.69,temettu:0.5543,miktar:25.72,oran:0.028151},
+    {ticker:'VEA',tarih:'2025-09-23',hisseFiyat:59.65,temettu:0.28,miktar:6.14,oran:0.004694},
+    {ticker:'QQQM',tarih:'2025-09-26',hisseFiyat:247.9,temettu:0.3,miktar:7.18,oran:0.00121},
+    {ticker:'SCHD',tarih:'2025-09-29',hisseFiyat:27.16,temettu:0.26,miktar:22.48,oran:0.009573},
+    {ticker:'SPLG',tarih:'2025-09-30',hisseFiyat:77.85,temettu:0.2382,miktar:6.67,oran:0.00306},
+    {ticker:'AVGO',tarih:'2025-09-30',hisseFiyat:338.79,temettu:0.59,miktar:4.31,oran:0.001741},
+    {ticker:'PEP',tarih:'2025-09-30',hisseFiyat:144.51,temettu:1.42,miktar:12.376,oran:0.009826},
+    {ticker:'VIG',tarih:'2025-10-01',hisseFiyat:215.4,temettu:0.86,miktar:7.64,oran:0.003993},
+    {ticker:'VOO',tarih:'2025-10-01',hisseFiyat:606.59,temettu:1.74,miktar:4.2,oran:0.002868},
+    {ticker:'QQQ',tarih:'2025-10-31',hisseFiyat:596.1,temettu:0.69,miktar:1.12,oran:0.001158},
+    {ticker:'TXN',tarih:'2025-11-12',hisseFiyat:161.46,temettu:1.42,miktar:11.05,oran:0.008795},
+    {ticker:'PG',tarih:'2025-11-17',hisseFiyat:152.49,temettu:1.05,miktar:9.58,oran:0.006886},
+    {ticker:'JNJ',tarih:'2025-12-09',hisseFiyat:206.67,temettu:1.3,miktar:10.46,oran:0.00629},
+    {ticker:'MSFT',tarih:'2025-12-11',hisseFiyat:510.0,temettu:0.91,miktar:4.31,oran:0.001784},
+    {ticker:'SCHD',tarih:'2025-12-15',hisseFiyat:27.57,temettu:0.27,miktar:24.2,oran:0.009793},
+    {ticker:'VEA',tarih:'2025-12-23',hisseFiyat:61.84,temettu:1.04,miktar:22.37,oran:0.016818},
+    {ticker:'VIG',tarih:'2025-12-24',hisseFiyat:220.95,temettu:0.88,miktar:7.84,oran:0.003983},
+    {ticker:'VOO',tarih:'2025-12-24',hisseFiyat:629.73,temettu:1.77,miktar:4.3,oran:0.002811},
+    {ticker:'QQQM',tarih:'2025-12-26',hisseFiyat:254.93,temettu:0.32,miktar:3.16,oran:0.001255},
+    {ticker:'AVGO',tarih:'2025-12-31',hisseFiyat:341.45,temettu:0.65,miktar:4.76,oran:0.001904},
+    {ticker:'PEP',tarih:'2026-01-06',hisseFiyat:145.02,temettu:1.42,miktar:14.26,oran:0.009792},
+    {ticker:'TXN',tarih:'2026-02-10',hisseFiyat:215.55,temettu:1.42,miktar:11.128,oran:0.006588},
+    {ticker:'PG',tarih:'2026-02-17',hisseFiyat:150.15,temettu:1.05,miktar:9.632,oran:0.006993},
+    {ticker:'JNJ',tarih:'2026-03-10',hisseFiyat:246.28,temettu:1.3,miktar:10.52,oran:0.005279},
+    {ticker:'MSFT',tarih:'2026-03-12',hisseFiyat:398.46,temettu:0.91,miktar:4.33,oran:0.002284},
+    {ticker:'VEA',tarih:'2026-03-24',hisseFiyat:62.04,temettu:0.1,miktar:2.38,oran:0.001612},
+    {ticker:'QQQM',tarih:'2026-03-27',hisseFiyat:242.07,temettu:0.32,miktar:5.52,oran:0.001322},
+    {ticker:'QQQ',tarih:'2026-03-27',hisseFiyat:588.0,temettu:0.73,miktar:2.36,oran:0.001241},
+    {ticker:'SCHD',tarih:'2026-03-30',hisseFiyat:30.54,temettu:0.25,miktar:22.53,oran:0.008186},
+    {ticker:'VIG',tarih:'2026-03-31',hisseFiyat:210.73,temettu:0.83,miktar:7.408,oran:0.003939},
+    {ticker:'VOO',tarih:'2026-03-31',hisseFiyat:582.96,temettu:1.87,miktar:4.544,oran:0.003208},
+    {ticker:'PEP',tarih:'2026-03-31',hisseFiyat:159.43,temettu:1.42,miktar:14.368,oran:0.008907},
+  ],
   odemeler: {
     maddeler: [
       {ad:"Annem", gun:1,
@@ -1173,7 +1369,7 @@ const DEFAULT = {
 
 let state = (() => {
   try {
-    const s=localStorage.getItem('portfoy-v7');
+    const s=localStorage.getItem('portfoy-v8');
     if(s) {
       const parsed = JSON.parse(s);
       // Migrate: add bes/sirketpay if missing
@@ -1183,6 +1379,15 @@ let state = (() => {
       if(!parsed.portfoySecim) parsed.portfoySecim = JSON.parse(JSON.stringify(DEFAULT.portfoySecim));
       if(!parsed.maliyetSecim) parsed.maliyetSecim = JSON.parse(JSON.stringify(DEFAULT.maliyetSecim));
       if(!parsed.abdHedef) parsed.abdHedef = JSON.parse(JSON.stringify(DEFAULT.abdHedef));
+      if(!parsed.temettuKayitlar) parsed.temettuKayitlar = [];
+      // Eski temettuKayit verisini temettuKayitlar'a taşı
+      if(parsed.temettuKayit && parsed.temettuKayit.length > 0) {
+        const mevcutTarihler = new Set(parsed.temettuKayitlar.map(k => k.ticker+'_'+k.tarih));
+        parsed.temettuKayit.forEach(k => {
+          if(!mevcutTarihler.has(k.ticker+'_'+k.tarih)) parsed.temettuKayitlar.push(k);
+        });
+        parsed.temettuKayit = [];
+      }
       if(!parsed.abdOzetOrder) parsed.abdOzetOrder = [...ABD_OZET_DEFAULT_ORDER];
       if(!parsed.odemeler) parsed.odemeler = JSON.parse(JSON.stringify(DEFAULT.odemeler));
       if(!parsed.odemeler.maaslar) parsed.odemeler.maaslar = {};
@@ -1248,7 +1453,7 @@ let state = (() => {
   return JSON.parse(JSON.stringify(DEFAULT));
 })();
 const save = () => {
-  localStorage.setItem('portfoy-v7', JSON.stringify(state));
+  localStorage.setItem('portfoy-v8', JSON.stringify(state));
   // Otomatik GitHub kayıt
   if(getGHConfig().autosave) {
     clearTimeout(save._ghTimer);
@@ -1359,7 +1564,8 @@ function renderPage(p) {
     islem: renderIslem,
     gecmis: renderGecmis,
     odemeler: renderOdemeler,
-    abdtakip: renderABDTakip
+    abdtakip: renderABDTakip,
+    temettutakip: renderTemettuTakip
   };
   if(map[p]) map[p]();
 }
@@ -2926,6 +3132,176 @@ async function refreshABDTakip() {
   showStatus('Güncellendi', 'success');
 }
 
+
+
+// ===== TEMETTÜ TAKİP =====
+const AY_ADLARI_TR = ['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
+
+function ayKeyFromDate(tarih) {
+  const d = new Date(tarih);
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
+}
+
+function ayLabel(key) {
+  const [yil, ay] = key.split('-');
+  return AY_ADLARI_TR[parseInt(ay)-1] + ' ' + yil;
+}
+
+
+
+
+
+// ===== TEMETTÜ TAKİP =====
+function renderTemettuTakip() {
+  const kayitlar = state.temettuKayitlar || [];
+  // Tarihe göre sırala (yeniden eskiye)
+  const sorted = [...kayitlar].sort((a,b) => b.tarih.localeCompare(a.tarih));
+
+  // ---- Temettü Kayıt Tablosu ----
+  setText('tt-kayit-count', kayitlar.length + ' kayıt');
+  document.getElementById('tt-kayit-tbody').innerHTML = sorted.map((k,i) => {
+    const idx = kayitlar.indexOf(k);
+    const tarihD = new Date(k.tarih);
+    const tarihStr = tarihD.toLocaleDateString('tr-TR');
+    const oranStr = k.oran ? '%' + fmt(k.oran * 100, 3) : '—';
+    return `<tr>
+      <td style="padding-left:16px"><span class="ticker-badge">${k.ticker}</span></td>
+      <td style="text-align:right;font-size:11px;color:var(--text3)">${tarihStr}</td>
+      <td style="text-align:right" class="price-cell">${k.hisseFiyat ? '$'+fmt(k.hisseFiyat,2) : '—'}</td>
+      <td style="text-align:right" class="price-cell">${k.temettu ? '$'+fmt(k.temettu,4) : '—'}</td>
+      <td style="text-align:right" class="price-cell gold">$${fmt(k.miktar,3)}</td>
+      <td style="text-align:right;font-size:11px;color:var(--text3)">${oranStr}</td>
+      <td><button class="btn btn-danger" style="font-size:9px;padding:3px 7px" onclick="removeTemettuKayit(${idx})">✕</button></td>
+    </tr>`;
+  }).join('');
+
+  // ---- Aylık Temettü Tablosu ----
+  const ayMap = {};
+  kayitlar.forEach(k => {
+    const d = new Date(k.tarih);
+    const key = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0');
+    if(!ayMap[key]) ayMap[key] = 0;
+    ayMap[key] += k.miktar || 0;
+  });
+  const aylar = Object.keys(ayMap).sort((a,b) => b.localeCompare(a));
+  const toplam = kayitlar.reduce((s,k) => s+(k.miktar||0), 0);
+  setText('tt-toplam', '$'+fmt(toplam,2));
+  document.getElementById('tt-aylik-tbody').innerHTML = aylar.map(key => {
+    const [yil,ay] = key.split('-');
+    const ayAd = AY_ADLARI_TR[parseInt(ay)-1] + ' ' + yil;
+    const tutar = ayMap[key];
+    // Bu ayın ticker'larını bul
+    const tickers = [...new Set(kayitlar.filter(k => k.tarih.startsWith(key)).map(k => k.ticker))];
+    return `<tr>
+      <td style="padding-left:16px;font-size:12px">${ayAd}</td>
+      <td style="text-align:right" class="price-cell gold">$${fmt(tutar,2)}</td>
+      <td style="text-align:right;font-size:10px;color:var(--text3)">${tickers.join(', ')}</td>
+    </tr>`;
+  }).join('');
+
+  // ---- Verim Tablosu ----
+  const tickerMap = {};
+  kayitlar.forEach(k => {
+    if(!tickerMap[k.ticker]) tickerMap[k.ticker] = {toplam:0, oranlar:[], count:0};
+    tickerMap[k.ticker].toplam += k.miktar || 0;
+    if(k.oran) tickerMap[k.ticker].oranlar.push(k.oran);
+  });
+  const abdCostMap = {}, abdValMap = {};
+  [...(state.buyume||[]), ...(state.temttu||[])].forEach(p => {
+    const t = p.ticker;
+    const usdM = p.usdMaliyet ?? (p.qty*p.buyPrice);
+    const curP = livePrice(t) || p.buyPrice;
+    abdCostMap[t] = (abdCostMap[t]||0) + usdM;
+    abdValMap[t]  = (abdValMap[t]||0)  + p.qty * curP;
+  });
+  // Satırları hesapla
+  _verimRows = Object.keys(tickerMap).map(ticker => {
+    const d = tickerMap[ticker];
+    const maliyet = abdCostMap[ticker] || 0;
+    const deger   = abdValMap[ticker]  || 0;
+    const tm = maliyet > 0 ? d.toplam / maliyet : null;
+    const td = deger   > 0 ? d.toplam / deger   : null;
+    const ortOran = d.oranlar.length > 0 ? d.oranlar.reduce((s,v)=>s+v,0)/d.oranlar.length : null;
+    return {ticker, toplam:d.toplam, tm, td, oran:ortOran};
+  });
+  renderVerimTablo();
+}
+
+let _verimRows = [];
+let _verimSort = {col:'tm', asc:false};
+
+function sortVerim(col) {
+  if(_verimSort.col === col) { _verimSort.asc = !_verimSort.asc; }
+  else { _verimSort = {col, asc: col === 'ticker'}; }
+  renderVerimTablo();
+}
+
+function renderVerimTablo() {
+  const {col, asc} = _verimSort;
+  const sorted = [..._verimRows].sort((a,b) => {
+    const va = a[col] ?? (col==='ticker' ? '' : -Infinity);
+    const vb = b[col] ?? (col==='ticker' ? '' : -Infinity);
+    if(typeof va === 'string') return asc ? va.localeCompare(vb) : vb.localeCompare(va);
+    return asc ? va - vb : vb - va;
+  });
+  // Başlık oklarını güncelle
+  ['ticker','toplam','tm','td','oran'].forEach(c => {
+    const el = document.getElementById('tt-sort-'+c);
+    if(!el) return;
+    const labels = {ticker:'Ticker',toplam:'Temettü ($)',tm:'T/M',td:'T/D',oran:'Ort. Oran'};
+    el.textContent = labels[c] + (col===c ? (asc?' ↑':' ↓') : '');
+  });
+  document.getElementById('tt-verim-tbody').innerHTML = sorted.map(r => `<tr>
+    <td style="padding-left:16px"><span class="ticker-badge">${r.ticker}</span></td>
+    <td style="text-align:right" class="price-cell gold">$${fmt(r.toplam,2)}</td>
+    <td style="text-align:right;color:var(--green)">${r.tm ? '%'+fmt(r.tm*100,2) : '—'}</td>
+    <td style="text-align:right;color:var(--green)">${r.td ? '%'+fmt(r.td*100,2) : '—'}</td>
+    <td style="text-align:right;color:var(--text3)">${r.oran ? '%'+fmt(r.oran*100,3) : '—'}</td>
+  </tr>`).join('');
+}
+
+
+function ttHesaplaOran() {
+  const hisse = parseFloat(document.getElementById('tt-hisse').value);
+  const temettu = parseFloat(document.getElementById('tt-temettu').value);
+  if(hisse > 0 && temettu > 0) {
+    document.getElementById('tt-oran-display').value = '%' + fmt(temettu/hisse*100, 3);
+  } else {
+    document.getElementById('tt-oran-display').value = '';
+  }
+}
+
+function openTemettuEkleModal() {
+  document.getElementById('tt-ticker').value = '';
+  document.getElementById('tt-tarih').value = new Date().toISOString().split('T')[0];
+  document.getElementById('tt-hisse').value = '';
+  document.getElementById('tt-temettu').value = '';
+  document.getElementById('tt-miktar').value = '';
+  document.getElementById('tt-oran-display').value = '';
+  document.getElementById('temettu-ekle-modal').classList.add('open');
+}
+
+function saveTemettuKayit() {
+  const ticker = document.getElementById('tt-ticker').value.trim().toUpperCase();
+  const tarih  = document.getElementById('tt-tarih').value;
+  const hisse  = parseFloat(document.getElementById('tt-hisse').value) || null;
+  const temettu= parseFloat(document.getElementById('tt-temettu').value) || null;
+  const miktar = parseFloat(document.getElementById('tt-miktar').value);
+  if(!ticker || !tarih || isNaN(miktar)) { showStatus('Ticker, tarih ve miktar zorunlu','error'); return; }
+  const oran = (hisse && temettu && hisse > 0) ? temettu/hisse : null;
+  if(!state.temettuKayitlar) state.temettuKayitlar = [];
+  state.temettuKayitlar.push({ticker, tarih, hisseFiyat:hisse, temettu, miktar, oran});
+  save();
+  closeModal('temettu-ekle-modal');
+  renderTemettuTakip();
+}
+
+function removeTemettuKayit(i) {
+  if(!confirm('Bu kayıt silinsin mi?')) return;
+  state.temettuKayitlar.splice(i,1);
+  save();
+  renderTemettuTakip();
+}
 
 function openPortfoySecimModal() {
   const sel = state.portfoySecim || DEFAULT.portfoySecim;
