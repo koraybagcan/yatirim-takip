@@ -494,6 +494,13 @@
         "adet": 1,
         "maliyet": 50000,
         "usd": null
+      },
+      {
+        "tarih": "2026-04-01",
+        "tur": "Faiz",
+        "adet": 1,
+        "maliyet": 10000,
+        "usd": null
       }
     ]
   },
