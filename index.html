@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V7.12</title>
+<title>Portföy Takip — V7.13</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V7.12</div>
+      <div class="logo-sub">Yatırım Takip — V7.13</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -1627,7 +1627,9 @@ function renderABD(key) {
       <td style="text-align:right;white-space:nowrap">
         <input type="number" step="any" value="${p.qty}"
           style="width:130px;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--text);font-family:'DM Mono',monospace;font-size:12px;text-align:right;padding:2px 4px;"
-          onfocus="this.dataset.prev=this.value"
+          onfocus="this.dataset.prev=this.value; this.select();"
+          onmousedown="event.stopPropagation()"
+          ondragstart="event.stopPropagation()"
           onchange="updateABDQty('${key}',${i},this.value)">
       </td>
       <td style="text-align:right" class="price-cell">$${fmt(p.buyPrice,2)}</td>
