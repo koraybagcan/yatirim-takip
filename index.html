@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.4</title>
+<title>Portföy Takip — V8.5</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.4</div>
+      <div class="logo-sub">Yatırım Takip — V8.5</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -3500,35 +3500,46 @@ async function updateIndexHtmlDefault(cfg) {
     const sha = existingData.sha;
     let htmlContent = decodeURIComponent(escape(atob(existingData.content.replace(/\n/g,''))));
 
-    // DEFAULT içindeki dinamik alanları güncelle
-    const stateJson = JSON.stringify(state);
-    const stateObj = JSON.parse(stateJson);
+    // DEFAULT bloğunu bul — "const DEFAULT = {" ile kapanış "}" arasını değiştir
+    const startMarker = 'const DEFAULT = {';
+    const startIdx = htmlContent.indexOf(startMarker);
+    if(startIdx === -1) { console.warn('DEFAULT bloğu bulunamadı'); return; }
 
-    // Güncellenmesi gereken alanlar
-    const fields = ['usdRate','eurRate','liveprices','temttu','buyume','metal','bes','sirketpay',
-                    'history','portfoySecim','maliyetSecim','abdHedef','abdOzetOrder',
-                    'temettuKayitlar','temettuKayit'];
-
-    fields.forEach(field => {
-      if(stateObj[field] === undefined) return;
-      const val = JSON.stringify(stateObj[field], null, 2)
-        .split('\n').map((l,i) => i===0 ? l : '  '+l).join('\n');
-      // DEFAULT içindeki field değerini bul ve değiştir
-      const regex = new RegExp('(  ' + field + ': )[\s\S]*?(?=,\n  [a-zA-Z]|\n};)', 'm');
-      if(regex.test(htmlContent)) {
-        htmlContent = htmlContent.replace(regex, '$1' + val);
-      }
-    });
-
-    // yatirim alanını da güncelle
-    if(stateObj.yatirim) {
-      const yVal = JSON.stringify(stateObj.yatirim, null, 2)
-        .split('\n').map((l,i) => i===0 ? l : '  '+l).join('\n');
-      const yRegex = new RegExp('(  yatirim: )[\s\S]*?(?=,\n  [a-zA-Z]|\n};)', 'm');
-      if(yRegex.test(htmlContent)) {
-        htmlContent = htmlContent.replace(yRegex, '$1' + yVal);
+    // DEFAULT bloğunun sonunu bul (iç içe parantezleri say)
+    let depth = 0, endIdx = startIdx;
+    for(let i = startIdx; i < htmlContent.length; i++) {
+      if(htmlContent[i] === '{') depth++;
+      else if(htmlContent[i] === '}') {
+        depth--;
+        if(depth === 0) { endIdx = i; break; }
       }
     }
+
+    // State'ten yeni DEFAULT bloğu oluştur
+    const s = state;
+    const newDefault = `const DEFAULT = ${JSON.stringify({
+      theme: s.theme || 'dark',
+      usdRate: s.usdRate,
+      eurRate: s.eurRate,
+      liveprices: s.liveprices,
+      temttu: s.temttu,
+      buyume: s.buyume,
+      yatirim: s.yatirim,
+      transactions: s.transactions || [],
+      metal: s.metal,
+      bes: s.bes,
+      sirketpay: s.sirketpay,
+      history: s.history,
+      portfoySecim: s.portfoySecim,
+      maliyetSecim: s.maliyetSecim,
+      abdHedef: s.abdHedef,
+      abdOzetOrder: s.abdOzetOrder,
+      temettuKayit: [],
+      temettuKayitlar: s.temettuKayitlar || [],
+      odemeler: s.odemeler,
+    }, null, 2)}`;
+
+    htmlContent = htmlContent.slice(0, startIdx) + newDefault + htmlContent.slice(endIdx + 1);
 
     // GitHub'a yükle
     const newEncoded = btoa(unescape(encodeURIComponent(htmlContent)));
@@ -3542,7 +3553,6 @@ async function updateIndexHtmlDefault(cfg) {
       })
     });
   } catch(e) {
-    // Sessizce başarısız ol — ana kayıt zaten tamamlandı
     console.warn('index.html güncellenemedi:', e.message);
   }
 }
