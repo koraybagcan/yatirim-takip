@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.13</title>
+<title>Portföy Takip — V8.15</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.13</div>
+      <div class="logo-sub">Yatırım Takip — V8.15</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -963,6 +963,7 @@ canvas{max-height:220px;}
     <button class="btn btn-secondary" id="rk-filter-Temettü" onclick="setRKFilter('Temettü')" style="font-size:11px;padding:7px 16px">Temettü</button>
     <button class="btn btn-secondary" id="rk-filter-Fon" onclick="setRKFilter('Fon')" style="font-size:11px;padding:7px 16px">Fon</button>
     <button class="btn btn-secondary" id="rk-filter-Metal" onclick="setRKFilter('Metal')" style="font-size:11px;padding:7px 16px">Metal</button>
+    <button class="btn btn-secondary" id="rk-filter-Faiz" onclick="setRKFilter('Faiz')" style="font-size:11px;padding:7px 16px">Faiz</button>
     <div style="flex:1"></div>
     <button class="btn btn-secondary" onclick="exportRKCSV()" style="font-size:10px;padding:7px 14px">↓ CSV</button>
   </div>
@@ -1121,7 +1122,7 @@ canvas{max-height:220px;}
     <div class="form-grid">
       <div class="form-group">
         <label class="form-label">Ticker / Fon</label>
-        <input type="text" id="rk-ekle-ticker" class="form-input" placeholder="QQQM, NVB, Altın...">
+        <input type="text" id="rk-ekle-ticker" class="form-input" placeholder="QQQM, NVB, Altın, Faiz...">
       </div>
       <div class="form-group">
         <label class="form-label">Kategori</label>
@@ -1130,6 +1131,7 @@ canvas{max-height:220px;}
           <option value="Temettü">Temettü</option>
           <option value="Fon">Fon</option>
           <option value="Metal">Metal</option>
+          <option value="Faiz">Faiz</option>
         </select>
       </div>
       <div class="form-group">
@@ -2428,7 +2430,7 @@ let _rkSort = {col:'kar', asc:false};
 
 function setRKFilter(f) {
   _rkFilter = f;
-  ['hepsi','ABD','Temett\u00fc','Fon','Metal'].forEach(k => {
+  ['hepsi','ABD','Temettü','Fon','Metal','Faiz'].forEach(k => {
     const el = document.getElementById('rk-filter-'+k);
     if(el) { el.className = k===f ? 'btn' : 'btn btn-secondary'; el.style.fontSize='11px'; el.style.padding='7px 16px'; }
   });
@@ -2523,9 +2525,12 @@ function saveRealizeEkle(){
   const maliyet=parseFloat(document.getElementById('rk-ekle-maliyet').value)||null;
   const deger=parseFloat(document.getElementById('rk-ekle-deger').value)||null;
   const tarih=document.getElementById('rk-ekle-tarih').value||null;
-  if(!ticker||!maliyet){showStatus('Ticker ve maliyet zorunlu','error');return;}
-  const kar=maliyet&&deger?deger-maliyet:null;
-  const pct=maliyet&&kar!==null?kar/maliyet:null;
+  const isFaiz = kategori === 'Faiz';
+  if(!ticker){showStatus('Ticker zorunlu','error');return;}
+  if(!isFaiz && !maliyet){showStatus('Ticker ve maliyet zorunlu','error');return;}
+  // Faiz: maliyet=0, kar=deger (kazanılan faiz)
+  const kar = isFaiz ? (deger||0) : (maliyet&&deger ? deger-maliyet : null);
+  const pct = (!isFaiz && maliyet && kar!==null) ? kar/maliyet : null;
   if(!state.realizeKayitlar) state.realizeKayitlar=[];
   state.realizeKayitlar.push({id:Date.now(),kategori,ticker,adet,maliyet,deger,kar,pct,para,tarih});
   save(); closeModal('realize-ekle-modal'); renderGecmis();
