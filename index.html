@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.16</title>
+<title>Portföy Takip — V8.17</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.16</div>
+      <div class="logo-sub">Yatırım Takip — V8.17</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -3424,13 +3424,23 @@ function renderTemettuTakip() {
     setText('tt-kart-en-yuksek-sub', AY_ADLARI_TR[parseInt(em)-1] + ' ' + ey);
   }
 
-  // En verimli ticker (T/M oranı)
-  if(_verimRows && _verimRows.length > 0) {
-    const enVerimli = [..._verimRows].filter(r=>r.tm).sort((a,b)=>(b.tm||0)-(a.tm||0))[0];
-    if(enVerimli) {
-      setText('tt-kart-verimli', enVerimli.ticker);
-      setText('tt-kart-verimli-sub', '%' + fmt((enVerimli.tm||0)*100, 2) + ' T/M');
-    }
+  // En verimli ticker (T/M oranı) — doğrudan hesapla
+  const tickerToplamMap = {};
+  kayitlar.forEach(k => {
+    tickerToplamMap[k.ticker] = (tickerToplamMap[k.ticker]||0) + (k.miktar||0);
+  });
+  const abdCostMap2 = {};
+  [...(state.buyume||[]), ...(state.temttu||[])].forEach(p => {
+    const usdM = p.usdMaliyet ?? (p.qty*p.buyPrice);
+    abdCostMap2[p.ticker] = (abdCostMap2[p.ticker]||0) + usdM;
+  });
+  const verimliList = Object.entries(tickerToplamMap).map(([ticker, ttoplam]) => {
+    const mal = abdCostMap2[ticker] || 0;
+    return {ticker, tm: mal > 0 ? ttoplam/mal : null};
+  }).filter(r => r.tm).sort((a,b) => b.tm - a.tm);
+  if(verimliList.length > 0) {
+    setText('tt-kart-verimli', verimliList[0].ticker);
+    setText('tt-kart-verimli-sub', '%' + fmt(verimliList[0].tm*100, 2) + ' T/M');
   }
   document.getElementById('tt-aylik-tbody').innerHTML = aylar.map(key => {
     const [yil,ay] = key.split('-');
