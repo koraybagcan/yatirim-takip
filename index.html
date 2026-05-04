@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.12</title>
+<title>Portföy Takip — V8.13</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.12</div>
+      <div class="logo-sub">Yatırım Takip — V8.13</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -2240,28 +2240,49 @@ function renderABDYK() {
   const rows = state.yatirim.abd;
   const TARGET = 1000;
 
-  // Ay bazında topla
+  if(!rows || rows.length === 0) {
+    document.getElementById('abd-yatirim-body').innerHTML = '';
+    setText('abd-yatirim-toplam', fmtUSD(0,0));
+    setText('abd-son-odenen', '—');
+    return;
+  }
+
+  // Ay bazında girilen tutarları topla
   const ayMap = {};
   rows.forEach(row => {
-    const k = row.tarih ? row.tarih.slice(0,7) : 'bilinmiyor';
-    ayMap[k] = (ayMap[k] || 0) + (row.tutar || 0);
+    const k = row.tarih ? row.tarih.slice(0,7) : null;
+    if(k) ayMap[k] = (ayMap[k] || 0) + (row.tutar || 0);
   });
 
-  // Sıralı ay listesi
-  const aylar = Object.keys(ayMap).sort();
+  // İlk kayıt ayından bugüne kadar tüm ayları oluştur
+  const ilkAy = Object.keys(ayMap).sort()[0];
+  const bugun = new Date();
+  const bugunAy = bugun.getFullYear() + '-' + String(bugun.getMonth()+1).padStart(2,'0');
+  
+  const tumAylar = [];
+  let cur = new Date(ilkAy + '-01');
+  const son = new Date(bugunAy + '-01');
+  while(cur <= son) {
+    const k = cur.getFullYear() + '-' + String(cur.getMonth()+1).padStart(2,'0');
+    tumAylar.push(k);
+    cur.setMonth(cur.getMonth() + 1);
+  }
+
   let totalUSD = 0, cumExtra = 0;
 
-  document.getElementById('abd-yatirim-body').innerHTML = aylar.map(ay => {
-    const t = ayMap[ay];
+  document.getElementById('abd-yatirim-body').innerHTML = tumAylar.map(ay => {
+    const t = ayMap[ay] || 0;
     totalUSD += t;
     cumExtra += (t - TARGET);
     const cumClass = cumExtra >= 0 ? 'pos' : 'neg';
     const cumStr = (cumExtra >= 0 ? '+' : '') + fmtUSD(cumExtra, 0);
-    // Satır indeksini bul (sil butonu için son kayıt indeksi)
-    const rowIdx = rows.map((r,i) => ({r,i})).filter(({r}) => r.tarih && r.tarih.slice(0,7) === ay).pop()?.i ?? -1;
-    return `<tr>
+    const girilenMi = ayMap[ay] !== undefined;
+    const rowIdx = girilenMi
+      ? rows.map((r,i) => ({r,i})).filter(({r}) => r.tarih && r.tarih.slice(0,7) === ay).pop()?.i ?? -1
+      : -1;
+    return `<tr${!girilenMi ? ' style="opacity:.5"' : ''}>
       <td>${tarihToAyYil(ay + '-01')}</td>
-      <td class="price-cell normal-weight" style="text-align:right">${fmtUSD(t, 0)}</td>
+      <td class="price-cell normal-weight" style="text-align:right">${girilenMi ? fmtUSD(t,0) : '<span style="color:var(--red)">—</span>'}</td>
       <td class="price-cell ${cumClass}" style="text-align:right">${cumStr}</td>
       <td>${rowIdx >= 0 ? `<button class="btn btn-danger" style="font-size:9px;padding:3px 7px" onclick="removeYKRow('abd',${rowIdx})">✕</button>` : ''}</td>
     </tr>`;
@@ -2269,19 +2290,15 @@ function renderABDYK() {
 
   setText('abd-yatirim-toplam', fmtUSD(totalUSD, 0));
 
-  // Son ödenen: cumExtra kaç tam 1000 aylık ödeme yaptıysak o kadar ileriye kaydır
-  if(aylar.length > 0) {
-    const sonAy = aylar[aylar.length - 1];
-    const [yil, ay] = sonAy.split('-').map(Number);
-    const ekstraAy = cumExtra >= 0 ? Math.floor(cumExtra / TARGET) : 0;
-    const toplamAy = ay - 1 + ekstraAy; // 0-indexed ay
-    const yeniYil = yil + Math.floor(toplamAy / 12);
-    const yeniAy  = (toplamAy % 12) + 1;
-    const yeniTarih = yeniYil + '-' + String(yeniAy).padStart(2,'0') + '-01';
-    setText('abd-son-odenen', tarihToAyYil(yeniTarih));
-  } else {
-    setText('abd-son-odenen', '—');
-  }
+  // Son ödenen: son aydan itibaren cumExtra kaç tam 1000 aylık ileri gider
+  const sonAy = tumAylar[tumAylar.length - 1];
+  const [yil, ay] = sonAy.split('-').map(Number);
+  const ekstraAy = cumExtra >= 0 ? Math.floor(cumExtra / TARGET) : 0;
+  const toplamAy = ay - 1 + ekstraAy;
+  const yeniYil = yil + Math.floor(toplamAy / 12);
+  const yeniAy  = (toplamAy % 12) + 1;
+  const yeniTarih = yeniYil + '-' + String(yeniAy).padStart(2,'0') + '-01';
+  setText('abd-son-odenen', tarihToAyYil(yeniTarih));
 
   const abdScroll = document.getElementById('abd-yatirim-scroll');
   if(abdScroll) abdScroll.scrollTop = abdScroll.scrollHeight;
