@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.15</title>
+<title>Portföy Takip — V8.16</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.15</div>
+      <div class="logo-sub">Yatırım Takip — V8.16</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -709,6 +709,16 @@ canvas{max-height:220px;}
   <div class="page-header">
     <div><div class="page-title">Temettü Takip</div><div class="page-subtitle">Temettü kayıtları & verim analizi</div></div>
     <button class="btn btn-secondary" style="font-size:10px;padding:6px 14px" onclick="openTemettuEkleModal()">+ Kayıt Ekle</button>
+  </div>
+
+  <!-- ÖZET KARTLAR -->
+  <div class="stats-grid" style="grid-template-columns:repeat(6,1fr);margin-bottom:20px">
+    <div class="stat-card"><div class="stat-label">Toplam Temettü</div><div class="stat-value gold" id="tt-kart-toplam">—</div><div class="stat-sub">Tüm zamanlar</div></div>
+    <div class="stat-card stagger-1"><div class="stat-label">Bu Yıl</div><div class="stat-value" id="tt-kart-yil">—</div><div class="stat-sub" id="tt-kart-yil-sub">—</div></div>
+    <div class="stat-card stagger-2"><div class="stat-label">Son 12 Ay</div><div class="stat-value" id="tt-kart-12ay">—</div><div class="stat-sub">Kayan dönem</div></div>
+    <div class="stat-card stagger-3"><div class="stat-label">Aylık Ortalama</div><div class="stat-value" id="tt-kart-ort">—</div><div class="stat-sub">Son 12 aya göre</div></div>
+    <div class="stat-card stagger-3"><div class="stat-label">En Yüksek Ay</div><div class="stat-value" id="tt-kart-en-yuksek">—</div><div class="stat-sub" id="tt-kart-en-yuksek-sub">—</div></div>
+    <div class="stat-card stagger-3"><div class="stat-label">En Verimli Ticker</div><div class="stat-value gold" id="tt-kart-verimli">—</div><div class="stat-sub" id="tt-kart-verimli-sub">T/M oranı</div></div>
   </div>
 
   <!-- ÜST: Aylık Temettü + Verim tabloları yan yana -->
@@ -3393,6 +3403,35 @@ function renderTemettuTakip() {
   const aylar = Object.keys(ayMap).sort((a,b) => b.localeCompare(a));
   const toplam = kayitlar.reduce((s,k) => s+(k.miktar||0), 0);
   setText('tt-toplam', '$'+fmt(toplam,2));
+
+  // ---- Özet Kartlar ----
+  const buYil = new Date().getFullYear();
+  const buYilToplam = kayitlar.filter(k => new Date(k.tarih).getFullYear() === buYil).reduce((s,k)=>s+(k.miktar||0),0);
+  setText('tt-kart-toplam', fmtUSD(toplam));
+  setText('tt-kart-yil', fmtUSD(buYilToplam));
+  setText('tt-kart-yil-sub', buYil + ' yılı');
+
+  const simdi = new Date();
+  const on2AyOnce = new Date(simdi.getFullYear(), simdi.getMonth()-11, 1);
+  const son12Ay = kayitlar.filter(k => new Date(k.tarih) >= on2AyOnce).reduce((s,k)=>s+(k.miktar||0),0);
+  setText('tt-kart-12ay', fmtUSD(son12Ay));
+  setText('tt-kart-ort', fmtUSD(son12Ay/12));
+
+  if(Object.keys(ayMap).length > 0) {
+    const enYuksekAy = Object.entries(ayMap).sort((a,b)=>b[1]-a[1])[0];
+    const [ey, em] = enYuksekAy[0].split('-');
+    setText('tt-kart-en-yuksek', fmtUSD(enYuksekAy[1]));
+    setText('tt-kart-en-yuksek-sub', AY_ADLARI_TR[parseInt(em)-1] + ' ' + ey);
+  }
+
+  // En verimli ticker (T/M oranı)
+  if(_verimRows && _verimRows.length > 0) {
+    const enVerimli = [..._verimRows].filter(r=>r.tm).sort((a,b)=>(b.tm||0)-(a.tm||0))[0];
+    if(enVerimli) {
+      setText('tt-kart-verimli', enVerimli.ticker);
+      setText('tt-kart-verimli-sub', '%' + fmt((enVerimli.tm||0)*100, 2) + ' T/M');
+    }
+  }
   document.getElementById('tt-aylik-tbody').innerHTML = aylar.map(key => {
     const [yil,ay] = key.split('-');
     const ayAd = AY_ADLARI_TR[parseInt(ay)-1] + ' ' + yil;
@@ -3915,6 +3954,9 @@ setSBStatus('Veriler yükleniyor…', '');
         if(mevcutTemettu && mevcutTemettu.length > 0) state.temettuKayitlar = mevcutTemettu;
       save();
       renderDashboard();
+      // Aktif sayfa hangisi olursa olsun yeniden render et
+      const activePage = document.querySelector('.page.active')?.id?.replace('page-','');
+      if(activePage && activePage !== 'dashboard') renderPage(activePage);
       setSBStatus('✓ Güncel veriler yüklendi', 'ok');
     } else {
       setSBStatus('', '');
