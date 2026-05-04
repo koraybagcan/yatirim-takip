@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.10</title>
+<title>Portföy Takip — V8.11</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -244,7 +244,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.10</div>
+      <div class="logo-sub">Yatırım Takip — V8.11</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -450,7 +450,7 @@ canvas{max-height:220px;}
     <div class="card-header"><span class="card-title">Temettü Pozisyonları</span><button class="btn btn-secondary" style="font-size:10px;padding:6px 14px" onclick="openAddModal('temttu')">+ Ekle</button></div>
     <div class="card-body table-wrap" style="max-height:460px;overflow-y:auto;">
       <table class="data-table">
-        <thead style="position:sticky;top:0;z-index:2;background:var(--surface);"><tr><th style="text-align:left">Fon</th><th style="text-align:right">Adet</th><th style="text-align:right">Alış ($)</th><th style="text-align:right">Anlık ($)</th><th style="text-align:right">USD Maliyet</th><th style="text-align:right">TL Maliyet</th><th style="text-align:right">USD Değer</th><th style="text-align:right">TL Değer</th><th style="text-align:right">Kâr</th><th style="text-align:right">%</th><th></th></tr></thead>
+        <thead style="position:sticky;top:0;z-index:2;background:var(--surface);"><tr><th style="text-align:left">Fon</th><th style="text-align:right">Adet</th><th style="text-align:right">Alış ($)</th><th style="text-align:right">Anlık ($)</th><th style="text-align:right">USD Maliyet</th><th style="text-align:right">TL Maliyet</th><th style="text-align:right">USD Değer</th><th style="text-align:right">TL Değer</th><th style="text-align:right">Kâr (USD)</th><th style="text-align:right">Kâr (TL)</th><th style="text-align:right">%</th><th></th></tr></thead>
         <tbody id="temttu-table-body"></tbody>
       </table>
     </div>
@@ -474,7 +474,7 @@ canvas{max-height:220px;}
     <div class="card-header"><span class="card-title">Büyüme Pozisyonları</span><button class="btn btn-secondary" style="font-size:10px;padding:6px 14px" onclick="openAddModal('buyume')">+ Ekle</button></div>
     <div class="card-body table-wrap" style="max-height:460px;overflow-y:auto;">
       <table class="data-table">
-        <thead style="position:sticky;top:0;z-index:2;background:var(--surface);"><tr><th style="text-align:left">Fon</th><th style="text-align:right">Adet</th><th style="text-align:right">Alış ($)</th><th style="text-align:right">Anlık ($)</th><th style="text-align:right">USD Maliyet</th><th style="text-align:right">TL Maliyet</th><th style="text-align:right">USD Değer</th><th style="text-align:right">TL Değer</th><th style="text-align:right">Kâr</th><th style="text-align:right">%</th><th></th></tr></thead>
+        <thead style="position:sticky;top:0;z-index:2;background:var(--surface);"><tr><th style="text-align:left">Fon</th><th style="text-align:right">Adet</th><th style="text-align:right">Alış ($)</th><th style="text-align:right">Anlık ($)</th><th style="text-align:right">USD Maliyet</th><th style="text-align:right">TL Maliyet</th><th style="text-align:right">USD Değer</th><th style="text-align:right">TL Değer</th><th style="text-align:right">Kâr (USD)</th><th style="text-align:right">Kâr (TL)</th><th style="text-align:right">%</th><th></th></tr></thead>
         <tbody id="buyume-table-body"></tbody>
       </table>
     </div>
@@ -1016,7 +1016,8 @@ canvas{max-height:220px;}
           <th style="text-align:right">TL Maliyet</th>
           <th style="text-align:right">USD Değer</th>
           <th style="text-align:right">TL Değer</th>
-          <th style="text-align:right">Kâr</th>
+          <th style="text-align:right">Kâr (USD)</th>
+          <th style="text-align:right">Kâr (TL)</th>
           <th style="text-align:right">%</th>
         </tr></thead>
         <tbody id="abdozet-table-body"></tbody>
@@ -1911,8 +1912,9 @@ function renderABD(key) {
     const tlMaliyet  = p.tlMaliyet  ?? (usdMaliyet * state.usdRate);
     const usdDeger   = p.qty * curP;
     const tlDeger    = usdDeger * state.usdRate;
-    const kar        = tlDeger - tlMaliyet;
-    const pct        = tlMaliyet > 0 ? kar / tlMaliyet : 0;
+    const karUSD      = usdDeger - usdMaliyet;
+    const kar         = tlDeger - tlMaliyet;
+    const pct         = usdMaliyet > 0 ? karUSD / usdMaliyet : 0;
     return `<tr draggable="true" data-idx="${i}" style="cursor:grab"
       ondragstart="abdDragStart(event,'${key}')"
       ondragover="abdDragOver(event)"
@@ -1936,6 +1938,7 @@ function renderABD(key) {
       <td style="text-align:right" class="price-cell">${fmtTL(tlMaliyet)}</td>
       <td style="text-align:right" class="price-cell">${fmtUSD(usdDeger)}</td>
       <td style="text-align:right" class="price-cell">${fmtTL(tlDeger)}</td>
+      <td style="text-align:right" class="price-cell ${pc(karUSD)}">${fmtUSD(karUSD)}</td>
       <td style="text-align:right" class="price-cell ${pc(kar)}">${fmtTL(kar)}</td>
       <td style="text-align:right" class="price-cell ${pc(pct)}">${fmtPct(pct)}</td>
       <td><button class="btn btn-danger" style="font-size:9px;padding:4px 8px" onclick="removeItem('${key}',${i})">✕</button></td>
@@ -2027,8 +2030,9 @@ function renderABDOzet() {
     const d = map[ticker];
     const usdVal = d.qty * curP;
     const tlVal  = usdVal * state.usdRate;
+    const karUSD = usdVal - d.costUSD;
     const kar    = tlVal - d.costTL;
-    const pct    = d.costTL > 0 ? kar / d.costTL : 0;
+    const pct    = d.costUSD > 0 ? karUSD / d.costUSD : 0;
     totalValUSD  += usdVal;
     totalValTL   += tlVal;
     totalCostUSD += d.costUSD;
@@ -2049,6 +2053,7 @@ function renderABDOzet() {
       <td style="text-align:right" class="price-cell">${fmtTL(d.costTL)}</td>
       <td style="text-align:right" class="price-cell">${fmtUSD(usdVal)}</td>
       <td style="text-align:right" class="price-cell">${fmtTL(tlVal)}</td>
+      <td style="text-align:right" class="price-cell ${pc(karUSD)}">${fmtUSD(karUSD)}</td>
       <td style="text-align:right" class="price-cell ${pc(kar)}">${fmtTL(kar)}</td>
       <td style="text-align:right" class="price-cell ${pc(pct)}">${fmtPct(pct)}</td>
     </tr>`;
