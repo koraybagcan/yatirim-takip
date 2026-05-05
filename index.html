@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.21</title>
+<title>Portföy Takip — V8.22</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -267,7 +267,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.21</div>
+      <div class="logo-sub">Yatırım Takip — V8.22</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -1037,6 +1037,7 @@ canvas{max-height:220px;}
     <div class="stat-card stagger-2"><div class="stat-label">Maliyet (USD)</div><div class="stat-value" id="abdozet-cost-usd">—</div></div>
     <div class="stat-card stagger-3"><div class="stat-label">Maliyet (TL)</div><div class="stat-value" id="abdozet-cost-tl">—</div></div>
     <div class="stat-card stagger-4"><div class="stat-label">Kâr/Zarar (TL)</div><div class="stat-value" id="abdozet-pnl">—</div><div class="stat-change" id="abdozet-pnl-pct">—</div></div>
+    <div class="stat-card stagger-5"><div class="stat-label">Kâr/Zarar (USD)</div><div class="stat-value" id="abdozet-pnl-usd">—</div><div class="stat-change" id="abdozet-pnl-usd-pct">—</div></div>
   </div>
 
   <!-- Geçmiş Grafik -->
@@ -2141,8 +2142,11 @@ function renderABDOzet() {
   setText('abdozet-total-tl',  fmtTL(totalValTL));
   setText('abdozet-cost-usd',  fmtUSD(totalCostUSD));
   setText('abdozet-cost-tl',   fmtTL(totalCostTL));
-  setVC('abdozet-pnl',     fmtTL(totalKar), totalKar);
-  setCC('abdozet-pnl-pct', fmtPct(totalKar/totalCostTL), totalKar);
+  setVC('abdozet-pnl',         fmtTL(totalKar), totalKar);
+  setCC('abdozet-pnl-pct',     fmtPct(totalKar/totalCostTL), totalKar);
+  const totalKarUSD = totalValUSD - totalCostUSD;
+  setVC('abdozet-pnl-usd',     fmtUSD(totalKarUSD), totalKarUSD);
+  setCC('abdozet-pnl-usd-pct', fmtPct(totalCostUSD>0?totalKarUSD/totalCostUSD:0), totalKarUSD);
   // Günlük snapshot al ve geçmişi göster
   takeABDSnapshot(totalValUSD, totalValTL, totalCostUSD);
   renderABDOzetGecmis();
