@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.17</title>
+<title>Portföy Takip — V8.18</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -236,15 +236,42 @@ canvas{max-height:220px;}
 /* Hidden file input */
 #import-file-input{display:none;}
 </style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-<div class="app">
+<!-- LOGIN EKRANI -->
+<div id="login-screen" style="display:none;position:fixed;inset:0;background:#0a0b0d;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px">
+  <div style="text-align:center">
+    <div style="font-family:'Outfit',sans-serif;font-size:28px;color:#c8a96e;font-weight:300;margin-bottom:8px">Portföy</div>
+    <div style="font-size:11px;color:#9a9590;letter-spacing:3px;text-transform:uppercase">Yatırım Takip</div>
+  </div>
+  <div style="background:#111318;border:1px solid #2e3648;border-radius:16px;padding:32px;width:320px;max-width:90vw">
+    <div id="login-form">
+      <div style="font-size:13px;color:#9a9590;margin-bottom:20px;text-align:center">Giriş için email adresinizi girin</div>
+      <input type="email" id="login-email" placeholder="email@example.com"
+        style="width:100%;background:#0a0b0d;border:1px solid #2e3648;border-radius:8px;color:#f5f2ee;font-family:'DM Mono',monospace;font-size:13px;padding:12px 14px;box-sizing:border-box;margin-bottom:12px;outline:none"
+        onkeydown="if(event.key==='Enter')sendMagicLink()">
+      <button onclick="sendMagicLink()"
+        style="width:100%;background:#c8a96e;color:#0a0b0d;border:none;border-radius:8px;padding:12px;font-size:13px;font-family:'Outfit',sans-serif;font-weight:600;cursor:pointer;letter-spacing:.5px">
+        Giriş Linki Gönder
+      </button>
+      <div id="login-status" style="font-size:11px;text-align:center;margin-top:12px;min-height:16px;color:#9a9590"></div>
+    </div>
+    <div id="login-sent" style="display:none;text-align:center">
+      <div style="font-size:32px;margin-bottom:12px">📧</div>
+      <div style="font-size:13px;color:#f5f2ee;margin-bottom:8px">Link gönderildi!</div>
+      <div style="font-size:11px;color:#9a9590">Email'inizi kontrol edin ve linke tıklayın</div>
+    </div>
+  </div>
+</div>
+
+<div class="app" style="display:none">
 
 <nav class="sidebar">
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.17</div>
+      <div class="logo-sub">Yatırım Takip — V8.18</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -3583,6 +3610,56 @@ function savePortfoySecim() {
 
 
 
+
+// ===== AUTH =====
+const _sb = supabase.createClient('https://oimzkvpwiskksawrdrst.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pbXprdnB3aXNra3Nhd3JkcnN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyODE5NDgsImV4cCI6MjA5Mjg1Nzk0OH0.LYj-d4WPMvjeBWwwIDSmLYWNoP4m1j79ahvYTDvh8KE');
+
+function showLoginScreen() {
+  document.getElementById('login-screen').style.display = 'flex';
+  document.querySelector('.app').style.display = 'none';
+}
+
+function showApp() {
+  document.getElementById('login-screen').style.display = 'none';
+  document.querySelector('.app').style.display = 'flex';
+}
+
+async function sendMagicLink() {
+  const email = document.getElementById('login-email').value.trim();
+  const statusEl = document.getElementById('login-status');
+  if(!email) { statusEl.textContent = 'Email adresi gerekli'; return; }
+  statusEl.textContent = 'Gönderiliyor...';
+  const { error } = await _sb.auth.signInWithOtp({
+    email,
+    options: { emailRedirectTo: 'https://koraybagcan.github.io/yatirim-takip/' }
+  });
+  if(error) {
+    statusEl.textContent = 'Hata: ' + error.message;
+  } else {
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('login-sent').style.display = 'block';
+  }
+}
+
+// Oturum kontrolü
+async function checkAuth() {
+  const { data: { session } } = await _sb.auth.getSession();
+  if(session) {
+    showApp();
+  } else {
+    showLoginScreen();
+  }
+}
+
+// Auth state değişimlerini dinle
+_sb.auth.onAuthStateChange((event, session) => {
+  if(session) {
+    showApp();
+  } else {
+    showLoginScreen();
+  }
+});
+
 // ===== SUPABASE SYNC =====
 const SB_URL = 'https://oimzkvpwiskksawrdrst.supabase.co';
 const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pbXprdnB3aXNra3Nhd3JkcnN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyODE5NDgsImV4cCI6MjA5Mjg1Nzk0OH0.LYj-d4WPMvjeBWwwIDSmLYWNoP4m1j79ahvYTDvh8KE';
@@ -3945,6 +4022,7 @@ async function autoRefreshAll() {
 }
 
 // Açılışta Supabase'den veri yükle, sonra fiyatları güncelle
+checkAuth();
 setText('eur-rate', 'EUR/TRY: yükleniyor…');
 setSBStatus('Veriler yükleniyor…', '');
 (async () => {
