@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.19</title>
+<title>Portföy Takip — V8.20</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -267,7 +267,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.19</div>
+      <div class="logo-sub">Yatırım Takip — V8.20</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -1038,6 +1038,45 @@ canvas{max-height:220px;}
     <div class="stat-card stagger-3"><div class="stat-label">Maliyet (TL)</div><div class="stat-value" id="abdozet-cost-tl">—</div></div>
     <div class="stat-card stagger-4"><div class="stat-label">Kâr/Zarar (TL)</div><div class="stat-value" id="abdozet-pnl">—</div><div class="stat-change" id="abdozet-pnl-pct">—</div></div>
   </div>
+
+  <!-- Geçmiş Grafik -->
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-header" style="display:flex;justify-content:space-between;align-items:center">
+      <span class="card-title">ABD Portföy Geçmişi</span>
+      <div style="display:flex;gap:8px;align-items:center">
+        <select id="abdozet-period" onchange="renderABDOzetGecmis()" style="background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:11px;padding:4px 8px">
+          <option value="30">Son 30 gün</option>
+          <option value="90">Son 90 gün</option>
+          <option value="180">Son 6 ay</option>
+          <option value="365">Son 1 yıl</option>
+          <option value="0">Tümü</option>
+        </select>
+        <button class="btn btn-secondary" style="font-size:10px;padding:5px 12px" onclick="manualSnapshot()">📸 Snapshot Al</button>
+      </div>
+    </div>
+    <div class="card-body"><canvas id="abdozet-gecmis-chart" style="max-height:240px"></canvas></div>
+  </div>
+
+  <!-- Geçmiş Tablo -->
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-header"><span class="card-title">Günlük Değer Geçmişi</span></div>
+    <div class="card-body" style="padding:0;max-height:300px;overflow-y:auto">
+      <table class="data-table">
+        <thead style="position:sticky;top:0;z-index:2;background:var(--surface)">
+          <tr>
+            <th style="padding-left:16px">Tarih</th>
+            <th style="text-align:right">Değer (USD)</th>
+            <th style="text-align:right">Değer (TL)</th>
+            <th style="text-align:right">Maliyet (USD)</th>
+            <th style="text-align:right">Kâr (USD)</th>
+            <th style="text-align:right">%</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="abdozet-gecmis-tbody"></tbody>
+      </table>
+    </div>
+  </div>
   <div class="card">
     <div class="card-header"><span class="card-title">Pozisyonlar</span></div>
     <div class="card-body table-wrap">
@@ -1497,6 +1536,7 @@ let state = (() => {
       if(!parsed.abdHedef) parsed.abdHedef = JSON.parse(JSON.stringify(DEFAULT.abdHedef));
       if(!parsed.temettuKayitlar) parsed.temettuKayitlar = [];
       if(!parsed.realizeKayitlar) parsed.realizeKayitlar = JSON.parse(JSON.stringify(DEFAULT.realizeKayitlar));
+      if(!parsed.abdSnapshot) parsed.abdSnapshot = [];
       // Eski temettuKayit verisini temettuKayitlar'a taşı
       if(parsed.temettuKayit && parsed.temettuKayit.length > 0) {
         const mevcutTarihler = new Set(parsed.temettuKayitlar.map(k => k.ticker+'_'+k.tarih));
@@ -2103,6 +2143,136 @@ function renderABDOzet() {
   setText('abdozet-cost-tl',   fmtTL(totalCostTL));
   setVC('abdozet-pnl',     fmtTL(totalKar), totalKar);
   setCC('abdozet-pnl-pct', fmtPct(totalKar/totalCostTL), totalKar);
+  // Günlük snapshot al ve geçmişi göster
+  takeABDSnapshot(totalValUSD, totalValTL, totalCostUSD);
+  renderABDOzetGecmis();
+}
+
+
+// ===== ABD SNAPSHOT =====
+let _abdOzetChart = null;
+
+function takeABDSnapshot(valUSD, valTL, costUSD) {
+  if(!valUSD || valUSD <= 0) return;
+  if(!state.abdSnapshot) state.abdSnapshot = [];
+  const bugun = new Date().toISOString().slice(0,10);
+  // Bugün zaten var mı?
+  const idx = state.abdSnapshot.findIndex(s => s.tarih === bugun);
+  const entry = {tarih: bugun, valUSD: Math.round(valUSD*100)/100, valTL: Math.round(valTL), costUSD: Math.round(costUSD*100)/100};
+  if(idx >= 0) {
+    state.abdSnapshot[idx] = entry; // Güncelle
+  } else {
+    state.abdSnapshot.push(entry);
+    state.abdSnapshot.sort((a,b) => a.tarih.localeCompare(b.tarih));
+  }
+  save();
+}
+
+function manualSnapshot() {
+  // Mevcut değerlerle anında snapshot al
+  const {buyumeTickers, temttuTickers, buyumeToplam, temttuToplam} = calcATPortfoy ? calcATPortfoy() : {buyumeToplam:0, temttuToplam:0};
+  const totalUSD = buyumeToplam + temttuToplam;
+  const totalTL  = totalUSD * (state.usdRate||1);
+  const costUSD  = [...(state.buyume||[]),...(state.temttu||[])].reduce((s,p) => s+(p.usdMaliyet||(p.qty*p.buyPrice)),0);
+  if(totalUSD > 0) {
+    takeABDSnapshot(totalUSD, totalTL, costUSD);
+    renderABDOzetGecmis();
+    showStatus('Snapshot alındı', 'success');
+  }
+}
+
+function renderABDOzetGecmis() {
+  const snapshots = state.abdSnapshot || [];
+  if(snapshots.length === 0) {
+    const tbody = document.getElementById('abdozet-gecmis-tbody');
+    if(tbody) tbody.innerHTML = '<tr><td colspan="7" class="empty-state">Henüz snapshot yok — ABD Özet sayfasını her ziyaretinde otomatik kaydedilir</td></tr>';
+    return;
+  }
+
+  // Periyod filtresi
+  const periodEl = document.getElementById('abdozet-period');
+  const days = periodEl ? parseInt(periodEl.value) : 0;
+  const cutoff = days > 0 ? new Date(Date.now() - days*86400000).toISOString().slice(0,10) : null;
+  const filtered = cutoff ? snapshots.filter(s => s.tarih >= cutoff) : snapshots;
+  const reversed = [...filtered].reverse();
+
+  // Tablo
+  const tbody = document.getElementById('abdozet-gecmis-tbody');
+  if(tbody) {
+    tbody.innerHTML = reversed.map((s,i) => {
+      const prev = filtered[filtered.length - 2 - i];
+      const karUSD = s.valUSD - s.costUSD;
+      const pct = s.costUSD > 0 ? karUSD/s.costUSD : 0;
+      return `<tr>
+        <td style="padding-left:16px;font-family:'DM Mono',monospace;font-size:12px">${s.tarih}</td>
+        <td style="text-align:right" class="price-cell gold">${fmtUSD(s.valUSD)}</td>
+        <td style="text-align:right" class="price-cell">${fmtTL(s.valTL)}</td>
+        <td style="text-align:right;color:var(--text3)" class="price-cell">${fmtUSD(s.costUSD)}</td>
+        <td style="text-align:right" class="price-cell ${pc(karUSD)}">${fmtUSD(karUSD)}</td>
+        <td style="text-align:right" class="price-cell ${pc(pct)}">${fmtPct(pct)}</td>
+        <td><button class="btn btn-danger" style="font-size:9px;padding:3px 7px" onclick="deleteABDSnapshot('${s.tarih}')">✕</button></td>
+      </tr>`;
+    }).join('');
+  }
+
+  // Grafik
+  const canvas = document.getElementById('abdozet-gecmis-chart');
+  if(!canvas || filtered.length < 2) return;
+  const labels = filtered.map(s => s.tarih.slice(5));
+  const dataUSD = filtered.map(s => s.valUSD);
+  const dataCost = filtered.map(s => s.costUSD);
+
+  if(_abdOzetChart) { _abdOzetChart.destroy(); _abdOzetChart = null; }
+  _abdOzetChart = new Chart(canvas, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Değer (USD)',
+          data: dataUSD,
+          borderColor: '#c8a96e',
+          backgroundColor: 'rgba(200,169,110,.1)',
+          borderWidth: 2,
+          pointRadius: filtered.length > 60 ? 0 : 3,
+          tension: 0.3,
+          fill: true,
+        },
+        {
+          label: 'Maliyet (USD)',
+          data: dataCost,
+          borderColor: '#9a9590',
+          backgroundColor: 'transparent',
+          borderWidth: 1.5,
+          borderDash: [4,4],
+          pointRadius: 0,
+          tension: 0.3,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      interaction: {mode:'index', intersect:false},
+      plugins: {
+        legend: {labels: {color:'#9a9590', font:{size:11}}},
+        tooltip: {
+          callbacks: {
+            label: ctx => ctx.dataset.label + ': $' + ctx.raw.toLocaleString('tr-TR', {minimumFractionDigits:0, maximumFractionDigits:0})
+          }
+        }
+      },
+      scales: {
+        x: {ticks:{color:'#9a9590',font:{size:10},maxTicksLimit:10}, grid:{color:'rgba(255,255,255,.05)'}},
+        y: {ticks:{color:'#9a9590',font:{size:10}, callback: v => '$'+v.toLocaleString('tr-TR',{maximumFractionDigits:0})}, grid:{color:'rgba(255,255,255,.05)'}}
+      }
+    }
+  });
+}
+
+function deleteABDSnapshot(tarih) {
+  if(!confirm(tarih + ' tarihli snapshot silinsin mi?')) return;
+  state.abdSnapshot = (state.abdSnapshot||[]).filter(s => s.tarih !== tarih);
+  save(); renderABDOzetGecmis();
 }
 
 // Birden fazla proxy dener, ilk başarılı olanı döndürür
