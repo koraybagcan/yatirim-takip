@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.22</title>
+<title>Portföy Takip — V8.23</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -267,7 +267,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.22</div>
+      <div class="logo-sub">Yatırım Takip — V8.23</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -4182,9 +4182,27 @@ async function autoRefreshAll() {
     await Promise.allSettled([refreshABD('temttu'), refreshABD('buyume')]);
     renderDashboard();
     showStatus('Fiyatlar güncellendi', 'success');
+    // Fiyatlar güncellendikten sonra snapshot al
+    autoTakeSnapshot();
   } catch(e) {
     setText('eur-rate', 'EUR/TRY: bağlantı hatası');
   }
+}
+
+function autoTakeSnapshot() {
+  try {
+    // Tüm ABD pozisyonlarının anlık değerini hesapla
+    const allPos = [...(state.buyume||[]), ...(state.temttu||[])];
+    let valUSD = 0, costUSD = 0;
+    allPos.forEach(p => {
+      const ticker = p.ticker === 'QQQ' ? 'QQQM' : p.ticker;
+      const fiyat = livePrice(ticker) || p.buyPrice || 0;
+      valUSD  += p.qty * fiyat;
+      costUSD += p.usdMaliyet ?? (p.qty * p.buyPrice);
+    });
+    const valTL = valUSD * (state.usdRate || 1);
+    if(valUSD > 0) takeABDSnapshot(valUSD, valTL, costUSD);
+  } catch(e) {}
 }
 
 // Açılışta Supabase'den veri yükle, sonra fiyatları güncelle
