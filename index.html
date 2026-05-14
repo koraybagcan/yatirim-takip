@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.24</title>
+<title>Portföy Takip — V8.25</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -267,7 +267,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.24</div>
+      <div class="logo-sub">Yatırım Takip — V8.25</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -1932,7 +1932,13 @@ function renderDashboard() {
   histChart = new Chart(document.getElementById('history-chart'),{
     type:'line',
     data:{labels:hist.map(h=>h.tarih),datasets:[{data:hist.map(h=>h.total),borderColor:'#c8a96e',backgroundColor:'rgba(200,169,110,.07)',fill:true,tension:.4,pointRadius:hist.length>60?0:3,pointBackgroundColor:'#c8a96e',borderWidth:2}]},
-    options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>' '+fmtTL(ctx.raw)}}},
+    options:{plugins:{legend:{display:false},tooltip:{callbacks:{
+        label: ctx => {
+          const s = hist[ctx.dataIndex];
+          const usdStr = s?.usd ? ' ($' + s.usd.toLocaleString('tr-TR') + ')' : '';
+          return ' ' + fmtTL(ctx.raw) + usdStr;
+        }
+      }}},
       scales:{x:{grid:{color:gc},ticks:{color:tc2,font:{family:'DM Mono',size:10},maxTicksLimit:8}},
               y:{grid:{color:gc},ticks:{color:tc2,font:{family:'DM Mono',size:10},callback:v=>'₺'+fmt(v/1000)+'k'}}}}
   });
@@ -2164,7 +2170,8 @@ function takePortfoySnapshot(total) {
   if(!state.portfoySnapshot) state.portfoySnapshot = [];
   const bugun = new Date().toISOString().slice(0,10);
   const idx = state.portfoySnapshot.findIndex(s => s.tarih === bugun);
-  const entry = {tarih: bugun, total: Math.round(total)};
+  const usdRate = state.usdRate || 1;
+  const entry = {tarih: bugun, total: Math.round(total), usd: Math.round(total / usdRate)};
   if(idx >= 0) {
     state.portfoySnapshot[idx] = entry;
   } else {
