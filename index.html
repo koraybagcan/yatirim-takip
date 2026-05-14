@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.23</title>
+<title>Portföy Takip — V8.24</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -267,7 +267,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.23</div>
+      <div class="logo-sub">Yatırım Takip — V8.24</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -1538,6 +1538,7 @@ let state = (() => {
       if(!parsed.temettuKayitlar) parsed.temettuKayitlar = [];
       if(!parsed.realizeKayitlar) parsed.realizeKayitlar = JSON.parse(JSON.stringify(DEFAULT.realizeKayitlar));
       if(!parsed.abdSnapshot) parsed.abdSnapshot = [];
+      if(!parsed.portfoySnapshot) parsed.portfoySnapshot = [];
       // Eski temettuKayit verisini temettuKayitlar'a taşı
       if(parsed.temettuKayit && parsed.temettuKayit.length > 0) {
         const mevcutTarihler = new Set(parsed.temettuKayitlar.map(k => k.ticker+'_'+k.tarih));
@@ -1920,17 +1921,19 @@ function renderDashboard() {
     ).join('');
   }
 
-  const hist=[...state.history];
-  const now=new Date().toISOString().slice(0,7);
-  if(hist[hist.length-1]?.date!==now) hist.push({date:now,total:Math.round(tv)});
+  // Portföy snapshot al
+  takePortfoySnapshot(tv);
+  // Grafiği çiz
+  const snapshots = state.portfoySnapshot || [];
+  const hist = snapshots.length > 0 ? snapshots : [{tarih: new Date().toISOString().slice(0,10), total: Math.round(tv)}];
   const gc=state.theme==='dark'?'#252d3d':'#d8d2c8';
   const tc2=state.theme==='dark'?'#6e6a64':'#96908a';
   if(histChart) histChart.destroy();
   histChart = new Chart(document.getElementById('history-chart'),{
     type:'line',
-    data:{labels:hist.map(h=>h.date),datasets:[{data:hist.map(h=>h.total),borderColor:'#c8a96e',backgroundColor:'rgba(200,169,110,.07)',fill:true,tension:.4,pointRadius:3,pointBackgroundColor:'#c8a96e',borderWidth:2}]},
+    data:{labels:hist.map(h=>h.tarih),datasets:[{data:hist.map(h=>h.total),borderColor:'#c8a96e',backgroundColor:'rgba(200,169,110,.07)',fill:true,tension:.4,pointRadius:hist.length>60?0:3,pointBackgroundColor:'#c8a96e',borderWidth:2}]},
     options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>' '+fmtTL(ctx.raw)}}},
-      scales:{x:{grid:{color:gc},ticks:{color:tc2,font:{family:'DM Mono',size:10}}},
+      scales:{x:{grid:{color:gc},ticks:{color:tc2,font:{family:'DM Mono',size:10},maxTicksLimit:8}},
               y:{grid:{color:gc},ticks:{color:tc2,font:{family:'DM Mono',size:10},callback:v=>'₺'+fmt(v/1000)+'k'}}}}
   });
   setText('last-update','Son güncelleme: '+new Date().toLocaleString('tr-TR'));
@@ -2155,6 +2158,21 @@ function renderABDOzet() {
 
 // ===== ABD SNAPSHOT =====
 let _abdOzetChart = null;
+
+function takePortfoySnapshot(total) {
+  if(!total || total <= 0) return;
+  if(!state.portfoySnapshot) state.portfoySnapshot = [];
+  const bugun = new Date().toISOString().slice(0,10);
+  const idx = state.portfoySnapshot.findIndex(s => s.tarih === bugun);
+  const entry = {tarih: bugun, total: Math.round(total)};
+  if(idx >= 0) {
+    state.portfoySnapshot[idx] = entry;
+  } else {
+    state.portfoySnapshot.push(entry);
+    state.portfoySnapshot.sort((a,b) => a.tarih.localeCompare(b.tarih));
+  }
+  save();
+}
 
 function takeABDSnapshot(valUSD, valTL, costUSD) {
   if(!valUSD || valUSD <= 0) return;
