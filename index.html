@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.27</title>
+<title>Portföy Takip — V8.28</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -267,7 +267,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.27</div>
+      <div class="logo-sub">Yatırım Takip — V8.28</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -1613,14 +1613,12 @@ let state = (() => {
 })();
 const save = () => {
   localStorage.setItem('portfoy-v8', JSON.stringify(state));
-  // Otomatik GitHub kayıt
+  // Otomatik GitHub kayıt (sadece autosave açıksa)
   if(getGHConfig().autosave) {
     clearTimeout(save._ghTimer);
     save._ghTimer = setTimeout(githubSave, 3000);
   }
-  // Otomatik Supabase kayıt (5sn debounce)
-  clearTimeout(save._sbTimer);
-  save._sbTimer = setTimeout(supabaseSave, 5000);
+  // NOT: Supabase otomatik kaydedilmez — sadece ☁ Kaydet butonu ile kaydedilir
 };
 
 // ===== EXPORT / IMPORT =====
@@ -4252,7 +4250,8 @@ setSBStatus('Veriler yükleniyor…', '');
         state.realizeKayitlar = (mevcutRealize && mevcutRealize.length > 0) ? mevcutRealize : JSON.parse(JSON.stringify(DEFAULT.realizeKayitlar || []));
       if(!state.temettuKayitlar || state.temettuKayitlar.length === 0)
         if(mevcutTemettu && mevcutTemettu.length > 0) state.temettuKayitlar = mevcutTemettu;
-      save();
+      // Sadece localStorage'a yaz, Supabase'e geri yazma
+      localStorage.setItem('portfoy-v8', JSON.stringify(state));
       renderDashboard();
       // Aktif sayfa hangisi olursa olsun yeniden render et
       const activePage = document.querySelector('.page.active')?.id?.replace('page-','');
@@ -4271,6 +4270,22 @@ setSBStatus('Veriler yükleniyor…', '');
 
 // Her 15 dakikada bir otomatik güncelle
 setInterval(autoRefreshAll, 15 * 60 * 1000);
+
+// Günlük otomatik Supabase yedek — her gün ilk açılışta
+(function dailyBackup() {
+  const bugun = new Date().toISOString().slice(0, 10);
+  const sonYedek = localStorage.getItem('son_yedek_tarihi');
+  if(sonYedek !== bugun) {
+    // Bugün henüz yedek alınmamış — Supabase'e kaydet
+    setTimeout(async () => {
+      try {
+        await supabaseSave();
+        localStorage.setItem('son_yedek_tarihi', bugun);
+        console.log('Günlük yedek alındı:', bugun);
+      } catch(e) {}
+    }, 10000); // Fiyatlar yüklendikten 10sn sonra
+  }
+})();
 </script>
 </body>
 </html>
