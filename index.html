@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.28</title>
+<title>Portföy Takip — V8.29</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -267,7 +267,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.28</div>
+      <div class="logo-sub">Yatırım Takip — V8.29</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -4271,20 +4271,57 @@ setSBStatus('Veriler yükleniyor…', '');
 // Her 15 dakikada bir otomatik güncelle
 setInterval(autoRefreshAll, 15 * 60 * 1000);
 
-// Günlük otomatik Supabase yedek — her gün ilk açılışta
-(function dailyBackup() {
+// Günlük otomatik GitHub yedek — her gün ilk açılışta tarihli JSON
+async function dailyGithubBackup() {
   const bugun = new Date().toISOString().slice(0, 10);
   const sonYedek = localStorage.getItem('son_yedek_tarihi');
-  if(sonYedek !== bugun) {
-    // Bugün henüz yedek alınmamış — Supabase'e kaydet
-    setTimeout(async () => {
-      try {
-        await supabaseSave();
-        localStorage.setItem('son_yedek_tarihi', bugun);
-        console.log('Günlük yedek alındı:', bugun);
-      } catch(e) {}
-    }, 10000); // Fiyatlar yüklendikten 10sn sonra
+  if(sonYedek === bugun) return; // Bugün zaten alındı
+
+  const cfg = getGHConfig();
+  if(!cfg.username || !cfg.token) return; // GitHub ayarı yoksa atla
+
+  try {
+    const path = 'backups/' + bugun + '.json';
+    const apiUrl = `https://api.github.com/repos/${cfg.username}/${cfg.repo}/contents/${path}`;
+
+    // Dosya zaten var mı kontrol et
+    const check = await fetch(apiUrl, {
+      headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if(check.ok) {
+      // Zaten var, sadece tarihi kaydet
+      localStorage.setItem('son_yedek_tarihi', bugun);
+      return;
+    }
+
+    // Yeni dosya oluştur
+    const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
+    const res = await fetch(apiUrl, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `token ${cfg.token}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: 'Günlük yedek — ' + bugun,
+        content: encoded
+      })
+    });
+
+    if(res.ok) {
+      localStorage.setItem('son_yedek_tarihi', bugun);
+      setGHStatus('✓ Günlük yedek alındı — ' + bugun, 'ok');
+      console.log('Günlük yedek alındı:', bugun);
+    }
+  } catch(e) {
+    console.warn('Günlük yedek hatası:', e.message);
   }
+}
+
+(function() {
+  // Fiyatlar yüklendikten 12sn sonra yedek al
+  setTimeout(dailyGithubBackup, 12000);
 })();
 </script>
 </body>
