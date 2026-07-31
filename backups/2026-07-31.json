@@ -1,0 +1,4080 @@
+{
+  "bes": {
+    "getiri": 11527,
+    "odenen": 67896,
+    "sirket": 203688,
+    "sirketGetiri": 62112
+  },
+  "metal": [
+    {
+      "kur": 34.71,
+      "tur": "Gümüş (IAR)",
+      "gram": 177.7,
+      "maliyet": 6167.967
+    },
+    {
+      "kur": 34.77,
+      "tur": "Gümüş (IAR)",
+      "gram": 748.2,
+      "maliyet": 26014.914
+    },
+    {
+      "kur": 34.75,
+      "tur": "Gümüş (IAR)",
+      "gram": 2.6,
+      "maliyet": 90.35
+    },
+    {
+      "kur": 35.65,
+      "tur": "Gümüş (IAR)",
+      "gram": 7.7,
+      "maliyet": 274.5
+    },
+    {
+      "kur": 35.28,
+      "tur": "Gümüş (IAR)",
+      "gram": 375.6,
+      "maliyet": 13251.17
+    },
+    {
+      "kur": 35.34,
+      "tur": "Gümüş (IAR)",
+      "gram": 165.8,
+      "maliyet": 5859.37
+    },
+    {
+      "kur": 35.62,
+      "tur": "Gümüş (IAR)",
+      "gram": 163.3,
+      "maliyet": 5816.75
+    },
+    {
+      "kur": 37.96,
+      "tur": "Gümüş (IAR)",
+      "gram": 1843.5,
+      "maliyet": 69970.3
+    },
+    {
+      "kur": 35.32,
+      "tur": "Gümüş (IAR)",
+      "gram": 146.6,
+      "maliyet": 5177.912
+    }
+  ],
+  "theme": "dark",
+  "buyume": [
+    {
+      "qty": 14.106877126,
+      "ticker": "QQQM",
+      "buyPrice": 228.95,
+      "tlMaliyet": 113173,
+      "commission": 0,
+      "usdMaliyet": 2795.48
+    },
+    {
+      "qty": 4.020644015,
+      "ticker": "QQQM",
+      "buyPrice": 250.85,
+      "tlMaliyet": 44640,
+      "commission": 0,
+      "usdMaliyet": 1004.11
+    },
+    {
+      "qty": 2.958840365,
+      "ticker": "QQQM",
+      "buyPrice": 243,
+      "tlMaliyet": 31968,
+      "commission": 0,
+      "usdMaliyet": 718.998
+    },
+    {
+      "qty": 20.125897353,
+      "ticker": "VEA",
+      "buyPrice": 53.61,
+      "tlMaliyet": 41974,
+      "commission": 0,
+      "usdMaliyet": 1073.7
+    },
+    {
+      "qty": 5.39736386,
+      "ticker": "VEA",
+      "buyPrice": 57.13,
+      "tlMaliyet": 12544,
+      "commission": 0,
+      "usdMaliyet": 309.85
+    },
+    {
+      "qty": 1.753544472,
+      "ticker": "VEA",
+      "buyPrice": 56.63,
+      "tlMaliyet": 2985,
+      "commission": 0,
+      "usdMaliyet": 72.61
+    },
+    {
+      "qty": 2.036974676,
+      "ticker": "VOO",
+      "buyPrice": 534.22,
+      "tlMaliyet": 37372,
+      "commission": 0,
+      "usdMaliyet": 1069.94
+    },
+    {
+      "qty": 1,
+      "ticker": "VOO",
+      "buyPrice": 517.13,
+      "tlMaliyet": 20275,
+      "commission": 0,
+      "usdMaliyet": 518.63
+    },
+    {
+      "qty": 8.1300813,
+      "ticker": "IJR",
+      "buyPrice": 123,
+      "tlMaliyet": 44529,
+      "commission": 0,
+      "usdMaliyet": 1001.5
+    },
+    {
+      "qty": 5.500704531,
+      "ticker": "QQQM",
+      "buyPrice": 233.85,
+      "tlMaliyet": 57252.71926525914,
+      "commission": 0,
+      "usdMaliyet": 1287.83975457435
+    },
+    {
+      "qty": 2.2357825,
+      "ticker": "QQQM",
+      "buyPrice": 232.46,
+      "tlMaliyet": 24028.859366694982,
+      "commission": 1.5,
+      "usdMaliyet": 521.22999995
+    },
+    {
+      "qty": 3.599683202,
+      "ticker": "QQQM",
+      "buyPrice": 277.78,
+      "tlMaliyet": 46165.76241915687,
+      "commission": 1.5,
+      "usdMaliyet": 1001.41999985156
+    },
+    {
+      "qty": 1.650818806,
+      "ticker": "QQQM",
+      "buyPrice": 302.88,
+      "tlMaliyet": 23119.30044821499,
+      "commission": 1.5,
+      "usdMaliyet": 501.49999996127997
+    },
+    {
+      "qty": 0.721803532,
+      "ticker": "VOO",
+      "buyPrice": 691.31,
+      "tlMaliyet": 23072.73913348892,
+      "commission": 1.5,
+      "usdMaliyet": 500.48999970692
+    },
+    {
+      "qty": 2.674183418,
+      "ticker": "VOO",
+      "buyPrice": 657.08,
+      "tlMaliyet": 80842.40808313809,
+      "commission": 1.5,
+      "usdMaliyet": 1753.61999993792
+    },
+    {
+      "qty": 1.689638831,
+      "ticker": "QQQM",
+      "buyPrice": 295.43,
+      "tlMaliyet": 23076.330895732845,
+      "commission": 1.5,
+      "usdMaliyet": 500.66999984232996
+    },
+    {
+      "qty": 0.019748175,
+      "ticker": "IJR",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.117165282,
+      "ticker": "VEA",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.034262406,
+      "ticker": "QQQM",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.01475314,
+      "ticker": "VOO",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    }
+  ],
+  "temttu": [
+    {
+      "qty": 4.032500941,
+      "ticker": "PG",
+      "buyPrice": 159.38,
+      "tlMaliyet": 25906,
+      "commission": 0,
+      "usdMaliyet": 644.2
+    },
+    {
+      "qty": 2.960999206,
+      "ticker": "PG",
+      "buyPrice": 157.86,
+      "tlMaliyet": 18984,
+      "commission": 0,
+      "usdMaliyet": 468.92
+    },
+    {
+      "qty": 0.683639949,
+      "ticker": "PG",
+      "buyPrice": 150.53,
+      "tlMaliyet": 3277,
+      "commission": 0,
+      "usdMaliyet": 79.71
+    },
+    {
+      "qty": 3.777411585,
+      "ticker": "PG",
+      "buyPrice": 157.78,
+      "tlMaliyet": 24715,
+      "commission": 0,
+      "usdMaliyet": 597.5
+    },
+    {
+      "qty": 5.032495497,
+      "ticker": "PEP",
+      "buyPrice": 127.71,
+      "tlMaliyet": 25906,
+      "commission": 0,
+      "usdMaliyet": 644.2
+    },
+    {
+      "qty": 3.461475739,
+      "ticker": "PEP",
+      "buyPrice": 135.03,
+      "tlMaliyet": 18983,
+      "commission": 0,
+      "usdMaliyet": 468.9
+    },
+    {
+      "qty": 0.66568312,
+      "ticker": "PEP",
+      "buyPrice": 138.93,
+      "tlMaliyet": 3277,
+      "commission": 0,
+      "usdMaliyet": 79.71
+    },
+    {
+      "qty": 1.824018677,
+      "ticker": "PEP",
+      "buyPrice": 150.77,
+      "tlMaliyet": 11370,
+      "commission": 0,
+      "usdMaliyet": 276.51
+    },
+    {
+      "qty": 1.642919575,
+      "ticker": "PEP",
+      "buyPrice": 144.07,
+      "tlMaliyet": 9853,
+      "commission": 0,
+      "usdMaliyet": 238.2
+    },
+    {
+      "qty": 4.208906352,
+      "ticker": "JNJ",
+      "buyPrice": 152.7,
+      "tlMaliyet": 25906,
+      "commission": 0,
+      "usdMaliyet": 644.2
+    },
+    {
+      "qty": 2.991977805,
+      "ticker": "JNJ",
+      "buyPrice": 156.22,
+      "tlMaliyet": 18983,
+      "commission": 0,
+      "usdMaliyet": 468.91
+    },
+    {
+      "qty": 0.56256398,
+      "ticker": "JNJ",
+      "buyPrice": 167.03,
+      "tlMaliyet": 3277,
+      "commission": 0,
+      "usdMaliyet": 79.71
+    },
+    {
+      "qty": 1.277729608,
+      "ticker": "JNJ",
+      "buyPrice": 179.48,
+      "tlMaliyet": 9108,
+      "commission": 0,
+      "usdMaliyet": 221.5
+    },
+    {
+      "qty": 1.109734114,
+      "ticker": "JNJ",
+      "buyPrice": 177.52,
+      "tlMaliyet": 8211,
+      "commission": 0,
+      "usdMaliyet": 198.5
+    },
+    {
+      "qty": 3.115668024,
+      "ticker": "TXN",
+      "buyPrice": 206.28,
+      "tlMaliyet": 25906,
+      "commission": 0,
+      "usdMaliyet": 644.2
+    },
+    {
+      "qty": 2.138641043,
+      "ticker": "TXN",
+      "buyPrice": 218.55,
+      "tlMaliyet": 18983,
+      "commission": 0,
+      "usdMaliyet": 468.9
+    },
+    {
+      "qty": 0.57787934,
+      "ticker": "TXN",
+      "buyPrice": 181.72,
+      "tlMaliyet": 3277,
+      "commission": 0,
+      "usdMaliyet": 79.71
+    },
+    {
+      "qty": 4.014321362,
+      "ticker": "TXN",
+      "buyPrice": 184.34,
+      "tlMaliyet": 30672,
+      "commission": 0,
+      "usdMaliyet": 741.5
+    },
+    {
+      "qty": 3.638969562,
+      "ticker": "AVGO",
+      "buyPrice": 265.13,
+      "tlMaliyet": 38860,
+      "commission": 0,
+      "usdMaliyet": 966.3
+    },
+    {
+      "qty": 2.535676866,
+      "ticker": "AVGO",
+      "buyPrice": 276.79,
+      "tlMaliyet": 28475,
+      "commission": 0,
+      "usdMaliyet": 703.35
+    },
+    {
+      "qty": 0.490358974,
+      "ticker": "AVGO",
+      "buyPrice": 292.5,
+      "tlMaliyet": 5959,
+      "commission": 0,
+      "usdMaliyet": 144.93
+    },
+    {
+      "qty": 1.681373076,
+      "ticker": "AVGO",
+      "buyPrice": 297.38,
+      "tlMaliyet": 19766,
+      "commission": 0,
+      "usdMaliyet": 480.69
+    },
+    {
+      "qty": 0.818443031,
+      "ticker": "AVGO",
+      "buyPrice": 362.56,
+      "tlMaliyet": 12336,
+      "commission": 0,
+      "usdMaliyet": 298.23
+    },
+    {
+      "qty": 1.303836244,
+      "ticker": "MSFT",
+      "buyPrice": 492.93,
+      "tlMaliyet": 25906,
+      "commission": 0,
+      "usdMaliyet": 644.2
+    },
+    {
+      "qty": 0.93044181,
+      "ticker": "MSFT",
+      "buyPrice": 502.35,
+      "tlMaliyet": 18983,
+      "commission": 0,
+      "usdMaliyet": 468.91
+    },
+    {
+      "qty": 0.294429146,
+      "ticker": "MSFT",
+      "buyPrice": 528.33,
+      "tlMaliyet": 5959,
+      "commission": 0,
+      "usdMaliyet": 144.93
+    },
+    {
+      "qty": 3.424508739,
+      "ticker": "MSFT",
+      "buyPrice": 506.35,
+      "tlMaliyet": 71788,
+      "commission": 0,
+      "usdMaliyet": 1735.5
+    },
+    {
+      "qty": 36.735820327,
+      "ticker": "SCHD",
+      "buyPrice": 26.27,
+      "tlMaliyet": 38870,
+      "commission": 0,
+      "usdMaliyet": 966.55
+    },
+    {
+      "qty": 14.677581477,
+      "ticker": "SCHD",
+      "buyPrice": 27.38,
+      "tlMaliyet": 16330,
+      "commission": 0,
+      "usdMaliyet": 403.37
+    },
+    {
+      "qty": 10.962238779,
+      "ticker": "SCHD",
+      "buyPrice": 27.37,
+      "tlMaliyet": 12208,
+      "commission": 0,
+      "usdMaliyet": 301.54
+    },
+    {
+      "qty": 41.747923438,
+      "ticker": "SCHD",
+      "buyPrice": 27.69,
+      "tlMaliyet": 47880,
+      "commission": 0,
+      "usdMaliyet": 1157.5
+    },
+    {
+      "qty": 6.226494445,
+      "ticker": "SCHD",
+      "buyPrice": 26.41,
+      "tlMaliyet": 4171,
+      "commission": 0,
+      "usdMaliyet": 101.45
+    },
+    {
+      "qty": 0.070229265,
+      "ticker": "PG",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.092568734,
+      "ticker": "PEP",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.036883705,
+      "ticker": "TXN",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.015467327,
+      "ticker": "AVGO",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 78.146257622,
+      "ticker": "SCHD",
+      "buyPrice": 30.52,
+      "tlMaliyet": 110019.46233607535,
+      "commission": 1.5,
+      "usdMaliyet": 2386.5237826234397
+    },
+    {
+      "qty": 0.045810526,
+      "ticker": "JNJ",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.011205147,
+      "ticker": "MSFT",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 1.193057209,
+      "ticker": "SCHD",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.01264189,
+      "ticker": "AVGO",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    },
+    {
+      "qty": 0.109539222,
+      "ticker": "PEP",
+      "buyPrice": 0,
+      "tlMaliyet": 0,
+      "commission": 0,
+      "usdMaliyet": 0
+    }
+  ],
+  "eurRate": 54.7761,
+  "history": [
+    {
+      "date": "2024-06",
+      "total": 330144
+    },
+    {
+      "date": "2024-07",
+      "total": 466475
+    },
+    {
+      "date": "2024-08",
+      "total": 539026
+    },
+    {
+      "date": "2024-09",
+      "total": 567466
+    },
+    {
+      "date": "2024-10",
+      "total": 936768
+    },
+    {
+      "date": "2024-11",
+      "total": 990750
+    },
+    {
+      "date": "2024-12",
+      "total": 919680
+    },
+    {
+      "date": "2025-01",
+      "total": 860273
+    },
+    {
+      "date": "2025-02",
+      "total": 1075841
+    },
+    {
+      "date": "2025-03",
+      "total": 1212132
+    },
+    {
+      "date": "2025-04",
+      "total": 1265332
+    }
+  ],
+  "usdRate": 47.5187,
+  "yatirim": {
+    "ev": [
+      {
+        "tarih": "2025-07-01",
+        "tutar": 263000
+      },
+      {
+        "tarih": "2025-08-01",
+        "tutar": 56800
+      },
+      {
+        "tarih": "2025-09-01",
+        "tutar": 56800
+      },
+      {
+        "tarih": "2025-10-01",
+        "tutar": 56800
+      },
+      {
+        "tarih": "2025-11-01",
+        "tutar": 56800
+      },
+      {
+        "tarih": "2025-12-01",
+        "tutar": 56800
+      },
+      {
+        "tarih": "2026-01-01",
+        "tutar": 56800
+      },
+      {
+        "tarih": "2026-02-01",
+        "tutar": 63750
+      },
+      {
+        "tarih": "2026-03-13",
+        "tutar": 63750
+      },
+      {
+        "tarih": "2026-04-01",
+        "tutar": 63750
+      },
+      {
+        "tarih": "2026-05-01",
+        "tutar": 63750
+      },
+      {
+        "tarih": "2026-06-01",
+        "tutar": 63750
+      },
+      {
+        "tarih": "2026-07-01",
+        "tutar": 63750
+      }
+    ],
+    "abd": [
+      {
+        "tarih": "2025-06-01",
+        "tutar": 1000
+      },
+      {
+        "tarih": "2025-07-01",
+        "tutar": 1000
+      },
+      {
+        "tarih": "2025-08-01",
+        "tutar": 4550
+      },
+      {
+        "tarih": "2025-09-01",
+        "tutar": 1000
+      },
+      {
+        "tarih": "2025-10-01",
+        "tutar": -790
+      },
+      {
+        "tarih": "2025-11-01",
+        "tutar": 0
+      },
+      {
+        "tarih": "2025-12-01",
+        "tutar": 0
+      },
+      {
+        "tarih": "2026-01-01",
+        "tutar": 500
+      },
+      {
+        "tarih": "2026-02-01",
+        "tutar": 1500
+      },
+      {
+        "tarih": "2026-03-01",
+        "tutar": 1000
+      },
+      {
+        "tarih": "2026-04-06",
+        "tutar": 1240
+      },
+      {
+        "tarih": "2026-05-05",
+        "tutar": 1750
+      },
+      {
+        "tarih": "2026-06-08",
+        "tutar": 1500
+      },
+      {
+        "tarih": "2026-07-03",
+        "tutar": 0
+      }
+    ],
+    "araba": [],
+    "emniyet": [
+      {
+        "tur": "Altın",
+        "usd": null,
+        "adet": 2,
+        "tarih": "2026-07-03",
+        "maliyet": 14926
+      }
+    ]
+  },
+  "abdHedef": {
+    "buyume": [
+      {
+        "pct": 25,
+        "ticker": "VOO"
+      },
+      {
+        "pct": 50,
+        "ticker": "QQQM"
+      },
+      {
+        "pct": 15,
+        "ticker": "VEA"
+      },
+      {
+        "pct": 10,
+        "ticker": "IJR"
+      }
+    ],
+    "temttu": [
+      {
+        "pct": 50,
+        "ticker": "SCHD"
+      },
+      {
+        "pct": 12,
+        "ticker": "AVGO"
+      },
+      {
+        "pct": 10,
+        "ticker": "JNJ"
+      },
+      {
+        "pct": 10,
+        "ticker": "TXN"
+      },
+      {
+        "pct": 8,
+        "ticker": "PG"
+      },
+      {
+        "pct": 6,
+        "ticker": "MSFT"
+      },
+      {
+        "pct": 4,
+        "ticker": "PEP"
+      }
+    ],
+    "buyumeOran": 65,
+    "temttuOran": 35
+  },
+  "odemeler": {
+    "maaslar": {
+      "2026-01": 279843,
+      "2026-02": 350100,
+      "2026-03": 312600,
+      "2026-04": 312600,
+      "2026-05": 295956,
+      "2026-06": 278439,
+      "2026-07": 278439,
+      "2026-08": 274049,
+      "2026-09": 275126,
+      "2026-10": 275126,
+      "2026-11": 275126,
+      "2026-12": 275126
+    },
+    "maddeler": [
+      {
+        "ad": "Annem",
+        "gun": 1,
+        "odendi": {
+          "2026-06": true,
+          "2026-07": true
+        },
+        "tekrar": true,
+        "tutarlar": {
+          "2025-04": 25000,
+          "2025-05": 25000,
+          "2025-06": 25000,
+          "2025-07": 25000,
+          "2025-08": 25000,
+          "2025-09": 25000,
+          "2025-10": 25000,
+          "2025-11": 25000,
+          "2025-12": 25000,
+          "2026-01": 25000,
+          "2026-02": 25000,
+          "2026-03": 25000,
+          "2026-04": 25000,
+          "2026-05": 25000,
+          "2026-06": 25000,
+          "2026-07": 25000,
+          "2026-08": 25000,
+          "2026-09": 25000,
+          "2026-10": 25000,
+          "2026-11": 25000,
+          "2026-12": 25000,
+          "2027-01": 25000,
+          "2027-02": 25000,
+          "2027-03": 25000
+        }
+      },
+      {
+        "ad": "Kira",
+        "gun": 2,
+        "odendi": {
+          "2026-06": true,
+          "2026-07": true
+        },
+        "tekrar": true,
+        "tutarlar": {
+          "2025-04": 39000,
+          "2025-05": 55000,
+          "2025-06": 55000,
+          "2025-07": 55000,
+          "2025-08": 55000,
+          "2025-09": 55000,
+          "2025-10": 55000,
+          "2025-11": 55000,
+          "2025-12": 55000,
+          "2026-01": 55000,
+          "2026-02": 39000,
+          "2026-03": 39000,
+          "2026-04": 39000,
+          "2026-05": 39000,
+          "2026-06": 52000,
+          "2026-07": 52000,
+          "2026-08": 52000,
+          "2026-09": 52000,
+          "2026-10": 52000,
+          "2026-11": 52000,
+          "2026-12": 52000,
+          "2027-01": 52000,
+          "2027-02": 52000,
+          "2027-03": 52000,
+          "2027-04": 52000,
+          "2027-05": 52000
+        }
+      },
+      {
+        "ad": "Aidat",
+        "gun": 1,
+        "odendi": {
+          "2026-06": true,
+          "2026-07": true
+        },
+        "tekrar": true,
+        "tutarlar": {
+          "2025-04": 3500,
+          "2025-05": 3500,
+          "2025-06": 3500,
+          "2025-07": 3500,
+          "2025-08": 3500,
+          "2025-09": 3500,
+          "2025-10": 3500,
+          "2025-11": 3500,
+          "2025-12": 3500,
+          "2026-01": 3500,
+          "2026-02": 3500,
+          "2026-03": 3500,
+          "2026-04": 3500,
+          "2026-05": 3500,
+          "2026-06": 3500,
+          "2026-07": 3500,
+          "2026-08": 3500,
+          "2026-09": 3500,
+          "2026-10": 3500,
+          "2026-11": 3500,
+          "2026-12": 3500,
+          "2027-01": 3500,
+          "2027-02": 3500,
+          "2027-03": 3500
+        }
+      },
+      {
+        "ad": "GS Para",
+        "gun": 6,
+        "odendi": {
+          "2026-07": true
+        },
+        "tutarlar": {
+          "2026-02": 49929,
+          "2026-03": 4666,
+          "2026-04": 12670,
+          "2026-07": 34456.28,
+          "2026-08": 41063,
+          "2026-09": 1300
+        }
+      },
+      {
+        "ad": "Axess",
+        "gun": 6,
+        "odendi": {
+          "2026-07": true
+        },
+        "tutarlar": {
+          "2026-02": 34001,
+          "2026-03": 117918,
+          "2026-04": 45553,
+          "2026-07": 63965,
+          "2026-08": 247993,
+          "2026-09": 27248,
+          "2026-10": 15001,
+          "2026-11": 11991,
+          "2026-12": 11991
+        }
+      },
+      {
+        "ad": "Emlak Fon",
+        "gun": 6,
+        "odendi": {
+          "2026-06": true,
+          "2026-07": true
+        },
+        "tekrar": true,
+        "tutarlar": {
+          "2025-04": 63750,
+          "2025-05": 63750,
+          "2025-06": 63750,
+          "2025-07": 63750,
+          "2025-08": 63750,
+          "2025-09": 63750,
+          "2025-10": 63750,
+          "2025-11": 63750,
+          "2025-12": 63750,
+          "2026-01": 63750,
+          "2026-02": 63750,
+          "2026-03": 63750,
+          "2026-04": 63750,
+          "2026-05": 63750,
+          "2026-06": 63750,
+          "2026-07": 63750,
+          "2026-08": 63750,
+          "2026-09": 63750,
+          "2026-10": 63750,
+          "2026-11": 63750,
+          "2026-12": 63750,
+          "2027-01": 63750,
+          "2027-02": 63750,
+          "2027-03": 63750
+        }
+      },
+      {
+        "ad": "Spor",
+        "gun": 1,
+        "tutarlar": {
+          "2026-08": 51171
+        }
+      }
+    ]
+  },
+  "sirketpay": [
+    {
+      "deger": 0,
+      "sirket": "Caremed",
+      "maliyet": 5000
+    },
+    {
+      "deger": 0,
+      "sirket": "Qcharge",
+      "maliyet": 60000
+    },
+    {
+      "deger": 0,
+      "sirket": "Sparga1",
+      "maliyet": 10000
+    },
+    {
+      "deger": 0,
+      "sirket": "Sparga2",
+      "maliyet": 18747
+    },
+    {
+      "deger": 0,
+      "sirket": "Pachamama",
+      "maliyet": 9100
+    },
+    {
+      "deger": 0,
+      "sirket": "Safran",
+      "maliyet": 70267
+    },
+    {
+      "deger": 0,
+      "sirket": "Atronmac",
+      "maliyet": 34511
+    },
+    {
+      "deger": 0,
+      "sirket": "Oleago",
+      "maliyet": 94500
+    },
+    {
+      "deger": 0,
+      "sirket": "Bebehum",
+      "maliyet": 111434
+    },
+    {
+      "deger": 0,
+      "sirket": "Trexo",
+      "maliyet": 12000
+    }
+  ],
+  "liveprices": {
+    "PG": 143.96,
+    "IJR": 145.5,
+    "JNJ": 255.82,
+    "PEP": 140.2,
+    "TXN": 278.76,
+    "VEA": 71.09,
+    "VIG": 233.28,
+    "VOO": 681.79,
+    "AVGO": 387.84,
+    "MSFT": 451.1,
+    "QQQM": 281.35,
+    "SCHD": 33.41,
+    "ALTIN": 6199.86,
+    "GUMUS": 88.74,
+    "BTC_TL": 3029364.6437000004
+  },
+  "abdSnapshot": [
+    {
+      "tarih": "2026-06-08",
+      "valTL": 1792016,
+      "valUSD": 38880.04,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-09",
+      "valTL": 1786067,
+      "valUSD": 38733.4,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-10",
+      "valTL": 1758177,
+      "valUSD": 38157.52,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-11",
+      "valTL": 1761019,
+      "valUSD": 38157.52,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-12",
+      "valTL": 1800179,
+      "valUSD": 38919.6,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-14",
+      "valTL": 1810457,
+      "valUSD": 39144.52,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-15",
+      "valTL": 1811170,
+      "valUSD": 39144.52,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-17",
+      "valTL": 1819627,
+      "valUSD": 39292.74,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-18",
+      "valTL": 1837215,
+      "valUSD": 39560.61,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-19",
+      "valTL": 1837290,
+      "valUSD": 39560.61,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-20",
+      "valTL": 1835945,
+      "valUSD": 39560.61,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-21",
+      "valTL": 1836807,
+      "valUSD": 39560.61,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-22",
+      "valTL": 1837503,
+      "valUSD": 39560.61,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-23",
+      "valTL": 1828198,
+      "valUSD": 39360.27,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-24",
+      "valTL": 1798854,
+      "valUSD": 38693.53,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-25",
+      "valTL": 1795046,
+      "valUSD": 38595.58,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-26",
+      "valTL": 1804382,
+      "valUSD": 38706.03,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-29",
+      "valTL": 1808479,
+      "valUSD": 38793.91,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-30",
+      "valTL": 1810378,
+      "valUSD": 38800.52,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-01",
+      "valTL": 1824491,
+      "valUSD": 39097.8,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-02",
+      "valTL": 1821392,
+      "valUSD": 39016.93,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-03",
+      "valTL": 1825777,
+      "valUSD": 39013.41,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-06",
+      "valTL": 1826514,
+      "valUSD": 39013.41,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-07",
+      "valTL": 1842051,
+      "valUSD": 39331.57,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-08",
+      "valTL": 1834502,
+      "valUSD": 39156.09,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-09",
+      "valTL": 1836714,
+      "valUSD": 39196.78,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-10",
+      "valTL": 1855153,
+      "valUSD": 39487.72,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-11",
+      "valTL": 1857676,
+      "valUSD": 39573.53,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-12",
+      "valTL": 1857676,
+      "valUSD": 39573.53,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-14",
+      "valTL": 1836733,
+      "valUSD": 39127.37,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-15",
+      "valTL": 1844109,
+      "valUSD": 39253.15,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-16",
+      "valTL": 1846448,
+      "valUSD": 39242.55,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-17",
+      "valTL": 1840874,
+      "valUSD": 39036.89,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-18",
+      "valTL": 1820751,
+      "valUSD": 38628.77,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-25",
+      "valTL": 1823114,
+      "valUSD": 38555.63,
+      "costUSD": 32580.54
+    }
+  ],
+  "abdOzetOrder": [
+    "QQQM",
+    "VEA",
+    "VOO",
+    "IJR",
+    "PG",
+    "PEP",
+    "JNJ",
+    "TXN",
+    "AVGO",
+    "MSFT",
+    "SCHD"
+  ],
+  "maliyetSecim": {
+    "ev": true,
+    "bes": true,
+    "metal": false,
+    "sirketpay": false,
+    "abd_buyume": true,
+    "abd_temttu": true
+  },
+  "portfoySecim": {
+    "ev": true,
+    "bes": true,
+    "metal": false,
+    "sirketpay": false,
+    "abd_buyume": true,
+    "abd_temttu": true
+  },
+  "temettuKayit": [
+    {
+      "oran": null,
+      "tarih": "2024-12-24",
+      "miktar": 2.57,
+      "ticker": "SMH",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2024-12-26",
+      "miktar": 2.79,
+      "ticker": "VOO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2024-12-31",
+      "miktar": 1.34,
+      "ticker": "QQQ",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-03-31",
+      "miktar": 2.9,
+      "ticker": "VOO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-30",
+      "miktar": 1.15,
+      "ticker": "QQQ",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-24",
+      "miktar": 7.05,
+      "ticker": "VEA",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-03-24",
+      "miktar": 5.51,
+      "ticker": "VALE",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-03-27",
+      "miktar": 0.77,
+      "ticker": "CTRA",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-01",
+      "miktar": 0.71,
+      "ticker": "KO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-02",
+      "miktar": 0.03,
+      "ticker": "NVIDA",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-03",
+      "miktar": 1.51,
+      "ticker": "VICI",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-07",
+      "miktar": 0.33,
+      "ticker": "WMT",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-09",
+      "miktar": 0.35,
+      "ticker": "NWS",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-15",
+      "miktar": 0.16,
+      "ticker": "MU",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-30",
+      "miktar": 0.5,
+      "ticker": "QQQ",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-05-27",
+      "miktar": 0.33,
+      "ticker": "WMT",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-05-29",
+      "miktar": 0.77,
+      "ticker": "CTRA",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-02",
+      "miktar": 1.09,
+      "ticker": "COP",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-03",
+      "miktar": 0.31,
+      "ticker": "DAL",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-27",
+      "miktar": 4.21,
+      "ticker": "QQQM",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-30",
+      "miktar": 5.98,
+      "ticker": "SPLG",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-07-01",
+      "miktar": 0.71,
+      "ticker": "KO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-07-02",
+      "miktar": 4.21,
+      "ticker": "VOO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-07-11",
+      "miktar": 1.51,
+      "ticker": "VICI",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-07-31",
+      "miktar": 1.36,
+      "ticker": "QQQ",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": 0.004274,
+      "tarih": "2025-07-02",
+      "miktar": 4.43,
+      "ticker": "VIG",
+      "temettu": 0.87,
+      "hisseFiyat": 203.55
+    },
+    {
+      "oran": 0.009421,
+      "tarih": "2025-07-28",
+      "miktar": 3.32,
+      "ticker": "RYLD",
+      "temettu": 0.14,
+      "hisseFiyat": 14.86
+    },
+    {
+      "oran": 0.009541,
+      "tarih": "2025-07-28",
+      "miktar": 4.38,
+      "ticker": "QYLD",
+      "temettu": 0.16,
+      "hisseFiyat": 16.77
+    },
+    {
+      "oran": 0.007951,
+      "tarih": "2025-07-28",
+      "miktar": 2.67,
+      "ticker": "XYLD",
+      "temettu": 0.31,
+      "hisseFiyat": 38.99
+    },
+    {
+      "oran": 0.016077,
+      "tarih": "2025-08-01",
+      "miktar": 1.62,
+      "ticker": "ULTY",
+      "temettu": 0.1,
+      "hisseFiyat": 6.22
+    },
+    {
+      "oran": 0.006294,
+      "tarih": "2025-08-05",
+      "miktar": 3.5,
+      "ticker": "JEPI",
+      "temettu": 0.35,
+      "hisseFiyat": 55.61
+    },
+    {
+      "oran": 0.007985,
+      "tarih": "2025-08-05",
+      "miktar": 4.54,
+      "ticker": "JEPQ",
+      "temettu": 0.44,
+      "hisseFiyat": 55.1
+    },
+    {
+      "oran": 0.01642,
+      "tarih": "2025-08-08",
+      "miktar": 2.09,
+      "ticker": "ULTY",
+      "temettu": 0.1,
+      "hisseFiyat": 6.09
+    },
+    {
+      "oran": 0.006279,
+      "tarih": "2025-08-12",
+      "miktar": 5.72,
+      "ticker": "TXN",
+      "temettu": 1.36,
+      "hisseFiyat": 216.59
+    },
+    {
+      "oran": 0.006714,
+      "tarih": "2025-08-15",
+      "miktar": 5.92,
+      "ticker": "PG",
+      "temettu": 1.06,
+      "hisseFiyat": 157.89
+    },
+    {
+      "oran": 0.049223,
+      "tarih": "2025-08-15",
+      "miktar": 5.08,
+      "ticker": "MRNY",
+      "temettu": 0.095,
+      "hisseFiyat": 1.93
+    },
+    {
+      "oran": 0.050891,
+      "tarih": "2025-08-15",
+      "miktar": 6.43,
+      "ticker": "MARO",
+      "temettu": 1,
+      "hisseFiyat": 19.65
+    },
+    {
+      "oran": 0.01642,
+      "tarih": "2025-08-15",
+      "miktar": 2.1,
+      "ticker": "ULTY",
+      "temettu": 0.1,
+      "hisseFiyat": 6.09
+    },
+    {
+      "oran": 0.017699,
+      "tarih": "2025-08-22",
+      "miktar": 2.4,
+      "ticker": "ULTY",
+      "temettu": 0.1,
+      "hisseFiyat": 5.65
+    },
+    {
+      "oran": 0.050147,
+      "tarih": "2025-08-22",
+      "miktar": 5,
+      "ticker": "CONY",
+      "temettu": 0.34,
+      "hisseFiyat": 6.78
+    },
+    {
+      "oran": 0.010095,
+      "tarih": "2025-08-25",
+      "miktar": 4.816,
+      "ticker": "QYLD",
+      "temettu": 0.17,
+      "hisseFiyat": 16.84
+    },
+    {
+      "oran": 0.01,
+      "tarih": "2025-08-25",
+      "miktar": 3.712,
+      "ticker": "RYLD",
+      "temettu": 0.15,
+      "hisseFiyat": 15
+    },
+    {
+      "oran": 0.007934,
+      "tarih": "2025-08-25",
+      "miktar": 2.984,
+      "ticker": "XYLD",
+      "temettu": 0.31,
+      "hisseFiyat": 39.07
+    },
+    {
+      "oran": 0.12605,
+      "tarih": "2025-08-26",
+      "miktar": 413,
+      "ticker": "ICOI",
+      "temettu": 5.163,
+      "hisseFiyat": 40.96
+    },
+    {
+      "oran": 0.132103,
+      "tarih": "2025-09-03",
+      "miktar": 31.81,
+      "ticker": "COYY",
+      "temettu": 0.68,
+      "hisseFiyat": 20.59
+    },
+    {
+      "oran": 0.109333,
+      "tarih": "2025-09-09",
+      "miktar": 25.12,
+      "ticker": "COYY",
+      "temettu": 0.5412,
+      "hisseFiyat": 19.8
+    },
+    {
+      "oran": 0.007889,
+      "tarih": "2025-09-09",
+      "miktar": 9.248,
+      "ticker": "JNJ",
+      "temettu": 1.3,
+      "hisseFiyat": 164.78
+    },
+    {
+      "oran": 0.001763,
+      "tarih": "2025-09-11",
+      "miktar": 1.656,
+      "ticker": "MSFT",
+      "temettu": 0.83,
+      "hisseFiyat": 470.92
+    },
+    {
+      "oran": 0.112605,
+      "tarih": "2025-09-16",
+      "miktar": 25.72,
+      "ticker": "COYY",
+      "temettu": 0.5543,
+      "hisseFiyat": 19.69
+    },
+    {
+      "oran": 0.004694,
+      "tarih": "2025-09-23",
+      "miktar": 6.14,
+      "ticker": "VEA",
+      "temettu": 0.28,
+      "hisseFiyat": 59.65
+    },
+    {
+      "oran": 0.00121,
+      "tarih": "2025-09-26",
+      "miktar": 7.18,
+      "ticker": "QQQM",
+      "temettu": 0.3,
+      "hisseFiyat": 247.9
+    },
+    {
+      "oran": 0.009573,
+      "tarih": "2025-09-29",
+      "miktar": 22.48,
+      "ticker": "SCHD",
+      "temettu": 0.26,
+      "hisseFiyat": 27.16
+    },
+    {
+      "oran": 0.00306,
+      "tarih": "2025-09-30",
+      "miktar": 6.67,
+      "ticker": "SPLG",
+      "temettu": 0.2382,
+      "hisseFiyat": 77.85
+    },
+    {
+      "oran": 0.001741,
+      "tarih": "2025-09-30",
+      "miktar": 4.31,
+      "ticker": "AVGO",
+      "temettu": 0.59,
+      "hisseFiyat": 338.79
+    },
+    {
+      "oran": 0.009826,
+      "tarih": "2025-09-30",
+      "miktar": 12.376,
+      "ticker": "PEP",
+      "temettu": 1.42,
+      "hisseFiyat": 144.51
+    },
+    {
+      "oran": 0.003993,
+      "tarih": "2025-10-01",
+      "miktar": 7.64,
+      "ticker": "VIG",
+      "temettu": 0.86,
+      "hisseFiyat": 215.4
+    },
+    {
+      "oran": 0.002868,
+      "tarih": "2025-10-01",
+      "miktar": 4.2,
+      "ticker": "VOO",
+      "temettu": 1.74,
+      "hisseFiyat": 606.59
+    },
+    {
+      "oran": 0.001158,
+      "tarih": "2025-10-31",
+      "miktar": 1.12,
+      "ticker": "QQQ",
+      "temettu": 0.69,
+      "hisseFiyat": 596.1
+    },
+    {
+      "oran": 0.008795,
+      "tarih": "2025-11-12",
+      "miktar": 11.05,
+      "ticker": "TXN",
+      "temettu": 1.42,
+      "hisseFiyat": 161.46
+    },
+    {
+      "oran": 0.006886,
+      "tarih": "2025-11-17",
+      "miktar": 9.58,
+      "ticker": "PG",
+      "temettu": 1.05,
+      "hisseFiyat": 152.49
+    },
+    {
+      "oran": 0.00629,
+      "tarih": "2025-12-09",
+      "miktar": 10.46,
+      "ticker": "JNJ",
+      "temettu": 1.3,
+      "hisseFiyat": 206.67
+    },
+    {
+      "oran": 0.001784,
+      "tarih": "2025-12-11",
+      "miktar": 4.31,
+      "ticker": "MSFT",
+      "temettu": 0.91,
+      "hisseFiyat": 510
+    },
+    {
+      "oran": 0.009793,
+      "tarih": "2025-12-15",
+      "miktar": 24.2,
+      "ticker": "SCHD",
+      "temettu": 0.27,
+      "hisseFiyat": 27.57
+    },
+    {
+      "oran": 0.016818,
+      "tarih": "2025-12-23",
+      "miktar": 22.37,
+      "ticker": "VEA",
+      "temettu": 1.04,
+      "hisseFiyat": 61.84
+    },
+    {
+      "oran": 0.003983,
+      "tarih": "2025-12-24",
+      "miktar": 7.84,
+      "ticker": "VIG",
+      "temettu": 0.88,
+      "hisseFiyat": 220.95
+    },
+    {
+      "oran": 0.002811,
+      "tarih": "2025-12-24",
+      "miktar": 4.3,
+      "ticker": "VOO",
+      "temettu": 1.77,
+      "hisseFiyat": 629.73
+    },
+    {
+      "oran": 0.001255,
+      "tarih": "2025-12-26",
+      "miktar": 3.16,
+      "ticker": "QQQM",
+      "temettu": 0.32,
+      "hisseFiyat": 254.93
+    },
+    {
+      "oran": 0.001276,
+      "tarih": "2025-12-31",
+      "miktar": 1.008,
+      "ticker": "QQQ",
+      "temettu": 0.79,
+      "hisseFiyat": 619.21
+    },
+    {
+      "oran": 0.001904,
+      "tarih": "2025-12-31",
+      "miktar": 4.76,
+      "ticker": "AVGO",
+      "temettu": 0.65,
+      "hisseFiyat": 341.45
+    },
+    {
+      "oran": 0.009792,
+      "tarih": "2026-01-06",
+      "miktar": 14.26,
+      "ticker": "PEP",
+      "temettu": 1.42,
+      "hisseFiyat": 145.02
+    },
+    {
+      "oran": 0.006588,
+      "tarih": "2026-02-10",
+      "miktar": 11.128,
+      "ticker": "TXN",
+      "temettu": 1.42,
+      "hisseFiyat": 215.55
+    },
+    {
+      "oran": 0.006993,
+      "tarih": "2026-02-17",
+      "miktar": 9.632,
+      "ticker": "PG",
+      "temettu": 1.05,
+      "hisseFiyat": 150.15
+    },
+    {
+      "oran": 0.005279,
+      "tarih": "2026-03-10",
+      "miktar": 10.52,
+      "ticker": "JNJ",
+      "temettu": 1.3,
+      "hisseFiyat": 246.28
+    },
+    {
+      "oran": 0.002284,
+      "tarih": "2026-03-12",
+      "miktar": 4.33,
+      "ticker": "MSFT",
+      "temettu": 0.91,
+      "hisseFiyat": 398.46
+    },
+    {
+      "oran": 0.001612,
+      "tarih": "2026-03-24",
+      "miktar": 2.38,
+      "ticker": "VEA",
+      "temettu": 0.1,
+      "hisseFiyat": 62.04
+    },
+    {
+      "oran": 0.001322,
+      "tarih": "2026-03-27",
+      "miktar": 5.52,
+      "ticker": "QQQM",
+      "temettu": 0.32,
+      "hisseFiyat": 242.07
+    },
+    {
+      "oran": 0.001241,
+      "tarih": "2026-03-27",
+      "miktar": 2.36,
+      "ticker": "QQQ",
+      "temettu": 0.73,
+      "hisseFiyat": 588
+    },
+    {
+      "oran": 0.008186,
+      "tarih": "2026-03-30",
+      "miktar": 22.53,
+      "ticker": "SCHD",
+      "temettu": 0.25,
+      "hisseFiyat": 30.54
+    },
+    {
+      "oran": 0.002015,
+      "tarih": "2026-03-31",
+      "miktar": 4.76,
+      "ticker": "AVGO",
+      "temettu": 0.65,
+      "hisseFiyat": 322.51
+    },
+    {
+      "oran": 0.003939,
+      "tarih": "2026-03-31",
+      "miktar": 7.408,
+      "ticker": "VIG",
+      "temettu": 0.83,
+      "hisseFiyat": 210.73
+    },
+    {
+      "oran": 0.003208,
+      "tarih": "2026-03-31",
+      "miktar": 4.544,
+      "ticker": "VOO",
+      "temettu": 1.87,
+      "hisseFiyat": 582.96
+    },
+    {
+      "oran": 0.008907,
+      "tarih": "2026-03-31",
+      "miktar": 14.368,
+      "ticker": "PEP",
+      "temettu": 1.42,
+      "hisseFiyat": 159.43
+    }
+  ],
+  "transactions": [],
+  "portfoySnapshot": [
+    {
+      "usd": 65726,
+      "tarih": "2026-06-08",
+      "total": 3029374
+    },
+    {
+      "usd": 65660,
+      "tarih": "2026-06-09",
+      "total": 3027690
+    },
+    {
+      "usd": 65104,
+      "tarih": "2026-06-10",
+      "total": 2999800
+    },
+    {
+      "usd": 65061,
+      "tarih": "2026-06-11",
+      "total": 3002642
+    },
+    {
+      "usd": 65759,
+      "tarih": "2026-06-12",
+      "total": 3041600
+    },
+    {
+      "usd": 65990,
+      "tarih": "2026-06-14",
+      "total": 3052080
+    },
+    {
+      "usd": 65980,
+      "tarih": "2026-06-15",
+      "total": 3052793
+    },
+    {
+      "usd": 66104,
+      "tarih": "2026-06-17",
+      "total": 3061250
+    },
+    {
+      "usd": 66296,
+      "tarih": "2026-06-18",
+      "total": 3078838
+    },
+    {
+      "usd": 66329,
+      "tarih": "2026-06-19",
+      "total": 3080478
+    },
+    {
+      "usd": 66349,
+      "tarih": "2026-06-20",
+      "total": 3079133
+    },
+    {
+      "usd": 66336,
+      "tarih": "2026-06-21",
+      "total": 3079995
+    },
+    {
+      "usd": 66326,
+      "tarih": "2026-06-22",
+      "total": 3080691
+    },
+    {
+      "usd": 66126,
+      "tarih": "2026-06-23",
+      "total": 3071386
+    },
+    {
+      "usd": 65435,
+      "tarih": "2026-06-24",
+      "total": 3042042
+    },
+    {
+      "usd": 65326,
+      "tarih": "2026-06-25",
+      "total": 3038234
+    },
+    {
+      "usd": 65374,
+      "tarih": "2026-06-26",
+      "total": 3047570
+    },
+    {
+      "usd": 65462,
+      "tarih": "2026-06-29",
+      "total": 3051667
+    },
+    {
+      "usd": 66811,
+      "tarih": "2026-06-30",
+      "total": 3117316
+    },
+    {
+      "usd": 67105,
+      "tarih": "2026-07-01",
+      "total": 3131429
+    },
+    {
+      "usd": 67013,
+      "tarih": "2026-07-02",
+      "total": 3128330
+    },
+    {
+      "usd": 66940,
+      "tarih": "2026-07-03",
+      "total": 3132715
+    },
+    {
+      "usd": 66929,
+      "tarih": "2026-07-06",
+      "total": 3133452
+    },
+    {
+      "usd": 67237,
+      "tarih": "2026-07-07",
+      "total": 3148989
+    },
+    {
+      "usd": 67052,
+      "tarih": "2026-07-08",
+      "total": 3141440
+    },
+    {
+      "usd": 67088,
+      "tarih": "2026-07-09",
+      "total": 3143652
+    },
+    {
+      "usd": 67830,
+      "tarih": "2026-07-10",
+      "total": 3186676
+    },
+    {
+      "usd": 67939,
+      "tarih": "2026-07-11",
+      "total": 3189199
+    },
+    {
+      "usd": 67939,
+      "tarih": "2026-07-12",
+      "total": 3189199
+    },
+    {
+      "usd": 67492,
+      "tarih": "2026-07-14",
+      "total": 3168256
+    },
+    {
+      "usd": 67596,
+      "tarih": "2026-07-15",
+      "total": 3175632
+    },
+    {
+      "usd": 67541,
+      "tarih": "2026-07-16",
+      "total": 3177971
+    },
+    {
+      "usd": 67273,
+      "tarih": "2026-07-17",
+      "total": 3172397
+    },
+    {
+      "usd": 66878,
+      "tarih": "2026-07-18",
+      "total": 3152274
+    },
+    {
+      "usd": 66715,
+      "tarih": "2026-07-25",
+      "total": 3154637
+    },
+    {
+      "tarih": "2026-07-31",
+      "total": 3163636,
+      "usd": 66577
+    }
+  ],
+  "realizeKayitlar": [
+    {
+      "id": 1,
+      "kar": 53.27829415,
+      "pct": 0.07000445971,
+      "adet": 9.348553846,
+      "para": "USD",
+      "deger": 814.3482941,
+      "tarih": null,
+      "ticker": "DXCM",
+      "maliyet": 761.07,
+      "kategori": "ABD"
+    },
+    {
+      "id": 2,
+      "kar": 66.96,
+      "pct": 0.08964575468,
+      "adet": 3,
+      "para": "USD",
+      "deger": 813.9,
+      "tarih": null,
+      "ticker": "SMH",
+      "maliyet": 746.9399999999999,
+      "kategori": "ABD"
+    },
+    {
+      "id": 3,
+      "kar": 80.26,
+      "pct": 0.1208407359,
+      "adet": 5,
+      "para": "USD",
+      "deger": 744.44,
+      "tarih": null,
+      "ticker": "NVDA",
+      "maliyet": 664.18,
+      "kategori": "ABD"
+    },
+    {
+      "id": 4,
+      "kar": 88.86,
+      "pct": 0.2671838355,
+      "adet": 3,
+      "para": "USD",
+      "deger": 421.44,
+      "tarih": null,
+      "ticker": "AMD",
+      "maliyet": 332.58,
+      "kategori": "ABD"
+    },
+    {
+      "id": 5,
+      "kar": 70.2,
+      "pct": 0.3835855964,
+      "adet": 2,
+      "para": "USD",
+      "deger": 253.21,
+      "tarih": null,
+      "ticker": "MU",
+      "maliyet": 183.01,
+      "kategori": "ABD"
+    },
+    {
+      "id": 6,
+      "kar": 76.65,
+      "pct": 0.1109824079,
+      "adet": 2,
+      "para": "USD",
+      "deger": 767.3,
+      "tarih": null,
+      "ticker": "MSTR",
+      "maliyet": 690.65,
+      "kategori": "ABD"
+    },
+    {
+      "id": 7,
+      "kar": -4.39,
+      "pct": -0.01500393041,
+      "adet": 32,
+      "para": "USD",
+      "deger": 288.2,
+      "tarih": null,
+      "ticker": "VALE",
+      "maliyet": 292.59,
+      "kategori": "ABD"
+    },
+    {
+      "id": 8,
+      "kar": 0.69,
+      "pct": 0.003237156932,
+      "adet": 1,
+      "para": "USD",
+      "deger": 213.84,
+      "tarih": null,
+      "ticker": "AMZN",
+      "maliyet": 213.15,
+      "kategori": "ABD"
+    },
+    {
+      "id": 9,
+      "kar": 59.06,
+      "pct": 0.1917719258,
+      "adet": 4,
+      "para": "USD",
+      "deger": 367.03,
+      "tarih": null,
+      "ticker": "UBER",
+      "maliyet": 307.97,
+      "kategori": "ABD"
+    },
+    {
+      "id": 10,
+      "kar": -2.3,
+      "pct": -0.01630165143,
+      "adet": 2,
+      "para": "USD",
+      "deger": 138.79,
+      "tarih": null,
+      "ticker": "KO",
+      "maliyet": 141.09,
+      "kategori": "ABD"
+    },
+    {
+      "id": 11,
+      "kar": -1.46,
+      "pct": -0.007420584498,
+      "adet": 2,
+      "para": "USD",
+      "deger": 195.29,
+      "tarih": null,
+      "ticker": "WMT",
+      "maliyet": 196.75,
+      "kategori": "ABD"
+    },
+    {
+      "id": 12,
+      "kar": 4.204,
+      "pct": 0.0257604353,
+      "adet": 5,
+      "para": "USD",
+      "deger": 167.4,
+      "tarih": null,
+      "ticker": "NWS",
+      "maliyet": 163.19599999999997,
+      "kategori": "ABD"
+    },
+    {
+      "id": 13,
+      "kar": -21.18,
+      "pct": -0.1064054258,
+      "adet": 2,
+      "para": "USD",
+      "deger": 177.87,
+      "tarih": null,
+      "ticker": "COP",
+      "maliyet": 199.05,
+      "kategori": "ABD"
+    },
+    {
+      "id": 14,
+      "kar": -2.1,
+      "pct": -0.01286764706,
+      "adet": 5,
+      "para": "USD",
+      "deger": 161.1,
+      "tarih": null,
+      "ticker": "VICI",
+      "maliyet": 163.20000000000002,
+      "kategori": "ABD"
+    },
+    {
+      "id": 15,
+      "kar": -32.58,
+      "pct": -0.1800099453,
+      "adet": 3,
+      "para": "USD",
+      "deger": 148.41,
+      "tarih": null,
+      "ticker": "DAL",
+      "maliyet": 180.99,
+      "kategori": "ABD"
+    },
+    {
+      "id": 16,
+      "kar": -3.45,
+      "pct": -0.02541436464,
+      "adet": 5,
+      "para": "USD",
+      "deger": 132.3,
+      "tarih": null,
+      "ticker": "CTRA",
+      "maliyet": 135.75,
+      "kategori": "ABD"
+    },
+    {
+      "id": 17,
+      "kar": -30.32,
+      "pct": -0.1609598131,
+      "adet": 2,
+      "para": "USD",
+      "deger": 158.05,
+      "tarih": null,
+      "ticker": "UAL",
+      "maliyet": 188.37,
+      "kategori": "ABD"
+    },
+    {
+      "id": 18,
+      "kar": 121.7684615,
+      "pct": 0.1825746767,
+      "adet": 10,
+      "para": "USD",
+      "deger": 788.72,
+      "tarih": null,
+      "ticker": "SPLG",
+      "maliyet": 666.9515384615385,
+      "kategori": "ABD"
+    },
+    {
+      "id": 19,
+      "kar": 346.4815385,
+      "pct": 0.1732201161,
+      "adet": 30,
+      "para": "USD",
+      "deger": 2346.72,
+      "tarih": null,
+      "ticker": "SPLG",
+      "maliyet": 2000.2384615384617,
+      "kategori": "ABD"
+    },
+    {
+      "id": 20,
+      "kar": 86.88,
+      "pct": 0.1685844572,
+      "adet": 1,
+      "para": "USD",
+      "deger": 602.23,
+      "tarih": null,
+      "ticker": "QQQ",
+      "maliyet": 515.35,
+      "kategori": "ABD"
+    },
+    {
+      "id": 21,
+      "kar": 975.52,
+      "pct": 0.2448821803,
+      "adet": 20,
+      "para": "USD",
+      "deger": 4959.15,
+      "tarih": null,
+      "ticker": "QQQM",
+      "maliyet": 3983.63,
+      "kategori": "ABD"
+    },
+    {
+      "id": 22,
+      "kar": 45.36216029,
+      "pct": 0.2233182825,
+      "adet": 0.413079757,
+      "para": "USD",
+      "deger": 248.49,
+      "tarih": null,
+      "ticker": "QQQ",
+      "maliyet": 203.1278397,
+      "kategori": "ABD"
+    },
+    {
+      "id": 23,
+      "kar": 4.993769538220022,
+      "pct": 0.0021873657073681924,
+      "adet": 4.013632361,
+      "para": "USD",
+      "deger": 2288,
+      "tarih": null,
+      "ticker": "QQQ",
+      "maliyet": 2283.00623046178,
+      "kategori": "ABD"
+    },
+    {
+      "id": 24,
+      "kar": -41.67999999999999,
+      "pct": -0.2557055214723926,
+      "adet": 69,
+      "para": "USD",
+      "deger": 122.82000000000001,
+      "tarih": null,
+      "ticker": "MRNY",
+      "maliyet": 163,
+      "kategori": "Temettü"
+    },
+    {
+      "id": 25,
+      "kar": 28.319999999999993,
+      "pct": 0.16885284998807532,
+      "adet": 34,
+      "para": "USD",
+      "deger": 197.54,
+      "tarih": null,
+      "ticker": "ULTY",
+      "maliyet": 167.72,
+      "kategori": "Temettü"
+    },
+    {
+      "id": 26,
+      "kar": -19.200000000000017,
+      "pct": -0.11587205793602906,
+      "adet": 8,
+      "para": "USD",
+      "deger": 148,
+      "tarih": null,
+      "ticker": "MARO",
+      "maliyet": 165.70000000000002,
+      "kategori": "Temettü"
+    },
+    {
+      "id": 27,
+      "kar": -154.60636538148,
+      "pct": -1.009797110631309,
+      "adet": 0,
+      "para": "USD",
+      "deger": -1.5,
+      "tarih": null,
+      "ticker": "CONY",
+      "maliyet": 153.10636538148,
+      "kategori": "Temettü"
+    },
+    {
+      "id": 28,
+      "kar": -82.84999999999991,
+      "pct": -0.06916558834578614,
+      "adet": 58,
+      "para": "USD",
+      "deger": 1116.5,
+      "tarih": null,
+      "ticker": "COYY",
+      "maliyet": 1197.85,
+      "kategori": "Temettü"
+    },
+    {
+      "id": 29,
+      "kar": -73.02999999999975,
+      "pct": -0.016820600225717977,
+      "adet": 111,
+      "para": "USD",
+      "deger": 4270.17,
+      "tarih": null,
+      "ticker": "ICOI",
+      "maliyet": 4341.7,
+      "kategori": "Temettü"
+    },
+    {
+      "id": 30,
+      "kar": 2652.11,
+      "pct": 0.05216993948,
+      "adet": 25569,
+      "para": "TL",
+      "deger": 53488.09,
+      "tarih": null,
+      "ticker": "NVB",
+      "maliyet": 50835.98,
+      "kategori": "Fon"
+    },
+    {
+      "id": 31,
+      "kar": 1402.24,
+      "pct": 0.07000968085,
+      "adet": 7881,
+      "para": "TL",
+      "deger": 21431.47,
+      "tarih": null,
+      "ticker": "HYV",
+      "maliyet": 20029.23,
+      "kategori": "Fon"
+    },
+    {
+      "id": 32,
+      "kar": 726.86,
+      "pct": 0.07191649352,
+      "adet": 4404,
+      "para": "TL",
+      "deger": 10833.86,
+      "tarih": null,
+      "ticker": "PPN",
+      "maliyet": 10107,
+      "kategori": "Fon"
+    },
+    {
+      "id": 33,
+      "kar": -5755.08,
+      "pct": -0.1151017842,
+      "adet": 85821,
+      "para": "TL",
+      "deger": 44244.84,
+      "tarih": null,
+      "ticker": "TAU",
+      "maliyet": 49999.92,
+      "kategori": "Fon"
+    },
+    {
+      "id": 34,
+      "kar": 1057.09,
+      "pct": 0.07047318347,
+      "adet": 54505,
+      "para": "TL",
+      "deger": 16056.98,
+      "tarih": null,
+      "ticker": "TTA",
+      "maliyet": 14999.89,
+      "kategori": "Fon"
+    },
+    {
+      "id": 35,
+      "kar": 1909.05,
+      "pct": 0.09545273863,
+      "adet": 36381,
+      "para": "TL",
+      "deger": 21909,
+      "tarih": null,
+      "ticker": "TAU",
+      "maliyet": 19999.95,
+      "kategori": "Fon"
+    },
+    {
+      "id": 36,
+      "kar": 633.77,
+      "pct": 0.03169128883,
+      "adet": 10715,
+      "para": "TL",
+      "deger": 20632.01,
+      "tarih": null,
+      "ticker": "NVB",
+      "maliyet": 19998.24,
+      "kategori": "Fon"
+    },
+    {
+      "id": 37,
+      "kar": 482.74,
+      "pct": 0.02413965536,
+      "adet": 9042,
+      "para": "TL",
+      "deger": 20480.54,
+      "tarih": null,
+      "ticker": "PPN",
+      "maliyet": 19997.8,
+      "kategori": "Fon"
+    },
+    {
+      "id": 38,
+      "kar": 478.07,
+      "pct": 0.02390483867,
+      "adet": 8173,
+      "para": "TL",
+      "deger": 20476.95,
+      "tarih": null,
+      "ticker": "HYV",
+      "maliyet": 19998.88,
+      "kategori": "Fon"
+    },
+    {
+      "id": 39,
+      "kar": 38.9,
+      "pct": 0.007690604414,
+      "adet": 2090,
+      "para": "TL",
+      "deger": 5097.02,
+      "tarih": null,
+      "ticker": "HYV",
+      "maliyet": 5058.12,
+      "kategori": "Fon"
+    },
+    {
+      "id": 40,
+      "kar": 54.64,
+      "pct": 0.1563107907,
+      "adet": 758,
+      "para": "TL",
+      "deger": 404.2,
+      "tarih": null,
+      "ticker": "GTA",
+      "maliyet": 349.56,
+      "kategori": "Fon"
+    },
+    {
+      "id": 41,
+      "kar": 239.5,
+      "pct": 0.001986631422,
+      "adet": 2929990,
+      "para": "TL",
+      "deger": 120795.33,
+      "tarih": null,
+      "ticker": "GTL",
+      "maliyet": 120555.83,
+      "kategori": "Fon"
+    },
+    {
+      "id": 42,
+      "kar": -19.13,
+      "pct": -0.0006085472739,
+      "adet": 9457,
+      "para": "TL",
+      "deger": 31416.39,
+      "tarih": null,
+      "ticker": "GTM",
+      "maliyet": 31435.52,
+      "kategori": "Fon"
+    },
+    {
+      "id": 43,
+      "kar": 12666.48,
+      "pct": 0.3298587411,
+      "adet": 303975,
+      "para": "TL",
+      "deger": 51066.19,
+      "tarih": null,
+      "ticker": "GUH",
+      "maliyet": 38399.71,
+      "kategori": "Fon"
+    },
+    {
+      "id": 44,
+      "kar": 1343.08,
+      "pct": 0.1343178052,
+      "adet": 4536,
+      "para": "TL",
+      "deger": 11342.35,
+      "tarih": null,
+      "ticker": "GVI",
+      "maliyet": 9999.27,
+      "kategori": "Fon"
+    },
+    {
+      "id": 45,
+      "kar": 4871.23,
+      "pct": 0.122711455,
+      "adet": 18748,
+      "para": "TL",
+      "deger": 44567.85,
+      "tarih": null,
+      "ticker": "MET",
+      "maliyet": 39696.62,
+      "kategori": "Fon"
+    },
+    {
+      "id": 46,
+      "kar": 1476.63,
+      "pct": 0.09809950194,
+      "adet": 13641,
+      "para": "TL",
+      "deger": 16529,
+      "tarih": null,
+      "ticker": "NAU",
+      "maliyet": 15052.37,
+      "kategori": "Fon"
+    },
+    {
+      "id": 47,
+      "kar": 185.86,
+      "pct": 0.01858624162,
+      "adet": 9083,
+      "para": "TL",
+      "deger": 10185.73,
+      "tarih": null,
+      "ticker": "GUV",
+      "maliyet": 9999.87,
+      "kategori": "Fon"
+    },
+    {
+      "id": 48,
+      "kar": 154.11,
+      "pct": 0.01541536255,
+      "adet": 437,
+      "para": "TL",
+      "deger": 10151.28,
+      "tarih": null,
+      "ticker": "YOT",
+      "maliyet": 9997.17,
+      "kategori": "Fon"
+    },
+    {
+      "id": 49,
+      "kar": 169.71,
+      "pct": 0.01703742894,
+      "adet": 203,
+      "para": "TL",
+      "deger": 10130.72,
+      "tarih": null,
+      "ticker": "IPV",
+      "maliyet": 9961.01,
+      "kategori": "Fon"
+    },
+    {
+      "id": 50,
+      "kar": 206.23,
+      "pct": 0.02757170341,
+      "adet": 192,
+      "para": "TL",
+      "deger": 7686,
+      "tarih": null,
+      "ticker": "EUN",
+      "maliyet": 7479.77,
+      "kategori": "Fon"
+    },
+    {
+      "id": 51,
+      "kar": 189.03,
+      "pct": 0.02510701995,
+      "adet": 31800,
+      "para": "TL",
+      "deger": 7718,
+      "tarih": null,
+      "ticker": "DBH",
+      "maliyet": 7528.97,
+      "kategori": "Fon"
+    },
+    {
+      "id": 52,
+      "kar": 190.77,
+      "pct": 0.02281602109,
+      "adet": 500,
+      "para": "TL",
+      "deger": 8552,
+      "tarih": null,
+      "ticker": "TLE",
+      "maliyet": 8361.23,
+      "kategori": "Fon"
+    },
+    {
+      "id": 53,
+      "kar": 139.7,
+      "pct": 0.02328484685,
+      "adet": 6060,
+      "para": "TL",
+      "deger": 6139.31,
+      "tarih": null,
+      "ticker": "HIZ",
+      "maliyet": 5999.61,
+      "kategori": "Fon"
+    },
+    {
+      "id": 54,
+      "kar": 129.42,
+      "pct": 0.02157107855,
+      "adet": 5413,
+      "para": "TL",
+      "deger": 6129.12,
+      "tarih": null,
+      "ticker": "JET",
+      "maliyet": 5999.7,
+      "kategori": "Fon"
+    },
+    {
+      "id": 55,
+      "kar": -120.77,
+      "pct": -0.02013652219,
+      "adet": 919,
+      "para": "TL",
+      "deger": 5876.79,
+      "tarih": null,
+      "ticker": "IJC",
+      "maliyet": 5997.56,
+      "kategori": "Fon"
+    },
+    {
+      "id": 56,
+      "kar": 252.38,
+      "pct": 0.05258037163,
+      "adet": 34624,
+      "para": "TL",
+      "deger": 5052.27,
+      "tarih": null,
+      "ticker": "TGE",
+      "maliyet": 4799.89,
+      "kategori": "Fon"
+    },
+    {
+      "id": 57,
+      "kar": 319.63,
+      "pct": 0.06884957048,
+      "adet": 2400,
+      "para": "TL",
+      "deger": 4962.07,
+      "tarih": null,
+      "ticker": "ZCN",
+      "maliyet": 4642.44,
+      "kategori": "Fon"
+    },
+    {
+      "id": 58,
+      "kar": 315.05,
+      "pct": 0.06563623712,
+      "adet": 2696,
+      "para": "TL",
+      "deger": 5114.99,
+      "tarih": null,
+      "ticker": "GBZ",
+      "maliyet": 4799.94,
+      "kategori": "Fon"
+    },
+    {
+      "id": 59,
+      "kar": 313.05,
+      "pct": 0.06523329159,
+      "adet": 2930,
+      "para": "TL",
+      "deger": 5111.98,
+      "tarih": null,
+      "ticker": "OVD",
+      "maliyet": 4798.93,
+      "kategori": "Fon"
+    },
+    {
+      "id": 60,
+      "kar": 110.95,
+      "pct": 0.01849644491,
+      "adet": 1361,
+      "para": "TL",
+      "deger": 6109.4,
+      "tarih": null,
+      "ticker": "TGR",
+      "maliyet": 5998.45,
+      "kategori": "Fon"
+    },
+    {
+      "id": 61,
+      "kar": 1764.62,
+      "pct": 0.08944843796,
+      "adet": 16254,
+      "para": "TL",
+      "deger": 21492.41,
+      "tarih": null,
+      "ticker": "NAU",
+      "maliyet": 19727.79,
+      "kategori": "Fon"
+    },
+    {
+      "id": 62,
+      "kar": 104.42,
+      "pct": 0.02089068502,
+      "adet": 2453,
+      "para": "TL",
+      "deger": 5102.82,
+      "tarih": null,
+      "ticker": "YZC",
+      "maliyet": 4998.4,
+      "kategori": "Fon"
+    },
+    {
+      "id": 63,
+      "kar": 151.01,
+      "pct": 0.03146048221,
+      "adet": 57567,
+      "para": "TL",
+      "deger": 4951,
+      "tarih": null,
+      "ticker": "AES",
+      "maliyet": 4799.99,
+      "kategori": "Fon"
+    },
+    {
+      "id": 64,
+      "kar": -640.01,
+      "pct": -0.10709905,
+      "adet": 190,
+      "para": "TL",
+      "deger": 5335.86,
+      "tarih": null,
+      "ticker": "TCD",
+      "maliyet": 5975.87,
+      "kategori": "Fon"
+    },
+    {
+      "id": 65,
+      "kar": -934.74,
+      "pct": -0.1560157027,
+      "adet": 607,
+      "para": "TL",
+      "deger": 5056.58,
+      "tarih": null,
+      "ticker": "NRC",
+      "maliyet": 5991.32,
+      "kategori": "Fon"
+    },
+    {
+      "id": 66,
+      "kar": -672.45,
+      "pct": -0.1120985407,
+      "adet": 3245,
+      "para": "TL",
+      "deger": 5326.29,
+      "tarih": null,
+      "ticker": "BIO",
+      "maliyet": 5998.74,
+      "kategori": "Fon"
+    },
+    {
+      "id": 67,
+      "kar": -2937.6,
+      "pct": -0.1469180518,
+      "adet": 2163,
+      "para": "TL",
+      "deger": 17057.22,
+      "tarih": null,
+      "ticker": "IDH",
+      "maliyet": 19994.82,
+      "kategori": "Fon"
+    },
+    {
+      "id": 68,
+      "kar": -816.45,
+      "pct": -0.1636382221,
+      "adet": 4761,
+      "para": "TL",
+      "deger": 4172.91,
+      "tarih": null,
+      "ticker": "KPH",
+      "maliyet": 4989.36,
+      "kategori": "Fon"
+    },
+    {
+      "id": 69,
+      "kar": -3444.36,
+      "pct": -0.1796785217,
+      "adet": 18,
+      "para": "TL",
+      "deger": 15725.21,
+      "tarih": null,
+      "ticker": "TI2",
+      "maliyet": 19169.57,
+      "kategori": "Fon"
+    },
+    {
+      "id": 70,
+      "kar": -1699.5,
+      "pct": -0.1700021907,
+      "adet": 700,
+      "para": "TL",
+      "deger": 8297.43,
+      "tarih": null,
+      "ticker": "IHK",
+      "maliyet": 9996.93,
+      "kategori": "Fon"
+    },
+    {
+      "id": 71,
+      "kar": -171.68,
+      "pct": -0.02861366716,
+      "adet": 24025,
+      "para": "TL",
+      "deger": 5828.25,
+      "tarih": null,
+      "ticker": "AFS",
+      "maliyet": 5999.93,
+      "kategori": "Fon"
+    },
+    {
+      "id": 72,
+      "kar": -139.4,
+      "pct": -0.02324449069,
+      "adet": 916,
+      "para": "TL",
+      "deger": 5857.72,
+      "tarih": null,
+      "ticker": "IKL",
+      "maliyet": 5997.12,
+      "kategori": "Fon"
+    },
+    {
+      "id": 73,
+      "kar": -193.63,
+      "pct": -0.03228334248,
+      "adet": 2596,
+      "para": "TL",
+      "deger": 5804.2,
+      "tarih": null,
+      "ticker": "RPM",
+      "maliyet": 5997.83,
+      "kategori": "Fon"
+    },
+    {
+      "id": 74,
+      "kar": 642.46,
+      "pct": 0.04283295109,
+      "adet": 14990,
+      "para": "TL",
+      "deger": 15641.66,
+      "tarih": null,
+      "ticker": "IAM",
+      "maliyet": 14999.2,
+      "kategori": "Fon"
+    },
+    {
+      "id": 75,
+      "kar": 1437.17,
+      "pct": 0.08057376084,
+      "adet": 6934,
+      "para": "TL",
+      "deger": 19273.87,
+      "tarih": null,
+      "ticker": "PPN",
+      "maliyet": 17836.7,
+      "kategori": "Fon"
+    },
+    {
+      "id": 76,
+      "kar": 780.05,
+      "pct": 0.01763502362,
+      "adet": 56,
+      "para": "TL",
+      "deger": 45013.05,
+      "tarih": null,
+      "ticker": "YAY",
+      "maliyet": 44233,
+      "kategori": "Fon"
+    },
+    {
+      "id": 77,
+      "kar": 558.93,
+      "pct": 0.01230527057,
+      "adet": 224579,
+      "para": "TL",
+      "deger": 45980.93,
+      "tarih": null,
+      "ticker": "GUH",
+      "maliyet": 45422,
+      "kategori": "Fon"
+    },
+    {
+      "id": 78,
+      "kar": -2088.17,
+      "pct": -0.02906106851,
+      "adet": 90000,
+      "para": "TL",
+      "deger": 69766.38,
+      "tarih": null,
+      "ticker": "TMG",
+      "maliyet": 71854.55,
+      "kategori": "Fon"
+    },
+    {
+      "id": 79,
+      "kar": -3.36712,
+      "pct": -0.00005408324379,
+      "adet": 77135,
+      "para": "TL",
+      "deger": 62254.73288,
+      "tarih": null,
+      "ticker": "TMG",
+      "maliyet": 62258.1,
+      "kategori": "Fon"
+    },
+    {
+      "id": 80,
+      "kar": 156.46,
+      "pct": 0.002240154403,
+      "adet": 56884,
+      "para": "TL",
+      "deger": 69999.86,
+      "tarih": null,
+      "ticker": "PPI",
+      "maliyet": 69843.4,
+      "kategori": "Fon"
+    },
+    {
+      "id": 81,
+      "kar": 182.470789,
+      "pct": 0.009207735347,
+      "adet": 16140,
+      "para": "TL",
+      "deger": 19999.59,
+      "tarih": null,
+      "ticker": "PPI",
+      "maliyet": 19817.119210956764,
+      "kategori": "Fon"
+    },
+    {
+      "id": 82,
+      "kar": 627.1,
+      "pct": 0.002986293006,
+      "adet": 28079,
+      "para": "TL",
+      "deger": 210619.89,
+      "tarih": null,
+      "ticker": "ALE",
+      "maliyet": 209992.79,
+      "kategori": "Fon"
+    },
+    {
+      "id": 83,
+      "kar": 9.80369559,
+      "pct": 0.00994515241,
+      "adet": 171,
+      "para": "TL",
+      "deger": 995.58,
+      "tarih": null,
+      "ticker": "PUR",
+      "maliyet": 985.776304410493,
+      "kategori": "Fon"
+    },
+    {
+      "id": 84,
+      "kar": 68.02802537,
+      "pct": 0.01383428026,
+      "adet": 853,
+      "para": "TL",
+      "deger": 4985.38,
+      "tarih": null,
+      "ticker": "PUR",
+      "maliyet": 4917.351974632459,
+      "kategori": "Fon"
+    },
+    {
+      "id": 85,
+      "kar": 387.337082,
+      "pct": 0.01578349366,
+      "adet": 4257,
+      "para": "TL",
+      "deger": 24927.98,
+      "tarih": null,
+      "ticker": "PUR",
+      "maliyet": 24540.642918,
+      "kategori": "Fon"
+    },
+    {
+      "id": 86,
+      "kar": 230.229482,
+      "pct": 0.02410216981,
+      "adet": 1657,
+      "para": "TL",
+      "deger": 9782.46,
+      "tarih": null,
+      "ticker": "PUR",
+      "maliyet": 9552.230518,
+      "kategori": "Fon"
+    },
+    {
+      "id": 87,
+      "kar": 134.735528,
+      "pct": 0.005021463447,
+      "adet": 3488,
+      "para": "TL",
+      "deger": 26966.66,
+      "tarih": null,
+      "ticker": "ALE",
+      "maliyet": 26831.92447204969,
+      "kategori": "Fon"
+    },
+    {
+      "id": 88,
+      "kar": 526.5622804718296,
+      "pct": 0.006718043893582181,
+      "adet": 10189,
+      "para": "TL",
+      "deger": 78906.86,
+      "tarih": null,
+      "ticker": "ALE",
+      "maliyet": 78380.29771952817,
+      "kategori": "Fon"
+    },
+    {
+      "id": 89,
+      "kar": 25.467499,
+      "pct": 0.02627485973,
+      "adet": 126,
+      "para": "TL",
+      "deger": 994.74,
+      "tarih": null,
+      "ticker": "ALE",
+      "maliyet": 969.2725009972078,
+      "kategori": "Fon"
+    },
+    {
+      "id": 90,
+      "kar": 1025.574693,
+      "pct": 0.03558968761,
+      "adet": 3746,
+      "para": "TL",
+      "deger": 29842.2,
+      "tarih": null,
+      "ticker": "ALE",
+      "maliyet": 28816.625307424925,
+      "kategori": "Fon"
+    },
+    {
+      "id": 91,
+      "kar": 24455.178,
+      "pct": 0.3019423189,
+      "adet": 170144,
+      "para": "TL",
+      "deger": 105448.058,
+      "tarih": null,
+      "ticker": "AFT",
+      "maliyet": 80992.87999999999,
+      "kategori": "Fon"
+    },
+    {
+      "id": 92,
+      "kar": 11792.349,
+      "pct": 0.2474834021,
+      "adet": 71302,
+      "para": "TL",
+      "deger": 59441.399000000005,
+      "tarih": null,
+      "ticker": "AFA",
+      "maliyet": 47649.049999999996,
+      "kategori": "Fon"
+    },
+    {
+      "id": 93,
+      "kar": 2484.56,
+      "pct": 0.1656394314,
+      "adet": 41814,
+      "para": "TL",
+      "deger": 17484.37,
+      "tarih": null,
+      "ticker": "AFV",
+      "maliyet": 14999.81,
+      "kategori": "Fon"
+    },
+    {
+      "id": 94,
+      "kar": 13129.53921,
+      "pct": 0.1625569041,
+      "adet": 65782,
+      "para": "TL",
+      "deger": 93898.42,
+      "tarih": null,
+      "ticker": "PPI",
+      "maliyet": 80768.88078904324,
+      "kategori": "Fon"
+    },
+    {
+      "id": 95,
+      "kar": 1119.54,
+      "pct": 0.2690206029,
+      "adet": 1,
+      "para": "TL",
+      "deger": 4161.54,
+      "tarih": null,
+      "ticker": "Altın (IAR)",
+      "maliyet": 3042,
+      "kategori": "Metal"
+    },
+    {
+      "id": 96,
+      "kar": 767.83,
+      "pct": 0.03622355637,
+      "adet": 7,
+      "para": "TL",
+      "deger": 21196.98,
+      "tarih": null,
+      "ticker": "Altın (IAR)",
+      "maliyet": 20429.149999999998,
+      "kategori": "Metal"
+    },
+    {
+      "id": 97,
+      "kar": 19235.253,
+      "pct": 0.1083560239,
+      "adet": 47,
+      "para": "TL",
+      "deger": 177519,
+      "tarih": null,
+      "ticker": "Altın (IAR)",
+      "maliyet": 158283.747,
+      "kategori": "Metal"
+    },
+    {
+      "id": 98,
+      "kar": 5505,
+      "pct": 0.2685365854,
+      "adet": 5,
+      "para": "TL",
+      "deger": 20500,
+      "tarih": null,
+      "ticker": "Altın (F)",
+      "maliyet": 14995,
+      "kategori": "Metal"
+    },
+    {
+      "id": 1780298493672,
+      "kar": 3307,
+      "pct": 0.009021469296450882,
+      "adet": 29900,
+      "para": "TL",
+      "deger": 369877,
+      "tarih": "2026-06-01",
+      "ticker": "ALE",
+      "maliyet": 366570,
+      "kategori": "Fon"
+    },
+    {
+      "id": 1780298561937,
+      "kar": 3831.449999999997,
+      "pct": 0.03179626556016595,
+      "adet": 1,
+      "para": "TL",
+      "deger": 124331.45,
+      "tarih": "2026-05-22",
+      "ticker": "FAIZ",
+      "maliyet": 120500,
+      "kategori": "Faiz"
+    }
+  ],
+  "temettuKayitlar": [
+    {
+      "oran": null,
+      "tarih": "2024-12-24",
+      "miktar": 2.57,
+      "ticker": "SMH",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2024-12-26",
+      "miktar": 2.79,
+      "ticker": "VOO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2024-12-31",
+      "miktar": 1.34,
+      "ticker": "QQQ",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-03-31",
+      "miktar": 2.9,
+      "ticker": "VOO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-30",
+      "miktar": 1.15,
+      "ticker": "QQQ",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-24",
+      "miktar": 7.05,
+      "ticker": "VEA",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-03-24",
+      "miktar": 5.51,
+      "ticker": "VALE",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-03-27",
+      "miktar": 0.77,
+      "ticker": "CTRA",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-01",
+      "miktar": 0.71,
+      "ticker": "KO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-02",
+      "miktar": 0.03,
+      "ticker": "NVIDA",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-03",
+      "miktar": 1.51,
+      "ticker": "VICI",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-07",
+      "miktar": 0.33,
+      "ticker": "WMT",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-09",
+      "miktar": 0.35,
+      "ticker": "NWS",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-15",
+      "miktar": 0.16,
+      "ticker": "MU",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-04-30",
+      "miktar": 0.5,
+      "ticker": "QQQ",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-05-27",
+      "miktar": 0.33,
+      "ticker": "WMT",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-05-29",
+      "miktar": 0.77,
+      "ticker": "CTRA",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-02",
+      "miktar": 1.09,
+      "ticker": "COP",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-03",
+      "miktar": 0.31,
+      "ticker": "DAL",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-27",
+      "miktar": 4.21,
+      "ticker": "QQQM",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-06-30",
+      "miktar": 5.98,
+      "ticker": "SPLG",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-07-01",
+      "miktar": 0.71,
+      "ticker": "KO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-07-02",
+      "miktar": 4.21,
+      "ticker": "VOO",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-07-11",
+      "miktar": 1.51,
+      "ticker": "VICI",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "tarih": "2025-07-31",
+      "miktar": 1.36,
+      "ticker": "QQQ",
+      "temettu": 0.28,
+      "hisseFiyat": null
+    },
+    {
+      "oran": 0.004274,
+      "tarih": "2025-07-02",
+      "miktar": 4.43,
+      "ticker": "VIG",
+      "temettu": 0.87,
+      "hisseFiyat": 203.55
+    },
+    {
+      "oran": 0.009421,
+      "tarih": "2025-07-28",
+      "miktar": 3.32,
+      "ticker": "RYLD",
+      "temettu": 0.14,
+      "hisseFiyat": 14.86
+    },
+    {
+      "oran": 0.009541,
+      "tarih": "2025-07-28",
+      "miktar": 4.38,
+      "ticker": "QYLD",
+      "temettu": 0.16,
+      "hisseFiyat": 16.77
+    },
+    {
+      "oran": 0.007951,
+      "tarih": "2025-07-28",
+      "miktar": 2.67,
+      "ticker": "XYLD",
+      "temettu": 0.31,
+      "hisseFiyat": 38.99
+    },
+    {
+      "oran": 0.016077,
+      "tarih": "2025-08-01",
+      "miktar": 1.62,
+      "ticker": "ULTY",
+      "temettu": 0.1,
+      "hisseFiyat": 6.22
+    },
+    {
+      "oran": 0.006294,
+      "tarih": "2025-08-05",
+      "miktar": 3.5,
+      "ticker": "JEPI",
+      "temettu": 0.35,
+      "hisseFiyat": 55.61
+    },
+    {
+      "oran": 0.007985,
+      "tarih": "2025-08-05",
+      "miktar": 4.54,
+      "ticker": "JEPQ",
+      "temettu": 0.44,
+      "hisseFiyat": 55.1
+    },
+    {
+      "oran": 0.01642,
+      "tarih": "2025-08-08",
+      "miktar": 2.09,
+      "ticker": "ULTY",
+      "temettu": 0.1,
+      "hisseFiyat": 6.09
+    },
+    {
+      "oran": 0.006279,
+      "tarih": "2025-08-12",
+      "miktar": 5.72,
+      "ticker": "TXN",
+      "temettu": 1.36,
+      "hisseFiyat": 216.59
+    },
+    {
+      "oran": 0.006714,
+      "tarih": "2025-08-15",
+      "miktar": 5.92,
+      "ticker": "PG",
+      "temettu": 1.06,
+      "hisseFiyat": 157.89
+    },
+    {
+      "oran": 0.049223,
+      "tarih": "2025-08-15",
+      "miktar": 5.08,
+      "ticker": "MRNY",
+      "temettu": 0.095,
+      "hisseFiyat": 1.93
+    },
+    {
+      "oran": 0.050891,
+      "tarih": "2025-08-15",
+      "miktar": 6.43,
+      "ticker": "MARO",
+      "temettu": 1,
+      "hisseFiyat": 19.65
+    },
+    {
+      "oran": 0.01642,
+      "tarih": "2025-08-15",
+      "miktar": 2.1,
+      "ticker": "ULTY",
+      "temettu": 0.1,
+      "hisseFiyat": 6.09
+    },
+    {
+      "oran": 0.017699,
+      "tarih": "2025-08-22",
+      "miktar": 2.4,
+      "ticker": "ULTY",
+      "temettu": 0.1,
+      "hisseFiyat": 5.65
+    },
+    {
+      "oran": 0.050147,
+      "tarih": "2025-08-22",
+      "miktar": 5,
+      "ticker": "CONY",
+      "temettu": 0.34,
+      "hisseFiyat": 6.78
+    },
+    {
+      "oran": 0.010095,
+      "tarih": "2025-08-25",
+      "miktar": 4.816,
+      "ticker": "QYLD",
+      "temettu": 0.17,
+      "hisseFiyat": 16.84
+    },
+    {
+      "oran": 0.01,
+      "tarih": "2025-08-25",
+      "miktar": 3.712,
+      "ticker": "RYLD",
+      "temettu": 0.15,
+      "hisseFiyat": 15
+    },
+    {
+      "oran": 0.007934,
+      "tarih": "2025-08-25",
+      "miktar": 2.984,
+      "ticker": "XYLD",
+      "temettu": 0.31,
+      "hisseFiyat": 39.07
+    },
+    {
+      "oran": 0.12605,
+      "tarih": "2025-08-26",
+      "miktar": 413,
+      "ticker": "ICOI",
+      "temettu": 5.163,
+      "hisseFiyat": 40.96
+    },
+    {
+      "oran": 0.033026,
+      "tarih": "2025-09-03",
+      "miktar": 31.81,
+      "ticker": "COYY",
+      "temettu": 0.68,
+      "hisseFiyat": 20.59
+    },
+    {
+      "oran": 0.027333,
+      "tarih": "2025-09-09",
+      "miktar": 25.12,
+      "ticker": "COYY",
+      "temettu": 0.5412,
+      "hisseFiyat": 19.8
+    },
+    {
+      "oran": 0.007889,
+      "tarih": "2025-09-09",
+      "miktar": 9.248,
+      "ticker": "JNJ",
+      "temettu": 1.3,
+      "hisseFiyat": 164.78
+    },
+    {
+      "oran": 0.001763,
+      "tarih": "2025-09-11",
+      "miktar": 1.656,
+      "ticker": "MSFT",
+      "temettu": 0.83,
+      "hisseFiyat": 470.92
+    },
+    {
+      "oran": 0.028151,
+      "tarih": "2025-09-16",
+      "miktar": 25.72,
+      "ticker": "COYY",
+      "temettu": 0.5543,
+      "hisseFiyat": 19.69
+    },
+    {
+      "oran": 0.004694,
+      "tarih": "2025-09-23",
+      "miktar": 6.14,
+      "ticker": "VEA",
+      "temettu": 0.28,
+      "hisseFiyat": 59.65
+    },
+    {
+      "oran": 0.00121,
+      "tarih": "2025-09-26",
+      "miktar": 7.18,
+      "ticker": "QQQM",
+      "temettu": 0.3,
+      "hisseFiyat": 247.9
+    },
+    {
+      "oran": 0.009573,
+      "tarih": "2025-09-29",
+      "miktar": 22.48,
+      "ticker": "SCHD",
+      "temettu": 0.26,
+      "hisseFiyat": 27.16
+    },
+    {
+      "oran": 0.00306,
+      "tarih": "2025-09-30",
+      "miktar": 6.67,
+      "ticker": "SPLG",
+      "temettu": 0.2382,
+      "hisseFiyat": 77.85
+    },
+    {
+      "oran": 0.001741,
+      "tarih": "2025-09-30",
+      "miktar": 4.31,
+      "ticker": "AVGO",
+      "temettu": 0.59,
+      "hisseFiyat": 338.79
+    },
+    {
+      "oran": 0.009826,
+      "tarih": "2025-09-30",
+      "miktar": 12.376,
+      "ticker": "PEP",
+      "temettu": 1.42,
+      "hisseFiyat": 144.51
+    },
+    {
+      "oran": 0.003993,
+      "tarih": "2025-10-01",
+      "miktar": 7.64,
+      "ticker": "VIG",
+      "temettu": 0.86,
+      "hisseFiyat": 215.4
+    },
+    {
+      "oran": 0.002868,
+      "tarih": "2025-10-01",
+      "miktar": 4.2,
+      "ticker": "VOO",
+      "temettu": 1.74,
+      "hisseFiyat": 606.59
+    },
+    {
+      "oran": 0.001158,
+      "tarih": "2025-10-31",
+      "miktar": 1.12,
+      "ticker": "QQQ",
+      "temettu": 0.69,
+      "hisseFiyat": 596.1
+    },
+    {
+      "oran": 0.008795,
+      "tarih": "2025-11-12",
+      "miktar": 11.05,
+      "ticker": "TXN",
+      "temettu": 1.42,
+      "hisseFiyat": 161.46
+    },
+    {
+      "oran": 0.006886,
+      "tarih": "2025-11-17",
+      "miktar": 9.58,
+      "ticker": "PG",
+      "temettu": 1.05,
+      "hisseFiyat": 152.49
+    },
+    {
+      "oran": 0.00629,
+      "tarih": "2025-12-09",
+      "miktar": 10.46,
+      "ticker": "JNJ",
+      "temettu": 1.3,
+      "hisseFiyat": 206.67
+    },
+    {
+      "oran": 0.001784,
+      "tarih": "2025-12-11",
+      "miktar": 4.31,
+      "ticker": "MSFT",
+      "temettu": 0.91,
+      "hisseFiyat": 510
+    },
+    {
+      "oran": 0.009793,
+      "tarih": "2025-12-15",
+      "miktar": 24.2,
+      "ticker": "SCHD",
+      "temettu": 0.27,
+      "hisseFiyat": 27.57
+    },
+    {
+      "oran": 0.016818,
+      "tarih": "2025-12-23",
+      "miktar": 22.37,
+      "ticker": "VEA",
+      "temettu": 1.04,
+      "hisseFiyat": 61.84
+    },
+    {
+      "oran": 0.003983,
+      "tarih": "2025-12-24",
+      "miktar": 7.84,
+      "ticker": "VIG",
+      "temettu": 0.88,
+      "hisseFiyat": 220.95
+    },
+    {
+      "oran": 0.002811,
+      "tarih": "2025-12-24",
+      "miktar": 4.3,
+      "ticker": "VOO",
+      "temettu": 1.77,
+      "hisseFiyat": 629.73
+    },
+    {
+      "oran": 0.001255,
+      "tarih": "2025-12-26",
+      "miktar": 3.16,
+      "ticker": "QQQM",
+      "temettu": 0.32,
+      "hisseFiyat": 254.93
+    },
+    {
+      "oran": 0.001904,
+      "tarih": "2025-12-31",
+      "miktar": 4.76,
+      "ticker": "AVGO",
+      "temettu": 0.65,
+      "hisseFiyat": 341.45
+    },
+    {
+      "oran": 0.009792,
+      "tarih": "2026-01-06",
+      "miktar": 14.26,
+      "ticker": "PEP",
+      "temettu": 1.42,
+      "hisseFiyat": 145.02
+    },
+    {
+      "oran": 0.006588,
+      "tarih": "2026-02-10",
+      "miktar": 11.128,
+      "ticker": "TXN",
+      "temettu": 1.42,
+      "hisseFiyat": 215.55
+    },
+    {
+      "oran": 0.006993,
+      "tarih": "2026-02-17",
+      "miktar": 9.632,
+      "ticker": "PG",
+      "temettu": 1.05,
+      "hisseFiyat": 150.15
+    },
+    {
+      "oran": 0.005279,
+      "tarih": "2026-03-10",
+      "miktar": 10.52,
+      "ticker": "JNJ",
+      "temettu": 1.3,
+      "hisseFiyat": 246.28
+    },
+    {
+      "oran": 0.002284,
+      "tarih": "2026-03-12",
+      "miktar": 4.33,
+      "ticker": "MSFT",
+      "temettu": 0.91,
+      "hisseFiyat": 398.46
+    },
+    {
+      "oran": 0.001612,
+      "tarih": "2026-03-24",
+      "miktar": 2.38,
+      "ticker": "VEA",
+      "temettu": 0.1,
+      "hisseFiyat": 62.04
+    },
+    {
+      "oran": 0.001322,
+      "tarih": "2026-03-27",
+      "miktar": 5.52,
+      "ticker": "QQQM",
+      "temettu": 0.32,
+      "hisseFiyat": 242.07
+    },
+    {
+      "oran": 0.001241,
+      "tarih": "2026-03-27",
+      "miktar": 2.36,
+      "ticker": "QQQ",
+      "temettu": 0.73,
+      "hisseFiyat": 588
+    },
+    {
+      "oran": 0.008186,
+      "tarih": "2026-03-30",
+      "miktar": 22.53,
+      "ticker": "SCHD",
+      "temettu": 0.25,
+      "hisseFiyat": 30.54
+    },
+    {
+      "oran": 0.003939,
+      "tarih": "2026-03-31",
+      "miktar": 7.408,
+      "ticker": "VIG",
+      "temettu": 0.83,
+      "hisseFiyat": 210.73
+    },
+    {
+      "oran": 0.003208,
+      "tarih": "2026-03-31",
+      "miktar": 4.544,
+      "ticker": "VOO",
+      "temettu": 1.87,
+      "hisseFiyat": 582.96
+    },
+    {
+      "oran": 0.008907,
+      "tarih": "2026-03-31",
+      "miktar": 14.368,
+      "ticker": "PEP",
+      "temettu": 1.42,
+      "hisseFiyat": 159.43
+    },
+    {
+      "oran": 0.0074119827053736875,
+      "tarih": "2026-05-15",
+      "miktar": 9.98,
+      "ticker": "PG",
+      "temettu": 1.08,
+      "hisseFiyat": 145.71
+    },
+    {
+      "oran": 0.00505535974936808,
+      "tarih": "2026-05-19",
+      "miktar": 11.19,
+      "ticker": "TXN",
+      "temettu": 1.42,
+      "hisseFiyat": 280.89
+    },
+    {
+      "oran": 0.005821530975758103,
+      "tarih": "2026-06-09",
+      "miktar": 10.88,
+      "ticker": "JNJ",
+      "temettu": 1.34,
+      "hisseFiyat": 230.18
+    },
+    {
+      "oran": 0.0021713713044930684,
+      "tarih": "2026-06-11",
+      "miktar": 4.34,
+      "ticker": "MSFT",
+      "temettu": 0.91,
+      "hisseFiyat": 419.09
+    },
+    {
+      "oran": 0.0029988144222051747,
+      "tarih": "2026-06-18",
+      "miktar": 2.82,
+      "ticker": "IJR",
+      "temettu": 0.43,
+      "hisseFiyat": 143.39
+    },
+    {
+      "oran": 0.005116857972617895,
+      "tarih": "2026-06-24",
+      "miktar": 8.24,
+      "ticker": "VEA",
+      "temettu": 0.37,
+      "hisseFiyat": 72.31
+    },
+    {
+      "oran": 0.0011516946363935505,
+      "tarih": "2026-06-29",
+      "miktar": 10.08,
+      "ticker": "QQQM",
+      "temettu": 0.35,
+      "hisseFiyat": 303.9
+    },
+    {
+      "oran": 0.007881462799495587,
+      "tarih": "2026-06-29",
+      "miktar": 38.08,
+      "ticker": "SCHD",
+      "temettu": 0.25,
+      "hisseFiyat": 31.72
+    },
+    {
+      "oran": 0.002015441381662584,
+      "tarih": "2026-03-31",
+      "miktar": 4.77,
+      "ticker": "AVGO",
+      "temettu": 0.65,
+      "hisseFiyat": 322.51
+    },
+    {
+      "oran": 0.0016576135465279373,
+      "tarih": "2026-06-30",
+      "miktar": 4.78,
+      "ticker": "AVGO",
+      "temettu": 0.65,
+      "hisseFiyat": 392.13
+    },
+    {
+      "oran": 0.002924238355265121,
+      "tarih": "2026-06-30",
+      "miktar": 10.1,
+      "ticker": "VOO",
+      "temettu": 1.96,
+      "hisseFiyat": 670.26
+    },
+    {
+      "oran": 0.010428410372040587,
+      "tarih": "2026-06-30",
+      "miktar": 15.06,
+      "ticker": "PEP",
+      "temettu": 1.48,
+      "hisseFiyat": 141.92
+    }
+  ]
+}
