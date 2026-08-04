@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.31</title>
+<title>Portföy Takip — V8.32</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -236,7 +236,31 @@ canvas{max-height:220px;}
 /* Hidden file input */
 #import-file-input{display:none;}
 </style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js';
+  import { getFirestore, doc, setDoc, getDoc } from 'https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js';
+  import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js';
+
+  const app = initializeApp({
+    apiKey: "AIzaSyCLIGow07DXISwO3PDFfeY4JQrUKnr5GN0",
+    authDomain: "portfoy-takip-3a295.firebaseapp.com",
+    projectId: "portfoy-takip-3a295",
+    storageBucket: "portfoy-takip-3a295.firebasestorage.app",
+    messagingSenderId: "697144021776",
+    appId: "1:697144021776:web:61649d01cc6d4e1de94b95"
+  });
+
+  window._fbDb   = getFirestore(app);
+  window._fbAuth = getAuth(app);
+  window._fbDoc = doc;
+  window._fbSetDoc = setDoc;
+  window._fbGetDoc = getDoc;
+  window._fbSignIn = signInWithEmailAndPassword;
+
+  onAuthStateChanged(window._fbAuth, user => {
+    if(window._fbAuthCallback) window._fbAuthCallback(user);
+  });
+</script>
 </head>
 <body>
 <!-- LOGIN EKRANI -->
@@ -267,7 +291,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.31</div>
+      <div class="logo-sub">Yatırım Takip — V8.32</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -3810,9 +3834,7 @@ function savePortfoySecim() {
 
 
 
-// ===== AUTH =====
-const _sb = supabase.createClient('https://oimzkvpwiskksawrdrst.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pbXprdnB3aXNra3Nhd3JkcnN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyODE5NDgsImV4cCI6MjA5Mjg1Nzk0OH0.LYj-d4WPMvjeBWwwIDSmLYWNoP4m1j79ahvYTDvh8KE');
-
+// ===== AUTH & FIREBASE SYNC =====
 function showLoginScreen() {
   document.getElementById('login-screen').style.display = 'flex';
   document.querySelector('.app').style.display = 'none';
@@ -3829,35 +3851,22 @@ async function signIn() {
   const statusEl = document.getElementById('login-status');
   if(!email || !password) { statusEl.textContent = 'Email ve şifre gerekli'; statusEl.style.color='var(--red)'; return; }
   statusEl.textContent = 'Giriş yapılıyor...'; statusEl.style.color='#9a9590';
-  const { error } = await _sb.auth.signInWithPassword({ email, password });
-  if(error) {
-    statusEl.textContent = 'Hata: ' + (error.message === 'Invalid login credentials' ? 'Email veya şifre hatalı' : error.message);
+  try {
+    await window._fbSignIn(window._fbAuth, email, password);
+  } catch(e) {
+    statusEl.textContent = 'Hata: ' + (e.code === 'auth/invalid-credential' ? 'Email veya şifre hatalı' : e.message);
     statusEl.style.color = 'var(--red)';
   }
 }
 
-// Oturum kontrolü
-async function checkAuth() {
-  const { data: { session } } = await _sb.auth.getSession();
-  if(session) {
-    showApp();
-  } else {
-    showLoginScreen();
-  }
+function checkAuth() {
+  // Firebase auth state onAuthStateChanged ile yönetilir
+  // _fbAuthCallback module script tarafından çağrılır
+  window._fbAuthCallback = (user) => {
+    if(user) { showApp(); }
+    else { showLoginScreen(); }
+  };
 }
-
-// Auth state değişimlerini dinle
-_sb.auth.onAuthStateChange((event, session) => {
-  if(session) {
-    showApp();
-  } else {
-    showLoginScreen();
-  }
-});
-
-// ===== SUPABASE SYNC =====
-const SB_URL = 'https://oimzkvpwiskksawrdrst.supabase.co';
-const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pbXprdnB3aXNra3Nhd3JkcnN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyODE5NDgsImV4cCI6MjA5Mjg1Nzk0OH0.LYj-d4WPMvjeBWwwIDSmLYWNoP4m1j79ahvYTDvh8KE';
 
 function setSBStatus(msg, type) {
   const el = document.getElementById('sb-status');
@@ -3871,25 +3880,13 @@ async function supabaseSave() {
   if(btn) btn.disabled = true;
   setSBStatus('Kaydediliyor…', '');
   try {
-    const payload = { id: 1, data: state, updated_at: new Date().toISOString() };
-    const res = await fetch(SB_URL + '/rest/v1/portfoy_data?on_conflict=id', {
-      method: 'POST',
-      headers: {
-        'apikey': SB_KEY,
-        'Authorization': 'Bearer ' + SB_KEY,
-        'Content-Type': 'application/json',
-        'Prefer': 'resolution=merge-duplicates'
-      },
-      body: JSON.stringify(payload)
-    });
-    if(res.ok || res.status === 201) {
-      setSBStatus('✓ Kaydedildi — ' + new Date().toLocaleTimeString('tr-TR'), 'ok');
-    } else {
-      const err = await res.json().catch(() => ({}));
-      setSBStatus('Hata: ' + (err.message || res.status), 'err');
-    }
+    const db = window._fbDb;
+    if(!db) throw new Error('Firebase bağlı değil');
+    const docRef = window._fbDoc(db, 'portfoy', 'data');
+    await window._fbSetDoc(docRef, { data: state, updated_at: new Date().toISOString() });
+    setSBStatus('✓ Kaydedildi — ' + new Date().toLocaleTimeString('tr-TR'), 'ok');
   } catch(e) {
-    setSBStatus('Bağlantı hatası: ' + e.message, 'err');
+    setSBStatus('Hata: ' + e.message, 'err');
   } finally {
     if(btn) btn.disabled = false;
   }
@@ -3897,15 +3894,12 @@ async function supabaseSave() {
 
 async function supabaseLoad() {
   try {
-    const res = await fetch(SB_URL + '/rest/v1/portfoy_data?id=eq.1&select=data', {
-      headers: {
-        'apikey': SB_KEY,
-        'Authorization': 'Bearer ' + SB_KEY
-      }
-    });
-    if(!res.ok) return null;
-    const rows = await res.json();
-    return (rows && rows.length > 0) ? rows[0].data : null;
+    const db = window._fbDb;
+    if(!db) return null;
+    const docRef = window._fbDoc(db, 'portfoy', 'data');
+    const snap = await window._fbGetDoc(docRef);
+    if(snap.exists()) return snap.data().data;
+    return null;
   } catch(e) {
     return null;
   }
