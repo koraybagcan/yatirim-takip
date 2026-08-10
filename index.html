@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.33</title>
+<title>Portföy Takip — V8.34</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -291,7 +291,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.33</div>
+      <div class="logo-sub">Yatırım Takip — V8.34</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -310,6 +310,8 @@ canvas{max-height:220px;}
     <div class="nav-item" onclick="navigate('yatirimkayit',this)"><span class="nav-icon">▦</span> Yatırım Kayıt</div>
     <div class="nav-item" onclick="navigate('abdtakip',this)"><span class="nav-icon">⊙</span> ABD Takip</div>
     <div class="nav-item" onclick="navigate('gecmis',this)"><span class="nav-icon">₺</span> Geçmiş</div>
+    <div class="nav-section">Radar</div>
+    <div class="nav-item" onclick="navigate('radar',this)"><span class="nav-icon">◉</span> Radar</div>
   </div>
   <div class="sidebar-bottom">
     <div class="theme-toggle">
@@ -1123,6 +1125,72 @@ canvas{max-height:220px;}
   </div>
 </div>
 
+<!-- RADAR -->
+<div id="page-radar" class="page">
+  <div class="page-header">
+    <div><div class="page-title">Radar</div><div class="page-subtitle">Sinyal Taraması & Performans Takibi</div></div>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-secondary" style="font-size:10px;padding:6px 14px" onclick="openRadarSettings()">⚙ API Ayarları</button>
+      <button class="btn" style="font-size:10px;padding:6px 14px" id="radar-scan-btn" onclick="scanRadar()">Tara</button>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-label">İzlenen Hisse</div><div class="stat-value" id="radar-watchlist-count">—</div></div>
+    <div class="stat-card stagger-1"><div class="stat-label">Aktif Sinyal</div><div class="stat-value gold" id="radar-active-count">—</div></div>
+    <div class="stat-card stagger-2"><div class="stat-label">Son Tarama</div><div class="stat-value" id="radar-last-scan" style="font-size:15px">—</div></div>
+    <div class="stat-card stagger-3"><div class="stat-label">NewsAPI Kotası (bugün)</div><div class="stat-value" id="radar-newsapi-quota" style="font-size:15px">—</div></div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-header"><span class="card-title">İzleme Listesi</span></div>
+    <div class="card-body">
+      <div style="display:flex;gap:8px;margin-bottom:14px">
+        <input type="text" id="radar-add-ticker" class="form-input" placeholder="Ticker ekle (ör. NVDA)" style="max-width:220px" onkeydown="if(event.key==='Enter'){event.preventDefault();addRadarWatchlistTicker();}">
+        <button class="btn btn-secondary" style="font-size:10px;padding:8px 14px" onclick="addRadarWatchlistTicker()">+ Ekle</button>
+      </div>
+      <div id="radar-watchlist-tags" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-header"><span class="card-title">Sinyal Sonuçları</span></div>
+    <div class="card-body table-wrap">
+      <table class="data-table">
+        <thead><tr>
+          <th style="text-align:left">Ticker</th>
+          <th style="text-align:right">Skor</th>
+          <th style="text-align:left">Kaynaklar</th>
+          <th style="text-align:left">Sinyaller</th>
+          <th></th>
+        </tr></thead>
+        <tbody id="radar-results-tbody"><tr><td colspan="5" style="text-align:center;color:var(--text3);padding:20px">Henüz tarama yapılmadı — "Tara" butonuna basın</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Radar Performansı</span>
+      <button class="btn btn-secondary" style="font-size:10px;padding:6px 14px" onclick="refreshRadarPerformance()">Fiyatları Güncelle</button>
+    </div>
+    <div class="card-body table-wrap">
+      <table class="data-table">
+        <thead><tr>
+          <th style="text-align:left">Ticker</th>
+          <th style="text-align:left">Tarih</th>
+          <th style="text-align:right">Fiyat (o an)</th>
+          <th style="text-align:right">Güncel Fiyat</th>
+          <th style="text-align:right">%</th>
+          <th style="text-align:right">Gün</th>
+          <th></th>
+        </tr></thead>
+        <tbody id="radar-performance-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 </main>
 </div>
 
@@ -1300,6 +1368,29 @@ canvas{max-height:220px;}
       <button class="btn btn-secondary" onclick="closeModal('github-settings-modal')">İptal</button>
     </div>
     <div id="gh-modal-status" style="font-size:11px;margin-top:12px;text-align:center;min-height:16px"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="radar-settings-modal">
+  <div class="modal" style="max-width:420px">
+    <div class="modal-title">Radar API Ayarları</div>
+    <p style="font-size:12px;color:var(--text3);margin:-8px 0 20px">Anahtarlar sadece bu cihazda (localStorage) saklanır, Firebase/GitHub'a gitmez. Finnhub ve SEC EDGAR anahtar gerektirmez.</p>
+    <div class="form-grid">
+      <div class="form-group">
+        <label class="form-label">Financial Modeling Prep API Key</label>
+        <input type="password" id="radar-fmp-key" class="form-input" placeholder="financialmodelingprep.com üzerinden ücretsiz alınır">
+      </div>
+      <div class="form-group">
+        <label class="form-label">NewsAPI.org API Key</label>
+        <input type="password" id="radar-newsapi-key" class="form-input" placeholder="newsapi.org üzerinden ücretsiz alınır">
+        <div style="font-size:10px;color:var(--text3);margin-top:6px">Not: NewsAPI ücretsiz plan bazen sadece localhost'tan çalışır — GitHub Pages'te kota hatası alırsa Radar otomatik olarak diğer kaynaklarla devam eder.</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:24px">
+      <button class="btn" onclick="saveRadarSettings()" style="flex:1">Kaydet</button>
+      <button class="btn btn-secondary" onclick="closeModal('radar-settings-modal')">İptal</button>
+    </div>
+    <div id="radar-modal-status" style="font-size:11px;margin-top:12px;text-align:center;min-height:16px"></div>
   </div>
 </div>
 
@@ -1544,6 +1635,9 @@ const DEFAULT = {
     ],
     maaslar:{"2026-03": 312600, "2026-04": 312600, "2026-05": 295956, "2026-06": 278439, "2026-07": 278439, "2026-08": 278765, "2026-09": 279843, "2026-10": 279843, "2026-11": 279843, "2026-12": 279843, "2026-01": 279843, "2026-02": 350100},
   },
+  radarWatchlist: ['QQQM','VEA','VOO','IJR','VIG','PG','PEP','JNJ','TXN','AVGO','MSFT','SCHD'],
+  radarKayitlar: [],
+  radarSonuclar: [],
 };
 
 let state = (() => {
@@ -1562,6 +1656,9 @@ let state = (() => {
       if(!parsed.realizeKayitlar) parsed.realizeKayitlar = JSON.parse(JSON.stringify(DEFAULT.realizeKayitlar));
       if(!parsed.abdSnapshot) parsed.abdSnapshot = [];
       if(!parsed.portfoySnapshot) parsed.portfoySnapshot = [];
+      if(!parsed.radarWatchlist) parsed.radarWatchlist = JSON.parse(JSON.stringify(DEFAULT.radarWatchlist));
+      if(!parsed.radarKayitlar) parsed.radarKayitlar = [];
+      if(!parsed.radarSonuclar) parsed.radarSonuclar = [];
       // Eski temettuKayit verisini temettuKayitlar'a taşı
       if(parsed.temettuKayit && parsed.temettuKayit.length > 0) {
         const mevcutTarihler = new Set(parsed.temettuKayitlar.map(k => k.ticker+'_'+k.tarih));
@@ -1686,6 +1783,9 @@ function importData(event) {
       if(!state.abdHedef) state.abdHedef = JSON.parse(JSON.stringify(DEFAULT.abdHedef));
       if(!state.maliyetSecim) state.maliyetSecim = JSON.parse(JSON.stringify(DEFAULT.maliyetSecim));
       if(!state.portfoySecim) state.portfoySecim = JSON.parse(JSON.stringify(DEFAULT.portfoySecim));
+      if(!state.radarWatchlist) state.radarWatchlist = JSON.parse(JSON.stringify(DEFAULT.radarWatchlist));
+      if(!state.radarKayitlar) state.radarKayitlar = [];
+      if(!state.radarSonuclar) state.radarSonuclar = [];
       // Ödemeler: import'ta boşsa mevcut koru
       const importTutarDolu = state.odemeler.maddeler?.some(m => Object.keys(m.tutarlar||{}).length > 0)
                            || Object.keys(state.odemeler.maaslar||{}).length > 0;
@@ -1763,7 +1863,8 @@ function renderPage(p) {
     gecmis: renderGecmis,
     odemeler: renderOdemeler,
     abdtakip: renderABDTakip,
-    temettutakip: renderTemettuTakip
+    temettutakip: renderTemettuTakip,
+    radar: renderRadar
   };
   if(map[p]) map[p]();
 }
@@ -4147,6 +4248,9 @@ async function updateIndexHtmlDefault(cfg) {
       abdSnapshot: s.abdSnapshot || [],
       portfoySnapshot: s.portfoySnapshot || [],
       realizeKayitlar: s.realizeKayitlar || [],
+      radarWatchlist: s.radarWatchlist || [],
+      radarKayitlar: s.radarKayitlar || [],
+      radarSonuclar: s.radarSonuclar || [],
     }, null, 2)}`;
 
     htmlContent = htmlContent.slice(0, startIdx) + newDefault + htmlContent.slice(endIdx + 1);
@@ -4219,6 +4323,339 @@ function showStatus(msg,type=''){
   const el=document.getElementById('status-bar');
   el.textContent=msg; el.className='status-bar show '+type;
   clearTimeout(stTimer); stTimer=setTimeout(()=>el.classList.remove('show'),3500);
+}
+
+// ===== RADAR =====
+// Bilinen tickerlar için SEC EDGAR CIK eşlemesi (ETF'lerin şirket CIK'i yoktur, o yüzden sadece hisseler)
+const SEC_CIK_MAP = {
+  AAPL:'0000320193', MSFT:'0000789019', NVDA:'0001045810', AMZN:'0001018724', GOOGL:'0001652044',
+  META:'0001326801', TSLA:'0001318605', AMD:'0000002488', AVGO:'0001730168', TXN:'0000097476',
+  JNJ:'0000200406', PG:'0000080424', PEP:'0000077476', KO:'0000021344', WMT:'0000104169',
+  MU:'0000723125', UBER:'0001543151', MSTR:'0001050446', VALE:'0000917851', DXCM:'0001093557',
+  COP:'0001163165', VICI:'0001705696', DAL:'0000027904', UAL:'0000100517', NWS:'0001564708',
+};
+
+const RADAR_ESIK = 4; // bu puanın üstündeki hisseler otomatik performans takibine alınır
+const RADAR_POS_KEYWORDS = ['upgrade','beats','beat estimates','acquisition','acquires','partnership','patent','record revenue','raises guidance','launches','deal','contract award','breakthrough'];
+
+function getRadarConfig() {
+  return {
+    fmpKey: localStorage.getItem('fmp_key') || '',
+    newsapiKey: localStorage.getItem('newsapi_key') || '',
+  };
+}
+
+function openRadarSettings() {
+  const cfg = getRadarConfig();
+  document.getElementById('radar-fmp-key').value = cfg.fmpKey;
+  document.getElementById('radar-newsapi-key').value = cfg.newsapiKey;
+  document.getElementById('radar-modal-status').textContent = '';
+  document.getElementById('radar-settings-modal').classList.add('open');
+}
+
+function saveRadarSettings() {
+  localStorage.setItem('fmp_key', document.getElementById('radar-fmp-key').value.trim());
+  localStorage.setItem('newsapi_key', document.getElementById('radar-newsapi-key').value.trim());
+  closeModal('radar-settings-modal');
+  showStatus('Radar API ayarları kaydedildi', 'success');
+  renderRadar();
+}
+
+// NewsAPI ücretsiz plan günde ~100 istek — güvenlik payıyla 90'da kendiliğinden durur
+function getNewsApiQuota() {
+  const today = new Date().toISOString().slice(0,10);
+  let date = localStorage.getItem('newsapi_daily_date') || '';
+  if(date !== today) {
+    localStorage.setItem('newsapi_daily_date', today);
+    localStorage.setItem('newsapi_daily_count', '0');
+    date = today;
+  }
+  const count = parseInt(localStorage.getItem('newsapi_daily_count') || '0', 10);
+  return { count, limit: 90, date };
+}
+function incNewsApiQuota() {
+  const q = getNewsApiQuota();
+  localStorage.setItem('newsapi_daily_count', String(q.count + 1));
+}
+function exhaustNewsApiQuota() {
+  localStorage.setItem('newsapi_daily_count', '9999');
+}
+
+function scanHeadlinesForKeywords(headlines) {
+  const hits = [];
+  for(const h of headlines) {
+    const low = (h||'').toLowerCase();
+    if(RADAR_POS_KEYWORDS.some(kw => low.includes(kw))) hits.push(h);
+  }
+  return hits;
+}
+
+async function fetchFinnhubSignals(ticker) {
+  const signals = [];
+  try {
+    const r = await fetch(`https://finnhub.io/api/v1/stock/recommendation?symbol=${ticker}&token=${FINNHUB_KEY}`, {cache:'no-store'});
+    if(r.ok) {
+      const d = await r.json();
+      if(Array.isArray(d) && d.length >= 2) {
+        const cur = d[0], prev = d[1];
+        const curScore = (cur.strongBuy||0)*2 + (cur.buy||0) - (cur.sell||0) - (cur.strongSell||0)*2;
+        const prevScore = (prev.strongBuy||0)*2 + (prev.buy||0) - (prev.sell||0) - (prev.strongSell||0)*2;
+        if(curScore > prevScore && curScore > 0) {
+          signals.push({kaynak:'Finnhub', tip:'Analist', detay:`Analist tavsiyeleri iyileşiyor (${prevScore} → ${curScore})`, puan:2});
+        }
+      }
+    }
+  } catch(e) {}
+  try {
+    const to = new Date().toISOString().slice(0,10);
+    const from = new Date(Date.now() - 120*86400000).toISOString().slice(0,10);
+    const r = await fetch(`https://finnhub.io/api/v1/stock/insider-sentiment?symbol=${ticker}&from=${from}&to=${to}&token=${FINNHUB_KEY}`, {cache:'no-store'});
+    if(r.ok) {
+      const d = await r.json();
+      const arr = d?.data || [];
+      const last = arr[arr.length-1];
+      if(last && last.mspr > 20) {
+        signals.push({kaynak:'Finnhub', tip:'Insider', detay:`İçeriden net alım baskın (MSPR ${last.mspr.toFixed(1)})`, puan:2});
+      }
+    }
+  } catch(e) {}
+  try {
+    const to = new Date().toISOString().slice(0,10);
+    const from = new Date(Date.now() - 7*86400000).toISOString().slice(0,10);
+    const r = await fetch(`https://finnhub.io/api/v1/company-news?symbol=${ticker}&from=${from}&to=${to}&token=${FINNHUB_KEY}`, {cache:'no-store'});
+    if(r.ok) {
+      const d = await r.json();
+      const headlines = (Array.isArray(d)?d:[]).map(n=>n.headline).slice(0,30);
+      scanHeadlinesForKeywords(headlines).slice(0,3).forEach(h => signals.push({kaynak:'Finnhub', tip:'Haber', detay:h.slice(0,90), puan:1}));
+    }
+  } catch(e) {}
+  return signals;
+}
+
+async function fetchFMPSignals(ticker) {
+  const { fmpKey } = getRadarConfig();
+  if(!fmpKey) return [];
+  const signals = [];
+  try {
+    const r = await fetch(`https://financialmodelingprep.com/api/v3/upgrades-downgrades?symbol=${ticker}&apikey=${fmpKey}`, {cache:'no-store'});
+    if(r.ok) {
+      const d = await r.json();
+      const recent = (Array.isArray(d)?d:[]).filter(x => x.publishedDate && (Date.now() - new Date(x.publishedDate).getTime()) < 21*86400000);
+      const upgrade = recent.find(x => (x.action||'').toLowerCase().includes('upgrade'));
+      if(upgrade) signals.push({kaynak:'FMP', tip:'Analist', detay:`${upgrade.gradingCompany||'Analist'} notu yükseltti → ${upgrade.newGrade}`, puan:2});
+    }
+  } catch(e) {}
+  try {
+    const r = await fetch(`https://financialmodelingprep.com/api/v3/insider-trading?symbol=${ticker}&limit=30&apikey=${fmpKey}`, {cache:'no-store'});
+    if(r.ok) {
+      const d = await r.json();
+      const recent = (Array.isArray(d)?d:[]).filter(x => x.transactionDate && (Date.now() - new Date(x.transactionDate).getTime()) < 30*86400000);
+      let netShares = 0;
+      recent.forEach(x => {
+        const t = (x.transactionType||'').toUpperCase();
+        const qty = x.securitiesTransacted || 0;
+        if(t.includes('P-') || t.includes('PURCHASE')) netShares += qty;
+        else if(t.includes('S-') || t.includes('SALE')) netShares -= qty;
+      });
+      if(netShares > 0 && recent.length > 0) signals.push({kaynak:'FMP', tip:'Insider', detay:'Son 30 günde içeriden net alım', puan:2});
+    }
+  } catch(e) {}
+  try {
+    const r = await fetch(`https://financialmodelingprep.com/api/v3/earnings-surprises/${ticker}?apikey=${fmpKey}`, {cache:'no-store'});
+    if(r.ok) {
+      const d = await r.json();
+      const last = (Array.isArray(d)?d:[])[0];
+      if(last && last.actualEarningResult != null && last.estimatedEarning != null && last.actualEarningResult > last.estimatedEarning) {
+        signals.push({kaynak:'FMP', tip:'Kazanç', detay:'Son çeyrek EPS beklentiyi aştı', puan:1});
+      }
+    }
+  } catch(e) {}
+  return signals;
+}
+
+async function fetchSecEdgarSignals(ticker) {
+  const cik = SEC_CIK_MAP[ticker];
+  if(!cik) return [];
+  const signals = [];
+  try {
+    const to = new Date().toISOString().slice(0,10);
+    const from = new Date(Date.now() - 30*86400000).toISOString().slice(0,10);
+    const url = `https://efts.sec.gov/LATEST/search-index?forms=8-K&ciks=${cik}&dateRange=custom&startdt=${from}&enddt=${to}`;
+    const r = await fetch(url, {cache:'no-store'});
+    if(r.ok) {
+      const d = await r.json();
+      const hits = d?.hits?.hits || [];
+      const importantItems = new Set(['1.01','2.01','7.01']);
+      const found = hits.some(h => (h?._source?.items||[]).some(it => importantItems.has(it)));
+      if(found) signals.push({kaynak:'SEC EDGAR', tip:'Dosyalama', detay:'Son 30 günde önemli sözleşme/devralma bildirimi (8-K)', puan:2});
+    }
+  } catch(e) {}
+  return signals;
+}
+
+async function fetchNewsApiSignals(ticker) {
+  const { newsapiKey } = getRadarConfig();
+  if(!newsapiKey) return [];
+  const q = getNewsApiQuota();
+  if(q.count >= q.limit) return []; // kota dolu — sessizce atla, hata gösterme
+  incNewsApiQuota();
+  const signals = [];
+  try {
+    const from = new Date(Date.now() - 7*86400000).toISOString().slice(0,10);
+    const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(ticker)}&from=${from}&sortBy=publishedAt&language=en&pageSize=15&apiKey=${newsapiKey}`;
+    const r = await fetch(url, {cache:'no-store'});
+    if(r.status === 429 || r.status === 426) { exhaustNewsApiQuota(); return []; } // rate limit — bugün için kapat
+    if(r.ok) {
+      const d = await r.json();
+      const headlines = (d?.articles||[]).map(a=>a.title).slice(0,15);
+      scanHeadlinesForKeywords(headlines).slice(0,2).forEach(h => signals.push({kaynak:'NewsAPI', tip:'Haber', detay:h.slice(0,90), puan:1}));
+    }
+  } catch(e) {}
+  return signals;
+}
+
+async function scanTickerSignals(ticker) {
+  const results = await Promise.allSettled([
+    fetchFinnhubSignals(ticker),
+    fetchFMPSignals(ticker),
+    fetchSecEdgarSignals(ticker),
+    fetchNewsApiSignals(ticker),
+  ]);
+  const signals = [];
+  results.forEach(r => { if(r.status === 'fulfilled') signals.push(...r.value); });
+  const puan = signals.reduce((s,x)=>s+x.puan, 0);
+  const kaynaklar = [...new Set(signals.map(s=>s.kaynak))];
+  return { ticker, puan, kaynaklar, signals, tarandi: new Date().toISOString() };
+}
+
+async function scanRadar() {
+  const btn = document.getElementById('radar-scan-btn');
+  const watchlist = state.radarWatchlist || [];
+  if(watchlist.length === 0) { showStatus('Önce izleme listesine hisse ekleyin', 'error'); return; }
+  btn.disabled = true;
+  const sonuclar = [];
+  state.radarSonuclar = sonuclar; // aynı referans — döngü boyunca canlı güncellenir
+  for(let i=0; i<watchlist.length; i++) {
+    const ticker = watchlist[i];
+    btn.textContent = `Taranıyor ${i+1}/${watchlist.length}…`;
+    try {
+      sonuclar.push(await scanTickerSignals(ticker));
+    } catch(e) {}
+    renderRadar();
+  }
+
+  // Eşik üstü olanları performans takibine ekle (aynı hisse 14 gün içinde tekrar eklenmez)
+  for(const sonuc of sonuclar) {
+    if(sonuc.puan < RADAR_ESIK) continue;
+    const varOlan = (state.radarKayitlar||[]).find(k => k.ticker === sonuc.ticker && (Date.now() - new Date(k.tarih).getTime()) < 14*86400000);
+    if(varOlan) continue;
+    const fiyat = await fetchStockPrice(sonuc.ticker);
+    if(!fiyat) continue;
+    state.liveprices[sonuc.ticker] = fiyat;
+    state.radarKayitlar.unshift({
+      id: Date.now() + Math.random(),
+      ticker: sonuc.ticker,
+      tarih: new Date().toISOString(),
+      fiyat,
+      paraBirimi: 'USD',
+      skor: sonuc.puan,
+      kaynaklar: sonuc.kaynaklar,
+      sinyaller: sonuc.signals,
+    });
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Tara';
+  save();
+  renderRadar();
+  showStatus('Radar taraması tamamlandı', 'success');
+}
+
+function addRadarWatchlistTicker() {
+  const input = document.getElementById('radar-add-ticker');
+  const ticker = input.value.trim().toUpperCase();
+  if(!ticker) return;
+  if(!state.radarWatchlist) state.radarWatchlist = [];
+  if(!state.radarWatchlist.includes(ticker)) state.radarWatchlist.push(ticker);
+  input.value = '';
+  save();
+  renderRadar();
+}
+function removeRadarWatchlistTicker(ticker) {
+  state.radarWatchlist = (state.radarWatchlist||[]).filter(t => t !== ticker);
+  save();
+  renderRadar();
+}
+function removeRadarKayit(id) {
+  state.radarKayitlar = (state.radarKayitlar||[]).filter(k => k.id !== id);
+  save();
+  renderRadar();
+}
+
+async function refreshRadarPerformance() {
+  const tickers = [...new Set((state.radarKayitlar||[]).map(k=>k.ticker))];
+  for(const ticker of tickers) {
+    const fiyat = await fetchStockPrice(ticker);
+    if(fiyat) state.liveprices[ticker] = fiyat;
+  }
+  save();
+  renderRadar();
+  showStatus('Radar performans fiyatları güncellendi', 'success');
+}
+
+function renderRadar() {
+  const cfg = getRadarConfig();
+  const watchlist = state.radarWatchlist || [];
+  setText('radar-watchlist-count', watchlist.length);
+  const sonuclar = state.radarSonuclar || [];
+  setText('radar-active-count', sonuclar.filter(s => s.puan >= RADAR_ESIK).length);
+  const sonTarama = sonuclar[0]?.tarandi;
+  setText('radar-last-scan', sonTarama ? new Date(sonTarama).toLocaleString('tr-TR') : '—');
+  const q = getNewsApiQuota();
+  setText('radar-newsapi-quota', cfg.newsapiKey ? (q.count+'/'+q.limit) : 'anahtar yok');
+
+  const tagsEl = document.getElementById('radar-watchlist-tags');
+  if(tagsEl) tagsEl.innerHTML = watchlist.map(t => `
+    <span class="tag" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface2);color:var(--text2);border:1px solid var(--border)">
+      ${t} <span style="cursor:pointer;color:var(--text3)" onclick="removeRadarWatchlistTicker('${t}')">✕</span>
+    </span>`).join('') || '<span style="color:var(--text3);font-size:12px">İzleme listesi boş</span>';
+
+  const resultsBody = document.getElementById('radar-results-tbody');
+  if(resultsBody) {
+    const siraliSonuclar = [...sonuclar].sort((a,b) => b.puan - a.puan);
+    resultsBody.innerHTML = siraliSonuclar.length === 0
+      ? '<tr><td colspan="5" style="text-align:center;color:var(--text3);padding:20px">Henüz tarama yapılmadı — "Tara" butonuna basın</td></tr>'
+      : siraliSonuclar.map(s => `
+      <tr>
+        <td style="font-family:'DM Mono',monospace">${s.ticker}</td>
+        <td style="text-align:right" class="${s.puan >= RADAR_ESIK ? 'pos' : ''}">${s.puan}</td>
+        <td>${s.kaynaklar.join(', ') || '—'}</td>
+        <td style="font-size:11px;color:var(--text3);max-width:360px">${s.signals.map(x=>x.detay).join(' · ') || 'Sinyal yok'}</td>
+        <td>${s.puan >= RADAR_ESIK ? '<span class="tag tag-buy">İzleniyor</span>' : ''}</td>
+      </tr>`).join('');
+  }
+
+  const perfBody = document.getElementById('radar-performance-tbody');
+  if(perfBody) {
+    const kayitlar = state.radarKayitlar || [];
+    perfBody.innerHTML = kayitlar.length === 0
+      ? '<tr><td colspan="7" style="text-align:center;color:var(--text3);padding:20px">Henüz performans kaydı yok</td></tr>'
+      : kayitlar.map(k => {
+        const guncel = livePrice(k.ticker);
+        const pct = guncel ? (guncel - k.fiyat) / k.fiyat : null;
+        const gun = Math.floor((Date.now() - new Date(k.tarih).getTime()) / 86400000);
+        return `
+      <tr>
+        <td style="font-family:'DM Mono',monospace">${k.ticker}</td>
+        <td>${new Date(k.tarih).toLocaleDateString('tr-TR')}</td>
+        <td style="text-align:right">${fmtUSD(k.fiyat)}</td>
+        <td style="text-align:right">${guncel ? fmtUSD(guncel) : '—'}</td>
+        <td style="text-align:right" class="${pct!=null ? pc(pct) : ''}">${pct!=null ? fmtPct(pct) : '—'}</td>
+        <td style="text-align:right">${gun}</td>
+        <td><span style="cursor:pointer;color:var(--text3)" onclick="removeRadarKayit(${k.id})">✕</span></td>
+      </tr>`;
+      }).join('');
+  }
 }
 
 // ===== INIT =====
