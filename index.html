@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portföy Takip — V8.36</title>
+<title>Portföy Takip — V8.37</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -291,7 +291,7 @@ canvas{max-height:220px;}
   <div class="logo" style="display:flex;align-items:center;justify-content:space-between">
     <div>
       <div class="logo-title">Portföy</div>
-      <div class="logo-sub">Yatırım Takip — V8.36</div>
+      <div class="logo-sub">Yatırım Takip — V8.37</div>
     </div>
     <button id="sidebar-close" onclick="toggleSidebar()" style="display:none;background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:4px">✕</button>
   </div>
@@ -4556,9 +4556,12 @@ async function radarEsikTakibeEkle(sonuclar) {
     if(sonuc.puan < RADAR_ESIK) continue;
     const varOlan = (state.radarKayitlar||[]).find(k => k.ticker === sonuc.ticker && (Date.now() - new Date(k.tarih).getTime()) < 14*86400000);
     if(varOlan) continue;
-    const fiyat = await fetchStockPrice(sonuc.ticker);
-    if(!fiyat) continue;
-    state.liveprices[sonuc.ticker] = fiyat;
+    // Taze fiyat çekilemezse (rate limit / ağ hatası) elde olan cache'e düş, o da yoksa fiyatsız kaydet —
+    // eşiği geçen bir sinyal, sadece fiyat çekilemedi diye asla sessizce kaybolmasın.
+    let fiyat = null;
+    try { fiyat = await fetchStockPrice(sonuc.ticker); } catch(e) {}
+    if(!fiyat) fiyat = livePrice(sonuc.ticker) || null;
+    if(fiyat) state.liveprices[sonuc.ticker] = fiyat;
     state.radarKayitlar.unshift({
       id: Date.now() + Math.random(),
       ticker: sonuc.ticker,
@@ -4731,7 +4734,7 @@ function renderRadar() {
       ? '<tr><td colspan="7" style="text-align:center;color:var(--text3);padding:20px">Henüz performans kaydı yok</td></tr>'
       : kayitlar.map(k => {
         const guncel = livePrice(k.ticker);
-        const pct = guncel ? (guncel - k.fiyat) / k.fiyat : null;
+        const pct = (guncel && k.fiyat) ? (guncel - k.fiyat) / k.fiyat : null;
         const gun = Math.floor((Date.now() - new Date(k.tarih).getTime()) / 86400000);
         return `
       <tr>
