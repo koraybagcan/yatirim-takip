@@ -3975,6 +3975,8 @@ function checkAuth() {
         if(sbData && sbData.buyume && sbData.buyume.length > 0) {
           const mevcutRealize = state.realizeKayitlar;
           const mevcutTemettu = state.temettuKayitlar;
+          const mevcutRadarKayitlar = state.radarKayitlar;
+          const mevcutRadarWatchlist = state.radarWatchlist;
           state = sbData;
           if(!state.odemeler) state.odemeler = JSON.parse(JSON.stringify(DEFAULT.odemeler));
           if(!state.abdHedef) state.abdHedef = JSON.parse(JSON.stringify(DEFAULT.abdHedef));
@@ -3983,6 +3985,11 @@ function checkAuth() {
             state.realizeKayitlar = (mevcutRealize && mevcutRealize.length > 0) ? mevcutRealize : JSON.parse(JSON.stringify(DEFAULT.realizeKayitlar || []));
           if(!state.temettuKayitlar || state.temettuKayitlar.length === 0)
             if(mevcutTemettu && mevcutTemettu.length > 0) state.temettuKayitlar = mevcutTemettu;
+          // Radar alanları eski (Radar'dan önceki) Firebase kayıtlarında yok — eksikse boş dizi/yereldeki veriyle doldur.
+          // Bu backfill olmadan state.radarKayitlar undefined kalır ve tarama sessizce hata verip kayıt eklemez.
+          if(!state.radarWatchlist) state.radarWatchlist = (mevcutRadarWatchlist && mevcutRadarWatchlist.length > 0) ? mevcutRadarWatchlist : JSON.parse(JSON.stringify(DEFAULT.radarWatchlist));
+          if(!state.radarKayitlar) state.radarKayitlar = (mevcutRadarKayitlar && mevcutRadarKayitlar.length > 0) ? mevcutRadarKayitlar : [];
+          if(!state.radarSonuclar) state.radarSonuclar = [];
           localStorage.setItem('portfoy-v8', JSON.stringify(state));
           renderDashboard();
           const activePage = document.querySelector('.page.active')?.id?.replace('page-','');
@@ -4312,12 +4319,17 @@ async function githubLoad() {
     const mevcutOdemeler = state.odemeler;
     const mevcutRealize2 = state.realizeKayitlar;
     const mevcutTemettu2 = state.temettuKayitlar;
+    const mevcutRadarKayitlar2 = state.radarKayitlar;
+    const mevcutRadarWatchlist2 = state.radarWatchlist;
     state = imported;
     if(!state.odemeler) state.odemeler = JSON.parse(JSON.stringify(DEFAULT.odemeler));
     if(!state.maliyetSecim) state.maliyetSecim = JSON.parse(JSON.stringify(DEFAULT.maliyetSecim));
     if(!state.portfoySecim) state.portfoySecim = JSON.parse(JSON.stringify(DEFAULT.portfoySecim));
     if(!state.abdHedef) state.abdHedef = JSON.parse(JSON.stringify(DEFAULT.abdHedef));
     if(!state.abdOzetOrder) state.abdOzetOrder = [...ABD_OZET_DEFAULT_ORDER];
+    if(!state.radarWatchlist) state.radarWatchlist = (mevcutRadarWatchlist2 && mevcutRadarWatchlist2.length > 0) ? mevcutRadarWatchlist2 : JSON.parse(JSON.stringify(DEFAULT.radarWatchlist));
+    if(!state.radarKayitlar) state.radarKayitlar = (mevcutRadarKayitlar2 && mevcutRadarKayitlar2.length > 0) ? mevcutRadarKayitlar2 : [];
+    if(!state.radarSonuclar) state.radarSonuclar = [];
     const importTutarDolu = state.odemeler.maddeler?.some(m => Object.keys(m.tutarlar||{}).length > 0)
                          || Object.keys(state.odemeler.maaslar||{}).length > 0;
     if(!importTutarDolu && mevcutOdemeler) state.odemeler = mevcutOdemeler;
@@ -4552,6 +4564,7 @@ async function scanTickerSignals(ticker) {
 // Eşik üstü sonuçları performans takibine ekler (aynı hisse 14 gün içinde tekrar eklenmez).
 // scanRadar() ve runBroadScan() tarafından ortak kullanılır.
 async function radarEsikTakibeEkle(sonuclar) {
+  if(!state.radarKayitlar) state.radarKayitlar = []; // savunma amaçlı — eski (Radar'dan önceki) bir state yüklenmiş olabilir
   for(const sonuc of sonuclar) {
     if(sonuc.puan < RADAR_ESIK) continue;
     const varOlan = (state.radarKayitlar||[]).find(k => k.ticker === sonuc.ticker && (Date.now() - new Date(k.tarih).getTime()) < 14*86400000);
