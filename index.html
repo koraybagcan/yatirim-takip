@@ -4106,28 +4106,31 @@ async function applyUpdate() {
   const cfg = getGHConfig();
   try {
     const apiUrl = `https://api.github.com/repos/${cfg.username}/${cfg.repo}/contents/index.html`;
-    // Mevcut SHA al
-    let sha = null;
-    const existing = await fetch(apiUrl, {
-      headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
-    });
-    if(existing.ok) { const d = await existing.json(); sha = d.sha; }
-    // Yeni HTML'i yükle
     const encoded = btoa(unescape(encodeURIComponent(newHtml)));
-    const body = {
-      message: `Uygulama güncellendi — ${new Date().toLocaleString('tr-TR')}`,
-      content: encoded,
-      ...(sha ? {sha} : {})
-    };
-    const res = await fetch(apiUrl, {
-      method: 'PUT',
-      headers: {
-        'Authorization': `token ${cfg.token}`,
-        'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body)
-    });
+    const msg = `Uygulama güncellendi — ${new Date().toLocaleString('tr-TR')}`;
+    async function getSha() {
+      const r = await fetch(apiUrl, { headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }, cache: 'no-store' });
+      return r.ok ? (await r.json()).sha : null;
+    }
+    async function doPut(sha) {
+      return fetch(apiUrl, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${cfg.token}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: msg, content: encoded, ...(sha ? {sha} : {}) })
+      });
+    }
+    // SHA uyuşmazlığı olursa (ör. arka planda updateIndexHtmlDefault ile çakışma) taze SHA ile bir kez daha dene
+    let res = await doPut(await getSha());
+    if(!res.ok) {
+      const errCheck = await res.clone().json().catch(()=>({}));
+      if(res.status === 409 || (errCheck.message||'').includes('does not match')) {
+        res = await doPut(await getSha());
+      }
+    }
     if(res.ok) {
       statusEl.textContent = '\u2713 GitHub\u2019a y\u00fcklendi! Sayfa birka\u00e7 dakika i\u00e7inde güncellenecek.';
       statusEl.style.color = 'var(--green)';
@@ -4199,14 +4202,22 @@ async function githubSave() {
 }
 
 async function updateIndexHtmlDefault(cfg) {
+  const htmlUrl = `https://api.github.com/repos/${cfg.username}/${cfg.repo}/contents/index.html`;
+  // SHA çakışması olursa (ör. applyUpdate ile aynı anda çalışırsa) taze içerikle bir kez daha dener
+  for(let attempt = 0; attempt < 2; attempt++) {
+    const conflict = await updateIndexHtmlDefaultAttempt(cfg, htmlUrl);
+    if(!conflict) return;
+  }
+}
+
+async function updateIndexHtmlDefaultAttempt(cfg, htmlUrl) {
   try {
-    const htmlUrl = `https://api.github.com/repos/${cfg.username}/${cfg.repo}/contents/index.html`;
     // Mevcut index.html'i al
     const existing = await fetch(htmlUrl, {
       headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' },
       cache: 'no-store'
     });
-    if(!existing.ok) return;
+    if(!existing.ok) return false;
     const existingData = await existing.json();
     const sha = existingData.sha;
     let htmlContent = decodeURIComponent(escape(atob(existingData.content.replace(/\n/g,''))));
@@ -4214,7 +4225,7 @@ async function updateIndexHtmlDefault(cfg) {
     // DEFAULT bloğunu bul — "const DEFAULT = {" ile kapanış "}" arasını değiştir
     const startMarker = 'const DEFAULT = {';
     const startIdx = htmlContent.indexOf(startMarker);
-    if(startIdx === -1) { console.warn('DEFAULT bloğu bulunamadı'); return; }
+    if(startIdx === -1) { console.warn('DEFAULT bloğu bulunamadı'); return false; }
 
     // DEFAULT bloğunun sonunu bul (iç içe parantezleri say)
     let depth = 0, endIdx = startIdx;
@@ -4261,7 +4272,7 @@ async function updateIndexHtmlDefault(cfg) {
 
     // GitHub'a yükle
     const newEncoded = btoa(unescape(encodeURIComponent(htmlContent)));
-    await fetch(htmlUrl, {
+    const putRes = await fetch(htmlUrl, {
       method: 'PUT',
       headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -4270,8 +4281,15 @@ async function updateIndexHtmlDefault(cfg) {
         sha
       })
     });
+    if(!putRes.ok) {
+      const errBody = await putRes.json().catch(()=>({}));
+      if(putRes.status === 409 || (errBody.message||'').includes('does not match')) return true; // çakışma — çağıran taze içerikle tekrar dener
+      console.warn('index.html güncellenemedi:', errBody.message || putRes.status);
+    }
+    return false;
   } catch(e) {
     console.warn('index.html güncellenemedi:', e.message);
+    return false;
   }
 }
 
