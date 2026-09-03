@@ -1,0 +1,7774 @@
+{
+  "abdSnapshot": [
+    {
+      "valUSD": 38880.04,
+      "valTL": 1792016,
+      "tarih": "2026-06-08",
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-09",
+      "valTL": 1786067,
+      "valUSD": 38733.4,
+      "costUSD": 32580.54
+    },
+    {
+      "valUSD": 38157.52,
+      "costUSD": 32580.54,
+      "valTL": 1758177,
+      "tarih": "2026-06-10"
+    },
+    {
+      "valTL": 1761019,
+      "tarih": "2026-06-11",
+      "valUSD": 38157.52,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-12",
+      "costUSD": 32580.54,
+      "valTL": 1800179,
+      "valUSD": 38919.6
+    },
+    {
+      "valUSD": 39144.52,
+      "valTL": 1810457,
+      "tarih": "2026-06-14",
+      "costUSD": 32580.54
+    },
+    {
+      "costUSD": 32580.54,
+      "valUSD": 39144.52,
+      "tarih": "2026-06-15",
+      "valTL": 1811170
+    },
+    {
+      "valUSD": 39292.74,
+      "costUSD": 32580.54,
+      "tarih": "2026-06-17",
+      "valTL": 1819627
+    },
+    {
+      "costUSD": 32580.54,
+      "valTL": 1837215,
+      "tarih": "2026-06-18",
+      "valUSD": 39560.61
+    },
+    {
+      "costUSD": 32580.54,
+      "tarih": "2026-06-19",
+      "valTL": 1837290,
+      "valUSD": 39560.61
+    },
+    {
+      "valTL": 1835945,
+      "costUSD": 32580.54,
+      "tarih": "2026-06-20",
+      "valUSD": 39560.61
+    },
+    {
+      "valUSD": 39560.61,
+      "valTL": 1836807,
+      "tarih": "2026-06-21",
+      "costUSD": 32580.54
+    },
+    {
+      "valUSD": 39560.61,
+      "costUSD": 32580.54,
+      "tarih": "2026-06-22",
+      "valTL": 1837503
+    },
+    {
+      "valUSD": 39360.27,
+      "tarih": "2026-06-23",
+      "valTL": 1828198,
+      "costUSD": 32580.54
+    },
+    {
+      "valUSD": 38693.53,
+      "tarih": "2026-06-24",
+      "valTL": 1798854,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-06-25",
+      "valTL": 1795046,
+      "costUSD": 32580.54,
+      "valUSD": 38595.58
+    },
+    {
+      "costUSD": 32580.54,
+      "valUSD": 38706.03,
+      "tarih": "2026-06-26",
+      "valTL": 1804382
+    },
+    {
+      "valTL": 1808479,
+      "tarih": "2026-06-29",
+      "costUSD": 32580.54,
+      "valUSD": 38793.91
+    },
+    {
+      "valUSD": 38800.52,
+      "costUSD": 32580.54,
+      "valTL": 1810378,
+      "tarih": "2026-06-30"
+    },
+    {
+      "valTL": 1824491,
+      "tarih": "2026-07-01",
+      "valUSD": 39097.8,
+      "costUSD": 32580.54
+    },
+    {
+      "costUSD": 32580.54,
+      "valUSD": 39016.93,
+      "tarih": "2026-07-02",
+      "valTL": 1821392
+    },
+    {
+      "valTL": 1825777,
+      "tarih": "2026-07-03",
+      "valUSD": 39013.41,
+      "costUSD": 32580.54
+    },
+    {
+      "tarih": "2026-07-06",
+      "valTL": 1826514,
+      "costUSD": 32580.54,
+      "valUSD": 39013.41
+    },
+    {
+      "costUSD": 32580.54,
+      "valTL": 1842051,
+      "tarih": "2026-07-07",
+      "valUSD": 39331.57
+    },
+    {
+      "costUSD": 32580.54,
+      "valUSD": 39156.09,
+      "valTL": 1834502,
+      "tarih": "2026-07-08"
+    },
+    {
+      "costUSD": 32580.54,
+      "valUSD": 39196.78,
+      "valTL": 1836714,
+      "tarih": "2026-07-09"
+    },
+    {
+      "costUSD": 32580.54,
+      "tarih": "2026-07-10",
+      "valTL": 1855153,
+      "valUSD": 39487.72
+    },
+    {
+      "tarih": "2026-07-11",
+      "valTL": 1857676,
+      "valUSD": 39573.53,
+      "costUSD": 32580.54
+    },
+    {
+      "costUSD": 32580.54,
+      "valUSD": 39573.53,
+      "valTL": 1857676,
+      "tarih": "2026-07-12"
+    },
+    {
+      "valTL": 1836733,
+      "tarih": "2026-07-14",
+      "valUSD": 39127.37,
+      "costUSD": 32580.54
+    },
+    {
+      "costUSD": 32580.54,
+      "tarih": "2026-07-15",
+      "valTL": 1844109,
+      "valUSD": 39253.15
+    },
+    {
+      "valTL": 1846448,
+      "tarih": "2026-07-16",
+      "costUSD": 32580.54,
+      "valUSD": 39242.55
+    },
+    {
+      "valUSD": 39036.89,
+      "tarih": "2026-07-17",
+      "valTL": 1840874,
+      "costUSD": 32580.54
+    },
+    {
+      "valTL": 1820751,
+      "tarih": "2026-07-18",
+      "costUSD": 32580.54,
+      "valUSD": 38628.77
+    },
+    {
+      "valUSD": 38555.63,
+      "tarih": "2026-07-25",
+      "valTL": 1823114,
+      "costUSD": 32580.54
+    },
+    {
+      "costUSD": 32580.54,
+      "tarih": "2026-07-31",
+      "valTL": 1844862,
+      "valUSD": 39015.55
+    },
+    {
+      "costUSD": 26439.91,
+      "valUSD": 30264.64,
+      "tarih": "2026-08-01",
+      "valTL": 1436605
+    },
+    {
+      "tarih": "2026-08-03",
+      "valTL": 1438663,
+      "costUSD": 26439.91,
+      "valUSD": 30264.64
+    },
+    {
+      "costUSD": 22942.06,
+      "valUSD": 27852.37,
+      "tarih": "2026-08-04",
+      "valTL": 1324060
+    },
+    {
+      "valUSD": 27804.48,
+      "costUSD": 22942.06,
+      "valTL": 1322798,
+      "tarih": "2026-08-05"
+    },
+    {
+      "valTL": 1328444,
+      "tarih": "2026-08-08",
+      "valUSD": 27862.42,
+      "costUSD": 22942.06
+    },
+    {
+      "valTL": 1331158,
+      "tarih": "2026-08-10",
+      "costUSD": 22942.06,
+      "valUSD": 27905.12
+    },
+    {
+      "tarih": "2026-08-11",
+      "costUSD": 22942.06,
+      "valTL": 1331989,
+      "valUSD": 27905.04
+    },
+    {
+      "valUSD": 27863.96,
+      "costUSD": 22942.06,
+      "tarih": "2026-08-12",
+      "valTL": 1330685
+    },
+    {
+      "valTL": 1340625,
+      "tarih": "2026-08-13",
+      "valUSD": 28066.1,
+      "costUSD": 22942.06
+    },
+    {
+      "tarih": "2026-08-14",
+      "valTL": 1346736,
+      "costUSD": 22942.06,
+      "valUSD": 28128.8
+    },
+    {
+      "valUSD": 28121.04,
+      "tarih": "2026-08-15",
+      "valTL": 1345373,
+      "costUSD": 22942.06
+    },
+    {
+      "tarih": "2026-08-16",
+      "valTL": 1345373,
+      "costUSD": 22942.06,
+      "valUSD": 28121.04
+    },
+    {
+      "costUSD": 22942.06,
+      "valTL": 1346931,
+      "tarih": "2026-08-17",
+      "valUSD": 28121.04
+    },
+    {
+      "valTL": 1339099,
+      "tarih": "2026-08-18",
+      "costUSD": 22942.06,
+      "valUSD": 27946.62
+    },
+    {
+      "valUSD": 27730.04,
+      "tarih": "2026-08-19",
+      "valTL": 1329237,
+      "costUSD": 22942.06
+    },
+    {
+      "valTL": 1327835,
+      "tarih": "2026-08-20",
+      "costUSD": 22942.06,
+      "valUSD": 27695.14
+    },
+    {
+      "costUSD": 22942.06,
+      "valTL": 1333691,
+      "tarih": "2026-08-22",
+      "valUSD": 27807.18
+    },
+    {
+      "valUSD": 27807.18,
+      "costUSD": 22942.06,
+      "valTL": 1333691,
+      "tarih": "2026-08-23"
+    },
+    {
+      "tarih": "2026-08-24",
+      "valTL": 1336900,
+      "valUSD": 27807.18,
+      "costUSD": 22942.06
+    },
+    {
+      "tarih": "2026-08-25",
+      "valTL": 1337379,
+      "costUSD": 22942.06,
+      "valUSD": 27825.48
+    },
+    {
+      "valUSD": 27825.48,
+      "costUSD": 22942.06,
+      "valTL": 1338634,
+      "tarih": "2026-08-26"
+    },
+    {
+      "costUSD": 22942.06,
+      "valTL": 1339678,
+      "tarih": "2026-08-27",
+      "valUSD": 27842.91
+    },
+    {
+      "costUSD": 22942.06,
+      "valUSD": 27991.2,
+      "tarih": "2026-08-28",
+      "valTL": 1349744
+    },
+    {
+      "valUSD": 27991.2,
+      "tarih": "2026-08-29",
+      "valTL": 1349744,
+      "costUSD": 22942.06
+    },
+    {
+      "valTL": 1349744,
+      "tarih": "2026-08-30",
+      "costUSD": 22942.06,
+      "valUSD": 27991.2
+    },
+    {
+      "valUSD": 27991.2,
+      "costUSD": 22942.06,
+      "tarih": "2026-08-31",
+      "valTL": 1350889
+    },
+    {
+      "valUSD": 27708.92,
+      "tarih": "2026-09-01",
+      "valTL": 1337501,
+      "costUSD": 22942.06
+    },
+    {
+      "costUSD": 22942.06,
+      "valUSD": 27678.06,
+      "tarih": "2026-09-02",
+      "valTL": 1336609
+    },
+    {
+      "valUSD": 27757.8,
+      "tarih": "2026-09-03",
+      "valTL": 1340921,
+      "costUSD": 22942.06
+    }
+  ],
+  "portfoySecim": {
+    "ev": true,
+    "bes": true,
+    "metal": false,
+    "abd_buyume": true,
+    "abd_temttu": true,
+    "sirketpay": false
+  },
+  "radarWatchlist": [],
+  "radarSonuclar": [
+    {
+      "tarandi": "2026-09-01T10:34:08.553Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "puan": 2,
+      "ticker": "KKR",
+      "signals": [
+        {
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        }
+      ]
+    },
+    {
+      "tarandi": "2026-09-01T10:34:09.308Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ],
+      "puan": 2,
+      "ticker": "AWK"
+    },
+    {
+      "puan": 2,
+      "signals": [
+        {
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ],
+      "ticker": "O",
+      "tarandi": "2026-09-01T10:34:10.244Z",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "tarandi": "2026-09-01T10:34:10.957Z",
+      "puan": 0,
+      "ticker": "CRWD",
+      "kaynaklar": [],
+      "signals": []
+    },
+    {
+      "ticker": "ASTS",
+      "tarandi": "2026-09-01T10:34:11.779Z",
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider"
+        }
+      ]
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        }
+      ],
+      "puan": 2,
+      "tarandi": "2026-09-01T10:34:12.687Z",
+      "ticker": "DTM",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ],
+      "ticker": "SMMT",
+      "tarandi": "2026-09-01T10:34:13.505Z"
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "SGI",
+      "puan": 2,
+      "tarandi": "2026-09-01T10:34:14.636Z"
+    },
+    {
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-09-01T10:34:15.678Z",
+      "ticker": "DT",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 36.4)"
+        }
+      ],
+      "puan": 2
+    },
+    {
+      "kaynaklar": [],
+      "ticker": "AGCO",
+      "tarandi": "2026-09-01T10:34:16.782Z",
+      "signals": [],
+      "puan": 0
+    },
+    {
+      "puan": 2,
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider"
+        }
+      ],
+      "ticker": "BROS",
+      "tarandi": "2026-09-01T10:34:17.560Z",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "tarandi": "2026-09-01T10:34:18.624Z",
+      "puan": 0,
+      "kaynaklar": [],
+      "ticker": "AMD",
+      "signals": []
+    },
+    {
+      "kaynaklar": [],
+      "puan": 0,
+      "signals": [],
+      "tarandi": "2026-09-01T10:34:19.650Z",
+      "ticker": "GOOG"
+    },
+    {
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ],
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "AMT",
+      "tarandi": "2026-09-01T10:34:20.878Z"
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider"
+        }
+      ],
+      "ticker": "CRH",
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-09-01T10:34:21.943Z"
+    },
+    {
+      "tarandi": "2026-08-31T06:23:59.665Z",
+      "ticker": "ADSK",
+      "puan": 4,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "detay": "Analist tavsiyeleri iyileşiyor (49 → 50)",
+          "tip": "Analist",
+          "puan": 2
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        }
+      ]
+    },
+    {
+      "signals": [],
+      "tarandi": "2026-08-31T06:24:03.440Z",
+      "puan": 0,
+      "ticker": "SNPS",
+      "kaynaklar": []
+    },
+    {
+      "ticker": "WDC",
+      "tarandi": "2026-08-31T06:24:04.616Z",
+      "puan": 2,
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 27.4)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "tarandi": "2026-08-31T06:24:13.905Z",
+      "puan": 2,
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 60.1)",
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2
+        }
+      ],
+      "ticker": "ARES",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "ATO",
+      "tarandi": "2026-08-31T06:24:16.391Z",
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "puan": 2
+    },
+    {
+      "puan": 2,
+      "tarandi": "2026-08-31T06:24:17.276Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "CTAS",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 39.4)"
+        }
+      ]
+    },
+    {
+      "signals": [
+        {
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ],
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "DG",
+      "tarandi": "2026-08-31T06:24:18.079Z"
+    },
+    {
+      "tarandi": "2026-08-31T06:24:19.053Z",
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "DUK",
+      "signals": [
+        {
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ]
+    },
+    {
+      "puan": 2,
+      "ticker": "EBAY",
+      "tarandi": "2026-08-31T06:24:20.179Z",
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "tarandi": "2026-08-28T07:30:54.803Z",
+      "kaynaklar": [],
+      "puan": 0,
+      "ticker": "GLW",
+      "signals": []
+    },
+    {
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 59.7)",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider"
+        }
+      ],
+      "ticker": "CCI",
+      "tarandi": "2026-08-28T07:30:55.593Z"
+    },
+    {
+      "signals": [
+        {
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 33.3)"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-28T07:30:56.332Z",
+      "ticker": "JKHY",
+      "puan": 2
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        }
+      ],
+      "puan": 2,
+      "ticker": "RSG",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-28T07:30:57.749Z"
+    },
+    {
+      "ticker": "VRT",
+      "puan": 2,
+      "tarandi": "2026-08-28T07:30:58.459Z",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "ticker": "STZ",
+      "signals": [
+        {
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 37.1)"
+        }
+      ],
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-28T07:31:01.340Z"
+    },
+    {
+      "puan": 0,
+      "kaynaklar": [],
+      "tarandi": "2026-08-28T07:31:02.298Z",
+      "signals": [],
+      "ticker": "COO"
+    },
+    {
+      "puan": 0,
+      "signals": [],
+      "kaynaklar": [],
+      "tarandi": "2026-08-28T07:31:03.991Z",
+      "ticker": "CSX"
+    },
+    {
+      "tarandi": "2026-08-28T07:31:05.002Z",
+      "puan": 0,
+      "ticker": "DHR",
+      "signals": [],
+      "kaynaklar": []
+    },
+    {
+      "tarandi": "2026-08-27T06:22:41.906Z",
+      "ticker": "GS",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "puan": 5,
+      "signals": [
+        {
+          "puan": 2,
+          "tip": "Analist",
+          "kaynak": "Finnhub",
+          "detay": "Analist tavsiyeleri iyileşiyor (18 → 19)"
+        },
+        {
+          "detay": "Can TROW's F/m Investments Buyout Deal Accelerate Fixed-Income Growth?",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "detay": "Deal Dispatch: MunichRe Buys At-Bay, Mavis Tire Closes Pep Boys Purchase, Werewolf Merges ",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Broadcom Seeks More Than $60 Billion in Latest AI Debt Deal",
+          "kaynak": "Finnhub"
+        }
+      ]
+    },
+    {
+      "tarandi": "2026-08-27T06:22:44.445Z",
+      "ticker": "LMT",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (15 → 18)",
+          "puan": 2
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Trump Signs New National Space Transportation Policy That Aims for 1,000 Launches by 2030,"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Should Lockheed’s AI Sensing and Space Partnerships Shift the Core Investment Case for LMT"
+        },
+        {
+          "puan": 1,
+          "detay": "Rocket Lab CEO Says $8 Billion Iridium Deal Won’t Take on Elon Musk’s Starlink — Don’t Int",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "puan": 5
+    },
+    {
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "detay": "Analist tavsiyeleri iyileşiyor (36 → 37)",
+          "tip": "Analist",
+          "puan": 2
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "detay": "Analog Devices Q3 Earnings Beat Estimates, Revenues Rise Y/Y",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "tarandi": "2026-08-27T06:22:45.497Z",
+      "puan": 5,
+      "ticker": "LITE",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider"
+        }
+      ],
+      "tarandi": "2026-08-27T06:22:50.735Z",
+      "puan": 2,
+      "ticker": "PSN",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "ticker": "ABBV",
+      "tarandi": "2026-08-27T06:22:51.481Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "puan": 2
+    },
+    {
+      "tarandi": "2026-08-24T05:01:14.919Z",
+      "ticker": "DLTR",
+      "signals": [],
+      "puan": 0,
+      "kaynaklar": []
+    },
+    {
+      "signals": [
+        {
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2
+        }
+      ],
+      "ticker": "D",
+      "puan": 2,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-24T05:01:17.964Z"
+    },
+    {
+      "ticker": "SRE",
+      "tarandi": "2026-08-24T05:01:27.795Z",
+      "puan": 5,
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (24 → 25)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "SoCalGas Program Provides More Than $10 Million in Energy Efficiency Upgrades to Schools a"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "tarandi": "2026-08-24T05:01:33.323Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 95.0)"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "detay": "B of A Securities Upgrades Americold Realty Trust (COLD)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "This Duolingo Analyst Turns Bullish; Here Are Top 5 Upgrades For Tuesday"
+        },
+        {
+          "detay": "B of A Securities Upgrades Americold Realty Trust to Neutral, Raises Price Target to $16",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "puan": 5,
+      "ticker": "COLD"
+    },
+    {
+      "puan": 2,
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 98.4)"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "HONA",
+      "tarandi": "2026-08-20T06:08:26.250Z"
+    },
+    {
+      "puan": 2,
+      "ticker": "HUM",
+      "tarandi": "2026-08-20T06:08:26.700Z",
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "puan": 0,
+      "signals": [],
+      "kaynaklar": [],
+      "tarandi": "2026-08-20T06:08:27.830Z",
+      "ticker": "GOOGL"
+    },
+    {
+      "puan": 0,
+      "ticker": "HPE",
+      "tarandi": "2026-08-20T06:08:30.482Z",
+      "signals": [],
+      "kaynaklar": []
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 39.7)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "PH",
+      "puan": 2,
+      "tarandi": "2026-08-20T06:08:31.088Z"
+    },
+    {
+      "puan": 0,
+      "kaynaklar": [],
+      "signals": [],
+      "ticker": "PYPL",
+      "tarandi": "2026-08-20T06:08:31.604Z"
+    },
+    {
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 88.9)"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "HON",
+      "tarandi": "2026-08-20T06:08:33.486Z",
+      "puan": 2
+    },
+    {
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "detay": "Amcor Q4 Earnings Beat Estimates on Berry Global Acquisition",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Amcor beats quarterly forecasts as investors weigh transition-period outlook",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Amcor (AMCR) Q4 Earnings and Revenues Beat Estimates",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        }
+      ],
+      "ticker": "AMCR",
+      "puan": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-19T06:06:59.541Z"
+    },
+    {
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (22 → 25)",
+          "puan": 2
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "ON Holding: Great Results, Greater Expectations (Rating Upgrade)",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "puan": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "DECK",
+      "tarandi": "2026-08-19T06:07:03.041Z"
+    },
+    {
+      "signals": [
+        {
+          "puan": 2,
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (36 → 41)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "HSBC Upgrades Digital Realty Trust (DLR)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "How To Upgrade Your Real Estate Portfolio For The AI Era",
+          "puan": 1
+        },
+        {
+          "detay": "This Capricor Therapeutics Analyst Turns Bullish; Here Are Top 5 Upgrades For Friday",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-19T06:07:03.779Z",
+      "ticker": "DLR",
+      "puan": 5
+    },
+    {
+      "tarandi": "2026-08-19T06:07:06.370Z",
+      "puan": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "ISRG",
+      "signals": [
+        {
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (38 → 39)",
+          "kaynak": "Finnhub",
+          "puan": 2
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "Intuitive Surgical (ISRG) Beats On Q2 As Investors Ask If The Bull Case Is Priced In",
+          "puan": 1
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "This Intuitive Surgical Analyst Turns Bullish; Here Are Top 4 Upgrades For Wednesday",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Oppenheimer Upgrades Intuitive Surgical to Outperform, Announces $500 Price Target"
+        }
+      ]
+    },
+    {
+      "ticker": "RL",
+      "tarandi": "2026-08-19T06:07:08.134Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "puan": 5,
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "detay": "Analist tavsiyeleri iyileşiyor (33 → 34)",
+          "tip": "Analist",
+          "puan": 2
+        },
+        {
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "All You Need to Know About Ralph Lauren (RL) Rating Upgrade to Buy"
+        }
+      ]
+    },
+    {
+      "puan": 5,
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Duolingo Stock Surges After Upgrade to Buy Rating",
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "detay": "This Duolingo Analyst Turns Bullish; Here Are Top 5 Upgrades For Tuesday",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "detay": "DA Davidson Upgrades Duolingo to Buy, Raises Price Target to $160",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        }
+      ],
+      "ticker": "DUOL",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-19T06:07:08.578Z"
+    },
+    {
+      "signals": [
+        {
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 32.6)",
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Align Technology Prevails in China Patent Infringement Action",
+          "tip": "Haber"
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Align Technology Prevails in China Patent Infringement Action Against Angelalign"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "ALGN",
+      "puan": 4,
+      "tarandi": "2026-08-19T06:07:10.201Z"
+    },
+    {
+      "puan": 2,
+      "tarandi": "2026-08-18T07:30:44.524Z",
+      "ticker": "FOXA",
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "tarandi": "2026-08-18T07:30:50.567Z",
+      "puan": 2,
+      "ticker": "FLEX",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "signals": [],
+      "puan": 0,
+      "kaynaklar": [],
+      "ticker": "GM",
+      "tarandi": "2026-08-18T07:30:51.341Z"
+    },
+    {
+      "kaynaklar": [],
+      "puan": 0,
+      "ticker": "MS",
+      "tarandi": "2026-08-18T07:30:52.924Z",
+      "signals": []
+    },
+    {
+      "kaynaklar": [],
+      "tarandi": "2026-08-18T07:30:53.913Z",
+      "ticker": "NEM",
+      "signals": [],
+      "puan": 0
+    },
+    {
+      "ticker": "TXN",
+      "puan": 2,
+      "tarandi": "2026-08-18T07:30:55.854Z",
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 73.9)",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "puan": 2,
+      "tarandi": "2026-08-17T04:50:20.762Z",
+      "ticker": "ABT"
+    },
+    {
+      "signals": [
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Ferguson Prices $1.2B Senior Notes Offering To Fund FWI Holdings Acquisition",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Ferguson Beats Earnings Estimates. Why the HVAC Supplier Is Optimistic as Business Headwin",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Ferguson Enterprises Q2 Adj. EPS $3.39 Beats $3.29 Estimate, Sales $8.750B Beat $8.668B Es"
+        }
+      ],
+      "ticker": "FERG",
+      "puan": 3,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-17T04:50:26.279Z"
+    },
+    {
+      "tarandi": "2026-08-17T04:50:28.710Z",
+      "puan": 3,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "NTAP",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "Everpure Stock Rallies After Cloud Deal. Why It Is A 'Mic Drop Moment.'",
+          "puan": 1
+        },
+        {
+          "detay": "WDC Beats Q4 Expectations: More AI-Driven Upside Ahead for the Stock?",
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "detay": "Apple downgraded, HPE upgraded: Wall Street's top analyst calls"
+        }
+      ]
+    },
+    {
+      "tarandi": "2026-08-17T04:50:30.170Z",
+      "puan": 3,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "ORCL",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Oracle stock jumps as AWS partnership expands to 22 regions"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Quantinuum’s Cloud Deal With Oracle Sends Clear Message on Hybrid AI",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "What Is Oracle (ORCL) Building With Its New AI And Quantum Deals?",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ]
+    },
+    {
+      "tarandi": "2026-08-16T14:51:36.682Z",
+      "kaynaklar": [],
+      "puan": 0,
+      "ticker": "SLGN",
+      "signals": []
+    },
+    {
+      "signals": [],
+      "puan": 0,
+      "tarandi": "2026-08-16T14:51:40.436Z",
+      "kaynaklar": [],
+      "ticker": "C"
+    },
+    {
+      "signals": [],
+      "ticker": "CMS",
+      "puan": 0,
+      "kaynaklar": [],
+      "tarandi": "2026-08-16T14:51:41.217Z"
+    },
+    {
+      "signals": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (15 → 16)",
+          "tip": "Analist",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Restaurant Brands International: Burger King Is Taking Market Share (Upgrade)"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "QSR",
+      "tarandi": "2026-08-16T14:51:43.181Z",
+      "puan": 3
+    },
+    {
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "ONON",
+      "tarandi": "2026-08-16T14:51:43.671Z",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 72.5)"
+        },
+        {
+          "detay": "ON Holding: Great Results, Greater Expectations (Rating Upgrade)",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "detay": "On Holding: The Quarter Wasn't Great, But The Stock May Finally Be (Upgrade)",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "On Holding Q2 Adj. EPS $0.44 Beats $0.41 Estimate, Sales $1.076B Miss $1.110B Estimate"
+        }
+      ],
+      "puan": 5
+    },
+    {
+      "kaynaklar": [],
+      "ticker": "MDT",
+      "tarandi": "2026-08-14T06:04:10.890Z",
+      "puan": 0,
+      "signals": []
+    },
+    {
+      "signals": [],
+      "ticker": "HALO",
+      "kaynaklar": [],
+      "tarandi": "2026-08-14T06:04:11.808Z",
+      "puan": 0
+    },
+    {
+      "tarandi": "2026-08-14T06:04:12.461Z",
+      "kaynaklar": [],
+      "puan": 0,
+      "ticker": "ITT",
+      "signals": []
+    },
+    {
+      "tarandi": "2026-08-14T06:04:16.513Z",
+      "signals": [],
+      "ticker": "AKAM",
+      "puan": 0,
+      "kaynaklar": []
+    },
+    {
+      "ticker": "CEG",
+      "puan": 3,
+      "tarandi": "2026-08-14T06:04:20.492Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "detay": "Constellation (CEG) Locks In More Power Deals As Nuclear Output Slips",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Constellation Signed 920 Megawatts of New Power Deals, Including a Walmart PPA. Here's Wha",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "puan": 1,
+          "detay": "CEG Q2 Earnings Call Focuses on Higher Guidance and Nuclear Deals",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ]
+    },
+    {
+      "tarandi": "2026-08-13T07:22:22.626Z",
+      "ticker": "MDU",
+      "puan": 7,
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (12 → 13)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "JP Morgan Upgrades MDU Resources Group (MDU)"
+        },
+        {
+          "detay": "MDU Resources Q2 Earnings Beat Estimates, Revenues Increase Y/Y",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "detay": "JP Morgan Upgrades MDU Resources Group to Overweight, Announces $27 Price Target",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "puan": 6,
+      "tarandi": "2026-08-13T07:22:25.923Z",
+      "signals": [
+        {
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (62 → 63)",
+          "kaynak": "Finnhub",
+          "tip": "Analist"
+        },
+        {
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Is Accenture's AI-Focused Deal With India's Dabur a Growth Catalyst?"
+        },
+        {
+          "detay": "ServiceNow Opens First Brazil Office; Expands Academic Partnerships to Build Regional AI T",
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "signals": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (10 → 11)",
+          "tip": "Analist",
+          "kaynak": "Finnhub",
+          "puan": 2
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 32.2)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        },
+        {
+          "puan": 1,
+          "detay": "Nvidia’s (NVDA) Amkor (AMKR) Deal Adds Packaging Muscle Ahead Of Earnings",
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Amkor Q2 2026: The Margin Breakthrough Is Real And The Price Drop Went Too Far",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "puan": 6,
+      "ticker": "AMKR",
+      "tarandi": "2026-08-13T07:22:28.175Z",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Accenture (ACN) Following UniCredit Deal And IBM Tie Up Has A Valuation Split",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "Accenture (ACN) Beats Stock Market Upswing: What Investors Need to Know"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Is Accenture's AI-Focused Deal With India's Dabur a Growth Catalyst?",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "puan": 5,
+      "ticker": "ACN",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-13T07:22:30.109Z"
+    },
+    {
+      "ticker": "BLK",
+      "tarandi": "2026-08-13T07:22:33.204Z",
+      "signals": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (23 → 24)",
+          "puan": 2,
+          "tip": "Analist",
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "detay": "Goldman Sachs Gains Bitcoin, Ethereum ETFs in $2.25B Deal: Could It 'Leapfrog' BlackRock?"
+        },
+        {
+          "puan": 1,
+          "detay": "Nvidia's Big Deal Expands The AI Horizon Once Again (Rating Upgrade)",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "detay": "Nvidia Strikes Deals With Wall Street Firms to Fund Its Own Customers",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "puan": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider"
+        },
+        {
+          "tip": "Haber",
+          "detay": "Argus Research Upgrades Boeing (BA)",
+          "kaynak": "Finnhub",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Argus Research Upgrades Boeing to Buy, Announces $265 Price Target",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Archer Aviation Exec Says Boeing Deal Will ‘Significantly Change the Profile’ as $200 Mill"
+        }
+      ],
+      "puan": 5,
+      "ticker": "BA",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-13T07:22:33.968Z"
+    },
+    {
+      "ticker": "CAH",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarandi": "2026-08-13T07:22:35.109Z",
+      "puan": 5,
+      "signals": [
+        {
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        },
+        {
+          "puan": 1,
+          "detay": "QDEL Q2 Earnings & Revenues Beat Estimates, 2026 Guidance Lowered",
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Inogen Q2 Earnings Beat Estimates, Sales Rise Y/Y, 2026 View Cut",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "tip": "Haber",
+          "detay": "iRhythm Q2 Earnings Beat Estimates on Volume Growth, '26 View Raised",
+          "kaynak": "Finnhub",
+          "puan": 1
+        }
+      ]
+    },
+    {
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "UPS",
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 67.5)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "tarandi": "2026-08-12T06:51:50.046Z",
+      "puan": 2
+    },
+    {
+      "puan": 2,
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ],
+      "tarandi": "2026-08-12T06:51:50.539Z",
+      "ticker": "SRPT",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 86.3)",
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2
+        }
+      ],
+      "tarandi": "2026-08-12T06:51:52.310Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "puan": 2,
+      "ticker": "ALB"
+    },
+    {
+      "tarandi": "2026-08-12T06:51:52.809Z",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider"
+        }
+      ],
+      "ticker": "ALL",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "puan": 2
+    },
+    {
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 99.0)",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "CPAY",
+      "tarandi": "2026-08-12T06:51:53.800Z",
+      "puan": 2
+    },
+    {
+      "kaynaklar": [],
+      "ticker": "OXY",
+      "tarandi": "2026-08-11T08:06:42.020Z",
+      "puan": 0,
+      "signals": []
+    },
+    {
+      "puan": 2,
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "GXO Logistics Transfers Six Contract Sites Serving Grocery Customers To DP World To Satisf",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "GXO Logistics (GXO) Beats Q2 Earnings Estimates"
+        }
+      ],
+      "tarandi": "2026-08-11T08:06:43.663Z",
+      "ticker": "GXO",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "ticker": "BR",
+      "tarandi": "2026-08-11T05:25:08.940Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Broadridge's Q4 Earnings & Revenues Beat Estimates, Increase Y/Y"
+        },
+        {
+          "puan": 1,
+          "detay": "Broadridge (NYSE:BR) Beats Q2 CY2026 Sales Expectations",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "detay": "Broadridge Financial Soln Q4 Adj. EPS $3.82 Beats $3.76 Estimate, Sales $2.220B Beat $2.13",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "puan": 5
+    },
+    {
+      "tarandi": "2026-08-10T17:39:25.853Z",
+      "puan": 0,
+      "ticker": "F",
+      "kaynaklar": [],
+      "signals": []
+    },
+    {
+      "tarandi": "2026-08-10T17:39:26.767Z",
+      "kaynaklar": [],
+      "puan": 0,
+      "signals": [],
+      "ticker": "FOX"
+    },
+    {
+      "tarandi": "2026-08-10T17:39:27.367Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "puan": 2,
+      "ticker": "MRK",
+      "signals": [
+        {
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        }
+      ]
+    },
+    {
+      "tarandi": "2026-08-10T17:39:28.433Z",
+      "puan": 0,
+      "ticker": "TKO",
+      "kaynaklar": [],
+      "signals": []
+    },
+    {
+      "puan": 2,
+      "tarandi": "2026-08-10T17:39:28.906Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "EHC",
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ]
+    },
+    {
+      "signals": [],
+      "ticker": "MMM",
+      "puan": 0,
+      "tarandi": "2026-08-10T17:39:30.046Z",
+      "kaynaklar": []
+    },
+    {
+      "signals": [],
+      "kaynaklar": [],
+      "puan": 0,
+      "ticker": "MGM",
+      "tarandi": "2026-08-10T17:39:30.980Z"
+    },
+    {
+      "kaynaklar": [],
+      "tarandi": "2026-08-10T17:30:42.998Z",
+      "puan": 0,
+      "ticker": "QQQM",
+      "signals": []
+    },
+    {
+      "signals": [],
+      "kaynaklar": [],
+      "ticker": "VEA",
+      "puan": 0,
+      "tarandi": "2026-08-10T17:30:43.667Z"
+    },
+    {
+      "puan": 0,
+      "kaynaklar": [],
+      "signals": [],
+      "ticker": "VOO",
+      "tarandi": "2026-08-10T17:30:44.381Z"
+    },
+    {
+      "signals": [],
+      "ticker": "IJR",
+      "puan": 0,
+      "tarandi": "2026-08-10T17:30:44.921Z",
+      "kaynaklar": []
+    },
+    {
+      "ticker": "VIG",
+      "tarandi": "2026-08-10T17:30:45.436Z",
+      "kaynaklar": [],
+      "puan": 0,
+      "signals": []
+    },
+    {
+      "ticker": "PG",
+      "tarandi": "2026-08-10T17:30:45.969Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "detay": "P&G’s (PG) $3.8B Wellness Deal Collides With a Costly Outlook",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Deal Dispatch: Bending Spoons Acquires Airtable, Bain Capital Buys Gong Cha Global, Salad ",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "puan": 4
+    },
+    {
+      "ticker": "PEP",
+      "tarandi": "2026-08-10T17:30:46.541Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "detay": "PepsiCo launches Alvalle gazpacho in the U.S., expanding into refrigerated foods",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "puan": 1
+    },
+    {
+      "signals": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (28 → 29)"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Gilead Sciences: The Market May Be Underestimating Its Growth (Rating Upgrade)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Halozyme's Q2 Earnings Beat Estimates, 2026 Outlook Raised, Stock Up",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "puan": 4,
+      "ticker": "JNJ",
+      "tarandi": "2026-08-10T17:30:47.119Z",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "kaynaklar": [],
+      "tarandi": "2026-08-10T17:30:49.224Z",
+      "puan": 0,
+      "signals": [],
+      "ticker": "AVGO"
+    },
+    {
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "signals": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (86 → 87)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Analist"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Update: Market Chatter: BlackRock Signs Deal With Unions for AI Construction Jobs",
+          "tip": "Haber"
+        }
+      ],
+      "puan": 3,
+      "tarandi": "2026-08-10T17:30:50.241Z",
+      "ticker": "MSFT"
+    },
+    {
+      "signals": [],
+      "puan": 0,
+      "ticker": "SCHD",
+      "kaynaklar": [],
+      "tarandi": "2026-08-10T17:30:51.024Z"
+    }
+  ],
+  "transactions": [],
+  "portfoySnapshot": [
+    {
+      "usd": 65726,
+      "tarih": "2026-06-08",
+      "total": 3029374
+    },
+    {
+      "total": 3027690,
+      "usd": 65660,
+      "tarih": "2026-06-09"
+    },
+    {
+      "total": 2999800,
+      "tarih": "2026-06-10",
+      "usd": 65104
+    },
+    {
+      "usd": 65061,
+      "total": 3002642,
+      "tarih": "2026-06-11"
+    },
+    {
+      "usd": 65759,
+      "total": 3041600,
+      "tarih": "2026-06-12"
+    },
+    {
+      "usd": 65990,
+      "tarih": "2026-06-14",
+      "total": 3052080
+    },
+    {
+      "usd": 65980,
+      "tarih": "2026-06-15",
+      "total": 3052793
+    },
+    {
+      "total": 3061250,
+      "usd": 66104,
+      "tarih": "2026-06-17"
+    },
+    {
+      "total": 3078838,
+      "usd": 66296,
+      "tarih": "2026-06-18"
+    },
+    {
+      "total": 3080478,
+      "usd": 66329,
+      "tarih": "2026-06-19"
+    },
+    {
+      "tarih": "2026-06-20",
+      "total": 3079133,
+      "usd": 66349
+    },
+    {
+      "usd": 66336,
+      "tarih": "2026-06-21",
+      "total": 3079995
+    },
+    {
+      "tarih": "2026-06-22",
+      "total": 3080691,
+      "usd": 66326
+    },
+    {
+      "usd": 66126,
+      "total": 3071386,
+      "tarih": "2026-06-23"
+    },
+    {
+      "total": 3042042,
+      "usd": 65435,
+      "tarih": "2026-06-24"
+    },
+    {
+      "usd": 65326,
+      "total": 3038234,
+      "tarih": "2026-06-25"
+    },
+    {
+      "tarih": "2026-06-26",
+      "usd": 65374,
+      "total": 3047570
+    },
+    {
+      "tarih": "2026-06-29",
+      "total": 3051667,
+      "usd": 65462
+    },
+    {
+      "total": 3117316,
+      "tarih": "2026-06-30",
+      "usd": 66811
+    },
+    {
+      "total": 3131429,
+      "usd": 67105,
+      "tarih": "2026-07-01"
+    },
+    {
+      "tarih": "2026-07-02",
+      "usd": 67013,
+      "total": 3128330
+    },
+    {
+      "usd": 66940,
+      "total": 3132715,
+      "tarih": "2026-07-03"
+    },
+    {
+      "total": 3133452,
+      "tarih": "2026-07-06",
+      "usd": 66929
+    },
+    {
+      "usd": 67237,
+      "total": 3148989,
+      "tarih": "2026-07-07"
+    },
+    {
+      "total": 3141440,
+      "usd": 67052,
+      "tarih": "2026-07-08"
+    },
+    {
+      "total": 3143652,
+      "usd": 67088,
+      "tarih": "2026-07-09"
+    },
+    {
+      "total": 3186676,
+      "usd": 67830,
+      "tarih": "2026-07-10"
+    },
+    {
+      "total": 3189199,
+      "usd": 67939,
+      "tarih": "2026-07-11"
+    },
+    {
+      "tarih": "2026-07-12",
+      "usd": 67939,
+      "total": 3189199
+    },
+    {
+      "tarih": "2026-07-14",
+      "usd": 67492,
+      "total": 3168256
+    },
+    {
+      "tarih": "2026-07-15",
+      "usd": 67596,
+      "total": 3175632
+    },
+    {
+      "tarih": "2026-07-16",
+      "total": 3177971,
+      "usd": 67541
+    },
+    {
+      "total": 3172397,
+      "tarih": "2026-07-17",
+      "usd": 67273
+    },
+    {
+      "total": 3152274,
+      "usd": 66878,
+      "tarih": "2026-07-18"
+    },
+    {
+      "total": 3154637,
+      "usd": 66715,
+      "tarih": "2026-07-25"
+    },
+    {
+      "total": 3176385,
+      "tarih": "2026-07-31",
+      "usd": 67175
+    },
+    {
+      "tarih": "2026-08-01",
+      "total": 2768128,
+      "usd": 58316
+    },
+    {
+      "usd": 58275,
+      "tarih": "2026-08-03",
+      "total": 2770186
+    },
+    {
+      "tarih": "2026-08-04",
+      "usd": 57382,
+      "total": 2727851
+    },
+    {
+      "tarih": "2026-08-05",
+      "total": 2726589,
+      "usd": 57311
+    },
+    {
+      "tarih": "2026-08-08",
+      "total": 2732235,
+      "usd": 57305
+    },
+    {
+      "total": 2757897,
+      "tarih": "2026-08-10",
+      "usd": 57814
+    },
+    {
+      "tarih": "2026-08-11",
+      "usd": 57795,
+      "total": 2758728
+    },
+    {
+      "usd": 57762,
+      "total": 2758507,
+      "tarih": "2026-08-12"
+    },
+    {
+      "usd": 57958,
+      "tarih": "2026-08-13",
+      "total": 2768447
+    },
+    {
+      "usd": 57951,
+      "total": 2774558,
+      "tarih": "2026-08-14"
+    },
+    {
+      "tarih": "2026-08-15",
+      "total": 2773195,
+      "usd": 57965
+    },
+    {
+      "total": 2773195,
+      "usd": 57965,
+      "tarih": "2026-08-16"
+    },
+    {
+      "usd": 57931,
+      "tarih": "2026-08-17",
+      "total": 2774753
+    },
+    {
+      "total": 2766921,
+      "usd": 57745,
+      "tarih": "2026-08-18"
+    },
+    {
+      "total": 2770208,
+      "usd": 57791,
+      "tarih": "2026-08-19"
+    },
+    {
+      "usd": 57750,
+      "total": 2768806,
+      "tarih": "2026-08-20"
+    },
+    {
+      "total": 2774662,
+      "tarih": "2026-08-22",
+      "usd": 57851
+    },
+    {
+      "tarih": "2026-08-23",
+      "total": 2774662,
+      "usd": 57851
+    },
+    {
+      "usd": 57779,
+      "tarih": "2026-08-24",
+      "total": 2777871
+    },
+    {
+      "tarih": "2026-08-25",
+      "usd": 57806,
+      "total": 2778350
+    },
+    {
+      "tarih": "2026-08-26",
+      "total": 2776141,
+      "usd": 57697
+    },
+    {
+      "tarih": "2026-08-27",
+      "total": 2776979,
+      "usd": 57715
+    },
+    {
+      "tarih": "2026-08-28",
+      "usd": 57798,
+      "total": 2787045
+    },
+    {
+      "total": 2787045,
+      "usd": 57798,
+      "tarih": "2026-08-29"
+    },
+    {
+      "tarih": "2026-08-30",
+      "usd": 57798,
+      "total": 2787045
+    },
+    {
+      "tarih": "2026-08-31",
+      "total": 2788190,
+      "usd": 57773
+    },
+    {
+      "tarih": "2026-09-01",
+      "total": 2774802,
+      "usd": 57485
+    },
+    {
+      "total": 2773910,
+      "usd": 57441,
+      "tarih": "2026-09-02"
+    },
+    {
+      "tarih": "2026-09-03",
+      "total": 2778222,
+      "usd": 57511
+    }
+  ],
+  "buyume": [
+    {
+      "tlMaliyet": 113173,
+      "commission": 0,
+      "ticker": "QQQM",
+      "usdMaliyet": 2795.48,
+      "qty": 14.106877126,
+      "buyPrice": 228.95
+    },
+    {
+      "usdMaliyet": 1004.11,
+      "buyPrice": 250.85,
+      "tlMaliyet": 44640,
+      "qty": 4.020644015,
+      "ticker": "QQQM",
+      "commission": 0
+    },
+    {
+      "usdMaliyet": 718.998,
+      "buyPrice": 243,
+      "ticker": "QQQM",
+      "qty": 2.958840365,
+      "commission": 0,
+      "tlMaliyet": 31968
+    },
+    {
+      "usdMaliyet": 1073.7,
+      "buyPrice": 53.61,
+      "qty": 20.125897353,
+      "ticker": "VEA",
+      "tlMaliyet": 41974,
+      "commission": 0
+    },
+    {
+      "tlMaliyet": 12544,
+      "commission": 0,
+      "ticker": "VEA",
+      "buyPrice": 57.13,
+      "usdMaliyet": 309.85,
+      "qty": 5.39736386
+    },
+    {
+      "buyPrice": 56.63,
+      "commission": 0,
+      "qty": 1.753544472,
+      "ticker": "VEA",
+      "usdMaliyet": 72.61,
+      "tlMaliyet": 2985
+    },
+    {
+      "qty": 2.036974676,
+      "buyPrice": 534.22,
+      "ticker": "VOO",
+      "usdMaliyet": 1069.94,
+      "commission": 0,
+      "tlMaliyet": 37372
+    },
+    {
+      "ticker": "VOO",
+      "usdMaliyet": 518.63,
+      "buyPrice": 517.13,
+      "commission": 0,
+      "tlMaliyet": 20275,
+      "qty": 1
+    },
+    {
+      "commission": 0,
+      "ticker": "IJR",
+      "qty": 8.1300813,
+      "tlMaliyet": 44529,
+      "usdMaliyet": 1001.5,
+      "buyPrice": 123
+    },
+    {
+      "tlMaliyet": 57252.71926525914,
+      "qty": 5.500704531,
+      "commission": 0,
+      "ticker": "QQQM",
+      "buyPrice": 233.85,
+      "usdMaliyet": 1287.83975457435
+    },
+    {
+      "qty": 2.2357825,
+      "usdMaliyet": 521.22999995,
+      "tlMaliyet": 24028.859366694982,
+      "buyPrice": 232.46,
+      "ticker": "QQQM",
+      "commission": 1.5
+    },
+    {
+      "buyPrice": 277.78,
+      "commission": 1.5,
+      "tlMaliyet": 46165.76241915687,
+      "usdMaliyet": 1001.41999985156,
+      "qty": 3.599683202,
+      "ticker": "QQQM"
+    },
+    {
+      "buyPrice": 302.88,
+      "qty": 1.650818806,
+      "commission": 1.5,
+      "tlMaliyet": 23119.30044821499,
+      "usdMaliyet": 501.49999996127997,
+      "ticker": "QQQM"
+    },
+    {
+      "tlMaliyet": 23072.73913348892,
+      "buyPrice": 691.31,
+      "usdMaliyet": 500.48999970692,
+      "ticker": "VOO",
+      "commission": 1.5,
+      "qty": 0.721803532
+    },
+    {
+      "ticker": "VOO",
+      "usdMaliyet": 1753.61999993792,
+      "qty": 2.674183418,
+      "commission": 1.5,
+      "tlMaliyet": 80842.40808313809,
+      "buyPrice": 657.08
+    },
+    {
+      "buyPrice": 295.43,
+      "tlMaliyet": 23076.330895732845,
+      "usdMaliyet": 500.66999984232996,
+      "qty": 1.689638831,
+      "commission": 1.5,
+      "ticker": "QQQM"
+    },
+    {
+      "commission": 0,
+      "buyPrice": 0,
+      "qty": 0.019748175,
+      "usdMaliyet": 0,
+      "tlMaliyet": 0,
+      "ticker": "IJR"
+    },
+    {
+      "tlMaliyet": 0,
+      "usdMaliyet": 0,
+      "qty": 0.117165282,
+      "commission": 0,
+      "buyPrice": 0,
+      "ticker": "VEA"
+    },
+    {
+      "ticker": "QQQM",
+      "commission": 0,
+      "buyPrice": 0,
+      "qty": 0.034262406,
+      "usdMaliyet": 0,
+      "tlMaliyet": 0
+    },
+    {
+      "qty": 0.01475314,
+      "buyPrice": 0,
+      "usdMaliyet": 0,
+      "ticker": "VOO",
+      "commission": 0,
+      "tlMaliyet": 0
+    }
+  ],
+  "temttu": [
+    {
+      "usdMaliyet": 644.2,
+      "ticker": "MSFT",
+      "buyPrice": 492.93,
+      "qty": 1.303836244,
+      "commission": 0,
+      "tlMaliyet": 25906
+    },
+    {
+      "ticker": "MSFT",
+      "commission": 0,
+      "buyPrice": 502.35,
+      "usdMaliyet": 468.91,
+      "tlMaliyet": 18983,
+      "qty": 0.93044181
+    },
+    {
+      "buyPrice": 528.33,
+      "commission": 0,
+      "qty": 0.294429146,
+      "ticker": "MSFT",
+      "usdMaliyet": 144.93,
+      "tlMaliyet": 5959
+    },
+    {
+      "usdMaliyet": 1735.5,
+      "ticker": "MSFT",
+      "tlMaliyet": 71788,
+      "qty": 3.424508739,
+      "commission": 0,
+      "buyPrice": 506.35
+    },
+    {
+      "ticker": "SCHD",
+      "tlMaliyet": 38870,
+      "usdMaliyet": 966.55,
+      "qty": 36.735820327,
+      "commission": 0,
+      "buyPrice": 26.27
+    },
+    {
+      "commission": 0,
+      "buyPrice": 27.38,
+      "ticker": "SCHD",
+      "qty": 14.677581477,
+      "usdMaliyet": 403.37,
+      "tlMaliyet": 16330
+    },
+    {
+      "ticker": "SCHD",
+      "buyPrice": 27.37,
+      "usdMaliyet": 301.54,
+      "qty": 10.962238779,
+      "tlMaliyet": 12208,
+      "commission": 0
+    },
+    {
+      "ticker": "SCHD",
+      "usdMaliyet": 1157.5,
+      "commission": 0,
+      "qty": 41.747923438,
+      "buyPrice": 27.69,
+      "tlMaliyet": 47880
+    },
+    {
+      "usdMaliyet": 101.45,
+      "buyPrice": 26.41,
+      "qty": 6.226494445,
+      "tlMaliyet": 4171,
+      "ticker": "SCHD",
+      "commission": 0
+    },
+    {
+      "tlMaliyet": 110019.46233607535,
+      "ticker": "SCHD",
+      "usdMaliyet": 2386.5237826234397,
+      "qty": 78.146257622,
+      "commission": 1.5,
+      "buyPrice": 30.52
+    },
+    {
+      "usdMaliyet": 0,
+      "buyPrice": 0,
+      "qty": 0.011205147,
+      "ticker": "MSFT",
+      "commission": 0,
+      "tlMaliyet": 0
+    },
+    {
+      "tlMaliyet": 0,
+      "qty": 1.193057209,
+      "commission": 0,
+      "ticker": "SCHD",
+      "usdMaliyet": 0,
+      "buyPrice": 0
+    }
+  ],
+  "liveprices": {
+    "NOW": 147.99,
+    "ITT": 200.29,
+    "DTM": 131.02,
+    "LITE": 914.76,
+    "PEP": 139.63,
+    "AMD": 470.72,
+    "GS": 1025.9,
+    "PSN": 48.64,
+    "VEA": 72.59,
+    "TXN": 281.6,
+    "ADSK": 258.53,
+    "DUK": 119.91,
+    "GOOG": 335.41,
+    "COLD": 14.95,
+    "AVGO": 389.28,
+    "VIG": 233.28,
+    "JNJ": 260.75,
+    "PH": 979.44,
+    "EBAY": 103.56,
+    "BA": 207.78,
+    "DUOL": 148.36,
+    "HUM": 383.23,
+    "BLK": 1155.61,
+    "NEM": 126.06,
+    "QQQM": 292.02,
+    "PG": 145.85,
+    "VOO": 703.41,
+    "FOXA": 67.35,
+    "AKAM": 108.62,
+    "AMCR": 45.89,
+    "SRE": 81.7,
+    "SCHD": 35.01,
+    "DLR": 185.59,
+    "SMMT": 13.62,
+    "ACN": 189.76,
+    "GUMUS": 101.98,
+    "ISRG": 376.86,
+    "ONON": 28.5,
+    "AMT": 175.7,
+    "DECK": 87.08,
+    "BR": 182.38,
+    "ABBV": 256.42,
+    "AWK": 138.23,
+    "GM": 86.32,
+    "AMKR": 47.3,
+    "DHR": 213.56,
+    "KKR": 109.72,
+    "CCI": 76.14,
+    "MSFT": 496.82,
+    "CRH": 100.48,
+    "LMT": 561.23,
+    "RL": 346.9,
+    "VRT": 258.72,
+    "IJR": 144.31,
+    "PYPL": 52.665,
+    "MDU": 19.92,
+    "CAH": 234.62,
+    "ALTIN": 6876.97,
+    "ALGN": 159.79,
+    "BTC_TL": 3748597.1488185
+  },
+  "radarKayitlar": [
+    {
+      "tarih": "2026-08-31T06:24:20.999Z",
+      "paraBirimi": "USD",
+      "fiyat": 260.66,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 4,
+      "sinyaller": [
+        {
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (49 → 50)",
+          "kaynak": "Finnhub",
+          "puan": 2
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        }
+      ],
+      "ticker": "ADSK",
+      "id": 1788157460999.8179
+    },
+    {
+      "tarih": "2026-08-31T06:24:20.692Z",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (7 → 8)"
+        },
+        {
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "California American Water Completes Carmel Woods Pump Station Upgrade",
+          "tip": "Haber"
+        },
+        {
+          "detay": "American Water White Paper Highlights Community Benefits of Water and Wastewater System Pa",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "fiyat": 138.3,
+      "id": 1788157460692.4934,
+      "skor": 6,
+      "ticker": "AWK",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD"
+    },
+    {
+      "tarih": "2026-08-27T06:22:57.174Z",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Summit Therapeutics: Signals Of Moving Past Lung Cancer (Rating Upgrade)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "detay": "This AMD Analyst Turns Bullish; Here Are Top 5 Upgrades For Tuesday",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Bernstein Upgrades Summit Therapeutics to Market Perform, Raises Price Target to $11.9",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "ticker": "SMMT",
+      "fiyat": 14.23,
+      "paraBirimi": "USD",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "id": 1787811777174.4814
+    },
+    {
+      "fiyat": 132.54,
+      "tarih": "2026-08-27T06:22:56.932Z",
+      "id": 1787811776932.0183,
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider"
+        },
+        {
+          "detay": "Wolfe Research Upgrades DT Midstream (DTM)",
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "This SolarEdge Analyst Turns Bullish; Here Are Top 2 Upgrades For Wednesday"
+        },
+        {
+          "puan": 1,
+          "detay": "Wolfe Research Upgrades DT Midstream to Outperform, Announces $145 Price Target",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "paraBirimi": "USD",
+      "skor": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "DTM"
+    },
+    {
+      "tarih": "2026-08-27T06:22:56.587Z",
+      "paraBirimi": "USD",
+      "id": 1787811776587.3076,
+      "ticker": "LITE",
+      "fiyat": 939.03,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "sinyaller": [
+        {
+          "tip": "Analist",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (36 → 37)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Analog Devices Q3 Earnings Beat Estimates, Revenues Rise Y/Y"
+        }
+      ]
+    },
+    {
+      "skor": 5,
+      "ticker": "GS",
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (18 → 19)",
+          "puan": 2,
+          "tip": "Analist",
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "detay": "Can TROW's F/m Investments Buyout Deal Accelerate Fixed-Income Growth?",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Deal Dispatch: MunichRe Buys At-Bay, Mavis Tire Closes Pep Boys Purchase, Werewolf Merges "
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Broadcom Seeks More Than $60 Billion in Latest AI Debt Deal"
+        }
+      ],
+      "paraBirimi": "USD",
+      "fiyat": 1040.46,
+      "id": 1787811776243.3118,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarih": "2026-08-27T06:22:56.243Z"
+    },
+    {
+      "ticker": "AMT",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (30 → 32)"
+        },
+        {
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "detay": "The Bull Case For American Tower (AMT) Could Change Following Barclays’ Upgrade And CoreSi",
+          "tip": "Haber"
+        },
+        {
+          "detay": "Barclays Upgrades American Tower (AMT)",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "American Tower (AMT) Wins A Barclays Upgrade, Does The Valuation Still Look Cheap?"
+        }
+      ],
+      "paraBirimi": "USD",
+      "tarih": "2026-08-27T06:22:55.889Z",
+      "id": 1787811775889.2751,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "fiyat": 175.73
+    },
+    {
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (17 → 19)",
+          "puan": 2,
+          "tip": "Analist",
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider"
+        },
+        {
+          "puan": 1,
+          "detay": "Cigna downgraded, Humana upgraded: Wall Street's top analyst calls",
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Etsy upgraded to buy at BofA on durable growth, buyback potential",
+          "tip": "Haber",
+          "puan": 1
+        }
+      ],
+      "id": 1787811775540.7031,
+      "tarih": "2026-08-27T06:22:55.540Z",
+      "ticker": "EBAY",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD",
+      "skor": 6,
+      "fiyat": 104.2
+    },
+    {
+      "id": 1787547694582.92,
+      "tarih": "2026-08-24T05:01:34.582Z",
+      "ticker": "COLD",
+      "sinyaller": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 95.0)",
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "B of A Securities Upgrades Americold Realty Trust (COLD)",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "This Duolingo Analyst Turns Bullish; Here Are Top 5 Upgrades For Tuesday"
+        },
+        {
+          "detay": "B of A Securities Upgrades Americold Realty Trust to Neutral, Raises Price Target to $16",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "fiyat": 15.25,
+      "skor": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD"
+    },
+    {
+      "fiyat": 49.05,
+      "skor": 5,
+      "ticker": "PSN",
+      "sinyaller": [
+        {
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Baird Upgrades Parsons (PSN)",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "This Equifax Analyst Turns Bullish; Here Are Top 5 Upgrades For Friday",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Baird Upgrades Parsons to Outperform, Raises Price Target to $57"
+        }
+      ],
+      "tarih": "2026-08-24T05:01:34.331Z",
+      "id": 1787547694331.301,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD"
+    },
+    {
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (24 → 25)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Analist"
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider"
+        },
+        {
+          "puan": 1,
+          "detay": "SoCalGas Program Provides More Than $10 Million in Energy Efficiency Upgrades to Schools a",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "tarih": "2026-08-24T05:01:33.734Z",
+      "id": 1787547693734.1926,
+      "fiyat": 82.89,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "ticker": "SRE",
+      "paraBirimi": "USD"
+    },
+    {
+      "paraBirimi": "USD",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "GOOG",
+      "skor": 4,
+      "fiyat": 341.28,
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (78 → 82)",
+          "tip": "Analist"
+        },
+        {
+          "detay": "Sandisk's Nvidia Catalyst Just Emerged (Rating Upgrade)",
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Why I Like Alphabet's Debt (Rating Upgrade)",
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1
+        }
+      ],
+      "tarih": "2026-08-19T06:07:13.568Z",
+      "id": 1787119633568.6902
+    },
+    {
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 4,
+      "paraBirimi": "USD",
+      "sinyaller": [
+        {
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 32.6)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Align Technology Prevails in China Patent Infringement Action",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "Align Technology Prevails in China Patent Infringement Action Against Angelalign"
+        }
+      ],
+      "fiyat": 167.91,
+      "ticker": "ALGN",
+      "id": 1787119633425.9185,
+      "tarih": "2026-08-19T06:07:13.425Z"
+    },
+    {
+      "id": 1787119633282.838,
+      "skor": 5,
+      "sinyaller": [
+        {
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Duolingo Stock Surges After Upgrade to Buy Rating",
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "This Duolingo Analyst Turns Bullish; Here Are Top 5 Upgrades For Tuesday",
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "DA Davidson Upgrades Duolingo to Buy, Raises Price Target to $160"
+        }
+      ],
+      "fiyat": 139.64,
+      "ticker": "DUOL",
+      "paraBirimi": "USD",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarih": "2026-08-19T06:07:13.282Z"
+    },
+    {
+      "id": 1787119633134.4436,
+      "paraBirimi": "USD",
+      "tarih": "2026-08-19T06:07:13.134Z",
+      "ticker": "RL",
+      "fiyat": 378.25,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (33 → 34)"
+        },
+        {
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "detay": "All You Need to Know About Ralph Lauren (RL) Rating Upgrade to Buy",
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1
+        }
+      ]
+    },
+    {
+      "id": 1787119632997.2412,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarih": "2026-08-19T06:07:12.997Z",
+      "fiyat": 60.43,
+      "paraBirimi": "USD",
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (15 → 16)",
+          "tip": "Analist",
+          "kaynak": "Finnhub",
+          "puan": 2
+        },
+        {
+          "puan": 1,
+          "detay": "PayPal Could Be Sold For $70-$80/Share (Rating Upgrade)",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Stripe Nears $7 Billion-Plus OpenRouter Acquisition as Payments Giant Deepens AI Push: Rep",
+          "kaynak": "Finnhub"
+        },
+        {
+          "puan": 1,
+          "detay": "Stripe, Advent Eye Higher PayPal Bid After $53 Billion Offer Falls Short — Deal Could Come",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "skor": 5,
+      "ticker": "PYPL"
+    },
+    {
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "paraBirimi": "USD",
+      "fiyat": 1041.85,
+      "ticker": "PH",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 39.7)",
+          "tip": "Insider",
+          "puan": 2
+        },
+        {
+          "detay": "Parker Hannifin (PH) Completes Filtration Group Acquisition",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Deal Dispatch: Safe Harbor Marinas Buys MarineMax, Thoma Bravo Acquires Accelerant, 777 Pa",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Parker Completes Acquisition of Filtration Group Corporation",
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1
+        }
+      ],
+      "id": 1787119632841.2405,
+      "tarih": "2026-08-19T06:07:12.841Z"
+    },
+    {
+      "tarih": "2026-08-19T06:07:12.702Z",
+      "sinyaller": [
+        {
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (38 → 39)"
+        },
+        {
+          "puan": 1,
+          "detay": "Intuitive Surgical (ISRG) Beats On Q2 As Investors Ask If The Bull Case Is Priced In",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "tip": "Haber",
+          "detay": "This Intuitive Surgical Analyst Turns Bullish; Here Are Top 4 Upgrades For Wednesday",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Oppenheimer Upgrades Intuitive Surgical to Outperform, Announces $500 Price Target"
+        }
+      ],
+      "fiyat": 391.18,
+      "ticker": "ISRG",
+      "id": 1787119632702.794,
+      "skor": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD"
+    },
+    {
+      "paraBirimi": "USD",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "id": 1787119632561.397,
+      "tarih": "2026-08-19T06:07:12.561Z",
+      "ticker": "ABBV",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Wolfe Research Upgrades AbbVie (ABBV)"
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "Wolfe Research upgrades Biogen, AbbVie on pipeline strength and valuation",
+          "puan": 1
+        },
+        {
+          "detay": "Wolfe Research Upgrades AbbVie to Outperform, Announces $300 Price Target",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "fiyat": 258.92,
+      "skor": 5
+    },
+    {
+      "ticker": "HUM",
+      "paraBirimi": "USD",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 6,
+      "tarih": "2026-08-19T06:07:12.417Z",
+      "fiyat": 382,
+      "id": 1787119632417.4827,
+      "sinyaller": [
+        {
+          "tip": "Analist",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (15 → 22)"
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Can Humana Improve Caregiver Retention With HealthStream Deal?",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "CVRx Eyes Barostim Growth as Coverage Gains and BENEFIT-HF Trial Launches"
+        }
+      ]
+    },
+    {
+      "id": 1786942231563.0806,
+      "fiyat": 117.76,
+      "tarih": "2026-08-17T04:50:31.563Z",
+      "sinyaller": [
+        {
+          "puan": 2,
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (36 → 37)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Barrick Q2 Earnings Call Centers on Newmont Deal and IPO",
+          "tip": "Haber"
+        },
+        {
+          "detay": "What Is Barrick Mining (TSX:ABX) Unlocking With Its Nevada Gold Mines Deal?",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Barrick Mining (B) Misses Q2 Earnings As $1.95 Billion JV Deal Clears IPO Path"
+        }
+      ],
+      "skor": 5,
+      "paraBirimi": "USD",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "NEM"
+    },
+    {
+      "paraBirimi": "USD",
+      "tarih": "2026-08-17T04:50:31.326Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "fiyat": 86.77,
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (37 → 39)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Analist"
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "'Detroit automakers fear North American trade deal revamp could cost them billions' - Reut"
+        },
+        {
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "'Detroit automakers fear North American trade deal revamp could cost them billions'- Reute"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Dear GM Stock Fans, Here's What General Motors' $4.5 Billion Parts Deal Means for You",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "skor": 5,
+      "ticker": "GM",
+      "id": 1786942231326.3752
+    },
+    {
+      "ticker": "DUK",
+      "sinyaller": [
+        {
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (17 → 18)",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Insider",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "detay": "Vistra Q2 Earnings Beat Estimates on Pricing and Lotus, Revenues Miss",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "skor": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "fiyat": 123.92,
+      "id": 1786942231087.8286,
+      "tarih": "2026-08-17T04:50:31.087Z",
+      "paraBirimi": "USD"
+    },
+    {
+      "ticker": "DLR",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "sinyaller": [
+        {
+          "tip": "Analist",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (36 → 41)"
+        },
+        {
+          "detay": "HSBC Upgrades Digital Realty Trust (DLR)",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "How To Upgrade Your Real Estate Portfolio For The AI Era",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "This Capricor Therapeutics Analyst Turns Bullish; Here Are Top 5 Upgrades For Friday"
+        }
+      ],
+      "tarih": "2026-08-17T04:50:30.852Z",
+      "paraBirimi": "USD",
+      "skor": 5,
+      "id": 1786942230852.5134,
+      "fiyat": 200.15
+    },
+    {
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (7 → 8)",
+          "tip": "Analist",
+          "puan": 2,
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "tip": "Haber",
+          "detay": "Pennsylvania American Water Completes Acquisition of the Sutersville-Sewickley Municipal S",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        }
+      ],
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "ticker": "AWK",
+      "tarih": "2026-08-17T04:50:30.576Z",
+      "id": 1786942230576.066,
+      "paraBirimi": "USD",
+      "fiyat": 136.2
+    },
+    {
+      "ticker": "ONON",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 72.5)",
+          "tip": "Insider",
+          "puan": 2
+        },
+        {
+          "detay": "ON Holding: Great Results, Greater Expectations (Rating Upgrade)",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "detay": "On Holding: The Quarter Wasn't Great, But The Stock May Finally Be (Upgrade)",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "On Holding Q2 Adj. EPS $0.44 Beats $0.41 Estimate, Sales $1.076B Miss $1.110B Estimate",
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        }
+      ],
+      "skor": 5,
+      "paraBirimi": "USD",
+      "fiyat": 32.22,
+      "tarih": "2026-08-16T14:51:43.981Z",
+      "id": 1786891903981.5935,
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "id": 1786891903829.3374,
+      "tarih": "2026-08-16T14:51:43.829Z",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (15 → 18)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Firefly Aerospace (FLY) Is Up 16.2% After Record Q2 Sales And New Lockheed Launch Deal - H"
+        },
+        {
+          "detay": "Firefly CEO Jason Kim Sees ‘So Much Demand’ For Rocket Launches As Capacity Hits Record Co",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "Israeli Defense Contractor Beats Earnings Estimates; Stock Sinks Over Iran War Renewal"
+        }
+      ],
+      "ticker": "LMT",
+      "fiyat": 608.68,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "paraBirimi": "USD"
+    },
+    {
+      "sinyaller": [
+        {
+          "puan": 2,
+          "tip": "Analist",
+          "kaynak": "Finnhub",
+          "detay": "Analist tavsiyeleri iyileşiyor (19 → 20)"
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 59.7)",
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2
+        },
+        {
+          "detay": "August Buys: 4 IDEAL S&P 500 'Safer' Dividend Dogs",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "skor": 5,
+      "fiyat": 75.73,
+      "paraBirimi": "USD",
+      "ticker": "CCI",
+      "tarih": "2026-08-14T06:04:22.098Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "id": 1786687462098.219
+    },
+    {
+      "paraBirimi": "USD",
+      "id": 1786605758741,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "CAH",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "QDEL Q2 Earnings & Revenues Beat Estimates, 2026 Guidance Lowered",
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Inogen Q2 Earnings Beat Estimates, Sales Rise Y/Y, 2026 View Cut"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "detay": "iRhythm Q2 Earnings Beat Estimates on Volume Growth, '26 View Raised"
+        }
+      ],
+      "skor": 5,
+      "tarih": "2026-08-13T07:22:38.741Z",
+      "fiyat": 234.16
+    },
+    {
+      "tarih": "2026-08-13T07:22:38.502Z",
+      "sinyaller": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider",
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "detay": "Amcor Q4 Adj. EPS $1.23 Beats $1.19 Estimate, Sales $6.400B Beat $6.050B Estimate",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "August Buys: 4 IDEAL S&P 500 'Safer' Dividend Dogs"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "detay": "Karat Packing (KRT) Beats Q2 Earnings and Revenue Estimates"
+        }
+      ],
+      "ticker": "AMCR",
+      "id": 1786605758502.629,
+      "fiyat": 46.56,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "paraBirimi": "USD"
+    },
+    {
+      "id": 1786605758265.817,
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (63 → 64)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Riot Platforms: The $9.1 Billion Anthropic Deal Changes Everything",
+          "tip": "Haber"
+        },
+        {
+          "detay": "Riot Says Massive AI Data Center Deal Could Top $1 Billion In Annual Rent",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "Anthropic Strikes $9 Billion Cloud Deal With Riot Platforms",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        }
+      ],
+      "tarih": "2026-08-13T07:22:38.265Z",
+      "ticker": "AMD",
+      "fiyat": 482.93,
+      "skor": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD"
+    },
+    {
+      "tarih": "2026-08-13T07:22:38.030Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD",
+      "fiyat": 180.14,
+      "id": 1786605758030.2876,
+      "sinyaller": [
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2
+        },
+        {
+          "puan": 1,
+          "detay": "Accenture (ACN) Following UniCredit Deal And IBM Tie Up Has A Valuation Split",
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Accenture (ACN) Beats Stock Market Upswing: What Investors Need to Know",
+          "tip": "Haber"
+        },
+        {
+          "detay": "Is Accenture's AI-Focused Deal With India's Dabur a Growth Catalyst?",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        }
+      ],
+      "ticker": "ACN",
+      "skor": 5
+    },
+    {
+      "paraBirimi": "USD",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "AMKR",
+      "skor": 6,
+      "tarih": "2026-08-13T07:22:37.797Z",
+      "fiyat": 55.59,
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (10 → 11)",
+          "kaynak": "Finnhub",
+          "tip": "Analist",
+          "puan": 2
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 32.2)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Nvidia’s (NVDA) Amkor (AMKR) Deal Adds Packaging Muscle Ahead Of Earnings"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "Amkor Q2 2026: The Margin Breakthrough Is Real And The Price Drop Went Too Far"
+        }
+      ],
+      "id": 1786605757797.0234
+    },
+    {
+      "id": 1786605757560.7263,
+      "ticker": "VRT",
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (38 → 41)",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Analist"
+        },
+        {
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "detay": "GLJ Research Upgrades Vertiv Holdings (VRT)",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "detay": "GLJ Research Upgrades Vertiv Holdings to Buy, Announces $381 Price Target",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "skor": 6,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "fiyat": 288.36,
+      "tarih": "2026-08-13T07:22:37.560Z",
+      "paraBirimi": "USD"
+    },
+    {
+      "sinyaller": [
+        {
+          "puan": 2,
+          "tip": "Analist",
+          "kaynak": "Finnhub",
+          "detay": "Analist tavsiyeleri iyileşiyor (62 → 63)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Is Accenture's AI-Focused Deal With India's Dabur a Growth Catalyst?",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "ServiceNow Opens First Brazil Office; Expands Academic Partnerships to Build Regional AI T",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "paraBirimi": "USD",
+      "skor": 6,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "NOW",
+      "id": 1786605756988.433,
+      "tarih": "2026-08-13T07:22:36.988Z",
+      "fiyat": 124.94
+    },
+    {
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 6,
+      "ticker": "DECK",
+      "id": 1786605756752.7742,
+      "paraBirimi": "USD",
+      "sinyaller": [
+        {
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (22 → 25)",
+          "tip": "Analist",
+          "kaynak": "Finnhub"
+        },
+        {
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "detay": "On Holding: The Quarter Wasn't Great, But The Stock May Finally Be (Upgrade)",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "detay": "CPRI Q1 Earnings Beat Estimates on Margin Gains, Jimmy Choo Growth",
+          "puan": 1,
+          "tip": "Haber",
+          "kaynak": "Finnhub"
+        }
+      ],
+      "fiyat": 91.2,
+      "tarih": "2026-08-13T07:22:36.752Z"
+    },
+    {
+      "tarih": "2026-08-13T07:22:36.516Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "DHR",
+      "paraBirimi": "USD",
+      "fiyat": 205.79,
+      "sinyaller": [
+        {
+          "tip": "Analist",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "Analist tavsiyeleri iyileşiyor (38 → 39)"
+        },
+        {
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Insider"
+        },
+        {
+          "detay": "Major Acquisition Alert: Julie A. Sawyer Montgomery Acquires $1.93M In Danaher Stock Optio",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber",
+          "detay": "Witness A Substantial Acquisition As Christopher Bouda Acquires $96K In Danaher Stock Opti"
+        }
+      ],
+      "id": 1786605756516.6963,
+      "skor": 6
+    },
+    {
+      "skor": 7,
+      "paraBirimi": "USD",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "fiyat": 20.52,
+      "ticker": "MDU",
+      "sinyaller": [
+        {
+          "puan": 2,
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (12 → 13)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "puan": 2,
+          "tip": "Insider"
+        },
+        {
+          "detay": "JP Morgan Upgrades MDU Resources Group (MDU)",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "detay": "MDU Resources Q2 Earnings Beat Estimates, Revenues Increase Y/Y",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "detay": "JP Morgan Upgrades MDU Resources Group to Overweight, Announces $27 Price Target",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "id": 1786605756292.0225,
+      "tarih": "2026-08-13T07:22:36.292Z"
+    },
+    {
+      "skor": 7,
+      "ticker": "ITT",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD",
+      "id": 1786605755932.7417,
+      "sinyaller": [
+        {
+          "detay": "Analist tavsiyeleri iyileşiyor (20 → 22)",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "tip": "Analist"
+        },
+        {
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)",
+          "kaynak": "Finnhub"
+        },
+        {
+          "detay": "ITT Q2 Deep Dive: Acquisitions Drive Growth, Margin Dilution from SPX FLOW Integration",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "detay": "ITT Q2 Earnings Beat Estimates on Broad-Based Organic Growth"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "ITT Inc (ITT) (Q2 2026) Earnings Call Highlights: Record Revenue and Raised Guidance Signa",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "fiyat": 216.53,
+      "tarih": "2026-08-13T07:22:35.932Z"
+    },
+    {
+      "sinyaller": [
+        {
+          "tip": "Analist",
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "detay": "Analist tavsiyeleri iyileşiyor (29 → 30)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Insider",
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Nvidia's Big Deal Expands The AI Horizon Once Again (Rating Upgrade)",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Nvidia Confirms Huge AI Funding Deal. These Financial Stocks Jump.",
+          "puan": 1,
+          "tip": "Haber"
+        },
+        {
+          "detay": "'Wall Street Giants Partner With NVIDIA On $500B AI Financing Deal; A Consortium Including",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ],
+      "id": 1786605755621.5483,
+      "fiyat": 110.9,
+      "skor": 7,
+      "paraBirimi": "USD",
+      "ticker": "KKR",
+      "tarih": "2026-08-13T07:22:35.621Z",
+      "kaynaklar": [
+        "Finnhub"
+      ]
+    },
+    {
+      "fiyat": 63.05,
+      "skor": 5,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "ticker": "FOXA",
+      "tarih": "2026-08-13T07:22:35.347Z",
+      "paraBirimi": "USD",
+      "id": 1786605755347.9802,
+      "sinyaller": [
+        {
+          "puan": 2,
+          "kaynak": "Finnhub",
+          "detay": "Analist tavsiyeleri iyileşiyor (18 → 19)",
+          "tip": "Analist"
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "Fox (FOXA) Launches Always On Ad Measurement Through FOX AdStudio",
+          "puan": 1
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "Roku beats second quarter estimates ahead of Fox acquisition",
+          "puan": 1
+        },
+        {
+          "detay": "Roku Q2 Profit Jumps 1,464% With Fox Acquisition Looming",
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "puan": 1
+        }
+      ]
+    },
+    {
+      "fiyat": 117.65,
+      "skor": 5,
+      "id": 1786435607239.152,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarih": "2026-08-11T08:06:47.239Z",
+      "ticker": "AKAM",
+      "paraBirimi": "USD",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (25 → 26)"
+        },
+        {
+          "tip": "Haber",
+          "kaynak": "Finnhub",
+          "detay": "Apple downgraded, HPE upgraded: Wall Street's top analyst calls",
+          "puan": 1
+        },
+        {
+          "tip": "Haber",
+          "detay": "Akamai Q2 Earnings Beat Estimates, Revenues Up Y/Y on Solid Demand",
+          "kaynak": "Finnhub",
+          "puan": 1
+        },
+        {
+          "detay": "Akamai beats quarterly estimates on cloud infrastructure demand",
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub"
+        }
+      ]
+    },
+    {
+      "ticker": "BR",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "paraBirimi": "USD",
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "tip": "Insider",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1,
+          "detay": "Broadridge's Q4 Earnings & Revenues Beat Estimates, Increase Y/Y"
+        },
+        {
+          "tip": "Haber",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "detay": "Broadridge (NYSE:BR) Beats Q2 CY2026 Sales Expectations"
+        },
+        {
+          "detay": "Broadridge Financial Soln Q4 Adj. EPS $3.82 Beats $3.76 Estimate, Sales $2.220B Beat $2.13",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        }
+      ],
+      "tarih": "2026-08-11T05:25:09.911Z",
+      "id": 1786425909911.601,
+      "skor": 5,
+      "fiyat": 173.4
+    },
+    {
+      "fiyat": 232.79,
+      "id": 1786425909569.0007,
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "tarih": "2026-08-11T05:25:09.569Z",
+      "ticker": "BA",
+      "skor": 5,
+      "sinyaller": [
+        {
+          "tip": "Insider",
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "detay": "İçeriden net alım baskın (MSPR 100.0)"
+        },
+        {
+          "detay": "Archer Announces Second Quarter 2026 Results; Announces Deal with Boeing to Shape Physical",
+          "puan": 1,
+          "kaynak": "Finnhub",
+          "tip": "Haber"
+        },
+        {
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "detay": "Boeing Stock Rises as Archer Deal Creates 20% Stake",
+          "tip": "Haber"
+        },
+        {
+          "detay": "Boeing deal gives Archer a faster growth path beyond air taxis",
+          "kaynak": "Finnhub",
+          "tip": "Haber",
+          "puan": 1
+        }
+      ],
+      "paraBirimi": "USD"
+    },
+    {
+      "paraBirimi": "USD",
+      "fiyat": 1131.4,
+      "tarih": "2026-08-11T05:25:09.211Z",
+      "kaynaklar": [
+        "Finnhub"
+      ],
+      "skor": 5,
+      "ticker": "BLK",
+      "id": 1786425909211.708,
+      "sinyaller": [
+        {
+          "kaynak": "Finnhub",
+          "puan": 2,
+          "tip": "Analist",
+          "detay": "Analist tavsiyeleri iyileşiyor (23 → 24)"
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Nvidia Strikes Deals With Wall Street Firms to Fund Its Own Customers",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "kaynak": "Finnhub",
+          "detay": "Nvidia Confirms Huge AI Funding Deal. These Financial Stocks Jump.",
+          "tip": "Haber",
+          "puan": 1
+        },
+        {
+          "detay": "BlackRock Canada Launches ETF That Combines Stocks And Bitcoin",
+          "kaynak": "Finnhub",
+          "puan": 1,
+          "tip": "Haber"
+        }
+      ]
+    }
+  ],
+  "theme": "dark",
+  "metal": [
+    {
+      "tur": "Gümüş (IAR)",
+      "maliyet": 6167.967,
+      "kur": 34.71,
+      "gram": 177.7
+    },
+    {
+      "gram": 748.2,
+      "maliyet": 26014.914,
+      "kur": 34.77,
+      "tur": "Gümüş (IAR)"
+    },
+    {
+      "tur": "Gümüş (IAR)",
+      "gram": 2.6,
+      "kur": 34.75,
+      "maliyet": 90.35
+    },
+    {
+      "kur": 35.65,
+      "tur": "Gümüş (IAR)",
+      "gram": 7.7,
+      "maliyet": 274.5
+    },
+    {
+      "tur": "Gümüş (IAR)",
+      "maliyet": 13251.17,
+      "gram": 375.6,
+      "kur": 35.28
+    },
+    {
+      "tur": "Gümüş (IAR)",
+      "kur": 35.34,
+      "maliyet": 5859.37,
+      "gram": 165.8
+    },
+    {
+      "kur": 35.62,
+      "tur": "Gümüş (IAR)",
+      "maliyet": 5816.75,
+      "gram": 163.3
+    },
+    {
+      "gram": 1843.5,
+      "maliyet": 69970.3,
+      "tur": "Gümüş (IAR)",
+      "kur": 37.96
+    },
+    {
+      "maliyet": 5177.912,
+      "tur": "Gümüş (IAR)",
+      "gram": 146.6,
+      "kur": 35.32
+    }
+  ],
+  "temettuKayit": [
+    {
+      "oran": null,
+      "miktar": 2.57,
+      "temettu": 0.28,
+      "ticker": "SMH",
+      "hisseFiyat": null,
+      "tarih": "2024-12-24"
+    },
+    {
+      "tarih": "2024-12-26",
+      "hisseFiyat": null,
+      "miktar": 2.79,
+      "temettu": 0.28,
+      "ticker": "VOO",
+      "oran": null
+    },
+    {
+      "hisseFiyat": null,
+      "oran": null,
+      "temettu": 0.28,
+      "ticker": "QQQ",
+      "tarih": "2024-12-31",
+      "miktar": 1.34
+    },
+    {
+      "ticker": "VOO",
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "tarih": "2025-03-31",
+      "oran": null,
+      "miktar": 2.9
+    },
+    {
+      "tarih": "2025-04-30",
+      "temettu": 0.28,
+      "miktar": 1.15,
+      "hisseFiyat": null,
+      "ticker": "QQQ",
+      "oran": null
+    },
+    {
+      "tarih": "2025-06-24",
+      "miktar": 7.05,
+      "oran": null,
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "ticker": "VEA"
+    },
+    {
+      "miktar": 5.51,
+      "oran": null,
+      "tarih": "2025-03-24",
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "ticker": "VALE"
+    },
+    {
+      "tarih": "2025-03-27",
+      "miktar": 0.77,
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "ticker": "CTRA",
+      "oran": null
+    },
+    {
+      "ticker": "KO",
+      "temettu": 0.28,
+      "oran": null,
+      "tarih": "2025-04-01",
+      "miktar": 0.71,
+      "hisseFiyat": null
+    },
+    {
+      "temettu": 0.28,
+      "oran": null,
+      "ticker": "NVIDA",
+      "hisseFiyat": null,
+      "miktar": 0.03,
+      "tarih": "2025-04-02"
+    },
+    {
+      "oran": null,
+      "hisseFiyat": null,
+      "temettu": 0.28,
+      "tarih": "2025-04-03",
+      "ticker": "VICI",
+      "miktar": 1.51
+    },
+    {
+      "oran": null,
+      "miktar": 0.33,
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "ticker": "WMT",
+      "tarih": "2025-04-07"
+    },
+    {
+      "hisseFiyat": null,
+      "oran": null,
+      "temettu": 0.28,
+      "tarih": "2025-04-09",
+      "ticker": "NWS",
+      "miktar": 0.35
+    },
+    {
+      "tarih": "2025-04-15",
+      "miktar": 0.16,
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "ticker": "MU",
+      "oran": null
+    },
+    {
+      "temettu": 0.28,
+      "oran": null,
+      "miktar": 0.5,
+      "ticker": "QQQ",
+      "hisseFiyat": null,
+      "tarih": "2025-04-30"
+    },
+    {
+      "tarih": "2025-05-27",
+      "ticker": "WMT",
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "miktar": 0.33,
+      "oran": null
+    },
+    {
+      "oran": null,
+      "hisseFiyat": null,
+      "ticker": "CTRA",
+      "temettu": 0.28,
+      "tarih": "2025-05-29",
+      "miktar": 0.77
+    },
+    {
+      "ticker": "COP",
+      "tarih": "2025-06-02",
+      "hisseFiyat": null,
+      "oran": null,
+      "temettu": 0.28,
+      "miktar": 1.09
+    },
+    {
+      "ticker": "DAL",
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "tarih": "2025-06-03",
+      "oran": null,
+      "miktar": 0.31
+    },
+    {
+      "ticker": "QQQM",
+      "temettu": 0.28,
+      "oran": null,
+      "tarih": "2025-06-27",
+      "hisseFiyat": null,
+      "miktar": 4.21
+    },
+    {
+      "tarih": "2025-06-30",
+      "oran": null,
+      "ticker": "SPLG",
+      "hisseFiyat": null,
+      "miktar": 5.98,
+      "temettu": 0.28
+    },
+    {
+      "tarih": "2025-07-01",
+      "temettu": 0.28,
+      "miktar": 0.71,
+      "ticker": "KO",
+      "oran": null,
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "ticker": "VOO",
+      "hisseFiyat": null,
+      "miktar": 4.21,
+      "temettu": 0.28,
+      "tarih": "2025-07-02"
+    },
+    {
+      "miktar": 1.51,
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "tarih": "2025-07-11",
+      "oran": null,
+      "ticker": "VICI"
+    },
+    {
+      "tarih": "2025-07-31",
+      "ticker": "QQQ",
+      "hisseFiyat": null,
+      "miktar": 1.36,
+      "oran": null,
+      "temettu": 0.28
+    },
+    {
+      "miktar": 4.43,
+      "oran": 0.004274,
+      "temettu": 0.87,
+      "tarih": "2025-07-02",
+      "hisseFiyat": 203.55,
+      "ticker": "VIG"
+    },
+    {
+      "miktar": 3.32,
+      "temettu": 0.14,
+      "tarih": "2025-07-28",
+      "ticker": "RYLD",
+      "oran": 0.009421,
+      "hisseFiyat": 14.86
+    },
+    {
+      "temettu": 0.16,
+      "hisseFiyat": 16.77,
+      "miktar": 4.38,
+      "oran": 0.009541,
+      "ticker": "QYLD",
+      "tarih": "2025-07-28"
+    },
+    {
+      "tarih": "2025-07-28",
+      "hisseFiyat": 38.99,
+      "oran": 0.007951,
+      "ticker": "XYLD",
+      "temettu": 0.31,
+      "miktar": 2.67
+    },
+    {
+      "temettu": 0.1,
+      "hisseFiyat": 6.22,
+      "miktar": 1.62,
+      "oran": 0.016077,
+      "ticker": "ULTY",
+      "tarih": "2025-08-01"
+    },
+    {
+      "hisseFiyat": 55.61,
+      "miktar": 3.5,
+      "oran": 0.006294,
+      "temettu": 0.35,
+      "ticker": "JEPI",
+      "tarih": "2025-08-05"
+    },
+    {
+      "hisseFiyat": 55.1,
+      "ticker": "JEPQ",
+      "temettu": 0.44,
+      "oran": 0.007985,
+      "tarih": "2025-08-05",
+      "miktar": 4.54
+    },
+    {
+      "hisseFiyat": 6.09,
+      "oran": 0.01642,
+      "ticker": "ULTY",
+      "tarih": "2025-08-08",
+      "temettu": 0.1,
+      "miktar": 2.09
+    },
+    {
+      "ticker": "TXN",
+      "hisseFiyat": 216.59,
+      "oran": 0.006279,
+      "tarih": "2025-08-12",
+      "temettu": 1.36,
+      "miktar": 5.72
+    },
+    {
+      "tarih": "2025-08-15",
+      "ticker": "PG",
+      "hisseFiyat": 157.89,
+      "oran": 0.006714,
+      "miktar": 5.92,
+      "temettu": 1.06
+    },
+    {
+      "oran": 0.049223,
+      "ticker": "MRNY",
+      "temettu": 0.095,
+      "hisseFiyat": 1.93,
+      "miktar": 5.08,
+      "tarih": "2025-08-15"
+    },
+    {
+      "temettu": 1,
+      "tarih": "2025-08-15",
+      "miktar": 6.43,
+      "oran": 0.050891,
+      "ticker": "MARO",
+      "hisseFiyat": 19.65
+    },
+    {
+      "ticker": "ULTY",
+      "oran": 0.01642,
+      "temettu": 0.1,
+      "hisseFiyat": 6.09,
+      "tarih": "2025-08-15",
+      "miktar": 2.1
+    },
+    {
+      "ticker": "ULTY",
+      "hisseFiyat": 5.65,
+      "tarih": "2025-08-22",
+      "temettu": 0.1,
+      "oran": 0.017699,
+      "miktar": 2.4
+    },
+    {
+      "oran": 0.050147,
+      "ticker": "CONY",
+      "miktar": 5,
+      "temettu": 0.34,
+      "tarih": "2025-08-22",
+      "hisseFiyat": 6.78
+    },
+    {
+      "hisseFiyat": 16.84,
+      "temettu": 0.17,
+      "miktar": 4.816,
+      "ticker": "QYLD",
+      "tarih": "2025-08-25",
+      "oran": 0.010095
+    },
+    {
+      "tarih": "2025-08-25",
+      "miktar": 3.712,
+      "hisseFiyat": 15,
+      "oran": 0.01,
+      "temettu": 0.15,
+      "ticker": "RYLD"
+    },
+    {
+      "hisseFiyat": 39.07,
+      "oran": 0.007934,
+      "ticker": "XYLD",
+      "temettu": 0.31,
+      "miktar": 2.984,
+      "tarih": "2025-08-25"
+    },
+    {
+      "ticker": "ICOI",
+      "temettu": 5.163,
+      "tarih": "2025-08-26",
+      "hisseFiyat": 40.96,
+      "miktar": 413,
+      "oran": 0.12605
+    },
+    {
+      "tarih": "2025-09-03",
+      "miktar": 31.81,
+      "hisseFiyat": 20.59,
+      "oran": 0.132103,
+      "temettu": 0.68,
+      "ticker": "COYY"
+    },
+    {
+      "ticker": "COYY",
+      "temettu": 0.5412,
+      "oran": 0.109333,
+      "hisseFiyat": 19.8,
+      "miktar": 25.12,
+      "tarih": "2025-09-09"
+    },
+    {
+      "tarih": "2025-09-09",
+      "ticker": "JNJ",
+      "temettu": 1.3,
+      "oran": 0.007889,
+      "hisseFiyat": 164.78,
+      "miktar": 9.248
+    },
+    {
+      "temettu": 0.83,
+      "hisseFiyat": 470.92,
+      "miktar": 1.656,
+      "oran": 0.001763,
+      "ticker": "MSFT",
+      "tarih": "2025-09-11"
+    },
+    {
+      "ticker": "COYY",
+      "temettu": 0.5543,
+      "hisseFiyat": 19.69,
+      "tarih": "2025-09-16",
+      "oran": 0.112605,
+      "miktar": 25.72
+    },
+    {
+      "temettu": 0.28,
+      "hisseFiyat": 59.65,
+      "miktar": 6.14,
+      "ticker": "VEA",
+      "tarih": "2025-09-23",
+      "oran": 0.004694
+    },
+    {
+      "tarih": "2025-09-26",
+      "hisseFiyat": 247.9,
+      "ticker": "QQQM",
+      "temettu": 0.3,
+      "miktar": 7.18,
+      "oran": 0.00121
+    },
+    {
+      "oran": 0.009573,
+      "miktar": 22.48,
+      "temettu": 0.26,
+      "ticker": "SCHD",
+      "hisseFiyat": 27.16,
+      "tarih": "2025-09-29"
+    },
+    {
+      "hisseFiyat": 77.85,
+      "oran": 0.00306,
+      "ticker": "SPLG",
+      "temettu": 0.2382,
+      "miktar": 6.67,
+      "tarih": "2025-09-30"
+    },
+    {
+      "oran": 0.001741,
+      "hisseFiyat": 338.79,
+      "tarih": "2025-09-30",
+      "ticker": "AVGO",
+      "temettu": 0.59,
+      "miktar": 4.31
+    },
+    {
+      "temettu": 1.42,
+      "miktar": 12.376,
+      "oran": 0.009826,
+      "ticker": "PEP",
+      "hisseFiyat": 144.51,
+      "tarih": "2025-09-30"
+    },
+    {
+      "tarih": "2025-10-01",
+      "ticker": "VIG",
+      "temettu": 0.86,
+      "miktar": 7.64,
+      "oran": 0.003993,
+      "hisseFiyat": 215.4
+    },
+    {
+      "tarih": "2025-10-01",
+      "temettu": 1.74,
+      "miktar": 4.2,
+      "hisseFiyat": 606.59,
+      "ticker": "VOO",
+      "oran": 0.002868
+    },
+    {
+      "tarih": "2025-10-31",
+      "ticker": "QQQ",
+      "miktar": 1.12,
+      "oran": 0.001158,
+      "hisseFiyat": 596.1,
+      "temettu": 0.69
+    },
+    {
+      "temettu": 1.42,
+      "miktar": 11.05,
+      "tarih": "2025-11-12",
+      "hisseFiyat": 161.46,
+      "oran": 0.008795,
+      "ticker": "TXN"
+    },
+    {
+      "miktar": 9.58,
+      "temettu": 1.05,
+      "tarih": "2025-11-17",
+      "oran": 0.006886,
+      "hisseFiyat": 152.49,
+      "ticker": "PG"
+    },
+    {
+      "temettu": 1.3,
+      "ticker": "JNJ",
+      "oran": 0.00629,
+      "miktar": 10.46,
+      "hisseFiyat": 206.67,
+      "tarih": "2025-12-09"
+    },
+    {
+      "ticker": "MSFT",
+      "temettu": 0.91,
+      "oran": 0.001784,
+      "tarih": "2025-12-11",
+      "miktar": 4.31,
+      "hisseFiyat": 510
+    },
+    {
+      "tarih": "2025-12-15",
+      "oran": 0.009793,
+      "ticker": "SCHD",
+      "miktar": 24.2,
+      "hisseFiyat": 27.57,
+      "temettu": 0.27
+    },
+    {
+      "tarih": "2025-12-23",
+      "miktar": 22.37,
+      "hisseFiyat": 61.84,
+      "ticker": "VEA",
+      "temettu": 1.04,
+      "oran": 0.016818
+    },
+    {
+      "tarih": "2025-12-24",
+      "ticker": "VIG",
+      "temettu": 0.88,
+      "oran": 0.003983,
+      "miktar": 7.84,
+      "hisseFiyat": 220.95
+    },
+    {
+      "miktar": 4.3,
+      "oran": 0.002811,
+      "temettu": 1.77,
+      "ticker": "VOO",
+      "tarih": "2025-12-24",
+      "hisseFiyat": 629.73
+    },
+    {
+      "miktar": 3.16,
+      "oran": 0.001255,
+      "tarih": "2025-12-26",
+      "hisseFiyat": 254.93,
+      "temettu": 0.32,
+      "ticker": "QQQM"
+    },
+    {
+      "temettu": 0.79,
+      "tarih": "2025-12-31",
+      "miktar": 1.008,
+      "oran": 0.001276,
+      "hisseFiyat": 619.21,
+      "ticker": "QQQ"
+    },
+    {
+      "miktar": 4.76,
+      "oran": 0.001904,
+      "hisseFiyat": 341.45,
+      "ticker": "AVGO",
+      "tarih": "2025-12-31",
+      "temettu": 0.65
+    },
+    {
+      "oran": 0.009792,
+      "ticker": "PEP",
+      "temettu": 1.42,
+      "miktar": 14.26,
+      "tarih": "2026-01-06",
+      "hisseFiyat": 145.02
+    },
+    {
+      "hisseFiyat": 215.55,
+      "temettu": 1.42,
+      "oran": 0.006588,
+      "miktar": 11.128,
+      "ticker": "TXN",
+      "tarih": "2026-02-10"
+    },
+    {
+      "miktar": 9.632,
+      "temettu": 1.05,
+      "tarih": "2026-02-17",
+      "oran": 0.006993,
+      "hisseFiyat": 150.15,
+      "ticker": "PG"
+    },
+    {
+      "tarih": "2026-03-10",
+      "miktar": 10.52,
+      "temettu": 1.3,
+      "hisseFiyat": 246.28,
+      "oran": 0.005279,
+      "ticker": "JNJ"
+    },
+    {
+      "temettu": 0.91,
+      "miktar": 4.33,
+      "hisseFiyat": 398.46,
+      "oran": 0.002284,
+      "ticker": "MSFT",
+      "tarih": "2026-03-12"
+    },
+    {
+      "temettu": 0.1,
+      "miktar": 2.38,
+      "tarih": "2026-03-24",
+      "ticker": "VEA",
+      "oran": 0.001612,
+      "hisseFiyat": 62.04
+    },
+    {
+      "miktar": 5.52,
+      "tarih": "2026-03-27",
+      "hisseFiyat": 242.07,
+      "temettu": 0.32,
+      "oran": 0.001322,
+      "ticker": "QQQM"
+    },
+    {
+      "ticker": "QQQ",
+      "hisseFiyat": 588,
+      "temettu": 0.73,
+      "tarih": "2026-03-27",
+      "oran": 0.001241,
+      "miktar": 2.36
+    },
+    {
+      "tarih": "2026-03-30",
+      "hisseFiyat": 30.54,
+      "ticker": "SCHD",
+      "temettu": 0.25,
+      "miktar": 22.53,
+      "oran": 0.008186
+    },
+    {
+      "temettu": 0.65,
+      "ticker": "AVGO",
+      "hisseFiyat": 322.51,
+      "oran": 0.002015,
+      "tarih": "2026-03-31",
+      "miktar": 4.76
+    },
+    {
+      "tarih": "2026-03-31",
+      "ticker": "VIG",
+      "temettu": 0.83,
+      "hisseFiyat": 210.73,
+      "miktar": 7.408,
+      "oran": 0.003939
+    },
+    {
+      "tarih": "2026-03-31",
+      "ticker": "VOO",
+      "temettu": 1.87,
+      "oran": 0.003208,
+      "miktar": 4.544,
+      "hisseFiyat": 582.96
+    },
+    {
+      "hisseFiyat": 159.43,
+      "miktar": 14.368,
+      "oran": 0.008907,
+      "temettu": 1.42,
+      "ticker": "PEP",
+      "tarih": "2026-03-31"
+    }
+  ],
+  "maliyetSecim": {
+    "abd_buyume": true,
+    "bes": true,
+    "ev": true,
+    "abd_temttu": true,
+    "metal": false,
+    "sirketpay": false
+  },
+  "odemeler": {
+    "maaslar": {
+      "2026-10": 275126,
+      "2026-11": 275126,
+      "2026-09": 275126,
+      "2026-06": 278439,
+      "2026-03": 312600,
+      "2026-04": 312600,
+      "2026-05": 295956,
+      "2026-07": 278439,
+      "2026-08": 274049,
+      "2026-12": 275126,
+      "2026-02": 350100,
+      "2026-01": 279843
+    },
+    "maddeler": [
+      {
+        "ad": "Annem",
+        "tutarlar": {
+          "2026-03": 25000,
+          "2025-05": 25000,
+          "2026-09": 25000,
+          "2026-06": 25000,
+          "2026-10": 25000,
+          "2025-06": 25000,
+          "2026-11": 25000,
+          "2025-07": 25000,
+          "2027-03": 25000,
+          "2026-08": 25000,
+          "2026-02": 25000,
+          "2026-04": 25000,
+          "2025-08": 25000,
+          "2027-02": 25000,
+          "2025-12": 25000,
+          "2025-04": 25000,
+          "2025-09": 25000,
+          "2026-05": 25000,
+          "2026-12": 25000,
+          "2027-01": 25000,
+          "2026-07": 25000,
+          "2026-01": 25000,
+          "2025-11": 25000,
+          "2025-10": 25000
+        },
+        "gun": 1,
+        "odendi": {
+          "2026-07": true,
+          "2026-08": true,
+          "2026-06": true
+        },
+        "tekrar": true
+      },
+      {
+        "odendi": {
+          "2026-08": true,
+          "2026-07": true,
+          "2026-06": true
+        },
+        "tutarlar": {
+          "2026-06": 52000,
+          "2026-10": 52000,
+          "2025-06": 55000,
+          "2026-03": 39000,
+          "2025-05": 55000,
+          "2027-04": 52000,
+          "2027-03": 52000,
+          "2025-09": 55000,
+          "2026-05": 39000,
+          "2025-04": 39000,
+          "2025-12": 55000,
+          "2026-04": 39000,
+          "2025-10": 55000,
+          "2026-01": 55000,
+          "2025-07": 55000,
+          "2026-09": 52000,
+          "2026-11": 52000,
+          "2026-02": 39000,
+          "2026-08": 52000,
+          "2027-05": 52000,
+          "2027-02": 52000,
+          "2025-08": 55000,
+          "2025-11": 55000,
+          "2027-01": 52000,
+          "2026-07": 52000,
+          "2026-12": 52000
+        },
+        "ad": "Kira",
+        "tekrar": true,
+        "gun": 2
+      },
+      {
+        "ad": "Aidat",
+        "odendi": {
+          "2026-06": true,
+          "2026-08": true,
+          "2026-07": true
+        },
+        "tutarlar": {
+          "2025-11": 3500,
+          "2026-01": 3500,
+          "2025-10": 3500,
+          "2026-12": 3500,
+          "2027-01": 3500,
+          "2026-07": 3500,
+          "2025-04": 3500,
+          "2025-12": 3500,
+          "2025-09": 3500,
+          "2026-05": 3500,
+          "2026-04": 3500,
+          "2025-08": 3500,
+          "2027-02": 3500,
+          "2026-02": 3500,
+          "2027-03": 3500,
+          "2026-08": 3500,
+          "2025-07": 3500,
+          "2026-03": 3500,
+          "2025-05": 3500,
+          "2026-09": 3500,
+          "2026-06": 3500,
+          "2025-06": 3500,
+          "2026-11": 3500,
+          "2026-10": 3500
+        },
+        "tekrar": true,
+        "gun": 1
+      },
+      {
+        "gun": 3,
+        "odendi": {
+          "2026-07": true,
+          "2026-08": true
+        },
+        "ad": "GS Para",
+        "tutarlar": {
+          "2026-02": 49929,
+          "2026-09": 26341.13,
+          "2026-07": 34456.28,
+          "2026-11": 1000,
+          "2026-10": 1300,
+          "2026-08": 41063.68,
+          "2026-03": 4666,
+          "2026-04": 12670
+        }
+      },
+      {
+        "tutarlar": {
+          "2026-10": 15001,
+          "2026-11": 11991,
+          "2026-09": 77522,
+          "2026-04": 45553,
+          "2026-03": 117918,
+          "2026-02": 34001,
+          "2026-08": 247993,
+          "2026-07": 63965,
+          "2026-12": 11991
+        },
+        "ad": "Axess",
+        "gun": 3,
+        "odendi": {
+          "2026-07": true,
+          "2026-08": true
+        }
+      },
+      {
+        "odendi": {
+          "2026-08": true,
+          "2026-07": true,
+          "2026-06": true
+        },
+        "tutarlar": {
+          "2027-03": 63750,
+          "2026-08": 63750,
+          "2026-02": 63750,
+          "2026-03": 63750,
+          "2025-05": 63750,
+          "2026-09": 63750,
+          "2026-06": 63750,
+          "2025-06": 63750,
+          "2026-11": 63750,
+          "2026-10": 63750,
+          "2025-07": 63750,
+          "2026-12": 63750,
+          "2027-01": 63750,
+          "2026-07": 63750,
+          "2025-11": 63750,
+          "2026-01": 63750,
+          "2025-10": 63750,
+          "2026-04": 63750,
+          "2025-08": 63750,
+          "2027-02": 63750,
+          "2025-04": 63750,
+          "2025-12": 63750,
+          "2025-09": 63750,
+          "2026-05": 63750
+        },
+        "tekrar": true,
+        "ad": "Emlak Fon",
+        "gun": 3
+      },
+      {
+        "ad": "Spor",
+        "odendi": {
+          "2026-08": true
+        },
+        "tutarlar": {
+          "2026-08": 51171
+        },
+        "gun": 1
+      }
+    ]
+  },
+  "realizeKayitlar": [
+    {
+      "adet": 9.348553846,
+      "id": 1,
+      "tarih": null,
+      "kategori": "ABD",
+      "para": "USD",
+      "maliyet": 761.07,
+      "kar": 53.27829415,
+      "ticker": "DXCM",
+      "deger": 814.3482941,
+      "pct": 0.07000445971
+    },
+    {
+      "kar": 66.96,
+      "ticker": "SMH",
+      "adet": 3,
+      "tarih": null,
+      "maliyet": 746.9399999999999,
+      "pct": 0.08964575468,
+      "id": 2,
+      "kategori": "ABD",
+      "deger": 813.9,
+      "para": "USD"
+    },
+    {
+      "pct": 0.1208407359,
+      "kategori": "ABD",
+      "tarih": null,
+      "adet": 5,
+      "kar": 80.26,
+      "maliyet": 664.18,
+      "ticker": "NVDA",
+      "para": "USD",
+      "deger": 744.44,
+      "id": 3
+    },
+    {
+      "adet": 3,
+      "id": 4,
+      "deger": 421.44,
+      "kar": 88.86,
+      "maliyet": 332.58,
+      "ticker": "AMD",
+      "kategori": "ABD",
+      "para": "USD",
+      "pct": 0.2671838355,
+      "tarih": null
+    },
+    {
+      "para": "USD",
+      "deger": 253.21,
+      "ticker": "MU",
+      "kategori": "ABD",
+      "adet": 2,
+      "tarih": null,
+      "pct": 0.3835855964,
+      "id": 5,
+      "maliyet": 183.01,
+      "kar": 70.2
+    },
+    {
+      "ticker": "MSTR",
+      "kategori": "ABD",
+      "pct": 0.1109824079,
+      "kar": 76.65,
+      "maliyet": 690.65,
+      "deger": 767.3,
+      "adet": 2,
+      "id": 6,
+      "para": "USD",
+      "tarih": null
+    },
+    {
+      "pct": -0.01500393041,
+      "kar": -4.39,
+      "ticker": "VALE",
+      "tarih": null,
+      "kategori": "ABD",
+      "adet": 32,
+      "id": 7,
+      "deger": 288.2,
+      "para": "USD",
+      "maliyet": 292.59
+    },
+    {
+      "deger": 213.84,
+      "id": 8,
+      "kar": 0.69,
+      "ticker": "AMZN",
+      "maliyet": 213.15,
+      "pct": 0.003237156932,
+      "para": "USD",
+      "tarih": null,
+      "kategori": "ABD",
+      "adet": 1
+    },
+    {
+      "para": "USD",
+      "tarih": null,
+      "ticker": "UBER",
+      "adet": 4,
+      "pct": 0.1917719258,
+      "deger": 367.03,
+      "id": 9,
+      "kategori": "ABD",
+      "kar": 59.06,
+      "maliyet": 307.97
+    },
+    {
+      "tarih": null,
+      "kar": -2.3,
+      "id": 10,
+      "para": "USD",
+      "ticker": "KO",
+      "pct": -0.01630165143,
+      "maliyet": 141.09,
+      "deger": 138.79,
+      "adet": 2,
+      "kategori": "ABD"
+    },
+    {
+      "maliyet": 196.75,
+      "pct": -0.007420584498,
+      "kategori": "ABD",
+      "tarih": null,
+      "adet": 2,
+      "kar": -1.46,
+      "para": "USD",
+      "ticker": "WMT",
+      "deger": 195.29,
+      "id": 11
+    },
+    {
+      "adet": 5,
+      "ticker": "NWS",
+      "id": 12,
+      "deger": 167.4,
+      "kategori": "ABD",
+      "para": "USD",
+      "kar": 4.204,
+      "maliyet": 163.19599999999997,
+      "pct": 0.0257604353,
+      "tarih": null
+    },
+    {
+      "adet": 2,
+      "ticker": "COP",
+      "tarih": null,
+      "para": "USD",
+      "pct": -0.1064054258,
+      "kategori": "ABD",
+      "kar": -21.18,
+      "id": 13,
+      "maliyet": 199.05,
+      "deger": 177.87
+    },
+    {
+      "id": 14,
+      "tarih": null,
+      "para": "USD",
+      "ticker": "VICI",
+      "maliyet": 163.20000000000002,
+      "adet": 5,
+      "kar": -2.1,
+      "deger": 161.1,
+      "kategori": "ABD",
+      "pct": -0.01286764706
+    },
+    {
+      "kar": -32.58,
+      "adet": 3,
+      "deger": 148.41,
+      "pct": -0.1800099453,
+      "id": 15,
+      "ticker": "DAL",
+      "maliyet": 180.99,
+      "tarih": null,
+      "para": "USD",
+      "kategori": "ABD"
+    },
+    {
+      "kategori": "ABD",
+      "pct": -0.02541436464,
+      "tarih": null,
+      "adet": 5,
+      "kar": -3.45,
+      "maliyet": 135.75,
+      "ticker": "CTRA",
+      "para": "USD",
+      "id": 16,
+      "deger": 132.3
+    },
+    {
+      "deger": 158.05,
+      "kar": -30.32,
+      "id": 17,
+      "ticker": "UAL",
+      "pct": -0.1609598131,
+      "kategori": "ABD",
+      "para": "USD",
+      "tarih": null,
+      "adet": 2,
+      "maliyet": 188.37
+    },
+    {
+      "pct": 0.1825746767,
+      "ticker": "SPLG",
+      "tarih": null,
+      "kar": 121.7684615,
+      "maliyet": 666.9515384615385,
+      "adet": 10,
+      "id": 18,
+      "kategori": "ABD",
+      "para": "USD",
+      "deger": 788.72
+    },
+    {
+      "tarih": null,
+      "kar": 346.4815385,
+      "maliyet": 2000.2384615384617,
+      "id": 19,
+      "pct": 0.1732201161,
+      "para": "USD",
+      "deger": 2346.72,
+      "kategori": "ABD",
+      "adet": 30,
+      "ticker": "SPLG"
+    },
+    {
+      "adet": 1,
+      "deger": 602.23,
+      "para": "USD",
+      "maliyet": 515.35,
+      "ticker": "QQQ",
+      "pct": 0.1685844572,
+      "kategori": "ABD",
+      "kar": 86.88,
+      "tarih": null,
+      "id": 20
+    },
+    {
+      "para": "USD",
+      "deger": 4959.15,
+      "pct": 0.2448821803,
+      "maliyet": 3983.63,
+      "adet": 20,
+      "ticker": "QQQM",
+      "id": 21,
+      "tarih": null,
+      "kar": 975.52,
+      "kategori": "ABD"
+    },
+    {
+      "id": 22,
+      "adet": 0.413079757,
+      "maliyet": 203.1278397,
+      "tarih": null,
+      "kategori": "ABD",
+      "kar": 45.36216029,
+      "para": "USD",
+      "pct": 0.2233182825,
+      "ticker": "QQQ",
+      "deger": 248.49
+    },
+    {
+      "pct": 0.0021873657073681924,
+      "ticker": "QQQ",
+      "tarih": null,
+      "adet": 4.013632361,
+      "kar": 4.993769538220022,
+      "kategori": "ABD",
+      "para": "USD",
+      "deger": 2288,
+      "maliyet": 2283.00623046178,
+      "id": 23
+    },
+    {
+      "maliyet": 163,
+      "kategori": "Temettü",
+      "adet": 69,
+      "deger": 122.82000000000001,
+      "pct": -0.2557055214723926,
+      "ticker": "MRNY",
+      "para": "USD",
+      "id": 24,
+      "kar": -41.67999999999999,
+      "tarih": null
+    },
+    {
+      "para": "USD",
+      "ticker": "ULTY",
+      "deger": 197.54,
+      "maliyet": 167.72,
+      "pct": 0.16885284998807532,
+      "kategori": "Temettü",
+      "id": 25,
+      "tarih": null,
+      "adet": 34,
+      "kar": 28.319999999999993
+    },
+    {
+      "maliyet": 165.70000000000002,
+      "deger": 148,
+      "para": "USD",
+      "id": 26,
+      "adet": 8,
+      "kar": -19.200000000000017,
+      "tarih": null,
+      "ticker": "MARO",
+      "pct": -0.11587205793602906,
+      "kategori": "Temettü"
+    },
+    {
+      "maliyet": 153.10636538148,
+      "kar": -154.60636538148,
+      "id": 27,
+      "deger": -1.5,
+      "pct": -1.009797110631309,
+      "adet": 0,
+      "kategori": "Temettü",
+      "ticker": "CONY",
+      "tarih": null,
+      "para": "USD"
+    },
+    {
+      "id": 28,
+      "tarih": null,
+      "para": "USD",
+      "maliyet": 1197.85,
+      "adet": 58,
+      "kar": -82.84999999999991,
+      "deger": 1116.5,
+      "pct": -0.06916558834578614,
+      "kategori": "Temettü",
+      "ticker": "COYY"
+    },
+    {
+      "pct": -0.016820600225717977,
+      "ticker": "ICOI",
+      "tarih": null,
+      "kar": -73.02999999999975,
+      "adet": 111,
+      "para": "USD",
+      "deger": 4270.17,
+      "kategori": "Temettü",
+      "id": 29,
+      "maliyet": 4341.7
+    },
+    {
+      "id": 30,
+      "tarih": null,
+      "kategori": "Fon",
+      "para": "TL",
+      "maliyet": 50835.98,
+      "kar": 2652.11,
+      "adet": 25569,
+      "deger": 53488.09,
+      "pct": 0.05216993948,
+      "ticker": "NVB"
+    },
+    {
+      "id": 31,
+      "adet": 7881,
+      "maliyet": 20029.23,
+      "kategori": "Fon",
+      "tarih": null,
+      "kar": 1402.24,
+      "para": "TL",
+      "pct": 0.07000968085,
+      "ticker": "HYV",
+      "deger": 21431.47
+    },
+    {
+      "adet": 4404,
+      "kategori": "Fon",
+      "id": 32,
+      "deger": 10833.86,
+      "maliyet": 10107,
+      "ticker": "PPN",
+      "para": "TL",
+      "kar": 726.86,
+      "tarih": null,
+      "pct": 0.07191649352
+    },
+    {
+      "kar": -5755.08,
+      "deger": 44244.84,
+      "id": 33,
+      "ticker": "TAU",
+      "kategori": "Fon",
+      "pct": -0.1151017842,
+      "para": "TL",
+      "tarih": null,
+      "maliyet": 49999.92,
+      "adet": 85821
+    },
+    {
+      "tarih": null,
+      "pct": 0.07047318347,
+      "para": "TL",
+      "kar": 1057.09,
+      "deger": 16056.98,
+      "maliyet": 14999.89,
+      "ticker": "TTA",
+      "id": 34,
+      "adet": 54505,
+      "kategori": "Fon"
+    },
+    {
+      "kategori": "Fon",
+      "deger": 21909,
+      "para": "TL",
+      "ticker": "TAU",
+      "id": 35,
+      "adet": 36381,
+      "tarih": null,
+      "kar": 1909.05,
+      "maliyet": 19999.95,
+      "pct": 0.09545273863
+    },
+    {
+      "adet": 10715,
+      "id": 36,
+      "ticker": "NVB",
+      "tarih": null,
+      "kar": 633.77,
+      "para": "TL",
+      "pct": 0.03169128883,
+      "kategori": "Fon",
+      "maliyet": 19998.24,
+      "deger": 20632.01
+    },
+    {
+      "id": 37,
+      "kategori": "Fon",
+      "deger": 20480.54,
+      "para": "TL",
+      "maliyet": 19997.8,
+      "kar": 482.74,
+      "adet": 9042,
+      "tarih": null,
+      "ticker": "PPN",
+      "pct": 0.02413965536
+    },
+    {
+      "id": 38,
+      "kar": 478.07,
+      "kategori": "Fon",
+      "ticker": "HYV",
+      "tarih": null,
+      "adet": 8173,
+      "pct": 0.02390483867,
+      "maliyet": 19998.88,
+      "deger": 20476.95,
+      "para": "TL"
+    },
+    {
+      "maliyet": 5058.12,
+      "kar": 38.9,
+      "adet": 2090,
+      "deger": 5097.02,
+      "id": 39,
+      "pct": 0.007690604414,
+      "kategori": "Fon",
+      "ticker": "HYV",
+      "tarih": null,
+      "para": "TL"
+    },
+    {
+      "pct": 0.1563107907,
+      "deger": 404.2,
+      "kar": 54.64,
+      "para": "TL",
+      "kategori": "Fon",
+      "id": 40,
+      "maliyet": 349.56,
+      "tarih": null,
+      "ticker": "GTA",
+      "adet": 758
+    },
+    {
+      "ticker": "GTL",
+      "kar": 239.5,
+      "adet": 2929990,
+      "deger": 120795.33,
+      "pct": 0.001986631422,
+      "id": 41,
+      "kategori": "Fon",
+      "maliyet": 120555.83,
+      "tarih": null,
+      "para": "TL"
+    },
+    {
+      "id": 42,
+      "kar": -19.13,
+      "maliyet": 31435.52,
+      "tarih": null,
+      "pct": -0.0006085472739,
+      "adet": 9457,
+      "kategori": "Fon",
+      "ticker": "GTM",
+      "deger": 31416.39,
+      "para": "TL"
+    },
+    {
+      "para": "TL",
+      "tarih": null,
+      "ticker": "GUH",
+      "maliyet": 38399.71,
+      "id": 43,
+      "kategori": "Fon",
+      "pct": 0.3298587411,
+      "deger": 51066.19,
+      "adet": 303975,
+      "kar": 12666.48
+    },
+    {
+      "para": "TL",
+      "ticker": "GVI",
+      "kategori": "Fon",
+      "deger": 11342.35,
+      "id": 44,
+      "pct": 0.1343178052,
+      "tarih": null,
+      "adet": 4536,
+      "maliyet": 9999.27,
+      "kar": 1343.08
+    },
+    {
+      "adet": 18748,
+      "id": 45,
+      "ticker": "MET",
+      "maliyet": 39696.62,
+      "tarih": null,
+      "kar": 4871.23,
+      "para": "TL",
+      "kategori": "Fon",
+      "pct": 0.122711455,
+      "deger": 44567.85
+    },
+    {
+      "adet": 13641,
+      "ticker": "NAU",
+      "maliyet": 15052.37,
+      "tarih": null,
+      "para": "TL",
+      "kategori": "Fon",
+      "pct": 0.09809950194,
+      "id": 46,
+      "deger": 16529,
+      "kar": 1476.63
+    },
+    {
+      "para": "TL",
+      "tarih": null,
+      "adet": 9083,
+      "pct": 0.01858624162,
+      "maliyet": 9999.87,
+      "deger": 10185.73,
+      "id": 47,
+      "kategori": "Fon",
+      "kar": 185.86,
+      "ticker": "GUV"
+    },
+    {
+      "kar": 154.11,
+      "tarih": null,
+      "ticker": "YOT",
+      "id": 48,
+      "adet": 437,
+      "pct": 0.01541536255,
+      "kategori": "Fon",
+      "deger": 10151.28,
+      "maliyet": 9997.17,
+      "para": "TL"
+    },
+    {
+      "pct": 0.01703742894,
+      "ticker": "IPV",
+      "kar": 169.71,
+      "tarih": null,
+      "kategori": "Fon",
+      "maliyet": 9961.01,
+      "adet": 203,
+      "id": 49,
+      "para": "TL",
+      "deger": 10130.72
+    },
+    {
+      "adet": 192,
+      "id": 50,
+      "maliyet": 7479.77,
+      "tarih": null,
+      "kar": 206.23,
+      "kategori": "Fon",
+      "para": "TL",
+      "ticker": "EUN",
+      "pct": 0.02757170341,
+      "deger": 7686
+    },
+    {
+      "adet": 31800,
+      "kategori": "Fon",
+      "ticker": "DBH",
+      "tarih": null,
+      "id": 51,
+      "kar": 189.03,
+      "para": "TL",
+      "maliyet": 7528.97,
+      "pct": 0.02510701995,
+      "deger": 7718
+    },
+    {
+      "adet": 500,
+      "maliyet": 8361.23,
+      "id": 52,
+      "tarih": null,
+      "kategori": "Fon",
+      "kar": 190.77,
+      "para": "TL",
+      "pct": 0.02281602109,
+      "ticker": "TLE",
+      "deger": 8552
+    },
+    {
+      "ticker": "HIZ",
+      "pct": 0.02328484685,
+      "maliyet": 5999.61,
+      "deger": 6139.31,
+      "adet": 6060,
+      "kar": 139.7,
+      "kategori": "Fon",
+      "para": "TL",
+      "tarih": null,
+      "id": 53
+    },
+    {
+      "ticker": "JET",
+      "kar": 129.42,
+      "id": 54,
+      "adet": 5413,
+      "deger": 6129.12,
+      "maliyet": 5999.7,
+      "pct": 0.02157107855,
+      "kategori": "Fon",
+      "tarih": null,
+      "para": "TL"
+    },
+    {
+      "adet": 919,
+      "ticker": "IJC",
+      "maliyet": 5997.56,
+      "id": 55,
+      "deger": 5876.79,
+      "kategori": "Fon",
+      "para": "TL",
+      "kar": -120.77,
+      "tarih": null,
+      "pct": -0.02013652219
+    },
+    {
+      "kar": 252.38,
+      "id": 56,
+      "pct": 0.05258037163,
+      "tarih": null,
+      "ticker": "TGE",
+      "adet": 34624,
+      "maliyet": 4799.89,
+      "deger": 5052.27,
+      "kategori": "Fon",
+      "para": "TL"
+    },
+    {
+      "maliyet": 4642.44,
+      "kategori": "Fon",
+      "pct": 0.06884957048,
+      "deger": 4962.07,
+      "adet": 2400,
+      "kar": 319.63,
+      "ticker": "ZCN",
+      "para": "TL",
+      "tarih": null,
+      "id": 57
+    },
+    {
+      "kategori": "Fon",
+      "ticker": "GBZ",
+      "adet": 2696,
+      "deger": 5114.99,
+      "id": 58,
+      "para": "TL",
+      "pct": 0.06563623712,
+      "maliyet": 4799.94,
+      "kar": 315.05,
+      "tarih": null
+    },
+    {
+      "pct": 0.06523329159,
+      "deger": 5111.98,
+      "maliyet": 4798.93,
+      "kar": 313.05,
+      "para": "TL",
+      "tarih": null,
+      "ticker": "OVD",
+      "id": 59,
+      "kategori": "Fon",
+      "adet": 2930
+    },
+    {
+      "adet": 1361,
+      "kategori": "Fon",
+      "ticker": "TGR",
+      "tarih": null,
+      "id": 60,
+      "kar": 110.95,
+      "para": "TL",
+      "deger": 6109.4,
+      "maliyet": 5998.45,
+      "pct": 0.01849644491
+    },
+    {
+      "deger": 21492.41,
+      "id": 61,
+      "kar": 1764.62,
+      "maliyet": 19727.79,
+      "pct": 0.08944843796,
+      "para": "TL",
+      "tarih": null,
+      "ticker": "NAU",
+      "kategori": "Fon",
+      "adet": 16254
+    },
+    {
+      "pct": 0.02089068502,
+      "ticker": "YZC",
+      "tarih": null,
+      "maliyet": 4998.4,
+      "adet": 2453,
+      "kar": 104.42,
+      "kategori": "Fon",
+      "para": "TL",
+      "id": 62,
+      "deger": 5102.82
+    },
+    {
+      "kar": 151.01,
+      "tarih": null,
+      "adet": 57567,
+      "ticker": "AES",
+      "pct": 0.03146048221,
+      "id": 63,
+      "deger": 4951,
+      "para": "TL",
+      "maliyet": 4799.99,
+      "kategori": "Fon"
+    },
+    {
+      "deger": 5335.86,
+      "para": "TL",
+      "ticker": "TCD",
+      "id": 64,
+      "maliyet": 5975.87,
+      "kategori": "Fon",
+      "adet": 190,
+      "tarih": null,
+      "kar": -640.01,
+      "pct": -0.10709905
+    },
+    {
+      "tarih": null,
+      "id": 65,
+      "para": "TL",
+      "ticker": "NRC",
+      "kar": -934.74,
+      "adet": 607,
+      "deger": 5056.58,
+      "pct": -0.1560157027,
+      "kategori": "Fon",
+      "maliyet": 5991.32
+    },
+    {
+      "deger": 5326.29,
+      "ticker": "BIO",
+      "pct": -0.1120985407,
+      "para": "TL",
+      "maliyet": 5998.74,
+      "kar": -672.45,
+      "kategori": "Fon",
+      "tarih": null,
+      "adet": 3245,
+      "id": 66
+    },
+    {
+      "id": 67,
+      "kar": -2937.6,
+      "ticker": "IDH",
+      "tarih": null,
+      "pct": -0.1469180518,
+      "adet": 2163,
+      "maliyet": 19994.82,
+      "deger": 17057.22,
+      "kategori": "Fon",
+      "para": "TL"
+    },
+    {
+      "ticker": "KPH",
+      "adet": 4761,
+      "kategori": "Fon",
+      "deger": 4172.91,
+      "pct": -0.1636382221,
+      "para": "TL",
+      "id": 68,
+      "kar": -816.45,
+      "maliyet": 4989.36,
+      "tarih": null
+    },
+    {
+      "deger": 15725.21,
+      "pct": -0.1796785217,
+      "kar": -3444.36,
+      "para": "TL",
+      "tarih": null,
+      "id": 69,
+      "maliyet": 19169.57,
+      "kategori": "Fon",
+      "ticker": "TI2",
+      "adet": 18
+    },
+    {
+      "tarih": null,
+      "maliyet": 9996.93,
+      "kar": -1699.5,
+      "id": 70,
+      "para": "TL",
+      "pct": -0.1700021907,
+      "deger": 8297.43,
+      "adet": 700,
+      "kategori": "Fon",
+      "ticker": "IHK"
+    },
+    {
+      "id": 71,
+      "tarih": null,
+      "para": "TL",
+      "kategori": "Fon",
+      "adet": 24025,
+      "kar": -171.68,
+      "deger": 5828.25,
+      "maliyet": 5999.93,
+      "pct": -0.02861366716,
+      "ticker": "AFS"
+    },
+    {
+      "tarih": null,
+      "pct": -0.02324449069,
+      "para": "TL",
+      "ticker": "IKL",
+      "kar": -139.4,
+      "deger": 5857.72,
+      "kategori": "Fon",
+      "id": 72,
+      "adet": 916,
+      "maliyet": 5997.12
+    },
+    {
+      "pct": -0.03228334248,
+      "ticker": "RPM",
+      "kar": -193.63,
+      "kategori": "Fon",
+      "tarih": null,
+      "adet": 2596,
+      "id": 73,
+      "para": "TL",
+      "deger": 5804.2,
+      "maliyet": 5997.83
+    },
+    {
+      "adet": 14990,
+      "kategori": "Fon",
+      "id": 74,
+      "deger": 15641.66,
+      "maliyet": 14999.2,
+      "ticker": "IAM",
+      "kar": 642.46,
+      "para": "TL",
+      "tarih": null,
+      "pct": 0.04283295109
+    },
+    {
+      "deger": 19273.87,
+      "pct": 0.08057376084,
+      "ticker": "PPN",
+      "kategori": "Fon",
+      "para": "TL",
+      "maliyet": 17836.7,
+      "kar": 1437.17,
+      "tarih": null,
+      "adet": 6934,
+      "id": 75
+    },
+    {
+      "para": "TL",
+      "deger": 45013.05,
+      "ticker": "YAY",
+      "kategori": "Fon",
+      "pct": 0.01763502362,
+      "adet": 56,
+      "tarih": null,
+      "maliyet": 44233,
+      "kar": 780.05,
+      "id": 76
+    },
+    {
+      "id": 77,
+      "kategori": "Fon",
+      "ticker": "GUH",
+      "adet": 224579,
+      "deger": 45980.93,
+      "kar": 558.93,
+      "para": "TL",
+      "maliyet": 45422,
+      "pct": 0.01230527057,
+      "tarih": null
+    },
+    {
+      "adet": 90000,
+      "tarih": null,
+      "pct": -0.02906106851,
+      "para": "TL",
+      "maliyet": 71854.55,
+      "id": 78,
+      "kar": -2088.17,
+      "ticker": "TMG",
+      "deger": 69766.38,
+      "kategori": "Fon"
+    },
+    {
+      "tarih": null,
+      "maliyet": 62258.1,
+      "pct": -0.00005408324379,
+      "para": "TL",
+      "kar": -3.36712,
+      "kategori": "Fon",
+      "deger": 62254.73288,
+      "id": 79,
+      "ticker": "TMG",
+      "adet": 77135
+    },
+    {
+      "deger": 69999.86,
+      "para": "TL",
+      "ticker": "PPI",
+      "maliyet": 69843.4,
+      "id": 80,
+      "adet": 56884,
+      "kategori": "Fon",
+      "tarih": null,
+      "kar": 156.46,
+      "pct": 0.002240154403
+    },
+    {
+      "tarih": null,
+      "kar": 182.470789,
+      "id": 81,
+      "ticker": "PPI",
+      "para": "TL",
+      "pct": 0.009207735347,
+      "deger": 19999.59,
+      "adet": 16140,
+      "kategori": "Fon",
+      "maliyet": 19817.119210956764
+    },
+    {
+      "id": 82,
+      "deger": 210619.89,
+      "para": "TL",
+      "ticker": "ALE",
+      "maliyet": 209992.79,
+      "kategori": "Fon",
+      "adet": 28079,
+      "kar": 627.1,
+      "tarih": null,
+      "pct": 0.002986293006
+    },
+    {
+      "kategori": "Fon",
+      "kar": 9.80369559,
+      "id": 83,
+      "ticker": "PUR",
+      "tarih": null,
+      "pct": 0.00994515241,
+      "adet": 171,
+      "deger": 995.58,
+      "maliyet": 985.776304410493,
+      "para": "TL"
+    },
+    {
+      "ticker": "PUR",
+      "kar": 68.02802537,
+      "kategori": "Fon",
+      "id": 84,
+      "pct": 0.01383428026,
+      "maliyet": 4917.351974632459,
+      "deger": 4985.38,
+      "adet": 853,
+      "tarih": null,
+      "para": "TL"
+    },
+    {
+      "adet": 4257,
+      "maliyet": 24540.642918,
+      "id": 85,
+      "deger": 24927.98,
+      "kategori": "Fon",
+      "ticker": "PUR",
+      "para": "TL",
+      "kar": 387.337082,
+      "tarih": null,
+      "pct": 0.01578349366
+    },
+    {
+      "kategori": "Fon",
+      "para": "TL",
+      "tarih": null,
+      "ticker": "PUR",
+      "pct": 0.02410216981,
+      "adet": 1657,
+      "deger": 9782.46,
+      "id": 86,
+      "kar": 230.229482,
+      "maliyet": 9552.230518
+    },
+    {
+      "kategori": "Fon",
+      "para": "TL",
+      "deger": 26966.66,
+      "ticker": "ALE",
+      "id": 87,
+      "adet": 3488,
+      "kar": 134.735528,
+      "tarih": null,
+      "maliyet": 26831.92447204969,
+      "pct": 0.005021463447
+    },
+    {
+      "ticker": "ALE",
+      "adet": 10189,
+      "maliyet": 78380.29771952817,
+      "deger": 78906.86,
+      "pct": 0.006718043893582181,
+      "para": "TL",
+      "id": 88,
+      "kategori": "Fon",
+      "kar": 526.5622804718296,
+      "tarih": null
+    },
+    {
+      "id": 89,
+      "tarih": null,
+      "para": "TL",
+      "ticker": "ALE",
+      "kar": 25.467499,
+      "adet": 126,
+      "deger": 994.74,
+      "kategori": "Fon",
+      "pct": 0.02627485973,
+      "maliyet": 969.2725009972078
+    },
+    {
+      "deger": 29842.2,
+      "ticker": "ALE",
+      "kar": 1025.574693,
+      "pct": 0.03558968761,
+      "para": "TL",
+      "id": 90,
+      "tarih": null,
+      "kategori": "Fon",
+      "adet": 3746,
+      "maliyet": 28816.625307424925
+    },
+    {
+      "maliyet": 80992.87999999999,
+      "adet": 170144,
+      "kategori": "Fon",
+      "deger": 105448.058,
+      "id": 91,
+      "ticker": "AFT",
+      "kar": 24455.178,
+      "para": "TL",
+      "pct": 0.3019423189,
+      "tarih": null
+    },
+    {
+      "id": 92,
+      "maliyet": 47649.049999999996,
+      "kar": 11792.349,
+      "deger": 59441.399000000005,
+      "adet": 71302,
+      "pct": 0.2474834021,
+      "ticker": "AFA",
+      "kategori": "Fon",
+      "tarih": null,
+      "para": "TL"
+    },
+    {
+      "maliyet": 14999.81,
+      "adet": 41814,
+      "kategori": "Fon",
+      "deger": 17484.37,
+      "para": "TL",
+      "ticker": "AFV",
+      "pct": 0.1656394314,
+      "id": 93,
+      "kar": 2484.56,
+      "tarih": null
+    },
+    {
+      "deger": 93898.42,
+      "ticker": "PPI",
+      "kar": 13129.53921,
+      "maliyet": 80768.88078904324,
+      "pct": 0.1625569041,
+      "para": "TL",
+      "id": 94,
+      "tarih": null,
+      "adet": 65782,
+      "kategori": "Fon"
+    },
+    {
+      "tarih": null,
+      "kar": 1119.54,
+      "id": 95,
+      "kategori": "Metal",
+      "pct": 0.2690206029,
+      "ticker": "Altın (IAR)",
+      "para": "TL",
+      "maliyet": 3042,
+      "deger": 4161.54,
+      "adet": 1
+    },
+    {
+      "para": "TL",
+      "kategori": "Metal",
+      "tarih": null,
+      "adet": 7,
+      "pct": 0.03622355637,
+      "maliyet": 20429.149999999998,
+      "deger": 21196.98,
+      "id": 96,
+      "kar": 767.83,
+      "ticker": "Altın (IAR)"
+    },
+    {
+      "kategori": "Metal",
+      "para": "TL",
+      "tarih": null,
+      "ticker": "Altın (IAR)",
+      "pct": 0.1083560239,
+      "adet": 47,
+      "id": 97,
+      "deger": 177519,
+      "kar": 19235.253,
+      "maliyet": 158283.747
+    },
+    {
+      "kategori": "Metal",
+      "para": "TL",
+      "ticker": "Altın (F)",
+      "deger": 20500,
+      "maliyet": 14995,
+      "adet": 5,
+      "pct": 0.2685365854,
+      "tarih": null,
+      "id": 98,
+      "kar": 5505
+    },
+    {
+      "para": "TL",
+      "ticker": "ALE",
+      "deger": 369877,
+      "kategori": "Fon",
+      "pct": 0.009021469296450882,
+      "tarih": "2026-06-01",
+      "adet": 29900,
+      "id": 1780298493672,
+      "kar": 3307,
+      "maliyet": 366570
+    },
+    {
+      "deger": 124331.45,
+      "maliyet": 120500,
+      "kategori": "Faiz",
+      "pct": 0.03179626556016595,
+      "para": "TL",
+      "kar": 3831.449999999997,
+      "tarih": "2026-05-22",
+      "ticker": "FAIZ",
+      "id": 1780298561937,
+      "adet": 1
+    },
+    {
+      "para": "USD",
+      "tarih": "2026-07-23",
+      "ticker": "JNJ",
+      "maliyet": 1612.82,
+      "pct": 0.6428615716570975,
+      "id": 1785561825181,
+      "deger": 2649.64,
+      "adet": 10.196722385,
+      "kar": 1036.82,
+      "kategori": "Temettü"
+    },
+    {
+      "deger": 3675.67,
+      "id": 1785561927747,
+      "kar": 1082.1599999999999,
+      "ticker": "AVGO",
+      "kategori": "Temettü",
+      "maliyet": 2593.51,
+      "pct": 0.4172569220862845,
+      "para": "USD",
+      "tarih": "2026-07-23",
+      "adet": 9.192930726
+    },
+    {
+      "maliyet": 1934.31,
+      "pct": 0.532076037450047,
+      "deger": 2963.51,
+      "para": "USD",
+      "kar": 1029.2000000000003,
+      "id": 1785562022614,
+      "tarih": "2026-07-22",
+      "ticker": "TXN",
+      "kategori": "Temettü",
+      "adet": 9.883393474
+    },
+    {
+      "para": "USD",
+      "tarih": "2026-08-03",
+      "maliyet": 1790.33,
+      "kategori": "Temettü",
+      "pct": -0.06756854881502294,
+      "id": 1785821074930,
+      "adet": 11.524780946,
+      "deger": 1669.36,
+      "kar": -120.97000000000003,
+      "ticker": "PG"
+    },
+    {
+      "kategori": "Temettü",
+      "ticker": "PEP",
+      "kar": 77.24000000000001,
+      "adet": 12.828700564,
+      "deger": 1784.76,
+      "maliyet": 1707.52,
+      "id": 1785821112963,
+      "pct": 0.04523519490254873,
+      "tarih": "2026-08-03",
+      "para": "USD"
+    }
+  ],
+  "bes": {
+    "sirket": 217836,
+    "getiri": 20335,
+    "odenen": 72612,
+    "sirketGetiri": 76468
+  },
+  "temettuKayitlar": [
+    {
+      "tarih": "2024-12-24",
+      "miktar": 2.57,
+      "oran": null,
+      "temettu": 0.28,
+      "ticker": "SMH",
+      "hisseFiyat": null
+    },
+    {
+      "tarih": "2024-12-26",
+      "ticker": "VOO",
+      "miktar": 2.79,
+      "hisseFiyat": null,
+      "temettu": 0.28,
+      "oran": null
+    },
+    {
+      "oran": null,
+      "temettu": 0.28,
+      "miktar": 1.34,
+      "ticker": "QQQ",
+      "hisseFiyat": null,
+      "tarih": "2024-12-31"
+    },
+    {
+      "tarih": "2025-03-31",
+      "ticker": "VOO",
+      "hisseFiyat": null,
+      "miktar": 2.9,
+      "oran": null,
+      "temettu": 0.28
+    },
+    {
+      "oran": null,
+      "miktar": 1.15,
+      "hisseFiyat": null,
+      "temettu": 0.28,
+      "ticker": "QQQ",
+      "tarih": "2025-04-30"
+    },
+    {
+      "miktar": 7.05,
+      "temettu": 0.28,
+      "oran": null,
+      "ticker": "VEA",
+      "tarih": "2025-06-24",
+      "hisseFiyat": null
+    },
+    {
+      "oran": null,
+      "miktar": 5.51,
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "ticker": "VALE",
+      "tarih": "2025-03-24"
+    },
+    {
+      "tarih": "2025-03-27",
+      "miktar": 0.77,
+      "oran": null,
+      "hisseFiyat": null,
+      "ticker": "CTRA",
+      "temettu": 0.28
+    },
+    {
+      "tarih": "2025-04-01",
+      "ticker": "KO",
+      "temettu": 0.28,
+      "oran": null,
+      "miktar": 0.71,
+      "hisseFiyat": null
+    },
+    {
+      "hisseFiyat": null,
+      "miktar": 0.03,
+      "tarih": "2025-04-02",
+      "ticker": "NVIDA",
+      "temettu": 0.28,
+      "oran": null
+    },
+    {
+      "oran": null,
+      "temettu": 0.28,
+      "ticker": "VICI",
+      "tarih": "2025-04-03",
+      "hisseFiyat": null,
+      "miktar": 1.51
+    },
+    {
+      "miktar": 0.33,
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "oran": null,
+      "ticker": "WMT",
+      "tarih": "2025-04-07"
+    },
+    {
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "miktar": 0.35,
+      "ticker": "NWS",
+      "tarih": "2025-04-09",
+      "oran": null
+    },
+    {
+      "tarih": "2025-04-15",
+      "ticker": "MU",
+      "temettu": 0.28,
+      "hisseFiyat": null,
+      "oran": null,
+      "miktar": 0.16
+    },
+    {
+      "temettu": 0.28,
+      "miktar": 0.5,
+      "tarih": "2025-04-30",
+      "hisseFiyat": null,
+      "ticker": "QQQ",
+      "oran": null
+    },
+    {
+      "oran": null,
+      "ticker": "WMT",
+      "miktar": 0.33,
+      "temettu": 0.28,
+      "tarih": "2025-05-27",
+      "hisseFiyat": null
+    },
+    {
+      "miktar": 0.77,
+      "temettu": 0.28,
+      "tarih": "2025-05-29",
+      "oran": null,
+      "hisseFiyat": null,
+      "ticker": "CTRA"
+    },
+    {
+      "ticker": "COP",
+      "hisseFiyat": null,
+      "temettu": 0.28,
+      "tarih": "2025-06-02",
+      "oran": null,
+      "miktar": 1.09
+    },
+    {
+      "hisseFiyat": null,
+      "miktar": 0.31,
+      "oran": null,
+      "tarih": "2025-06-03",
+      "temettu": 0.28,
+      "ticker": "DAL"
+    },
+    {
+      "temettu": 0.28,
+      "miktar": 4.21,
+      "hisseFiyat": null,
+      "ticker": "QQQM",
+      "tarih": "2025-06-27",
+      "oran": null
+    },
+    {
+      "hisseFiyat": null,
+      "miktar": 5.98,
+      "ticker": "SPLG",
+      "oran": null,
+      "temettu": 0.28,
+      "tarih": "2025-06-30"
+    },
+    {
+      "temettu": 0.28,
+      "miktar": 0.71,
+      "ticker": "KO",
+      "hisseFiyat": null,
+      "tarih": "2025-07-01",
+      "oran": null
+    },
+    {
+      "temettu": 0.28,
+      "miktar": 4.21,
+      "tarih": "2025-07-02",
+      "ticker": "VOO",
+      "hisseFiyat": null,
+      "oran": null
+    },
+    {
+      "tarih": "2025-07-11",
+      "ticker": "VICI",
+      "hisseFiyat": null,
+      "miktar": 1.51,
+      "oran": null,
+      "temettu": 0.28
+    },
+    {
+      "hisseFiyat": null,
+      "temettu": 0.28,
+      "oran": null,
+      "miktar": 1.36,
+      "ticker": "QQQ",
+      "tarih": "2025-07-31"
+    },
+    {
+      "temettu": 0.87,
+      "miktar": 4.43,
+      "ticker": "VIG",
+      "oran": 0.004274,
+      "tarih": "2025-07-02",
+      "hisseFiyat": 203.55
+    },
+    {
+      "ticker": "RYLD",
+      "temettu": 0.14,
+      "oran": 0.009421,
+      "hisseFiyat": 14.86,
+      "tarih": "2025-07-28",
+      "miktar": 3.32
+    },
+    {
+      "temettu": 0.16,
+      "hisseFiyat": 16.77,
+      "miktar": 4.38,
+      "tarih": "2025-07-28",
+      "ticker": "QYLD",
+      "oran": 0.009541
+    },
+    {
+      "ticker": "XYLD",
+      "hisseFiyat": 38.99,
+      "temettu": 0.31,
+      "tarih": "2025-07-28",
+      "oran": 0.007951,
+      "miktar": 2.67
+    },
+    {
+      "temettu": 0.1,
+      "miktar": 1.62,
+      "ticker": "ULTY",
+      "oran": 0.016077,
+      "tarih": "2025-08-01",
+      "hisseFiyat": 6.22
+    },
+    {
+      "ticker": "JEPI",
+      "temettu": 0.35,
+      "hisseFiyat": 55.61,
+      "oran": 0.006294,
+      "tarih": "2025-08-05",
+      "miktar": 3.5
+    },
+    {
+      "hisseFiyat": 55.1,
+      "miktar": 4.54,
+      "oran": 0.007985,
+      "ticker": "JEPQ",
+      "temettu": 0.44,
+      "tarih": "2025-08-05"
+    },
+    {
+      "miktar": 2.09,
+      "oran": 0.01642,
+      "temettu": 0.1,
+      "tarih": "2025-08-08",
+      "hisseFiyat": 6.09,
+      "ticker": "ULTY"
+    },
+    {
+      "oran": 0.006279,
+      "ticker": "TXN",
+      "temettu": 1.36,
+      "miktar": 5.72,
+      "hisseFiyat": 216.59,
+      "tarih": "2025-08-12"
+    },
+    {
+      "tarih": "2025-08-15",
+      "temettu": 1.06,
+      "ticker": "PG",
+      "miktar": 5.92,
+      "oran": 0.006714,
+      "hisseFiyat": 157.89
+    },
+    {
+      "hisseFiyat": 1.93,
+      "miktar": 5.08,
+      "ticker": "MRNY",
+      "tarih": "2025-08-15",
+      "temettu": 0.095,
+      "oran": 0.049223
+    },
+    {
+      "temettu": 1,
+      "tarih": "2025-08-15",
+      "oran": 0.050891,
+      "ticker": "MARO",
+      "miktar": 6.43,
+      "hisseFiyat": 19.65
+    },
+    {
+      "ticker": "ULTY",
+      "hisseFiyat": 6.09,
+      "tarih": "2025-08-15",
+      "oran": 0.01642,
+      "temettu": 0.1,
+      "miktar": 2.1
+    },
+    {
+      "tarih": "2025-08-22",
+      "miktar": 2.4,
+      "temettu": 0.1,
+      "hisseFiyat": 5.65,
+      "ticker": "ULTY",
+      "oran": 0.017699
+    },
+    {
+      "miktar": 5,
+      "oran": 0.050147,
+      "tarih": "2025-08-22",
+      "hisseFiyat": 6.78,
+      "temettu": 0.34,
+      "ticker": "CONY"
+    },
+    {
+      "oran": 0.010095,
+      "ticker": "QYLD",
+      "hisseFiyat": 16.84,
+      "miktar": 4.816,
+      "temettu": 0.17,
+      "tarih": "2025-08-25"
+    },
+    {
+      "ticker": "RYLD",
+      "tarih": "2025-08-25",
+      "temettu": 0.15,
+      "hisseFiyat": 15,
+      "oran": 0.01,
+      "miktar": 3.712
+    },
+    {
+      "tarih": "2025-08-25",
+      "miktar": 2.984,
+      "temettu": 0.31,
+      "oran": 0.007934,
+      "ticker": "XYLD",
+      "hisseFiyat": 39.07
+    },
+    {
+      "miktar": 413,
+      "oran": 0.12605,
+      "ticker": "ICOI",
+      "tarih": "2025-08-26",
+      "hisseFiyat": 40.96,
+      "temettu": 5.163
+    },
+    {
+      "hisseFiyat": 20.59,
+      "oran": 0.033026,
+      "tarih": "2025-09-03",
+      "ticker": "COYY",
+      "temettu": 0.68,
+      "miktar": 31.81
+    },
+    {
+      "tarih": "2025-09-09",
+      "ticker": "COYY",
+      "temettu": 0.5412,
+      "oran": 0.027333,
+      "hisseFiyat": 19.8,
+      "miktar": 25.12
+    },
+    {
+      "ticker": "JNJ",
+      "oran": 0.007889,
+      "hisseFiyat": 164.78,
+      "miktar": 9.248,
+      "temettu": 1.3,
+      "tarih": "2025-09-09"
+    },
+    {
+      "tarih": "2025-09-11",
+      "ticker": "MSFT",
+      "hisseFiyat": 470.92,
+      "miktar": 1.656,
+      "oran": 0.001763,
+      "temettu": 0.83
+    },
+    {
+      "oran": 0.028151,
+      "tarih": "2025-09-16",
+      "ticker": "COYY",
+      "miktar": 25.72,
+      "hisseFiyat": 19.69,
+      "temettu": 0.5543
+    },
+    {
+      "ticker": "VEA",
+      "temettu": 0.28,
+      "oran": 0.004694,
+      "hisseFiyat": 59.65,
+      "miktar": 6.14,
+      "tarih": "2025-09-23"
+    },
+    {
+      "hisseFiyat": 247.9,
+      "tarih": "2025-09-26",
+      "miktar": 7.18,
+      "temettu": 0.3,
+      "ticker": "QQQM",
+      "oran": 0.00121
+    },
+    {
+      "hisseFiyat": 27.16,
+      "miktar": 22.48,
+      "tarih": "2025-09-29",
+      "temettu": 0.26,
+      "oran": 0.009573,
+      "ticker": "SCHD"
+    },
+    {
+      "miktar": 6.67,
+      "tarih": "2025-09-30",
+      "temettu": 0.2382,
+      "oran": 0.00306,
+      "ticker": "SPLG",
+      "hisseFiyat": 77.85
+    },
+    {
+      "ticker": "AVGO",
+      "hisseFiyat": 338.79,
+      "temettu": 0.59,
+      "tarih": "2025-09-30",
+      "oran": 0.001741,
+      "miktar": 4.31
+    },
+    {
+      "miktar": 12.376,
+      "temettu": 1.42,
+      "tarih": "2025-09-30",
+      "oran": 0.009826,
+      "hisseFiyat": 144.51,
+      "ticker": "PEP"
+    },
+    {
+      "ticker": "VIG",
+      "hisseFiyat": 215.4,
+      "tarih": "2025-10-01",
+      "temettu": 0.86,
+      "oran": 0.003993,
+      "miktar": 7.64
+    },
+    {
+      "oran": 0.002868,
+      "ticker": "VOO",
+      "hisseFiyat": 606.59,
+      "miktar": 4.2,
+      "temettu": 1.74,
+      "tarih": "2025-10-01"
+    },
+    {
+      "temettu": 0.69,
+      "hisseFiyat": 596.1,
+      "miktar": 1.12,
+      "oran": 0.001158,
+      "ticker": "QQQ",
+      "tarih": "2025-10-31"
+    },
+    {
+      "oran": 0.008795,
+      "hisseFiyat": 161.46,
+      "ticker": "TXN",
+      "tarih": "2025-11-12",
+      "temettu": 1.42,
+      "miktar": 11.05
+    },
+    {
+      "oran": 0.006886,
+      "hisseFiyat": 152.49,
+      "miktar": 9.58,
+      "temettu": 1.05,
+      "ticker": "PG",
+      "tarih": "2025-11-17"
+    },
+    {
+      "tarih": "2025-12-09",
+      "ticker": "JNJ",
+      "hisseFiyat": 206.67,
+      "temettu": 1.3,
+      "oran": 0.00629,
+      "miktar": 10.46
+    },
+    {
+      "ticker": "MSFT",
+      "temettu": 0.91,
+      "tarih": "2025-12-11",
+      "hisseFiyat": 510,
+      "oran": 0.001784,
+      "miktar": 4.31
+    },
+    {
+      "ticker": "SCHD",
+      "oran": 0.009793,
+      "temettu": 0.27,
+      "tarih": "2025-12-15",
+      "miktar": 24.2,
+      "hisseFiyat": 27.57
+    },
+    {
+      "tarih": "2025-12-23",
+      "ticker": "VEA",
+      "temettu": 1.04,
+      "hisseFiyat": 61.84,
+      "miktar": 22.37,
+      "oran": 0.016818
+    },
+    {
+      "oran": 0.003983,
+      "hisseFiyat": 220.95,
+      "ticker": "VIG",
+      "temettu": 0.88,
+      "miktar": 7.84,
+      "tarih": "2025-12-24"
+    },
+    {
+      "tarih": "2025-12-24",
+      "oran": 0.002811,
+      "ticker": "VOO",
+      "miktar": 4.3,
+      "temettu": 1.77,
+      "hisseFiyat": 629.73
+    },
+    {
+      "oran": 0.001255,
+      "hisseFiyat": 254.93,
+      "temettu": 0.32,
+      "miktar": 3.16,
+      "ticker": "QQQM",
+      "tarih": "2025-12-26"
+    },
+    {
+      "tarih": "2025-12-31",
+      "miktar": 4.76,
+      "temettu": 0.65,
+      "hisseFiyat": 341.45,
+      "ticker": "AVGO",
+      "oran": 0.001904
+    },
+    {
+      "tarih": "2026-01-06",
+      "hisseFiyat": 145.02,
+      "miktar": 14.26,
+      "temettu": 1.42,
+      "ticker": "PEP",
+      "oran": 0.009792
+    },
+    {
+      "ticker": "TXN",
+      "temettu": 1.42,
+      "oran": 0.006588,
+      "tarih": "2026-02-10",
+      "miktar": 11.128,
+      "hisseFiyat": 215.55
+    },
+    {
+      "temettu": 1.05,
+      "hisseFiyat": 150.15,
+      "oran": 0.006993,
+      "miktar": 9.632,
+      "ticker": "PG",
+      "tarih": "2026-02-17"
+    },
+    {
+      "temettu": 1.3,
+      "hisseFiyat": 246.28,
+      "miktar": 10.52,
+      "ticker": "JNJ",
+      "oran": 0.005279,
+      "tarih": "2026-03-10"
+    },
+    {
+      "oran": 0.002284,
+      "miktar": 4.33,
+      "temettu": 0.91,
+      "ticker": "MSFT",
+      "tarih": "2026-03-12",
+      "hisseFiyat": 398.46
+    },
+    {
+      "ticker": "VEA",
+      "temettu": 0.1,
+      "oran": 0.001612,
+      "tarih": "2026-03-24",
+      "miktar": 2.38,
+      "hisseFiyat": 62.04
+    },
+    {
+      "oran": 0.001322,
+      "temettu": 0.32,
+      "miktar": 5.52,
+      "hisseFiyat": 242.07,
+      "ticker": "QQQM",
+      "tarih": "2026-03-27"
+    },
+    {
+      "oran": 0.001241,
+      "hisseFiyat": 588,
+      "ticker": "QQQ",
+      "temettu": 0.73,
+      "tarih": "2026-03-27",
+      "miktar": 2.36
+    },
+    {
+      "oran": 0.008186,
+      "temettu": 0.25,
+      "hisseFiyat": 30.54,
+      "miktar": 22.53,
+      "ticker": "SCHD",
+      "tarih": "2026-03-30"
+    },
+    {
+      "hisseFiyat": 210.73,
+      "ticker": "VIG",
+      "oran": 0.003939,
+      "miktar": 7.408,
+      "temettu": 0.83,
+      "tarih": "2026-03-31"
+    },
+    {
+      "hisseFiyat": 582.96,
+      "miktar": 4.544,
+      "tarih": "2026-03-31",
+      "oran": 0.003208,
+      "temettu": 1.87,
+      "ticker": "VOO"
+    },
+    {
+      "oran": 0.008907,
+      "ticker": "PEP",
+      "temettu": 1.42,
+      "miktar": 14.368,
+      "hisseFiyat": 159.43,
+      "tarih": "2026-03-31"
+    },
+    {
+      "temettu": 1.08,
+      "tarih": "2026-05-15",
+      "miktar": 9.98,
+      "hisseFiyat": 145.71,
+      "ticker": "PG",
+      "oran": 0.0074119827053736875
+    },
+    {
+      "oran": 0.00505535974936808,
+      "miktar": 11.19,
+      "temettu": 1.42,
+      "hisseFiyat": 280.89,
+      "ticker": "TXN",
+      "tarih": "2026-05-19"
+    },
+    {
+      "temettu": 1.34,
+      "oran": 0.005821530975758103,
+      "miktar": 10.88,
+      "ticker": "JNJ",
+      "hisseFiyat": 230.18,
+      "tarih": "2026-06-09"
+    },
+    {
+      "oran": 0.0021713713044930684,
+      "ticker": "MSFT",
+      "temettu": 0.91,
+      "hisseFiyat": 419.09,
+      "miktar": 4.34,
+      "tarih": "2026-06-11"
+    },
+    {
+      "hisseFiyat": 143.39,
+      "temettu": 0.43,
+      "tarih": "2026-06-18",
+      "ticker": "IJR",
+      "oran": 0.0029988144222051747,
+      "miktar": 2.82
+    },
+    {
+      "oran": 0.005116857972617895,
+      "ticker": "VEA",
+      "hisseFiyat": 72.31,
+      "miktar": 8.24,
+      "temettu": 0.37,
+      "tarih": "2026-06-24"
+    },
+    {
+      "hisseFiyat": 303.9,
+      "oran": 0.0011516946363935505,
+      "miktar": 10.08,
+      "temettu": 0.35,
+      "ticker": "QQQM",
+      "tarih": "2026-06-29"
+    },
+    {
+      "miktar": 38.08,
+      "ticker": "SCHD",
+      "temettu": 0.25,
+      "oran": 0.007881462799495587,
+      "hisseFiyat": 31.72,
+      "tarih": "2026-06-29"
+    },
+    {
+      "tarih": "2026-03-31",
+      "hisseFiyat": 322.51,
+      "ticker": "AVGO",
+      "miktar": 4.77,
+      "oran": 0.002015441381662584,
+      "temettu": 0.65
+    },
+    {
+      "hisseFiyat": 392.13,
+      "oran": 0.0016576135465279373,
+      "miktar": 4.78,
+      "temettu": 0.65,
+      "ticker": "AVGO",
+      "tarih": "2026-06-30"
+    },
+    {
+      "ticker": "VOO",
+      "hisseFiyat": 670.26,
+      "oran": 0.002924238355265121,
+      "tarih": "2026-06-30",
+      "temettu": 1.96,
+      "miktar": 10.1
+    },
+    {
+      "hisseFiyat": 141.92,
+      "ticker": "PEP",
+      "oran": 0.010428410372040587,
+      "temettu": 1.48,
+      "tarih": "2026-06-30",
+      "miktar": 15.06
+    }
+  ],
+  "yatirim": {
+    "abd": [
+      {
+        "tarih": "2025-06-01",
+        "tutar": 1000
+      },
+      {
+        "tutar": 1000,
+        "tarih": "2025-07-01"
+      },
+      {
+        "tutar": 4550,
+        "tarih": "2025-08-01"
+      },
+      {
+        "tarih": "2025-09-01",
+        "tutar": 1000
+      },
+      {
+        "tarih": "2025-10-01",
+        "tutar": -790
+      },
+      {
+        "tarih": "2025-11-01",
+        "tutar": 0
+      },
+      {
+        "tutar": 0,
+        "tarih": "2025-12-01"
+      },
+      {
+        "tarih": "2026-01-01",
+        "tutar": 500
+      },
+      {
+        "tarih": "2026-02-01",
+        "tutar": 1500
+      },
+      {
+        "tutar": 1000,
+        "tarih": "2026-03-01"
+      },
+      {
+        "tutar": 1240,
+        "tarih": "2026-04-06"
+      },
+      {
+        "tutar": 1750,
+        "tarih": "2026-05-05"
+      },
+      {
+        "tarih": "2026-06-08",
+        "tutar": 1500
+      },
+      {
+        "tarih": "2026-07-03",
+        "tutar": 0
+      },
+      {
+        "tutar": -12750,
+        "tarih": "2026-08-04"
+      }
+    ],
+    "emniyet": [],
+    "ev": [
+      {
+        "tutar": 263000,
+        "tarih": "2025-07-01"
+      },
+      {
+        "tutar": 56800,
+        "tarih": "2025-08-01"
+      },
+      {
+        "tarih": "2025-09-01",
+        "tutar": 56800
+      },
+      {
+        "tutar": 56800,
+        "tarih": "2025-10-01"
+      },
+      {
+        "tarih": "2025-11-01",
+        "tutar": 56800
+      },
+      {
+        "tutar": 56800,
+        "tarih": "2025-12-01"
+      },
+      {
+        "tarih": "2026-01-01",
+        "tutar": 56800
+      },
+      {
+        "tarih": "2026-02-01",
+        "tutar": 63750
+      },
+      {
+        "tutar": 63750,
+        "tarih": "2026-03-13"
+      },
+      {
+        "tutar": 63750,
+        "tarih": "2026-04-01"
+      },
+      {
+        "tarih": "2026-05-01",
+        "tutar": 63750
+      },
+      {
+        "tarih": "2026-06-01",
+        "tutar": 63750
+      },
+      {
+        "tutar": 63750,
+        "tarih": "2026-07-01"
+      },
+      {
+        "tutar": 63750,
+        "tarih": "2026-08-04"
+      }
+    ],
+    "araba": []
+  },
+  "abdHedef": {
+    "buyumeOran": 80,
+    "temttu": [
+      {
+        "pct": 90,
+        "ticker": "SCHD"
+      },
+      {
+        "pct": 0,
+        "ticker": "AVGO"
+      },
+      {
+        "pct": 0,
+        "ticker": "JNJ"
+      },
+      {
+        "ticker": "TXN",
+        "pct": 0
+      },
+      {
+        "pct": 0,
+        "ticker": "PG"
+      },
+      {
+        "pct": 10,
+        "ticker": "MSFT"
+      },
+      {
+        "pct": 0,
+        "ticker": "PEP"
+      }
+    ],
+    "buyume": [
+      {
+        "ticker": "VOO",
+        "pct": 25
+      },
+      {
+        "pct": 50,
+        "ticker": "QQQM"
+      },
+      {
+        "pct": 15,
+        "ticker": "VEA"
+      },
+      {
+        "ticker": "IJR",
+        "pct": 10
+      }
+    ],
+    "temttuOran": 20
+  },
+  "history": [
+    {
+      "total": 330144,
+      "date": "2024-06"
+    },
+    {
+      "total": 466475,
+      "date": "2024-07"
+    },
+    {
+      "total": 539026,
+      "date": "2024-08"
+    },
+    {
+      "date": "2024-09",
+      "total": 567466
+    },
+    {
+      "date": "2024-10",
+      "total": 936768
+    },
+    {
+      "date": "2024-11",
+      "total": 990750
+    },
+    {
+      "date": "2024-12",
+      "total": 919680
+    },
+    {
+      "date": "2025-01",
+      "total": 860273
+    },
+    {
+      "date": "2025-02",
+      "total": 1075841
+    },
+    {
+      "total": 1212132,
+      "date": "2025-03"
+    },
+    {
+      "total": 1265332,
+      "date": "2025-04"
+    }
+  ],
+  "usdRate": 48.3079,
+  "sirketpay": [
+    {
+      "deger": 0,
+      "sirket": "Caremed",
+      "maliyet": 5000
+    },
+    {
+      "sirket": "Qcharge",
+      "deger": 0,
+      "maliyet": 60000
+    },
+    {
+      "deger": 0,
+      "sirket": "Sparga1",
+      "maliyet": 10000
+    },
+    {
+      "sirket": "Sparga2",
+      "deger": 0,
+      "maliyet": 18747
+    },
+    {
+      "deger": 0,
+      "maliyet": 9100,
+      "sirket": "Pachamama"
+    },
+    {
+      "maliyet": 70267,
+      "sirket": "Safran",
+      "deger": 0
+    },
+    {
+      "deger": 0,
+      "maliyet": 34511,
+      "sirket": "Atronmac"
+    },
+    {
+      "sirket": "Oleago",
+      "maliyet": 94500,
+      "deger": 0
+    },
+    {
+      "sirket": "Bebehum",
+      "maliyet": 111434,
+      "deger": 0
+    },
+    {
+      "maliyet": 12000,
+      "sirket": "Trexo",
+      "deger": 0
+    }
+  ],
+  "eurRate": 56.2499,
+  "abdOzetOrder": [
+    "QQQM",
+    "VEA",
+    "VOO",
+    "IJR",
+    "MSFT",
+    "SCHD"
+  ]
+}
